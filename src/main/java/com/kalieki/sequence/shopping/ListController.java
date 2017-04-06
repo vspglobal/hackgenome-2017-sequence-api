@@ -1,10 +1,7 @@
 package com.kalieki.sequence.shopping;
 
 import com.kalieki.sequence.model.Item;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,15 +15,40 @@ import java.util.List;
 @CrossOrigin
 public class ListController {
 
+    public static List<Item> itemList = null;
 
     @RequestMapping(method = RequestMethod.GET)
     public List<Item> get(){
-        List<Item> itemList = new ArrayList<Item>();
-        itemList.add(new Item("Chicken"));
-        itemList.add(new Item("Cookies"));
-        itemList.add(new Item("Whole Milk"));
+
         return itemList;
-
-
     }
+    @RequestMapping(method = RequestMethod.POST)
+    public List<Item> add(@RequestBody Item item){
+        boolean exists = false;
+        for(Item inList:itemList) {
+            if(item.getName().equalsIgnoreCase(inList.getName())){
+                exists = true;
+                break;
+            }
+        }
+
+        if( !exists)
+             itemList.add(item);
+        return itemList;
+    }
+
+    @RequestMapping(method = RequestMethod.DELETE)
+    public List<Item> delete(@RequestBody Item item){
+
+      for(Item inList:itemList) {
+          if(item.getName().equalsIgnoreCase(inList.getName())){
+              itemList.remove(inList);
+              break;
+          }
+      }
+
+
+        return itemList;
+    }
+
 }
