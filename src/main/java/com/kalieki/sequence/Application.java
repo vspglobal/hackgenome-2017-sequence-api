@@ -1,5 +1,6 @@
 package com.kalieki.sequence;
 
+
 import com.kalieki.sequence.model.Item;
 import com.kalieki.sequence.shopping.ListController;
 import com.sequencing.oauth.config.AuthenticationParameters;
@@ -14,20 +15,19 @@ import org.springframework.context.annotation.Bean;
 
 import java.util.ArrayList;
 
+
 /**
  * Created by kalieki on 3/24/17.
  */
-
 @SpringBootApplication
 public class Application {
 
-    public static void main(String... args){
+    public static void main(String... args) {
         initialize();
         SpringApplication.run(Application.class);
     }
 
-    private static void initialize(){
-
+    private static void initialize() {
         ListController.itemList = new ArrayList<Item>();
         ListController.itemList.add(new Item("Chicken"));
         ListController.itemList.add(new Item("Cookies"));
@@ -37,15 +37,14 @@ public class Application {
 
     @Bean
     @Autowired
-    public AuthenticationParameters getParameters(ApplicationConfiguration config)
-    {
+    public AuthenticationParameters getParameters(ApplicationConfiguration config) {
         return new AuthenticationParameters.ConfigurationBuilder()
-                .withRedirectUri(config.getRedirectHost() + config.getRedirectMapping())
-                .withClientId(config.getClientId())
-                .withClientSecret(config.getClientSecret())
+             .withRedirectUri(config.getRedirectHost() + config.getRedirectMapping())
+             .withClientId(config.getClientId())
+             .withClientSecret(config.getClientSecret())
              .withState("CA")
-                .withScope("external|demo")
-                .build();
+             .withScope("external|demo")
+             .build();
     }
 
     @Bean
@@ -59,6 +58,5 @@ public class Application {
     public SequencingFileMetadataApi getFileMetadataApi(SequencingOAuth2Client client) {
         return new DefaultSequencingFileMetadataApi(client);
     }
-
 
 }
