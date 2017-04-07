@@ -591,6 +591,7 @@ var AppComponent = (function () {
             });
         }
         else if (!this.oauth.isLoggedIn()) {
+            this.router.navigate(["login"]);
         }
     };
     AppComponent.prototype.getParameterByName = function (name) {
