@@ -5,8 +5,8 @@ webpackJsonp([3,4],[
 "use strict";
 
 var root_1 = __webpack_require__(16);
-var toSubscriber_1 = __webpack_require__(656);
-var observable_1 = __webpack_require__(63);
+var toSubscriber_1 = __webpack_require__(657);
+var observable_1 = __webpack_require__(62);
 /**
  * A representation of any set of values over any amount of time. This the most basic building block
  * of RxJS.
@@ -160,7 +160,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var isFunction_1 = __webpack_require__(84);
 var Subscription_1 = __webpack_require__(13);
-var Observer_1 = __webpack_require__(168);
+var Observer_1 = __webpack_require__(169);
 var rxSubscriber_1 = __webpack_require__(80);
 /**
  * Implements the {@link Observer} interface and extends the
@@ -458,13 +458,13 @@ exports.OuterSubscriber = OuterSubscriber;
 "use strict";
 
 var root_1 = __webpack_require__(16);
-var isArrayLike_1 = __webpack_require__(202);
-var isPromise_1 = __webpack_require__(204);
-var isObject_1 = __webpack_require__(203);
+var isArrayLike_1 = __webpack_require__(203);
+var isPromise_1 = __webpack_require__(205);
+var isObject_1 = __webpack_require__(204);
 var Observable_1 = __webpack_require__(0);
-var iterator_1 = __webpack_require__(62);
-var InnerSubscriber_1 = __webpack_require__(395);
-var observable_1 = __webpack_require__(63);
+var iterator_1 = __webpack_require__(61);
+var InnerSubscriber_1 = __webpack_require__(396);
+var observable_1 = __webpack_require__(62);
 function subscribeToResult(outerSubscriber, result, outerValue, outerIndex) {
     var destination = new InnerSubscriber_1.InnerSubscriber(outerSubscriber, outerValue, outerIndex);
     if (destination.closed) {
@@ -544,11 +544,11 @@ exports.subscribeToResult = subscribeToResult;
 /* WEBPACK VAR INJECTION */(function(global) {Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_merge__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_merge__ = __webpack_require__(177);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_merge__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_share__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_share__ = __webpack_require__(191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_operator_share___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_operator_share__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_symbol_observable__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_symbol_observable__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_symbol_observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Subject__);
@@ -6228,7 +6228,7 @@ var SystemJsNgModuleLoader = (function () {
         if (exportName === undefined) {
             exportName = 'default';
         }
-        return __webpack_require__(206)(module)
+        return __webpack_require__(207)(module)
             .then(function (module) { return module[exportName]; })
             .then(function (type) { return checkNotEmpty(type, module, exportName); })
             .then(function (type) { return _this._compiler.compileModuleAsync(type); });
@@ -6244,7 +6244,7 @@ var SystemJsNgModuleLoader = (function () {
             exportName = 'default';
             factoryClassSuffix = '';
         }
-        return __webpack_require__(206)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
+        return __webpack_require__(207)(this._config.factoryPathPrefix + module + this._config.factoryPathSuffix)
             .then(function (module) { return module[exportName + factoryClassSuffix]; })
             .then(function (factory) { return checkNotEmpty(factory, module, exportName); });
     };
@@ -13867,7 +13867,7 @@ var Observable_1 = __webpack_require__(0);
 var Subscriber_1 = __webpack_require__(2);
 var Subscription_1 = __webpack_require__(13);
 var ObjectUnsubscribedError_1 = __webpack_require__(82);
-var SubjectSubscription_1 = __webpack_require__(169);
+var SubjectSubscription_1 = __webpack_require__(170);
 var rxSubscriber_1 = __webpack_require__(80);
 /**
  * @class SubjectSubscriber<T>
@@ -14036,11 +14036,11 @@ exports.AnonymousSubject = AnonymousSubject;
 "use strict";
 
 var isArray_1 = __webpack_require__(35);
-var isObject_1 = __webpack_require__(203);
+var isObject_1 = __webpack_require__(204);
 var isFunction_1 = __webpack_require__(84);
 var tryCatch_1 = __webpack_require__(17);
 var errorObject_1 = __webpack_require__(15);
-var UnsubscriptionError_1 = __webpack_require__(200);
+var UnsubscriptionError_1 = __webpack_require__(201);
 /**
  * Represents a disposable resource, such as the execution of an Observable. A
  * Subscription has one important method, `unsubscribe`, that takes no argument
@@ -14291,8 +14291,8 @@ exports.tryCatch = tryCatch;
 
 "use strict";
 
-var AsyncAction_1 = __webpack_require__(60);
-var AsyncScheduler_1 = __webpack_require__(61);
+var AsyncAction_1 = __webpack_require__(59);
+var AsyncScheduler_1 = __webpack_require__(60);
 /**
  *
  * Async Scheduler
@@ -14419,7 +14419,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var ScalarObservable_1 = __webpack_require__(108);
+var ScalarObservable_1 = __webpack_require__(110);
 var EmptyObservable_1 = __webpack_require__(39);
 var isScheduler_1 = __webpack_require__(36);
 /**
@@ -14655,7 +14655,7 @@ exports.EmptyObservable = EmptyObservable;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(6);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserModule", function() { return BrowserModule; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "platformBrowser", function() { return platformBrowser; });
@@ -18878,7 +18878,7 @@ var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["
 
 "use strict";
 
-var ConnectableObservable_1 = __webpack_require__(171);
+var ConnectableObservable_1 = __webpack_require__(172);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits the results of invoking a specified selector on items
@@ -18936,48 +18936,6417 @@ exports.MulticastOperator = MulticastOperator;
 //# sourceMappingURL=multicast.js.map
 
 /***/ }),
-/* 50 */
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var toast_1 = __webpack_require__(168);
+exports.Toast = toast_1.Toast;
+var toast_manager_1 = __webpack_require__(167);
+exports.ToastsManager = toast_manager_1.ToastsManager;
+var toast_container_component_1 = __webpack_require__(107);
+exports.ToastContainer = toast_container_component_1.ToastContainer;
+var toast_options_1 = __webpack_require__(76);
+exports.ToastOptions = toast_options_1.ToastOptions;
+var toast_module_1 = __webpack_require__(385);
+exports.ToastModule = toast_module_1.ToastModule;
+//# sourceMappingURL=ng2-toastr.js.map
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+/**
+ * Represents a push-based event or value that an {@link Observable} can emit.
+ * This class is particularly useful for operators that manage notifications,
+ * like {@link materialize}, {@link dematerialize}, {@link observeOn}, and
+ * others. Besides wrapping the actual delivered value, it also annotates it
+ * with metadata of, for instance, what type of push message it is (`next`,
+ * `error`, or `complete`).
+ *
+ * @see {@link materialize}
+ * @see {@link dematerialize}
+ * @see {@link observeOn}
+ *
+ * @class Notification<T>
+ */
+var Notification = (function () {
+    function Notification(kind, value, error) {
+        this.kind = kind;
+        this.value = value;
+        this.error = error;
+        this.hasValue = kind === 'N';
+    }
+    /**
+     * Delivers to the given `observer` the value wrapped by this Notification.
+     * @param {Observer} observer
+     * @return
+     */
+    Notification.prototype.observe = function (observer) {
+        switch (this.kind) {
+            case 'N':
+                return observer.next && observer.next(this.value);
+            case 'E':
+                return observer.error && observer.error(this.error);
+            case 'C':
+                return observer.complete && observer.complete();
+        }
+    };
+    /**
+     * Given some {@link Observer} callbacks, deliver the value represented by the
+     * current Notification to the correctly corresponding callback.
+     * @param {function(value: T): void} next An Observer `next` callback.
+     * @param {function(err: any): void} [error] An Observer `error` callback.
+     * @param {function(): void} [complete] An Observer `complete` callback.
+     * @return {any}
+     */
+    Notification.prototype.do = function (next, error, complete) {
+        var kind = this.kind;
+        switch (kind) {
+            case 'N':
+                return next && next(this.value);
+            case 'E':
+                return error && error(this.error);
+            case 'C':
+                return complete && complete();
+        }
+    };
+    /**
+     * Takes an Observer or its individual callback functions, and calls `observe`
+     * or `do` methods accordingly.
+     * @param {Observer|function(value: T): void} nextOrObserver An Observer or
+     * the `next` callback.
+     * @param {function(err: any): void} [error] An Observer `error` callback.
+     * @param {function(): void} [complete] An Observer `complete` callback.
+     * @return {any}
+     */
+    Notification.prototype.accept = function (nextOrObserver, error, complete) {
+        if (nextOrObserver && typeof nextOrObserver.next === 'function') {
+            return this.observe(nextOrObserver);
+        }
+        else {
+            return this.do(nextOrObserver, error, complete);
+        }
+    };
+    /**
+     * Returns a simple Observable that just delivers the notification represented
+     * by this Notification instance.
+     * @return {any}
+     */
+    Notification.prototype.toObservable = function () {
+        var kind = this.kind;
+        switch (kind) {
+            case 'N':
+                return Observable_1.Observable.of(this.value);
+            case 'E':
+                return Observable_1.Observable.throw(this.error);
+            case 'C':
+                return Observable_1.Observable.empty();
+        }
+        throw new Error('unexpected notification kind value');
+    };
+    /**
+     * A shortcut to create a Notification instance of the type `next` from a
+     * given value.
+     * @param {T} value The `next` value.
+     * @return {Notification<T>} The "next" Notification representing the
+     * argument.
+     */
+    Notification.createNext = function (value) {
+        if (typeof value !== 'undefined') {
+            return new Notification('N', value);
+        }
+        return this.undefinedValueNotification;
+    };
+    /**
+     * A shortcut to create a Notification instance of the type `error` from a
+     * given error.
+     * @param {any} [err] The `error` error.
+     * @return {Notification<T>} The "error" Notification representing the
+     * argument.
+     */
+    Notification.createError = function (err) {
+        return new Notification('E', undefined, err);
+    };
+    /**
+     * A shortcut to create a Notification instance of the type `complete`.
+     * @return {Notification<any>} The valueless "complete" Notification.
+     */
+    Notification.createComplete = function () {
+        return this.completeNotification;
+    };
+    Notification.completeNotification = new Notification('C');
+    Notification.undefinedValueNotification = new Notification('N', undefined);
+    return Notification;
+}());
+exports.Notification = Notification;
+//# sourceMappingURL=Notification.js.map
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var OuterSubscriber_1 = __webpack_require__(3);
+var subscribeToResult_1 = __webpack_require__(4);
+/**
+ * Converts a higher-order Observable into a first-order Observable which
+ * concurrently delivers all values that are emitted on the inner Observables.
+ *
+ * <span class="informal">Flattens an Observable-of-Observables.</span>
+ *
+ * <img src="./img/mergeAll.png" width="100%">
+ *
+ * `mergeAll` subscribes to an Observable that emits Observables, also known as
+ * a higher-order Observable. Each time it observes one of these emitted inner
+ * Observables, it subscribes to that and delivers all the values from the
+ * inner Observable on the output Observable. The output Observable only
+ * completes once all inner Observables have completed. Any error delivered by
+ * a inner Observable will be immediately emitted on the output Observable.
+ *
+ * @example <caption>Spawn a new interval Observable for each click event, and blend their outputs as one Observable</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var higherOrder = clicks.map((ev) => Rx.Observable.interval(1000));
+ * var firstOrder = higherOrder.mergeAll();
+ * firstOrder.subscribe(x => console.log(x));
+ *
+ * @example <caption>Count from 0 to 9 every second for each click, but only allow 2 concurrent timers</caption>
+ * var clicks = Rx.Observable.fromEvent(document, 'click');
+ * var higherOrder = clicks.map((ev) => Rx.Observable.interval(1000).take(10));
+ * var firstOrder = higherOrder.mergeAll(2);
+ * firstOrder.subscribe(x => console.log(x));
+ *
+ * @see {@link combineAll}
+ * @see {@link concatAll}
+ * @see {@link exhaust}
+ * @see {@link merge}
+ * @see {@link mergeMap}
+ * @see {@link mergeMapTo}
+ * @see {@link mergeScan}
+ * @see {@link switch}
+ * @see {@link zipAll}
+ *
+ * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of inner
+ * Observables being subscribed to concurrently.
+ * @return {Observable} An Observable that emits values coming from all the
+ * inner Observables emitted by the source Observable.
+ * @method mergeAll
+ * @owner Observable
+ */
+function mergeAll(concurrent) {
+    if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
+    return this.lift(new MergeAllOperator(concurrent));
+}
+exports.mergeAll = mergeAll;
+var MergeAllOperator = (function () {
+    function MergeAllOperator(concurrent) {
+        this.concurrent = concurrent;
+    }
+    MergeAllOperator.prototype.call = function (observer, source) {
+        return source.subscribe(new MergeAllSubscriber(observer, this.concurrent));
+    };
+    return MergeAllOperator;
+}());
+exports.MergeAllOperator = MergeAllOperator;
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var MergeAllSubscriber = (function (_super) {
+    __extends(MergeAllSubscriber, _super);
+    function MergeAllSubscriber(destination, concurrent) {
+        _super.call(this, destination);
+        this.concurrent = concurrent;
+        this.hasCompleted = false;
+        this.buffer = [];
+        this.active = 0;
+    }
+    MergeAllSubscriber.prototype._next = function (observable) {
+        if (this.active < this.concurrent) {
+            this.active++;
+            this.add(subscribeToResult_1.subscribeToResult(this, observable));
+        }
+        else {
+            this.buffer.push(observable);
+        }
+    };
+    MergeAllSubscriber.prototype._complete = function () {
+        this.hasCompleted = true;
+        if (this.active === 0 && this.buffer.length === 0) {
+            this.destination.complete();
+        }
+    };
+    MergeAllSubscriber.prototype.notifyComplete = function (innerSub) {
+        var buffer = this.buffer;
+        this.remove(innerSub);
+        this.active--;
+        if (buffer.length > 0) {
+            this._next(buffer.shift());
+        }
+        else if (this.active === 0 && this.hasCompleted) {
+            this.destination.complete();
+        }
+    };
+    return MergeAllSubscriber;
+}(OuterSubscriber_1.OuterSubscriber));
+exports.MergeAllSubscriber = MergeAllSubscriber;
+//# sourceMappingURL=mergeAll.js.map
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var root_1 = __webpack_require__(16);
+var Action_1 = __webpack_require__(638);
+/**
+ * We need this JSDoc comment for affecting ESDoc.
+ * @ignore
+ * @extends {Ignored}
+ */
+var AsyncAction = (function (_super) {
+    __extends(AsyncAction, _super);
+    function AsyncAction(scheduler, work) {
+        _super.call(this, scheduler, work);
+        this.scheduler = scheduler;
+        this.work = work;
+        this.pending = false;
+    }
+    AsyncAction.prototype.schedule = function (state, delay) {
+        if (delay === void 0) { delay = 0; }
+        if (this.closed) {
+            return this;
+        }
+        // Always replace the current state with the new state.
+        this.state = state;
+        // Set the pending flag indicating that this action has been scheduled, or
+        // has recursively rescheduled itself.
+        this.pending = true;
+        var id = this.id;
+        var scheduler = this.scheduler;
+        //
+        // Important implementation note:
+        //
+        // Actions only execute once by default, unless rescheduled from within the
+        // scheduled callback. This allows us to implement single and repeat
+        // actions via the same code path, without adding API surface area, as well
+        // as mimic traditional recursion but across asynchronous boundaries.
+        //
+        // However, JS runtimes and timers distinguish between intervals achieved by
+        // serial `setTimeout` calls vs. a single `setInterval` call. An interval of
+        // serial `setTimeout` calls can be individually delayed, which delays
+        // scheduling the next `setTimeout`, and so on. `setInterval` attempts to
+        // guarantee the interval callback will be invoked more precisely to the
+        // interval period, regardless of load.
+        //
+        // Therefore, we use `setInterval` to schedule single and repeat actions.
+        // If the action reschedules itself with the same delay, the interval is not
+        // canceled. If the action doesn't reschedule, or reschedules with a
+        // different delay, the interval will be canceled after scheduled callback
+        // execution.
+        //
+        if (id != null) {
+            this.id = this.recycleAsyncId(scheduler, id, delay);
+        }
+        this.delay = delay;
+        // If this action has already an async Id, don't request a new one.
+        this.id = this.id || this.requestAsyncId(scheduler, this.id, delay);
+        return this;
+    };
+    AsyncAction.prototype.requestAsyncId = function (scheduler, id, delay) {
+        if (delay === void 0) { delay = 0; }
+        return root_1.root.setInterval(scheduler.flush.bind(scheduler, this), delay);
+    };
+    AsyncAction.prototype.recycleAsyncId = function (scheduler, id, delay) {
+        if (delay === void 0) { delay = 0; }
+        // If this action is rescheduled with the same delay time, don't clear the interval id.
+        if (delay !== null && this.delay === delay) {
+            return id;
+        }
+        // Otherwise, if the action's delay time is different from the current delay,
+        // clear the interval id
+        return root_1.root.clearInterval(id) && undefined || undefined;
+    };
+    /**
+     * Immediately executes this action and the `work` it contains.
+     * @return {any}
+     */
+    AsyncAction.prototype.execute = function (state, delay) {
+        if (this.closed) {
+            return new Error('executing a cancelled action');
+        }
+        this.pending = false;
+        var error = this._execute(state, delay);
+        if (error) {
+            return error;
+        }
+        else if (this.pending === false && this.id != null) {
+            // Dequeue if the action didn't reschedule itself. Don't call
+            // unsubscribe(), because the action could reschedule later.
+            // For example:
+            // ```
+            // scheduler.schedule(function doWork(counter) {
+            //   /* ... I'm a busy worker bee ... */
+            //   var originalAction = this;
+            //   /* wait 100ms before rescheduling the action */
+            //   setTimeout(function () {
+            //     originalAction.schedule(counter + 1);
+            //   }, 100);
+            // }, 1000);
+            // ```
+            this.id = this.recycleAsyncId(this.scheduler, this.id, null);
+        }
+    };
+    AsyncAction.prototype._execute = function (state, delay) {
+        var errored = false;
+        var errorValue = undefined;
+        try {
+            this.work(state);
+        }
+        catch (e) {
+            errored = true;
+            errorValue = !!e && e || new Error(e);
+        }
+        if (errored) {
+            this.unsubscribe();
+            return errorValue;
+        }
+    };
+    AsyncAction.prototype._unsubscribe = function () {
+        var id = this.id;
+        var scheduler = this.scheduler;
+        var actions = scheduler.actions;
+        var index = actions.indexOf(this);
+        this.work = null;
+        this.delay = null;
+        this.state = null;
+        this.pending = false;
+        this.scheduler = null;
+        if (index !== -1) {
+            actions.splice(index, 1);
+        }
+        if (id != null) {
+            this.id = this.recycleAsyncId(scheduler, id, null);
+        }
+    };
+    return AsyncAction;
+}(Action_1.Action));
+exports.AsyncAction = AsyncAction;
+//# sourceMappingURL=AsyncAction.js.map
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var Scheduler_1 = __webpack_require__(398);
+var AsyncScheduler = (function (_super) {
+    __extends(AsyncScheduler, _super);
+    function AsyncScheduler() {
+        _super.apply(this, arguments);
+        this.actions = [];
+        /**
+         * A flag to indicate whether the Scheduler is currently executing a batch of
+         * queued actions.
+         * @type {boolean}
+         */
+        this.active = false;
+        /**
+         * An internal ID used to track the latest asynchronous task such as those
+         * coming from `setTimeout`, `setInterval`, `requestAnimationFrame`, and
+         * others.
+         * @type {any}
+         */
+        this.scheduled = undefined;
+    }
+    AsyncScheduler.prototype.flush = function (action) {
+        var actions = this.actions;
+        if (this.active) {
+            actions.push(action);
+            return;
+        }
+        var error;
+        this.active = true;
+        do {
+            if (error = action.execute(action.state, action.delay)) {
+                break;
+            }
+        } while (action = actions.shift()); // exhaust the scheduler queue
+        this.active = false;
+        if (error) {
+            while (action = actions.shift()) {
+                action.unsubscribe();
+            }
+            throw error;
+        }
+    };
+    return AsyncScheduler;
+}(Scheduler_1.Scheduler));
+exports.AsyncScheduler = AsyncScheduler;
+//# sourceMappingURL=AsyncScheduler.js.map
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var root_1 = __webpack_require__(16);
+function symbolIteratorPonyfill(root) {
+    var Symbol = root.Symbol;
+    if (typeof Symbol === 'function') {
+        if (!Symbol.iterator) {
+            Symbol.iterator = Symbol('iterator polyfill');
+        }
+        return Symbol.iterator;
+    }
+    else {
+        // [for Mozilla Gecko 27-35:](https://mzl.la/2ewE1zC)
+        var Set_1 = root.Set;
+        if (Set_1 && typeof new Set_1()['@@iterator'] === 'function') {
+            return '@@iterator';
+        }
+        var Map_1 = root.Map;
+        // required for compatability with es6-shim
+        if (Map_1) {
+            var keys = Object.getOwnPropertyNames(Map_1.prototype);
+            for (var i = 0; i < keys.length; ++i) {
+                var key = keys[i];
+                // according to spec, Map.prototype[@@iterator] and Map.orototype.entries must be equal.
+                if (key !== 'entries' && key !== 'size' && Map_1.prototype[key] === Map_1.prototype['entries']) {
+                    return key;
+                }
+            }
+        }
+        return '@@iterator';
+    }
+}
+exports.symbolIteratorPonyfill = symbolIteratorPonyfill;
+exports.iterator = symbolIteratorPonyfill(root_1.root);
+/**
+ * @deprecated use iterator instead
+ */
+exports.$$iterator = exports.iterator;
+//# sourceMappingURL=iterator.js.map
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var root_1 = __webpack_require__(16);
+function getSymbolObservable(context) {
+    var $$observable;
+    var Symbol = context.Symbol;
+    if (typeof Symbol === 'function') {
+        if (Symbol.observable) {
+            $$observable = Symbol.observable;
+        }
+        else {
+            $$observable = Symbol('observable');
+            Symbol.observable = $$observable;
+        }
+    }
+    else {
+        $$observable = '@@observable';
+    }
+    return $$observable;
+}
+exports.getSymbolObservable = getSymbolObservable;
+exports.observable = getSymbolObservable(root_1.root);
+/**
+ * @deprecated use observable instead
+ */
+exports.$$observable = exports.observable;
+//# sourceMappingURL=observable.js.map
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+/**
+ * An error thrown when an Observable or a sequence was queried but has no
+ * elements.
+ *
+ * @see {@link first}
+ * @see {@link last}
+ * @see {@link single}
+ *
+ * @class EmptyError
+ */
+var EmptyError = (function (_super) {
+    __extends(EmptyError, _super);
+    function EmptyError() {
+        var err = _super.call(this, 'no elements in sequence');
+        this.name = err.name = 'EmptyError';
+        this.stack = err.stack;
+        this.message = err.message;
+    }
+    return EmptyError;
+}(Error));
+exports.EmptyError = EmptyError;
+//# sourceMappingURL=EmptyError.js.map
+
+/***/ }),
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(65);
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgLocaleLocalization", function() { return NgLocaleLocalization; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgLocalization", function() { return NgLocalization; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommonModule", function() { return CommonModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgClass", function() { return NgClass; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgFor", function() { return NgFor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgForOf", function() { return NgForOf; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgIf", function() { return NgIf; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgPlural", function() { return NgPlural; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgPluralCase", function() { return NgPluralCase; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgStyle", function() { return NgStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgSwitch", function() { return NgSwitch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgSwitchCase", function() { return NgSwitchCase; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgSwitchDefault", function() { return NgSwitchDefault; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgTemplateOutlet", function() { return NgTemplateOutlet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgComponentOutlet", function() { return NgComponentOutlet; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AsyncPipe", function() { return AsyncPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DatePipe", function() { return DatePipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "I18nPluralPipe", function() { return I18nPluralPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "I18nSelectPipe", function() { return I18nSelectPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JsonPipe", function() { return JsonPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LowerCasePipe", function() { return LowerCasePipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrencyPipe", function() { return CurrencyPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DecimalPipe", function() { return DecimalPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PercentPipe", function() { return PercentPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlicePipe", function() { return SlicePipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UpperCasePipe", function() { return UpperCasePipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TitleCasePipe", function() { return TitleCasePipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵPLATFORM_BROWSER_ID", function() { return PLATFORM_BROWSER_ID; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵPLATFORM_SERVER_ID", function() { return PLATFORM_SERVER_ID; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵPLATFORM_WORKER_APP_ID", function() { return PLATFORM_WORKER_APP_ID; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵPLATFORM_WORKER_UI_ID", function() { return PLATFORM_WORKER_UI_ID; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPlatformBrowser", function() { return isPlatformBrowser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPlatformServer", function() { return isPlatformServer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPlatformWorkerApp", function() { return isPlatformWorkerApp; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPlatformWorkerUi", function() { return isPlatformWorkerUi; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VERSION", function() { return VERSION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlatformLocation", function() { return PlatformLocation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOCATION_INITIALIZED", function() { return LOCATION_INITIALIZED; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocationStrategy", function() { return LocationStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "APP_BASE_HREF", function() { return APP_BASE_HREF; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HashLocationStrategy", function() { return HashLocationStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PathLocationStrategy", function() { return PathLocationStrategy; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Location", function() { return Location; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵc", function() { return COMMON_DIRECTIVES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵa", function() { return NgForOfRow; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵb", function() { return NgIfContext; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵd", function() { return COMMON_PIPES; });
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+/**
+ * @license Angular v4.0.0-rc.3
+ * (c) 2010-2017 Google, Inc. https://angular.io/
+ * License: MIT
+ */
+
+/**
+ * This class should not be used directly by an application developer. Instead, use
+ * {\@link Location}.
+ *
+ * `PlatformLocation` encapsulates all calls to DOM apis, which allows the Router to be platform
+ * agnostic.
+ * This means that we can have different implementation of `PlatformLocation` for the different
+ * platforms
+ * that angular supports. For example, the default `PlatformLocation` is {\@link
+ * BrowserPlatformLocation},
+ * however when you run your app in a WebWorker you use {\@link WebWorkerPlatformLocation}.
+ *
+ * The `PlatformLocation` class is used directly by all implementations of {\@link LocationStrategy}
+ * when
+ * they need to interact with the DOM apis like pushState, popState, etc...
+ *
+ * {\@link LocationStrategy} in turn is used by the {\@link Location} service which is used directly
+ * by
+ * the {\@link Router} in order to navigate between routes. Since all interactions between {\@link
+ * Router} /
+ * {\@link Location} / {\@link LocationStrategy} and DOM apis flow through the `PlatformLocation`
+ * class
+ * they are all platform independent.
+ *
+ * \@stable
+ * @abstract
+ */
+var PlatformLocation = (function () {
+    function PlatformLocation() {
+    }
+    /**
+     * @abstract
+     * @return {?}
+     */
+    PlatformLocation.prototype.getBaseHrefFromDOM = function () { };
+    /**
+     * @abstract
+     * @param {?} fn
+     * @return {?}
+     */
+    PlatformLocation.prototype.onPopState = function (fn) { };
+    /**
+     * @abstract
+     * @param {?} fn
+     * @return {?}
+     */
+    PlatformLocation.prototype.onHashChange = function (fn) { };
+    Object.defineProperty(PlatformLocation.prototype, "pathname", {
+        /**
+         * @return {?}
+         */
+        get: function () { return null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PlatformLocation.prototype, "search", {
+        /**
+         * @return {?}
+         */
+        get: function () { return null; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(PlatformLocation.prototype, "hash", {
+        /**
+         * @return {?}
+         */
+        get: function () { return null; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @abstract
+     * @param {?} state
+     * @param {?} title
+     * @param {?} url
+     * @return {?}
+     */
+    PlatformLocation.prototype.replaceState = function (state, title, url) { };
+    /**
+     * @abstract
+     * @param {?} state
+     * @param {?} title
+     * @param {?} url
+     * @return {?}
+     */
+    PlatformLocation.prototype.pushState = function (state, title, url) { };
+    /**
+     * @abstract
+     * @return {?}
+     */
+    PlatformLocation.prototype.forward = function () { };
+    /**
+     * @abstract
+     * @return {?}
+     */
+    PlatformLocation.prototype.back = function () { };
+    return PlatformLocation;
+}());
+/**
+ * @whatItDoes indicates when a location is initialized
+ * @experimental
+ */
+var /** @type {?} */ LOCATION_INITIALIZED = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["InjectionToken"]('Location Initialized');
+/**
+ * `LocationStrategy` is responsible for representing and reading route state
+ * from the browser's URL. Angular provides two strategies:
+ * {\@link HashLocationStrategy} and {\@link PathLocationStrategy}.
+ *
+ * This is used under the hood of the {\@link Location} service.
+ *
+ * Applications should use the {\@link Router} or {\@link Location} services to
+ * interact with application route state.
+ *
+ * For instance, {\@link HashLocationStrategy} produces URLs like
+ * `http://example.com#/foo`, and {\@link PathLocationStrategy} produces
+ * `http://example.com/foo` as an equivalent URL.
+ *
+ * See these two classes for more.
+ *
+ * \@stable
+ * @abstract
+ */
+var LocationStrategy = (function () {
+    function LocationStrategy() {
+    }
+    /**
+     * @abstract
+     * @param {?=} includeHash
+     * @return {?}
+     */
+    LocationStrategy.prototype.path = function (includeHash) { };
+    /**
+     * @abstract
+     * @param {?} internal
+     * @return {?}
+     */
+    LocationStrategy.prototype.prepareExternalUrl = function (internal) { };
+    /**
+     * @abstract
+     * @param {?} state
+     * @param {?} title
+     * @param {?} url
+     * @param {?} queryParams
+     * @return {?}
+     */
+    LocationStrategy.prototype.pushState = function (state, title, url, queryParams) { };
+    /**
+     * @abstract
+     * @param {?} state
+     * @param {?} title
+     * @param {?} url
+     * @param {?} queryParams
+     * @return {?}
+     */
+    LocationStrategy.prototype.replaceState = function (state, title, url, queryParams) { };
+    /**
+     * @abstract
+     * @return {?}
+     */
+    LocationStrategy.prototype.forward = function () { };
+    /**
+     * @abstract
+     * @return {?}
+     */
+    LocationStrategy.prototype.back = function () { };
+    /**
+     * @abstract
+     * @param {?} fn
+     * @return {?}
+     */
+    LocationStrategy.prototype.onPopState = function (fn) { };
+    /**
+     * @abstract
+     * @return {?}
+     */
+    LocationStrategy.prototype.getBaseHref = function () { };
+    return LocationStrategy;
+}());
+/**
+ * The `APP_BASE_HREF` token represents the base href to be used with the
+ * {@link PathLocationStrategy}.
+ *
+ * If you're using {@link PathLocationStrategy}, you must provide a provider to a string
+ * representing the URL prefix that should be preserved when generating and recognizing
+ * URLs.
+ *
+ * ### Example
+ *
+ * ```typescript
+ * import {Component, NgModule} from '@angular/core';
+ * import {APP_BASE_HREF} from '@angular/common';
+ *
+ * @NgModule({
+ *   providers: [{provide: APP_BASE_HREF, useValue: '/my/app'}]
+ * })
+ * class AppModule {}
+ * ```
+ *
+ * @stable
+ */
+var /** @type {?} */ APP_BASE_HREF = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["InjectionToken"]('appBaseHref');
+/**
+ * \@whatItDoes `Location` is a service that applications can use to interact with a browser's URL.
+ * \@description
+ * Depending on which {\@link LocationStrategy} is used, `Location` will either persist
+ * to the URL's path or the URL's hash segment.
+ *
+ * Note: it's better to use {\@link Router#navigate} service to trigger route changes. Use
+ * `Location` only if you need to interact with or create normalized URLs outside of
+ * routing.
+ *
+ * `Location` is responsible for normalizing the URL against the application's base href.
+ * A normalized URL is absolute from the URL host, includes the application's base href, and has no
+ * trailing slash:
+ * - `/my/app/user/123` is normalized
+ * - `my/app/user/123` **is not** normalized
+ * - `/my/app/user/123/` **is not** normalized
+ *
+ * ### Example
+ * {\@example common/location/ts/path_location_component.ts region='LocationComponent'}
+ * \@stable
+ */
+var Location = (function () {
+    /**
+     * @param {?} platformStrategy
+     */
+    function Location(platformStrategy) {
+        var _this = this;
+        /** @internal */
+        this._subject = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
+        this._platformStrategy = platformStrategy;
+        var browserBaseHref = this._platformStrategy.getBaseHref();
+        this._baseHref = Location.stripTrailingSlash(_stripIndexHtml(browserBaseHref));
+        this._platformStrategy.onPopState(function (ev) {
+            _this._subject.emit({
+                'url': _this.path(true),
+                'pop': true,
+                'type': ev.type,
+            });
+        });
+    }
+    /**
+     * @param {?=} includeHash
+     * @return {?}
+     */
+    Location.prototype.path = function (includeHash) {
+        if (includeHash === void 0) { includeHash = false; }
+        return this.normalize(this._platformStrategy.path(includeHash));
+    };
+    /**
+     * Normalizes the given path and compares to the current normalized path.
+     * @param {?} path
+     * @param {?=} query
+     * @return {?}
+     */
+    Location.prototype.isCurrentPathEqualTo = function (path, query) {
+        if (query === void 0) { query = ''; }
+        return this.path() == this.normalize(path + Location.normalizeQueryParams(query));
+    };
+    /**
+     * Given a string representing a URL, returns the normalized URL path without leading or
+     * trailing slashes.
+     * @param {?} url
+     * @return {?}
+     */
+    Location.prototype.normalize = function (url) {
+        return Location.stripTrailingSlash(_stripBaseHref(this._baseHref, _stripIndexHtml(url)));
+    };
+    /**
+     * Given a string representing a URL, returns the platform-specific external URL path.
+     * If the given URL doesn't begin with a leading slash (`'/'`), this method adds one
+     * before normalizing. This method will also add a hash if `HashLocationStrategy` is
+     * used, or the `APP_BASE_HREF` if the `PathLocationStrategy` is in use.
+     * @param {?} url
+     * @return {?}
+     */
+    Location.prototype.prepareExternalUrl = function (url) {
+        if (url && url[0] !== '/') {
+            url = '/' + url;
+        }
+        return this._platformStrategy.prepareExternalUrl(url);
+    };
+    /**
+     * Changes the browsers URL to the normalized version of the given URL, and pushes a
+     * new item onto the platform's history.
+     * @param {?} path
+     * @param {?=} query
+     * @return {?}
+     */
+    Location.prototype.go = function (path, query) {
+        if (query === void 0) { query = ''; }
+        this._platformStrategy.pushState(null, '', path, query);
+    };
+    /**
+     * Changes the browsers URL to the normalized version of the given URL, and replaces
+     * the top item on the platform's history stack.
+     * @param {?} path
+     * @param {?=} query
+     * @return {?}
+     */
+    Location.prototype.replaceState = function (path, query) {
+        if (query === void 0) { query = ''; }
+        this._platformStrategy.replaceState(null, '', path, query);
+    };
+    /**
+     * Navigates forward in the platform's history.
+     * @return {?}
+     */
+    Location.prototype.forward = function () { this._platformStrategy.forward(); };
+    /**
+     * Navigates back in the platform's history.
+     * @return {?}
+     */
+    Location.prototype.back = function () { this._platformStrategy.back(); };
+    /**
+     * Subscribe to the platform's `popState` events.
+     * @param {?} onNext
+     * @param {?=} onThrow
+     * @param {?=} onReturn
+     * @return {?}
+     */
+    Location.prototype.subscribe = function (onNext, onThrow, onReturn) {
+        if (onThrow === void 0) { onThrow = null; }
+        if (onReturn === void 0) { onReturn = null; }
+        return this._subject.subscribe({ next: onNext, error: onThrow, complete: onReturn });
+    };
+    /**
+     * Given a string of url parameters, prepend with '?' if needed, otherwise return parameters as
+     * is.
+     * @param {?} params
+     * @return {?}
+     */
+    Location.normalizeQueryParams = function (params) {
+        return params && params[0] !== '?' ? '?' + params : params;
+    };
+    /**
+     * Given 2 parts of a url, join them with a slash if needed.
+     * @param {?} start
+     * @param {?} end
+     * @return {?}
+     */
+    Location.joinWithSlash = function (start, end) {
+        if (start.length == 0) {
+            return end;
+        }
+        if (end.length == 0) {
+            return start;
+        }
+        var /** @type {?} */ slashes = 0;
+        if (start.endsWith('/')) {
+            slashes++;
+        }
+        if (end.startsWith('/')) {
+            slashes++;
+        }
+        if (slashes == 2) {
+            return start + end.substring(1);
+        }
+        if (slashes == 1) {
+            return start + end;
+        }
+        return start + '/' + end;
+    };
+    /**
+     * If url has a trailing slash, remove it, otherwise return url as is.
+     * @param {?} url
+     * @return {?}
+     */
+    Location.stripTrailingSlash = function (url) { return url.replace(/\/$/, ''); };
+    return Location;
+}());
+Location.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+Location.ctorParameters = function () { return [
+    { type: LocationStrategy, },
+]; };
+/**
+ * @param {?} baseHref
+ * @param {?} url
+ * @return {?}
+ */
+function _stripBaseHref(baseHref, url) {
+    return baseHref && url.startsWith(baseHref) ? url.substring(baseHref.length) : url;
+}
+/**
+ * @param {?} url
+ * @return {?}
+ */
+function _stripIndexHtml(url) {
+    return url.replace(/\/index.html$/, '');
+}
+/**
+ * \@whatItDoes Use URL hash for storing application location data.
+ * \@description
+ * `HashLocationStrategy` is a {\@link LocationStrategy} used to configure the
+ * {\@link Location} service to represent its state in the
+ * [hash fragment](https://en.wikipedia.org/wiki/Uniform_Resource_Locator#Syntax)
+ * of the browser's URL.
+ *
+ * For instance, if you call `location.go('/foo')`, the browser's URL will become
+ * `example.com#/foo`.
+ *
+ * ### Example
+ *
+ * {\@example common/location/ts/hash_location_component.ts region='LocationComponent'}
+ *
+ * \@stable
+ */
+var HashLocationStrategy = (function (_super) {
+    __extends(HashLocationStrategy, _super);
+    /**
+     * @param {?} _platformLocation
+     * @param {?=} _baseHref
+     */
+    function HashLocationStrategy(_platformLocation, _baseHref) {
+        var _this = _super.call(this) || this;
+        _this._platformLocation = _platformLocation;
+        _this._baseHref = '';
+        if (_baseHref != null) {
+            _this._baseHref = _baseHref;
+        }
+        return _this;
+    }
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    HashLocationStrategy.prototype.onPopState = function (fn) {
+        this._platformLocation.onPopState(fn);
+        this._platformLocation.onHashChange(fn);
+    };
+    /**
+     * @return {?}
+     */
+    HashLocationStrategy.prototype.getBaseHref = function () { return this._baseHref; };
+    /**
+     * @param {?=} includeHash
+     * @return {?}
+     */
+    HashLocationStrategy.prototype.path = function (includeHash) {
+        if (includeHash === void 0) { includeHash = false; }
+        // the hash value is always prefixed with a `#`
+        // and if it is empty then it will stay empty
+        var /** @type {?} */ path = this._platformLocation.hash;
+        if (path == null)
+            path = '#';
+        return path.length > 0 ? path.substring(1) : path;
+    };
+    /**
+     * @param {?} internal
+     * @return {?}
+     */
+    HashLocationStrategy.prototype.prepareExternalUrl = function (internal) {
+        var /** @type {?} */ url = Location.joinWithSlash(this._baseHref, internal);
+        return url.length > 0 ? ('#' + url) : url;
+    };
+    /**
+     * @param {?} state
+     * @param {?} title
+     * @param {?} path
+     * @param {?} queryParams
+     * @return {?}
+     */
+    HashLocationStrategy.prototype.pushState = function (state, title, path, queryParams) {
+        var /** @type {?} */ url = this.prepareExternalUrl(path + Location.normalizeQueryParams(queryParams));
+        if (url.length == 0) {
+            url = this._platformLocation.pathname;
+        }
+        this._platformLocation.pushState(state, title, url);
+    };
+    /**
+     * @param {?} state
+     * @param {?} title
+     * @param {?} path
+     * @param {?} queryParams
+     * @return {?}
+     */
+    HashLocationStrategy.prototype.replaceState = function (state, title, path, queryParams) {
+        var /** @type {?} */ url = this.prepareExternalUrl(path + Location.normalizeQueryParams(queryParams));
+        if (url.length == 0) {
+            url = this._platformLocation.pathname;
+        }
+        this._platformLocation.replaceState(state, title, url);
+    };
+    /**
+     * @return {?}
+     */
+    HashLocationStrategy.prototype.forward = function () { this._platformLocation.forward(); };
+    /**
+     * @return {?}
+     */
+    HashLocationStrategy.prototype.back = function () { this._platformLocation.back(); };
+    return HashLocationStrategy;
+}(LocationStrategy));
+HashLocationStrategy.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+HashLocationStrategy.ctorParameters = function () { return [
+    { type: PlatformLocation, },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Optional"] }, { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [APP_BASE_HREF,] },] },
+]; };
+/**
+ * \@whatItDoes Use URL for storing application location data.
+ * \@description
+ * `PathLocationStrategy` is a {\@link LocationStrategy} used to configure the
+ * {\@link Location} service to represent its state in the
+ * [path](https://en.wikipedia.org/wiki/Uniform_Resource_Locator#Syntax) of the
+ * browser's URL.
+ *
+ * If you're using `PathLocationStrategy`, you must provide a {\@link APP_BASE_HREF}
+ * or add a base element to the document. This URL prefix that will be preserved
+ * when generating and recognizing URLs.
+ *
+ * For instance, if you provide an `APP_BASE_HREF` of `'/my/app'` and call
+ * `location.go('/foo')`, the browser's URL will become
+ * `example.com/my/app/foo`.
+ *
+ * Similarly, if you add `<base href='/my/app'/>` to the document and call
+ * `location.go('/foo')`, the browser's URL will become
+ * `example.com/my/app/foo`.
+ *
+ * ### Example
+ *
+ * {\@example common/location/ts/path_location_component.ts region='LocationComponent'}
+ *
+ * \@stable
+ */
+var PathLocationStrategy = (function (_super) {
+    __extends(PathLocationStrategy, _super);
+    /**
+     * @param {?} _platformLocation
+     * @param {?=} href
+     */
+    function PathLocationStrategy(_platformLocation, href) {
+        var _this = _super.call(this) || this;
+        _this._platformLocation = _platformLocation;
+        if (href == null) {
+            href = _this._platformLocation.getBaseHrefFromDOM();
+        }
+        if (href == null) {
+            throw new Error("No base href set. Please provide a value for the APP_BASE_HREF token or add a base element to the document.");
+        }
+        _this._baseHref = href;
+        return _this;
+    }
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    PathLocationStrategy.prototype.onPopState = function (fn) {
+        this._platformLocation.onPopState(fn);
+        this._platformLocation.onHashChange(fn);
+    };
+    /**
+     * @return {?}
+     */
+    PathLocationStrategy.prototype.getBaseHref = function () { return this._baseHref; };
+    /**
+     * @param {?} internal
+     * @return {?}
+     */
+    PathLocationStrategy.prototype.prepareExternalUrl = function (internal) {
+        return Location.joinWithSlash(this._baseHref, internal);
+    };
+    /**
+     * @param {?=} includeHash
+     * @return {?}
+     */
+    PathLocationStrategy.prototype.path = function (includeHash) {
+        if (includeHash === void 0) { includeHash = false; }
+        var /** @type {?} */ pathname = this._platformLocation.pathname +
+            Location.normalizeQueryParams(this._platformLocation.search);
+        var /** @type {?} */ hash = this._platformLocation.hash;
+        return hash && includeHash ? "" + pathname + hash : pathname;
+    };
+    /**
+     * @param {?} state
+     * @param {?} title
+     * @param {?} url
+     * @param {?} queryParams
+     * @return {?}
+     */
+    PathLocationStrategy.prototype.pushState = function (state, title, url, queryParams) {
+        var /** @type {?} */ externalUrl = this.prepareExternalUrl(url + Location.normalizeQueryParams(queryParams));
+        this._platformLocation.pushState(state, title, externalUrl);
+    };
+    /**
+     * @param {?} state
+     * @param {?} title
+     * @param {?} url
+     * @param {?} queryParams
+     * @return {?}
+     */
+    PathLocationStrategy.prototype.replaceState = function (state, title, url, queryParams) {
+        var /** @type {?} */ externalUrl = this.prepareExternalUrl(url + Location.normalizeQueryParams(queryParams));
+        this._platformLocation.replaceState(state, title, externalUrl);
+    };
+    /**
+     * @return {?}
+     */
+    PathLocationStrategy.prototype.forward = function () { this._platformLocation.forward(); };
+    /**
+     * @return {?}
+     */
+    PathLocationStrategy.prototype.back = function () { this._platformLocation.back(); };
+    return PathLocationStrategy;
+}(LocationStrategy));
+PathLocationStrategy.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+PathLocationStrategy.ctorParameters = function () { return [
+    { type: PlatformLocation, },
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Optional"] }, { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [APP_BASE_HREF,] },] },
+]; };
+/**
+ * \@experimental
+ * @abstract
+ */
+var NgLocalization = (function () {
+    function NgLocalization() {
+    }
+    /**
+     * @abstract
+     * @param {?} value
+     * @return {?}
+     */
+    NgLocalization.prototype.getPluralCategory = function (value) { };
+    return NgLocalization;
+}());
+/**
+ * Returns the plural category for a given value.
+ * - "=value" when the case exists,
+ * - the plural category otherwise
+ *
+ * \@internal
+ * @param {?} value
+ * @param {?} cases
+ * @param {?} ngLocalization
+ * @return {?}
+ */
+function getPluralCategory(value, cases, ngLocalization) {
+    var /** @type {?} */ key = "=" + value;
+    if (cases.indexOf(key) > -1) {
+        return key;
+    }
+    key = ngLocalization.getPluralCategory(value);
+    if (cases.indexOf(key) > -1) {
+        return key;
+    }
+    if (cases.indexOf('other') > -1) {
+        return 'other';
+    }
+    throw new Error("No plural message found for value \"" + value + "\"");
+}
+/**
+ * Returns the plural case based on the locale
+ *
+ * \@experimental
+ */
+var NgLocaleLocalization = (function (_super) {
+    __extends(NgLocaleLocalization, _super);
+    /**
+     * @param {?} locale
+     */
+    function NgLocaleLocalization(locale) {
+        var _this = _super.call(this) || this;
+        _this.locale = locale;
+        return _this;
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NgLocaleLocalization.prototype.getPluralCategory = function (value) {
+        var /** @type {?} */ plural = getPluralCase(this.locale, value);
+        switch (plural) {
+            case Plural.Zero:
+                return 'zero';
+            case Plural.One:
+                return 'one';
+            case Plural.Two:
+                return 'two';
+            case Plural.Few:
+                return 'few';
+            case Plural.Many:
+                return 'many';
+            default:
+                return 'other';
+        }
+    };
+    return NgLocaleLocalization;
+}(NgLocalization));
+NgLocaleLocalization.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+NgLocaleLocalization.ctorParameters = function () { return [
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"],] },] },
+]; };
+var Plural = {};
+Plural.Zero = 0;
+Plural.One = 1;
+Plural.Two = 2;
+Plural.Few = 3;
+Plural.Many = 4;
+Plural.Other = 5;
+Plural[Plural.Zero] = "Zero";
+Plural[Plural.One] = "One";
+Plural[Plural.Two] = "Two";
+Plural[Plural.Few] = "Few";
+Plural[Plural.Many] = "Many";
+Plural[Plural.Other] = "Other";
+/**
+ * Returns the plural case based on the locale
+ *
+ * \@experimental
+ * @param {?} locale
+ * @param {?} nLike
+ * @return {?}
+ */
+function getPluralCase(locale, nLike) {
+    // TODO(vicb): lazy compute
+    if (typeof nLike === 'string') {
+        nLike = parseInt(/** @type {?} */ (nLike), 10);
+    }
+    var /** @type {?} */ n = (nLike);
+    var /** @type {?} */ nDecimal = n.toString().replace(/^[^.]*\.?/, '');
+    var /** @type {?} */ i = Math.floor(Math.abs(n));
+    var /** @type {?} */ v = nDecimal.length;
+    var /** @type {?} */ f = parseInt(nDecimal, 10);
+    var /** @type {?} */ t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
+    var /** @type {?} */ lang = locale.split('-')[0].toLowerCase();
+    switch (lang) {
+        case 'af':
+        case 'asa':
+        case 'az':
+        case 'bem':
+        case 'bez':
+        case 'bg':
+        case 'brx':
+        case 'ce':
+        case 'cgg':
+        case 'chr':
+        case 'ckb':
+        case 'ee':
+        case 'el':
+        case 'eo':
+        case 'es':
+        case 'eu':
+        case 'fo':
+        case 'fur':
+        case 'gsw':
+        case 'ha':
+        case 'haw':
+        case 'hu':
+        case 'jgo':
+        case 'jmc':
+        case 'ka':
+        case 'kk':
+        case 'kkj':
+        case 'kl':
+        case 'ks':
+        case 'ksb':
+        case 'ky':
+        case 'lb':
+        case 'lg':
+        case 'mas':
+        case 'mgo':
+        case 'ml':
+        case 'mn':
+        case 'nb':
+        case 'nd':
+        case 'ne':
+        case 'nn':
+        case 'nnh':
+        case 'nyn':
+        case 'om':
+        case 'or':
+        case 'os':
+        case 'ps':
+        case 'rm':
+        case 'rof':
+        case 'rwk':
+        case 'saq':
+        case 'seh':
+        case 'sn':
+        case 'so':
+        case 'sq':
+        case 'ta':
+        case 'te':
+        case 'teo':
+        case 'tk':
+        case 'tr':
+        case 'ug':
+        case 'uz':
+        case 'vo':
+        case 'vun':
+        case 'wae':
+        case 'xog':
+            if (n === 1)
+                return Plural.One;
+            return Plural.Other;
+        case 'agq':
+        case 'bas':
+        case 'cu':
+        case 'dav':
+        case 'dje':
+        case 'dua':
+        case 'dyo':
+        case 'ebu':
+        case 'ewo':
+        case 'guz':
+        case 'kam':
+        case 'khq':
+        case 'ki':
+        case 'kln':
+        case 'kok':
+        case 'ksf':
+        case 'lrc':
+        case 'lu':
+        case 'luo':
+        case 'luy':
+        case 'mer':
+        case 'mfe':
+        case 'mgh':
+        case 'mua':
+        case 'mzn':
+        case 'nmg':
+        case 'nus':
+        case 'qu':
+        case 'rn':
+        case 'rw':
+        case 'sbp':
+        case 'twq':
+        case 'vai':
+        case 'yav':
+        case 'yue':
+        case 'zgh':
+        case 'ak':
+        case 'ln':
+        case 'mg':
+        case 'pa':
+        case 'ti':
+            if (n === Math.floor(n) && n >= 0 && n <= 1)
+                return Plural.One;
+            return Plural.Other;
+        case 'am':
+        case 'as':
+        case 'bn':
+        case 'fa':
+        case 'gu':
+        case 'hi':
+        case 'kn':
+        case 'mr':
+        case 'zu':
+            if (i === 0 || n === 1)
+                return Plural.One;
+            return Plural.Other;
+        case 'ar':
+            if (n === 0)
+                return Plural.Zero;
+            if (n === 1)
+                return Plural.One;
+            if (n === 2)
+                return Plural.Two;
+            if (n % 100 === Math.floor(n % 100) && n % 100 >= 3 && n % 100 <= 10)
+                return Plural.Few;
+            if (n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 99)
+                return Plural.Many;
+            return Plural.Other;
+        case 'ast':
+        case 'ca':
+        case 'de':
+        case 'en':
+        case 'et':
+        case 'fi':
+        case 'fy':
+        case 'gl':
+        case 'it':
+        case 'nl':
+        case 'sv':
+        case 'sw':
+        case 'ur':
+        case 'yi':
+            if (i === 1 && v === 0)
+                return Plural.One;
+            return Plural.Other;
+        case 'be':
+            if (n % 10 === 1 && !(n % 100 === 11))
+                return Plural.One;
+            if (n % 10 === Math.floor(n % 10) && n % 10 >= 2 && n % 10 <= 4 &&
+                !(n % 100 >= 12 && n % 100 <= 14))
+                return Plural.Few;
+            if (n % 10 === 0 || n % 10 === Math.floor(n % 10) && n % 10 >= 5 && n % 10 <= 9 ||
+                n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 14)
+                return Plural.Many;
+            return Plural.Other;
+        case 'br':
+            if (n % 10 === 1 && !(n % 100 === 11 || n % 100 === 71 || n % 100 === 91))
+                return Plural.One;
+            if (n % 10 === 2 && !(n % 100 === 12 || n % 100 === 72 || n % 100 === 92))
+                return Plural.Two;
+            if (n % 10 === Math.floor(n % 10) && (n % 10 >= 3 && n % 10 <= 4 || n % 10 === 9) &&
+                !(n % 100 >= 10 && n % 100 <= 19 || n % 100 >= 70 && n % 100 <= 79 ||
+                    n % 100 >= 90 && n % 100 <= 99))
+                return Plural.Few;
+            if (!(n === 0) && n % 1e6 === 0)
+                return Plural.Many;
+            return Plural.Other;
+        case 'bs':
+        case 'hr':
+        case 'sr':
+            if (v === 0 && i % 10 === 1 && !(i % 100 === 11) || f % 10 === 1 && !(f % 100 === 11))
+                return Plural.One;
+            if (v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 2 && i % 10 <= 4 &&
+                !(i % 100 >= 12 && i % 100 <= 14) ||
+                f % 10 === Math.floor(f % 10) && f % 10 >= 2 && f % 10 <= 4 &&
+                    !(f % 100 >= 12 && f % 100 <= 14))
+                return Plural.Few;
+            return Plural.Other;
+        case 'cs':
+        case 'sk':
+            if (i === 1 && v === 0)
+                return Plural.One;
+            if (i === Math.floor(i) && i >= 2 && i <= 4 && v === 0)
+                return Plural.Few;
+            if (!(v === 0))
+                return Plural.Many;
+            return Plural.Other;
+        case 'cy':
+            if (n === 0)
+                return Plural.Zero;
+            if (n === 1)
+                return Plural.One;
+            if (n === 2)
+                return Plural.Two;
+            if (n === 3)
+                return Plural.Few;
+            if (n === 6)
+                return Plural.Many;
+            return Plural.Other;
+        case 'da':
+            if (n === 1 || !(t === 0) && (i === 0 || i === 1))
+                return Plural.One;
+            return Plural.Other;
+        case 'dsb':
+        case 'hsb':
+            if (v === 0 && i % 100 === 1 || f % 100 === 1)
+                return Plural.One;
+            if (v === 0 && i % 100 === 2 || f % 100 === 2)
+                return Plural.Two;
+            if (v === 0 && i % 100 === Math.floor(i % 100) && i % 100 >= 3 && i % 100 <= 4 ||
+                f % 100 === Math.floor(f % 100) && f % 100 >= 3 && f % 100 <= 4)
+                return Plural.Few;
+            return Plural.Other;
+        case 'ff':
+        case 'fr':
+        case 'hy':
+        case 'kab':
+            if (i === 0 || i === 1)
+                return Plural.One;
+            return Plural.Other;
+        case 'fil':
+            if (v === 0 && (i === 1 || i === 2 || i === 3) ||
+                v === 0 && !(i % 10 === 4 || i % 10 === 6 || i % 10 === 9) ||
+                !(v === 0) && !(f % 10 === 4 || f % 10 === 6 || f % 10 === 9))
+                return Plural.One;
+            return Plural.Other;
+        case 'ga':
+            if (n === 1)
+                return Plural.One;
+            if (n === 2)
+                return Plural.Two;
+            if (n === Math.floor(n) && n >= 3 && n <= 6)
+                return Plural.Few;
+            if (n === Math.floor(n) && n >= 7 && n <= 10)
+                return Plural.Many;
+            return Plural.Other;
+        case 'gd':
+            if (n === 1 || n === 11)
+                return Plural.One;
+            if (n === 2 || n === 12)
+                return Plural.Two;
+            if (n === Math.floor(n) && (n >= 3 && n <= 10 || n >= 13 && n <= 19))
+                return Plural.Few;
+            return Plural.Other;
+        case 'gv':
+            if (v === 0 && i % 10 === 1)
+                return Plural.One;
+            if (v === 0 && i % 10 === 2)
+                return Plural.Two;
+            if (v === 0 &&
+                (i % 100 === 0 || i % 100 === 20 || i % 100 === 40 || i % 100 === 60 || i % 100 === 80))
+                return Plural.Few;
+            if (!(v === 0))
+                return Plural.Many;
+            return Plural.Other;
+        case 'he':
+            if (i === 1 && v === 0)
+                return Plural.One;
+            if (i === 2 && v === 0)
+                return Plural.Two;
+            if (v === 0 && !(n >= 0 && n <= 10) && n % 10 === 0)
+                return Plural.Many;
+            return Plural.Other;
+        case 'is':
+            if (t === 0 && i % 10 === 1 && !(i % 100 === 11) || !(t === 0))
+                return Plural.One;
+            return Plural.Other;
+        case 'ksh':
+            if (n === 0)
+                return Plural.Zero;
+            if (n === 1)
+                return Plural.One;
+            return Plural.Other;
+        case 'kw':
+        case 'naq':
+        case 'se':
+        case 'smn':
+            if (n === 1)
+                return Plural.One;
+            if (n === 2)
+                return Plural.Two;
+            return Plural.Other;
+        case 'lag':
+            if (n === 0)
+                return Plural.Zero;
+            if ((i === 0 || i === 1) && !(n === 0))
+                return Plural.One;
+            return Plural.Other;
+        case 'lt':
+            if (n % 10 === 1 && !(n % 100 >= 11 && n % 100 <= 19))
+                return Plural.One;
+            if (n % 10 === Math.floor(n % 10) && n % 10 >= 2 && n % 10 <= 9 &&
+                !(n % 100 >= 11 && n % 100 <= 19))
+                return Plural.Few;
+            if (!(f === 0))
+                return Plural.Many;
+            return Plural.Other;
+        case 'lv':
+        case 'prg':
+            if (n % 10 === 0 || n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 19 ||
+                v === 2 && f % 100 === Math.floor(f % 100) && f % 100 >= 11 && f % 100 <= 19)
+                return Plural.Zero;
+            if (n % 10 === 1 && !(n % 100 === 11) || v === 2 && f % 10 === 1 && !(f % 100 === 11) ||
+                !(v === 2) && f % 10 === 1)
+                return Plural.One;
+            return Plural.Other;
+        case 'mk':
+            if (v === 0 && i % 10 === 1 || f % 10 === 1)
+                return Plural.One;
+            return Plural.Other;
+        case 'mt':
+            if (n === 1)
+                return Plural.One;
+            if (n === 0 || n % 100 === Math.floor(n % 100) && n % 100 >= 2 && n % 100 <= 10)
+                return Plural.Few;
+            if (n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 19)
+                return Plural.Many;
+            return Plural.Other;
+        case 'pl':
+            if (i === 1 && v === 0)
+                return Plural.One;
+            if (v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 2 && i % 10 <= 4 &&
+                !(i % 100 >= 12 && i % 100 <= 14))
+                return Plural.Few;
+            if (v === 0 && !(i === 1) && i % 10 === Math.floor(i % 10) && i % 10 >= 0 && i % 10 <= 1 ||
+                v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 5 && i % 10 <= 9 ||
+                v === 0 && i % 100 === Math.floor(i % 100) && i % 100 >= 12 && i % 100 <= 14)
+                return Plural.Many;
+            return Plural.Other;
+        case 'pt':
+            if (n === Math.floor(n) && n >= 0 && n <= 2 && !(n === 2))
+                return Plural.One;
+            return Plural.Other;
+        case 'ro':
+            if (i === 1 && v === 0)
+                return Plural.One;
+            if (!(v === 0) || n === 0 ||
+                !(n === 1) && n % 100 === Math.floor(n % 100) && n % 100 >= 1 && n % 100 <= 19)
+                return Plural.Few;
+            return Plural.Other;
+        case 'ru':
+        case 'uk':
+            if (v === 0 && i % 10 === 1 && !(i % 100 === 11))
+                return Plural.One;
+            if (v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 2 && i % 10 <= 4 &&
+                !(i % 100 >= 12 && i % 100 <= 14))
+                return Plural.Few;
+            if (v === 0 && i % 10 === 0 ||
+                v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 5 && i % 10 <= 9 ||
+                v === 0 && i % 100 === Math.floor(i % 100) && i % 100 >= 11 && i % 100 <= 14)
+                return Plural.Many;
+            return Plural.Other;
+        case 'shi':
+            if (i === 0 || n === 1)
+                return Plural.One;
+            if (n === Math.floor(n) && n >= 2 && n <= 10)
+                return Plural.Few;
+            return Plural.Other;
+        case 'si':
+            if (n === 0 || n === 1 || i === 0 && f === 1)
+                return Plural.One;
+            return Plural.Other;
+        case 'sl':
+            if (v === 0 && i % 100 === 1)
+                return Plural.One;
+            if (v === 0 && i % 100 === 2)
+                return Plural.Two;
+            if (v === 0 && i % 100 === Math.floor(i % 100) && i % 100 >= 3 && i % 100 <= 4 || !(v === 0))
+                return Plural.Few;
+            return Plural.Other;
+        case 'tzm':
+            if (n === Math.floor(n) && n >= 0 && n <= 1 || n === Math.floor(n) && n >= 11 && n <= 99)
+                return Plural.One;
+            return Plural.Other;
+        default:
+            return Plural.Other;
+    }
+}
+/**
+ * \@ngModule CommonModule
+ *
+ * \@whatItDoes Adds and removes CSS classes on an HTML element.
+ *
+ * \@howToUse
+ * ```
+ *     <some-element [ngClass]="'first second'">...</some-element>
+ *
+ *     <some-element [ngClass]="['first', 'second']">...</some-element>
+ *
+ *     <some-element [ngClass]="{'first': true, 'second': true, 'third': false}">...</some-element>
+ *
+ *     <some-element [ngClass]="stringExp|arrayExp|objExp">...</some-element>
+ *
+ *     <some-element [ngClass]="{'class1 class2 class3' : true}">...</some-element>
+ * ```
+ *
+ * \@description
+ *
+ * The CSS classes are updated as follows, depending on the type of the expression evaluation:
+ * - `string` - the CSS classes listed in the string (space delimited) are added,
+ * - `Array` - the CSS classes declared as Array elements are added,
+ * - `Object` - keys are CSS classes that get added when the expression given in the value
+ *              evaluates to a truthy value, otherwise they are removed.
+ *
+ * \@stable
+ */
+var NgClass = (function () {
+    /**
+     * @param {?} _iterableDiffers
+     * @param {?} _keyValueDiffers
+     * @param {?} _ngEl
+     * @param {?} _renderer
+     */
+    function NgClass(_iterableDiffers, _keyValueDiffers, _ngEl, _renderer) {
+        this._iterableDiffers = _iterableDiffers;
+        this._keyValueDiffers = _keyValueDiffers;
+        this._ngEl = _ngEl;
+        this._renderer = _renderer;
+        this._initialClasses = [];
+    }
+    Object.defineProperty(NgClass.prototype, "klass", {
+        /**
+         * @param {?} v
+         * @return {?}
+         */
+        set: function (v) {
+            this._applyInitialClasses(true);
+            this._initialClasses = typeof v === 'string' ? v.split(/\s+/) : [];
+            this._applyInitialClasses(false);
+            this._applyClasses(this._rawClass, false);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgClass.prototype, "ngClass", {
+        /**
+         * @param {?} v
+         * @return {?}
+         */
+        set: function (v) {
+            this._cleanupClasses(this._rawClass);
+            this._iterableDiffer = null;
+            this._keyValueDiffer = null;
+            this._rawClass = typeof v === 'string' ? v.split(/\s+/) : v;
+            if (this._rawClass) {
+                if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵisListLikeIterable"])(this._rawClass)) {
+                    this._iterableDiffer = this._iterableDiffers.find(this._rawClass).create();
+                }
+                else {
+                    this._keyValueDiffer = this._keyValueDiffers.find(this._rawClass).create();
+                }
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @return {?}
+     */
+    NgClass.prototype.ngDoCheck = function () {
+        if (this._iterableDiffer) {
+            var /** @type {?} */ iterableChanges = this._iterableDiffer.diff(/** @type {?} */ (this._rawClass));
+            if (iterableChanges) {
+                this._applyIterableChanges(iterableChanges);
+            }
+        }
+        else if (this._keyValueDiffer) {
+            var /** @type {?} */ keyValueChanges = this._keyValueDiffer.diff(/** @type {?} */ (this._rawClass));
+            if (keyValueChanges) {
+                this._applyKeyValueChanges(keyValueChanges);
+            }
+        }
+    };
+    /**
+     * @param {?} rawClassVal
+     * @return {?}
+     */
+    NgClass.prototype._cleanupClasses = function (rawClassVal) {
+        this._applyClasses(rawClassVal, true);
+        this._applyInitialClasses(false);
+    };
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgClass.prototype._applyKeyValueChanges = function (changes) {
+        var _this = this;
+        changes.forEachAddedItem(function (record) { return _this._toggleClass(record.key, record.currentValue); });
+        changes.forEachChangedItem(function (record) { return _this._toggleClass(record.key, record.currentValue); });
+        changes.forEachRemovedItem(function (record) {
+            if (record.previousValue) {
+                _this._toggleClass(record.key, false);
+            }
+        });
+    };
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgClass.prototype._applyIterableChanges = function (changes) {
+        var _this = this;
+        changes.forEachAddedItem(function (record) {
+            if (typeof record.item === 'string') {
+                _this._toggleClass(record.item, true);
+            }
+            else {
+                throw new Error("NgClass can only toggle CSS classes expressed as strings, got " + __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵstringify"])(record.item));
+            }
+        });
+        changes.forEachRemovedItem(function (record) { return _this._toggleClass(record.item, false); });
+    };
+    /**
+     * @param {?} isCleanup
+     * @return {?}
+     */
+    NgClass.prototype._applyInitialClasses = function (isCleanup) {
+        var _this = this;
+        this._initialClasses.forEach(function (klass) { return _this._toggleClass(klass, !isCleanup); });
+    };
+    /**
+     * @param {?} rawClassVal
+     * @param {?} isCleanup
+     * @return {?}
+     */
+    NgClass.prototype._applyClasses = function (rawClassVal, isCleanup) {
+        var _this = this;
+        if (rawClassVal) {
+            if (Array.isArray(rawClassVal) || rawClassVal instanceof Set) {
+                ((rawClassVal)).forEach(function (klass) { return _this._toggleClass(klass, !isCleanup); });
+            }
+            else {
+                Object.keys(rawClassVal).forEach(function (klass) {
+                    if (rawClassVal[klass] != null)
+                        _this._toggleClass(klass, !isCleanup);
+                });
+            }
+        }
+    };
+    /**
+     * @param {?} klass
+     * @param {?} enabled
+     * @return {?}
+     */
+    NgClass.prototype._toggleClass = function (klass, enabled) {
+        var _this = this;
+        klass = klass.trim();
+        if (klass) {
+            klass.split(/\s+/g).forEach(function (klass) { _this._renderer.setElementClass(_this._ngEl.nativeElement, klass, !!enabled); });
+        }
+    };
+    return NgClass;
+}());
+NgClass.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngClass]' },] },
+];
+/** @nocollapse */
+NgClass.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["IterableDiffers"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["KeyValueDiffers"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"], },
+]; };
+NgClass.propDecorators = {
+    'klass': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"], args: ['class',] },],
+    'ngClass': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+};
+/**
+ * Instantiates a single {\@link Component} type and inserts its Host View into current View.
+ * `NgComponentOutlet` provides a declarative approach for dynamic component creation.
+ *
+ * `NgComponentOutlet` requires a component type, if a falsy value is set the view will clear and
+ * any existing component will get destroyed.
+ *
+ * ### Fine tune control
+ *
+ * You can control the component creation process by using the following optional attributes:
+ *
+ * * `ngComponentOutletInjector`: Optional custom {\@link Injector} that will be used as parent for
+ * the Component. Defaults to the injector of the current view container.
+ *
+ * * `ngComponentOutletProviders`: Optional injectable objects ({\@link Provider}) that are visible
+ * to the component.
+ *
+ * * `ngComponentOutletContent`: Optional list of projectable nodes to insert into the content
+ * section of the component, if exists.
+ *
+ * * `ngComponentOutletNgModuleFactory`: Optional module factory to allow dynamically loading other
+ * module, then load a component from that module.
+ *
+ * ### Syntax
+ *
+ * Simple
+ * ```
+ * <ng-container *ngComponentOutlet="componentTypeExpression"></ng-container>
+ * ```
+ *
+ * Customized injector/content
+ * ```
+ * <ng-container *ngComponentOutlet="componentTypeExpression;
+ *                                   injector: injectorExpression;
+ *                                   content: contentNodesExpression;">
+ * </ng-container>
+ * ```
+ *
+ * Customized ngModuleFactory
+ * ```
+ * <ng-container *ngComponentOutlet="componentTypeExpression;
+ *                                   ngModuleFactory: moduleFactory;">
+ * </ng-container>
+ * ```
+ * # Example
+ *
+ * {\@example common/ngComponentOutlet/ts/module.ts region='SimpleExample'}
+ *
+ * A more complete example with additional options:
+ *
+ * {\@example common/ngComponentOutlet/ts/module.ts region='CompleteExample'}
+ * A more complete example with ngModuleFactory:
+ *
+ * {\@example common/ngComponentOutlet/ts/module.ts region='NgModuleFactoryExample'}
+ *
+ * \@experimental
+ */
+var NgComponentOutlet = (function () {
+    /**
+     * @param {?} _viewContainerRef
+     */
+    function NgComponentOutlet(_viewContainerRef) {
+        this._viewContainerRef = _viewContainerRef;
+        this._componentRef = null;
+        this._moduleRef = null;
+    }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgComponentOutlet.prototype.ngOnChanges = function (changes) {
+        if (this._componentRef) {
+            this._viewContainerRef.remove(this._viewContainerRef.indexOf(this._componentRef.hostView));
+        }
+        this._viewContainerRef.clear();
+        this._componentRef = null;
+        if (this.ngComponentOutlet) {
+            var /** @type {?} */ injector = this.ngComponentOutletInjector || this._viewContainerRef.parentInjector;
+            if (((changes)).ngComponentOutletNgModuleFactory) {
+                if (this._moduleRef)
+                    this._moduleRef.destroy();
+                if (this.ngComponentOutletNgModuleFactory) {
+                    this._moduleRef = this.ngComponentOutletNgModuleFactory.create(injector);
+                }
+                else {
+                    this._moduleRef = null;
+                }
+            }
+            if (this._moduleRef) {
+                injector = this._moduleRef.injector;
+            }
+            var /** @type {?} */ componentFactory = injector.get(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"]).resolveComponentFactory(this.ngComponentOutlet);
+            this._componentRef = this._viewContainerRef.createComponent(componentFactory, this._viewContainerRef.length, injector, this.ngComponentOutletContent);
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgComponentOutlet.prototype.ngOnDestroy = function () {
+        if (this._moduleRef)
+            this._moduleRef.destroy();
+    };
+    return NgComponentOutlet;
+}());
+NgComponentOutlet.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngComponentOutlet]' },] },
+];
+/** @nocollapse */
+NgComponentOutlet.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
+]; };
+NgComponentOutlet.propDecorators = {
+    'ngComponentOutlet': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'ngComponentOutletInjector': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'ngComponentOutletContent': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'ngComponentOutletNgModuleFactory': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+};
+var NgForOfRow = (function () {
+    /**
+     * @param {?} $implicit
+     * @param {?} index
+     * @param {?} count
+     */
+    function NgForOfRow($implicit, index, count) {
+        this.$implicit = $implicit;
+        this.index = index;
+        this.count = count;
+    }
+    Object.defineProperty(NgForOfRow.prototype, "first", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.index === 0; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForOfRow.prototype, "last", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.index === this.count - 1; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForOfRow.prototype, "even", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this.index % 2 === 0; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForOfRow.prototype, "odd", {
+        /**
+         * @return {?}
+         */
+        get: function () { return !this.even; },
+        enumerable: true,
+        configurable: true
+    });
+    return NgForOfRow;
+}());
+/**
+ * The `NgForOf` directive instantiates a template once per item from an iterable. The context
+ * for each instantiated template inherits from the outer context with the given loop variable
+ * set to the current item from the iterable.
+ *
+ * ### Local Variables
+ *
+ * `NgForOf` provides several exported values that can be aliased to local variables:
+ *
+ * * `index` will be set to the current loop iteration for each template context.
+ * * `first` will be set to a boolean value indicating whether the item is the first one in the
+ *   iteration.
+ * * `last` will be set to a boolean value indicating whether the item is the last one in the
+ *   iteration.
+ * * `even` will be set to a boolean value indicating whether this item has an even index.
+ * * `odd` will be set to a boolean value indicating whether this item has an odd index.
+ *
+ * ### Change Propagation
+ *
+ * When the contents of the iterator changes, `NgForOf` makes the corresponding changes to the DOM:
+ *
+ * * When an item is added, a new instance of the template is added to the DOM.
+ * * When an item is removed, its template instance is removed from the DOM.
+ * * When items are reordered, their respective templates are reordered in the DOM.
+ * * Otherwise, the DOM element for that item will remain the same.
+ *
+ * Angular uses object identity to track insertions and deletions within the iterator and reproduce
+ * those changes in the DOM. This has important implications for animations and any stateful
+ * controls (such as `<input>` elements which accept user input) that are present. Inserted rows can
+ * be animated in, deleted rows can be animated out, and unchanged rows retain any unsaved state
+ * such as user input.
+ *
+ * It is possible for the identities of elements in the iterator to change while the data does not.
+ * This can happen, for example, if the iterator produced from an RPC to the server, and that
+ * RPC is re-run. Even if the data hasn't changed, the second response will produce objects with
+ * different identities, and Angular will tear down the entire DOM and rebuild it (as if all old
+ * elements were deleted and all new elements inserted). This is an expensive operation and should
+ * be avoided if possible.
+ *
+ * To customize the default tracking algorithm, `NgForOf` supports `trackBy` option.
+ * `trackBy` takes a function which has two arguments: `index` and `item`.
+ * If `trackBy` is given, Angular tracks changes by the return value of the function.
+ *
+ * ### Syntax
+ *
+ * - `<li *ngFor="let item of items; let i = index; trackBy: trackByFn">...</li>`
+ * - `<li template="ngFor let item of items; let i = index; trackBy: trackByFn">...</li>`
+ *
+ * With `<ng-template>` element:
+ *
+ * ```
+ * <ng-template ngFor let-item [ngForOf]="items" let-i="index" [ngForTrackBy]="trackByFn">
+ *   <li>...</li>
+ * </ng-template>
+ * ```
+ *
+ * ### Example
+ *
+ * See a [live demo](http://plnkr.co/edit/KVuXxDp0qinGDyo307QW?p=preview) for a more detailed
+ * example.
+ *
+ * \@stable
+ */
+var NgForOf = (function () {
+    /**
+     * @param {?} _viewContainer
+     * @param {?} _template
+     * @param {?} _differs
+     */
+    function NgForOf(_viewContainer, _template, _differs) {
+        this._viewContainer = _viewContainer;
+        this._template = _template;
+        this._differs = _differs;
+        this._differ = null;
+    }
+    Object.defineProperty(NgForOf.prototype, "ngForTrackBy", {
+        /**
+         * @return {?}
+         */
+        get: function () { return this._trackByFn; },
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        set: function (fn) {
+            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["isDevMode"])() && fn != null && typeof fn !== 'function') {
+                // TODO(vicb): use a log service once there is a public one available
+                if ((console) && (console.warn)) {
+                    console.warn("trackBy must be a function, but received " + JSON.stringify(fn) + ". " +
+                        "See https://angular.io/docs/ts/latest/api/common/index/NgFor-directive.html#!#change-propagation for more information.");
+                }
+            }
+            this._trackByFn = fn;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgForOf.prototype, "ngForTemplate", {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            // TODO(TS2.1): make TemplateRef<Partial<NgForRowOf<T>>> once we move to TS v2.1
+            // The current type is too restrictive; a template that just uses index, for example,
+            // should be acceptable.
+            if (value) {
+                this._template = value;
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgForOf.prototype.ngOnChanges = function (changes) {
+        if ('ngForOf' in changes) {
+            // React on ngForOf changes only once all inputs have been initialized
+            var /** @type {?} */ value = changes['ngForOf'].currentValue;
+            if (!this._differ && value) {
+                try {
+                    this._differ = this._differs.find(value).create(this.ngForTrackBy);
+                }
+                catch (e) {
+                    throw new Error("Cannot find a differ supporting object '" + value + "' of type '" + getTypeNameForDebugging(value) + "'. NgFor only supports binding to Iterables such as Arrays.");
+                }
+            }
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NgForOf.prototype.ngDoCheck = function () {
+        if (this._differ) {
+            var /** @type {?} */ changes = this._differ.diff(this.ngForOf);
+            if (changes)
+                this._applyChanges(changes);
+        }
+    };
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgForOf.prototype._applyChanges = function (changes) {
+        var _this = this;
+        var /** @type {?} */ insertTuples = [];
+        changes.forEachOperation(function (item, adjustedPreviousIndex, currentIndex) {
+            if (item.previousIndex == null) {
+                var /** @type {?} */ view = _this._viewContainer.createEmbeddedView(_this._template, new NgForOfRow(null, null, null), currentIndex);
+                var /** @type {?} */ tuple = new RecordViewTuple(item, view);
+                insertTuples.push(tuple);
+            }
+            else if (currentIndex == null) {
+                _this._viewContainer.remove(adjustedPreviousIndex);
+            }
+            else {
+                var /** @type {?} */ view = _this._viewContainer.get(adjustedPreviousIndex);
+                _this._viewContainer.move(view, currentIndex);
+                var /** @type {?} */ tuple = new RecordViewTuple(item, /** @type {?} */ (view));
+                insertTuples.push(tuple);
+            }
+        });
+        for (var /** @type {?} */ i = 0; i < insertTuples.length; i++) {
+            this._perViewChange(insertTuples[i].view, insertTuples[i].record);
+        }
+        for (var /** @type {?} */ i = 0, /** @type {?} */ ilen = this._viewContainer.length; i < ilen; i++) {
+            var /** @type {?} */ viewRef = (this._viewContainer.get(i));
+            viewRef.context.index = i;
+            viewRef.context.count = ilen;
+        }
+        changes.forEachIdentityChange(function (record) {
+            var /** @type {?} */ viewRef = (_this._viewContainer.get(record.currentIndex));
+            viewRef.context.$implicit = record.item;
+        });
+    };
+    /**
+     * @param {?} view
+     * @param {?} record
+     * @return {?}
+     */
+    NgForOf.prototype._perViewChange = function (view, record) {
+        view.context.$implicit = record.item;
+    };
+    return NgForOf;
+}());
+NgForOf.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngFor][ngForOf]' },] },
+];
+/** @nocollapse */
+NgForOf.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["IterableDiffers"], },
+]; };
+NgForOf.propDecorators = {
+    'ngForOf': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'ngForTrackBy': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'ngForTemplate': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+};
+var RecordViewTuple = (function () {
+    /**
+     * @param {?} record
+     * @param {?} view
+     */
+    function RecordViewTuple(record, view) {
+        this.record = record;
+        this.view = view;
+    }
+    return RecordViewTuple;
+}());
+/**
+ * @deprecated from v4.0.0 - Use NgForOf instead.
+ */
+var /** @type {?} */ NgFor = NgForOf;
+/**
+ * @param {?} type
+ * @return {?}
+ */
+function getTypeNameForDebugging(type) {
+    return type['name'] || typeof type;
+}
+/**
+ * Conditionally includes a template based on the value of an `expression`.
+ *
+ * `ngIf` evaluates the `expression` and then renders the `then` or `else` template in its place
+ * when expression is truthy or falsy respectively. Typically the:
+ *  - `then` template is the inline template of `ngIf` unless bound to a different value.
+ *  - `else` template is blank unless it is bound.
+ *
+ * # Most common usage
+ *
+ * The most common usage of the `ngIf` directive is to conditionally show the inline template as
+ * seen in this example:
+ * {\@example common/ngIf/ts/module.ts region='NgIfSimple'}
+ *
+ * # Showing an alternative template using `else`
+ *
+ * If it is necessary to display a template when the `expression` is falsy use the `else` template
+ * binding as shown. Note that the `else` binding points to a `<ng-template>` labeled `#elseBlock`.
+ * The template can be defined anywhere in the component view but is typically placed right after
+ * `ngIf` for readability.
+ *
+ * {\@example common/ngIf/ts/module.ts region='NgIfElse'}
+ *
+ * # Using non-inlined `then` template
+ *
+ * Usually the `then` template is the inlined template of the `ngIf`, but it can be changed using
+ * a binding (just like `else`). Because `then` and `else` are bindings, the template references can
+ * change at runtime as shown in this example.
+ *
+ * {\@example common/ngIf/ts/module.ts region='NgIfThenElse'}
+ *
+ * # Storing conditional result in a variable
+ *
+ * A common pattern is that we need to show a set of properties from the same object. If the
+ * object is undefined, then we have to use the safe-traversal-operator `?.` to guard against
+ * dereferencing a `null` value. This is especially the case when waiting on async data such as
+ * when using the `async` pipe as shown in folowing example:
+ *
+ * ```
+ * Hello {{ (userStream|async)?.last }}, {{ (userStream|async)?.first }}!
+ * ```
+ *
+ * There are several inefficiencies in the above example:
+ *  - We create multiple subscriptions on `userStream`. One for each `async` pipe, or two in the
+ *    example above.
+ *  - We cannot display an alternative screen while waiting for the data to arrive asynchronously.
+ *  - We have to use the safe-traversal-operator `?.` to access properties, which is cumbersome.
+ *  - We have to place the `async` pipe in parenthesis.
+ *
+ * A better way to do this is to use `ngIf` and store the result of the condition in a local
+ * variable as shown in the the example below:
+ *
+ * {\@example common/ngIf/ts/module.ts region='NgIfLet'}
+ *
+ * Notice that:
+ *  - We use only one `async` pipe and hence only one subscription gets created.
+ *  - `ngIf` stores the result of the `userStream|async` in the local variable `user`.
+ *  - The local `user` can then be bound repeatedly in a more efficient way.
+ *  - No need to use the safe-traversal-operator `?.` to access properties as `ngIf` will only
+ *    display the data if `userStream` returns a value.
+ *  - We can display an alternative template while waiting for the data.
+ *
+ * ### Syntax
+ *
+ * Simple form:
+ * - `<div *ngIf="condition">...</div>`
+ * - `<div template="ngIf condition">...</div>`
+ * - `<ng-template [ngIf]="condition"><div>...</div></ng-template>`
+ *
+ * Form with an else block:
+ * ```
+ * <div *ngIf="condition; else elseBlock">...</div>
+ * <ng-template #elseBlock>...</ng-template>
+ * ```
+ *
+ * Form with a `then` and `else` block:
+ * ```
+ * <div *ngIf="condition; then thenBlock else elseBlock"></div>
+ * <ng-template #thenBlock>...</ng-template>
+ * <ng-template #elseBlock>...</ng-template>
+ * ```
+ *
+ * Form with storing the value locally:
+ * ```
+ * <div *ngIf="condition; else elseBlock; let value">{{value}}</div>
+ * <ng-template #elseBlock>...</ng-template>
+ * ```
+ *
+ * \@stable
+ */
+var NgIf = (function () {
+    /**
+     * @param {?} _viewContainer
+     * @param {?} templateRef
+     */
+    function NgIf(_viewContainer, templateRef) {
+        this._viewContainer = _viewContainer;
+        this._context = new NgIfContext();
+        this._thenTemplateRef = null;
+        this._elseTemplateRef = null;
+        this._thenViewRef = null;
+        this._elseViewRef = null;
+        this._thenTemplateRef = templateRef;
+    }
+    Object.defineProperty(NgIf.prototype, "ngIf", {
+        /**
+         * @param {?} condition
+         * @return {?}
+         */
+        set: function (condition) {
+            this._context.$implicit = condition;
+            this._updateView();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgIf.prototype, "ngIfThen", {
+        /**
+         * @param {?} templateRef
+         * @return {?}
+         */
+        set: function (templateRef) {
+            this._thenTemplateRef = templateRef;
+            this._thenViewRef = null; // clear previous view if any.
+            this._updateView();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(NgIf.prototype, "ngIfElse", {
+        /**
+         * @param {?} templateRef
+         * @return {?}
+         */
+        set: function (templateRef) {
+            this._elseTemplateRef = templateRef;
+            this._elseViewRef = null; // clear previous view if any.
+            this._updateView();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @return {?}
+     */
+    NgIf.prototype._updateView = function () {
+        if (this._context.$implicit) {
+            if (!this._thenViewRef) {
+                this._viewContainer.clear();
+                this._elseViewRef = null;
+                if (this._thenTemplateRef) {
+                    this._thenViewRef =
+                        this._viewContainer.createEmbeddedView(this._thenTemplateRef, this._context);
+                }
+            }
+        }
+        else {
+            if (!this._elseViewRef) {
+                this._viewContainer.clear();
+                this._thenViewRef = null;
+                if (this._elseTemplateRef) {
+                    this._elseViewRef =
+                        this._viewContainer.createEmbeddedView(this._elseTemplateRef, this._context);
+                }
+            }
+        }
+    };
+    return NgIf;
+}());
+NgIf.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngIf]' },] },
+];
+/** @nocollapse */
+NgIf.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], },
+]; };
+NgIf.propDecorators = {
+    'ngIf': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'ngIfThen': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'ngIfElse': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+};
+var NgIfContext = (function () {
+    function NgIfContext() {
+        this.$implicit = null;
+    }
+    return NgIfContext;
+}());
+var SwitchView = (function () {
+    /**
+     * @param {?} _viewContainerRef
+     * @param {?} _templateRef
+     */
+    function SwitchView(_viewContainerRef, _templateRef) {
+        this._viewContainerRef = _viewContainerRef;
+        this._templateRef = _templateRef;
+        this._created = false;
+    }
+    /**
+     * @return {?}
+     */
+    SwitchView.prototype.create = function () {
+        this._created = true;
+        this._viewContainerRef.createEmbeddedView(this._templateRef);
+    };
+    /**
+     * @return {?}
+     */
+    SwitchView.prototype.destroy = function () {
+        this._created = false;
+        this._viewContainerRef.clear();
+    };
+    /**
+     * @param {?} created
+     * @return {?}
+     */
+    SwitchView.prototype.enforceState = function (created) {
+        if (created && !this._created) {
+            this.create();
+        }
+        else if (!created && this._created) {
+            this.destroy();
+        }
+    };
+    return SwitchView;
+}());
+/**
+ * \@ngModule CommonModule
+ *
+ * \@whatItDoes Adds / removes DOM sub-trees when the nest match expressions matches the switch
+ *             expression.
+ *
+ * \@howToUse
+ * ```
+ *     <container-element [ngSwitch]="switch_expression">
+ *       <some-element *ngSwitchCase="match_expression_1">...</some-element>
+ *       <some-element *ngSwitchCase="match_expression_2">...</some-element>
+ *       <some-other-element *ngSwitchCase="match_expression_3">...</some-other-element>
+ *       <ng-container *ngSwitchCase="match_expression_3">
+ *         <!-- use a ng-container to group multiple root nodes -->
+ *         <inner-element></inner-element>
+ *         <inner-other-element></inner-other-element>
+ *       </ng-container>
+ *       <some-element *ngSwitchDefault>...</some-element>
+ *     </container-element>
+ * ```
+ * \@description
+ *
+ * `NgSwitch` stamps out nested views when their match expression value matches the value of the
+ * switch expression.
+ *
+ * In other words:
+ * - you define a container element (where you place the directive with a switch expression on the
+ * `[ngSwitch]="..."` attribute)
+ * - you define inner views inside the `NgSwitch` and place a `*ngSwitchCase` attribute on the view
+ * root elements.
+ *
+ * Elements within `NgSwitch` but outside of a `NgSwitchCase` or `NgSwitchDefault` directives will
+ * be preserved at the location.
+ *
+ * The `ngSwitchCase` directive informs the parent `NgSwitch` of which view to display when the
+ * expression is evaluated.
+ * When no matching expression is found on a `ngSwitchCase` view, the `ngSwitchDefault` view is
+ * stamped out.
+ *
+ * \@stable
+ */
+var NgSwitch = (function () {
+    function NgSwitch() {
+        this._defaultUsed = false;
+        this._caseCount = 0;
+        this._lastCaseCheckIndex = 0;
+        this._lastCasesMatched = false;
+    }
+    Object.defineProperty(NgSwitch.prototype, "ngSwitch", {
+        /**
+         * @param {?} newValue
+         * @return {?}
+         */
+        set: function (newValue) {
+            this._ngSwitch = newValue;
+            if (this._caseCount === 0) {
+                this._updateDefaultCases(true);
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * \@internal
+     * @return {?}
+     */
+    NgSwitch.prototype._addCase = function () { return this._caseCount++; };
+    /**
+     * \@internal
+     * @param {?} view
+     * @return {?}
+     */
+    NgSwitch.prototype._addDefault = function (view) {
+        if (!this._defaultViews) {
+            this._defaultViews = [];
+        }
+        this._defaultViews.push(view);
+    };
+    /**
+     * \@internal
+     * @param {?} value
+     * @return {?}
+     */
+    NgSwitch.prototype._matchCase = function (value) {
+        var /** @type {?} */ matched = value == this._ngSwitch;
+        this._lastCasesMatched = this._lastCasesMatched || matched;
+        this._lastCaseCheckIndex++;
+        if (this._lastCaseCheckIndex === this._caseCount) {
+            this._updateDefaultCases(!this._lastCasesMatched);
+            this._lastCaseCheckIndex = 0;
+            this._lastCasesMatched = false;
+        }
+        return matched;
+    };
+    /**
+     * @param {?} useDefault
+     * @return {?}
+     */
+    NgSwitch.prototype._updateDefaultCases = function (useDefault) {
+        if (this._defaultViews && useDefault !== this._defaultUsed) {
+            this._defaultUsed = useDefault;
+            for (var /** @type {?} */ i = 0; i < this._defaultViews.length; i++) {
+                var /** @type {?} */ defaultView = this._defaultViews[i];
+                defaultView.enforceState(useDefault);
+            }
+        }
+    };
+    return NgSwitch;
+}());
+NgSwitch.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngSwitch]' },] },
+];
+/** @nocollapse */
+NgSwitch.ctorParameters = function () { return []; };
+NgSwitch.propDecorators = {
+    'ngSwitch': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+};
+/**
+ * \@ngModule CommonModule
+ *
+ * \@whatItDoes Creates a view that will be added/removed from the parent {\@link NgSwitch} when the
+ *             given expression evaluate to respectively the same/different value as the switch
+ *             expression.
+ *
+ * \@howToUse
+ * ```
+ * <container-element [ngSwitch]="switch_expression">
+ *   <some-element *ngSwitchCase="match_expression_1">...</some-element>
+ * </container-element>
+ * ```
+ * \@description
+ *
+ * Insert the sub-tree when the expression evaluates to the same value as the enclosing switch
+ * expression.
+ *
+ * If multiple match expressions match the switch expression value, all of them are displayed.
+ *
+ * See {\@link NgSwitch} for more details and example.
+ *
+ * \@stable
+ */
+var NgSwitchCase = (function () {
+    /**
+     * @param {?} viewContainer
+     * @param {?} templateRef
+     * @param {?} ngSwitch
+     */
+    function NgSwitchCase(viewContainer, templateRef, ngSwitch) {
+        this.ngSwitch = ngSwitch;
+        ngSwitch._addCase();
+        this._view = new SwitchView(viewContainer, templateRef);
+    }
+    /**
+     * @return {?}
+     */
+    NgSwitchCase.prototype.ngDoCheck = function () { this._view.enforceState(this.ngSwitch._matchCase(this.ngSwitchCase)); };
+    return NgSwitchCase;
+}());
+NgSwitchCase.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngSwitchCase]' },] },
+];
+/** @nocollapse */
+NgSwitchCase.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], },
+    { type: NgSwitch, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Host"] },] },
+]; };
+NgSwitchCase.propDecorators = {
+    'ngSwitchCase': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+};
+/**
+ * \@ngModule CommonModule
+ * \@whatItDoes Creates a view that is added to the parent {\@link NgSwitch} when no case expressions
+ * match the
+ *             switch expression.
+ *
+ * \@howToUse
+ * ```
+ * <container-element [ngSwitch]="switch_expression">
+ *   <some-element *ngSwitchCase="match_expression_1">...</some-element>
+ *   <some-other-element *ngSwitchDefault>...</some-other-element>
+ * </container-element>
+ * ```
+ *
+ * \@description
+ *
+ * Insert the sub-tree when no case expressions evaluate to the same value as the enclosing switch
+ * expression.
+ *
+ * See {\@link NgSwitch} for more details and example.
+ *
+ * \@stable
+ */
+var NgSwitchDefault = (function () {
+    /**
+     * @param {?} viewContainer
+     * @param {?} templateRef
+     * @param {?} ngSwitch
+     */
+    function NgSwitchDefault(viewContainer, templateRef, ngSwitch) {
+        ngSwitch._addDefault(new SwitchView(viewContainer, templateRef));
+    }
+    return NgSwitchDefault;
+}());
+NgSwitchDefault.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngSwitchDefault]' },] },
+];
+/** @nocollapse */
+NgSwitchDefault.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], },
+    { type: NgSwitch, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Host"] },] },
+]; };
+/**
+ * \@ngModule CommonModule
+ *
+ * \@whatItDoes Adds / removes DOM sub-trees based on a numeric value. Tailored for pluralization.
+ *
+ * \@howToUse
+ * ```
+ * <some-element [ngPlural]="value">
+ *   <ng-template ngPluralCase="=0">there is nothing</ng-template>
+ *   <ng-template ngPluralCase="=1">there is one</ng-template>
+ *   <ng-template ngPluralCase="few">there are a few</ng-template>
+ * </some-element>
+ * ```
+ *
+ * \@description
+ *
+ * Displays DOM sub-trees that match the switch expression value, or failing that, DOM sub-trees
+ * that match the switch expression's pluralization category.
+ *
+ * To use this directive you must provide a container element that sets the `[ngPlural]` attribute
+ * to a switch expression. Inner elements with a `[ngPluralCase]` will display based on their
+ * expression:
+ * - if `[ngPluralCase]` is set to a value starting with `=`, it will only display if the value
+ *   matches the switch expression exactly,
+ * - otherwise, the view will be treated as a "category match", and will only display if exact
+ *   value matches aren't found and the value maps to its category for the defined locale.
+ *
+ * See http://cldr.unicode.org/index/cldr-spec/plural-rules
+ *
+ * \@experimental
+ */
+var NgPlural = (function () {
+    /**
+     * @param {?} _localization
+     */
+    function NgPlural(_localization) {
+        this._localization = _localization;
+        this._caseViews = {};
+    }
+    Object.defineProperty(NgPlural.prototype, "ngPlural", {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            this._switchValue = value;
+            this._updateView();
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} value
+     * @param {?} switchView
+     * @return {?}
+     */
+    NgPlural.prototype.addCase = function (value, switchView) { this._caseViews[value] = switchView; };
+    /**
+     * @return {?}
+     */
+    NgPlural.prototype._updateView = function () {
+        this._clearViews();
+        var /** @type {?} */ cases = Object.keys(this._caseViews);
+        var /** @type {?} */ key = getPluralCategory(this._switchValue, cases, this._localization);
+        this._activateView(this._caseViews[key]);
+    };
+    /**
+     * @return {?}
+     */
+    NgPlural.prototype._clearViews = function () {
+        if (this._activeView)
+            this._activeView.destroy();
+    };
+    /**
+     * @param {?} view
+     * @return {?}
+     */
+    NgPlural.prototype._activateView = function (view) {
+        if (view) {
+            this._activeView = view;
+            this._activeView.create();
+        }
+    };
+    return NgPlural;
+}());
+NgPlural.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngPlural]' },] },
+];
+/** @nocollapse */
+NgPlural.ctorParameters = function () { return [
+    { type: NgLocalization, },
+]; };
+NgPlural.propDecorators = {
+    'ngPlural': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+};
+/**
+ * \@ngModule CommonModule
+ *
+ * \@whatItDoes Creates a view that will be added/removed from the parent {\@link NgPlural} when the
+ *             given expression matches the plural expression according to CLDR rules.
+ *
+ * \@howToUse
+ * ```
+ * <some-element [ngPlural]="value">
+ *   <ng-template ngPluralCase="=0">...</ng-template>
+ *   <ng-template ngPluralCase="other">...</ng-template>
+ * </some-element>
+ * ```
+ *
+ * See {\@link NgPlural} for more details and example.
+ *
+ * \@experimental
+ */
+var NgPluralCase = (function () {
+    /**
+     * @param {?} value
+     * @param {?} template
+     * @param {?} viewContainer
+     * @param {?} ngPlural
+     */
+    function NgPluralCase(value, template, viewContainer, ngPlural) {
+        this.value = value;
+        var isANumber = !isNaN(Number(value));
+        ngPlural.addCase(isANumber ? "=" + value : value, new SwitchView(viewContainer, template));
+    }
+    return NgPluralCase;
+}());
+NgPluralCase.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngPluralCase]' },] },
+];
+/** @nocollapse */
+NgPluralCase.ctorParameters = function () { return [
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Attribute"], args: ['ngPluralCase',] },] },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
+    { type: NgPlural, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Host"] },] },
+]; };
+/**
+ * \@ngModule CommonModule
+ *
+ * \@whatItDoes Update an HTML element styles.
+ *
+ * \@howToUse
+ * ```
+ * <some-element [ngStyle]="{'font-style': styleExp}">...</some-element>
+ *
+ * <some-element [ngStyle]="{'max-width.px': widthExp}">...</some-element>
+ *
+ * <some-element [ngStyle]="objExp">...</some-element>
+ * ```
+ *
+ * \@description
+ *
+ * The styles are updated according to the value of the expression evaluation:
+ * - keys are style names with an optional `.<unit>` suffix (ie 'top.px', 'font-style.em'),
+ * - values are the values assigned to those properties (expressed in the given unit).
+ *
+ * \@stable
+ */
+var NgStyle = (function () {
+    /**
+     * @param {?} _differs
+     * @param {?} _ngEl
+     * @param {?} _renderer
+     */
+    function NgStyle(_differs, _ngEl, _renderer) {
+        this._differs = _differs;
+        this._ngEl = _ngEl;
+        this._renderer = _renderer;
+    }
+    Object.defineProperty(NgStyle.prototype, "ngStyle", {
+        /**
+         * @param {?} v
+         * @return {?}
+         */
+        set: function (v) {
+            this._ngStyle = v;
+            if (!this._differ && v) {
+                this._differ = this._differs.find(v).create();
+            }
+        },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @return {?}
+     */
+    NgStyle.prototype.ngDoCheck = function () {
+        if (this._differ) {
+            var /** @type {?} */ changes = this._differ.diff(this._ngStyle);
+            if (changes) {
+                this._applyChanges(changes);
+            }
+        }
+    };
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgStyle.prototype._applyChanges = function (changes) {
+        var _this = this;
+        changes.forEachRemovedItem(function (record) { return _this._setStyle(record.key, null); });
+        changes.forEachAddedItem(function (record) { return _this._setStyle(record.key, record.currentValue); });
+        changes.forEachChangedItem(function (record) { return _this._setStyle(record.key, record.currentValue); });
+    };
+    /**
+     * @param {?} nameAndUnit
+     * @param {?} value
+     * @return {?}
+     */
+    NgStyle.prototype._setStyle = function (nameAndUnit, value) {
+        var _a = nameAndUnit.split('.'), name = _a[0], unit = _a[1];
+        value = value != null && unit ? "" + value + unit : value;
+        this._renderer.setElementStyle(this._ngEl.nativeElement, name, /** @type {?} */ (value));
+    };
+    return NgStyle;
+}());
+NgStyle.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngStyle]' },] },
+];
+/** @nocollapse */
+NgStyle.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["KeyValueDiffers"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"], },
+]; };
+NgStyle.propDecorators = {
+    'ngStyle': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+};
+/**
+ * \@ngModule CommonModule
+ *
+ * \@whatItDoes Inserts an embedded view from a prepared `TemplateRef`
+ *
+ * \@howToUse
+ * ```
+ * <ng-container *ngTemplateOutlet="templateRefExp; context: contextExp"></ng-container>
+ * ```
+ *
+ * \@description
+ *
+ * You can attach a context object to the `EmbeddedViewRef` by setting `[ngTemplateOutletContext]`.
+ * `[ngTemplateOutletContext]` should be an object, the object's keys will be available for binding
+ * by the local template `let` declarations.
+ *
+ * Note: using the key `$implicit` in the context object will set it's value as default.
+ *
+ * # Example
+ *
+ * {\@example common/ngTemplateOutlet/ts/module.ts region='NgTemplateOutlet'}
+ *
+ * \@experimental
+ */
+var NgTemplateOutlet = (function () {
+    /**
+     * @param {?} _viewContainerRef
+     */
+    function NgTemplateOutlet(_viewContainerRef) {
+        this._viewContainerRef = _viewContainerRef;
+    }
+    Object.defineProperty(NgTemplateOutlet.prototype, "ngOutletContext", {
+        /**
+         * @deprecated v4.0.0 - Renamed to ngTemplateOutletContext.
+         * @param {?} context
+         * @return {?}
+         */
+        set: function (context) { this.ngTemplateOutletContext = context; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NgTemplateOutlet.prototype.ngOnChanges = function (changes) {
+        if (this._viewRef) {
+            this._viewContainerRef.remove(this._viewContainerRef.indexOf(this._viewRef));
+        }
+        if (this.ngTemplateOutlet) {
+            this._viewRef = this._viewContainerRef.createEmbeddedView(this.ngTemplateOutlet, this.ngTemplateOutletContext);
+        }
+    };
+    return NgTemplateOutlet;
+}());
+NgTemplateOutlet.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngTemplateOutlet]' },] },
+];
+/** @nocollapse */
+NgTemplateOutlet.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
+]; };
+NgTemplateOutlet.propDecorators = {
+    'ngTemplateOutletContext': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'ngTemplateOutlet': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+    'ngOutletContext': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
+};
+/**
+ * A collection of Angular directives that are likely to be used in each and every Angular
+ * application.
+ */
+var /** @type {?} */ COMMON_DIRECTIVES = [
+    NgClass,
+    NgComponentOutlet,
+    NgForOf,
+    NgIf,
+    NgTemplateOutlet,
+    NgStyle,
+    NgSwitch,
+    NgSwitchCase,
+    NgSwitchDefault,
+    NgPlural,
+    NgPluralCase,
+];
+/**
+ * @param {?} type
+ * @param {?} value
+ * @return {?}
+ */
+function invalidPipeArgumentError(type, value) {
+    return Error("InvalidPipeArgument: '" + value + "' for pipe '" + __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵstringify"])(type) + "'");
+}
+var ObservableStrategy = (function () {
+    function ObservableStrategy() {
+    }
+    /**
+     * @param {?} async
+     * @param {?} updateLatestValue
+     * @return {?}
+     */
+    ObservableStrategy.prototype.createSubscription = function (async, updateLatestValue) {
+        return async.subscribe({ next: updateLatestValue, error: function (e) { throw e; } });
+    };
+    /**
+     * @param {?} subscription
+     * @return {?}
+     */
+    ObservableStrategy.prototype.dispose = function (subscription) { subscription.unsubscribe(); };
+    /**
+     * @param {?} subscription
+     * @return {?}
+     */
+    ObservableStrategy.prototype.onDestroy = function (subscription) { subscription.unsubscribe(); };
+    return ObservableStrategy;
+}());
+var PromiseStrategy = (function () {
+    function PromiseStrategy() {
+    }
+    /**
+     * @param {?} async
+     * @param {?} updateLatestValue
+     * @return {?}
+     */
+    PromiseStrategy.prototype.createSubscription = function (async, updateLatestValue) {
+        return async.then(updateLatestValue, function (e) { throw e; });
+    };
+    /**
+     * @param {?} subscription
+     * @return {?}
+     */
+    PromiseStrategy.prototype.dispose = function (subscription) { };
+    /**
+     * @param {?} subscription
+     * @return {?}
+     */
+    PromiseStrategy.prototype.onDestroy = function (subscription) { };
+    return PromiseStrategy;
+}());
+var /** @type {?} */ _promiseStrategy = new PromiseStrategy();
+var /** @type {?} */ _observableStrategy = new ObservableStrategy();
+/**
+ * \@ngModule CommonModule
+ * \@whatItDoes Unwraps a value from an asynchronous primitive.
+ * \@howToUse `observable_or_promise_expression | async`
+ * \@description
+ * The `async` pipe subscribes to an `Observable` or `Promise` and returns the latest value it has
+ * emitted. When a new value is emitted, the `async` pipe marks the component to be checked for
+ * changes. When the component gets destroyed, the `async` pipe unsubscribes automatically to avoid
+ * potential memory leaks.
+ *
+ *
+ * ## Examples
+ *
+ * This example binds a `Promise` to the view. Clicking the `Resolve` button resolves the
+ * promise.
+ *
+ * {\@example common/pipes/ts/async_pipe.ts region='AsyncPipePromise'}
+ *
+ * It's also possible to use `async` with Observables. The example below binds the `time` Observable
+ * to the view. The Observable continuously updates the view with the current time.
+ *
+ * {\@example common/pipes/ts/async_pipe.ts region='AsyncPipeObservable'}
+ *
+ * \@stable
+ */
+var AsyncPipe = (function () {
+    /**
+     * @param {?} _ref
+     */
+    function AsyncPipe(_ref) {
+        this._ref = _ref;
+        this._latestValue = null;
+        this._latestReturnedValue = null;
+        this._subscription = null;
+        this._obj = null;
+        this._strategy = null;
+    }
+    /**
+     * @return {?}
+     */
+    AsyncPipe.prototype.ngOnDestroy = function () {
+        if (this._subscription) {
+            this._dispose();
+        }
+    };
+    /**
+     * @param {?} obj
+     * @return {?}
+     */
+    AsyncPipe.prototype.transform = function (obj) {
+        if (!this._obj) {
+            if (obj) {
+                this._subscribe(obj);
+            }
+            this._latestReturnedValue = this._latestValue;
+            return this._latestValue;
+        }
+        if (obj !== this._obj) {
+            this._dispose();
+            return this.transform(/** @type {?} */ (obj));
+        }
+        if (this._latestValue === this._latestReturnedValue) {
+            return this._latestReturnedValue;
+        }
+        this._latestReturnedValue = this._latestValue;
+        return __WEBPACK_IMPORTED_MODULE_0__angular_core__["WrappedValue"].wrap(this._latestValue);
+    };
+    /**
+     * @param {?} obj
+     * @return {?}
+     */
+    AsyncPipe.prototype._subscribe = function (obj) {
+        var _this = this;
+        this._obj = obj;
+        this._strategy = this._selectStrategy(obj);
+        this._subscription = this._strategy.createSubscription(obj, function (value) { return _this._updateLatestValue(obj, value); });
+    };
+    /**
+     * @param {?} obj
+     * @return {?}
+     */
+    AsyncPipe.prototype._selectStrategy = function (obj) {
+        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵisPromise"])(obj)) {
+            return _promiseStrategy;
+        }
+        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵisObservable"])(obj)) {
+            return _observableStrategy;
+        }
+        throw invalidPipeArgumentError(AsyncPipe, obj);
+    };
+    /**
+     * @return {?}
+     */
+    AsyncPipe.prototype._dispose = function () {
+        this._strategy.dispose(this._subscription);
+        this._latestValue = null;
+        this._latestReturnedValue = null;
+        this._subscription = null;
+        this._obj = null;
+    };
+    /**
+     * @param {?} async
+     * @param {?} value
+     * @return {?}
+     */
+    AsyncPipe.prototype._updateLatestValue = function (async, value) {
+        if (async === this._obj) {
+            this._latestValue = value;
+            this._ref.markForCheck();
+        }
+    };
+    return AsyncPipe;
+}());
+AsyncPipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'async', pure: false },] },
+];
+/** @nocollapse */
+AsyncPipe.ctorParameters = function () { return [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"], },
+]; };
+/**
+ * Transforms text to lowercase.
+ *
+ * {\@example  common/pipes/ts/lowerupper_pipe.ts region='LowerUpperPipe' }
+ *
+ * \@stable
+ */
+var LowerCasePipe = (function () {
+    function LowerCasePipe() {
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    LowerCasePipe.prototype.transform = function (value) {
+        if (!value)
+            return value;
+        if (typeof value !== 'string') {
+            throw invalidPipeArgumentError(LowerCasePipe, value);
+        }
+        return value.toLowerCase();
+    };
+    return LowerCasePipe;
+}());
+LowerCasePipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'lowercase' },] },
+];
+/** @nocollapse */
+LowerCasePipe.ctorParameters = function () { return []; };
+/**
+ * Helper method to transform a single word to titlecase.
+ *
+ * \@stable
+ * @param {?} word
+ * @return {?}
+ */
+function titleCaseWord(word) {
+    if (!word)
+        return word;
+    return word[0].toUpperCase() + word.substr(1).toLowerCase();
+}
+/**
+ * Transforms text to titlecase.
+ *
+ * \@stable
+ */
+var TitleCasePipe = (function () {
+    function TitleCasePipe() {
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    TitleCasePipe.prototype.transform = function (value) {
+        if (!value)
+            return value;
+        if (typeof value !== 'string') {
+            throw invalidPipeArgumentError(TitleCasePipe, value);
+        }
+        return value.split(/\b/g).map(function (word) { return titleCaseWord(word); }).join('');
+    };
+    return TitleCasePipe;
+}());
+TitleCasePipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'titlecase' },] },
+];
+/** @nocollapse */
+TitleCasePipe.ctorParameters = function () { return []; };
+/**
+ * Transforms text to uppercase.
+ *
+ * \@stable
+ */
+var UpperCasePipe = (function () {
+    function UpperCasePipe() {
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    UpperCasePipe.prototype.transform = function (value) {
+        if (!value)
+            return value;
+        if (typeof value !== 'string') {
+            throw invalidPipeArgumentError(UpperCasePipe, value);
+        }
+        return value.toUpperCase();
+    };
+    return UpperCasePipe;
+}());
+UpperCasePipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'uppercase' },] },
+];
+/** @nocollapse */
+UpperCasePipe.ctorParameters = function () { return []; };
+var NumberFormatStyle = {};
+NumberFormatStyle.Decimal = 0;
+NumberFormatStyle.Percent = 1;
+NumberFormatStyle.Currency = 2;
+NumberFormatStyle[NumberFormatStyle.Decimal] = "Decimal";
+NumberFormatStyle[NumberFormatStyle.Percent] = "Percent";
+NumberFormatStyle[NumberFormatStyle.Currency] = "Currency";
+var NumberFormatter = (function () {
+    function NumberFormatter() {
+    }
+    /**
+     * @param {?} num
+     * @param {?} locale
+     * @param {?} style
+     * @param {?=} __3
+     * @return {?}
+     */
+    NumberFormatter.format = function (num, locale, style, _a) {
+        var _b = _a === void 0 ? {} : _a, minimumIntegerDigits = _b.minimumIntegerDigits, minimumFractionDigits = _b.minimumFractionDigits, maximumFractionDigits = _b.maximumFractionDigits, currency = _b.currency, _c = _b.currencyAsSymbol, currencyAsSymbol = _c === void 0 ? false : _c;
+        var /** @type {?} */ options = {
+            minimumIntegerDigits: minimumIntegerDigits,
+            minimumFractionDigits: minimumFractionDigits,
+            maximumFractionDigits: maximumFractionDigits,
+            style: NumberFormatStyle[style].toLowerCase()
+        };
+        if (style == NumberFormatStyle.Currency) {
+            options.currency = currency;
+            options.currencyDisplay = currencyAsSymbol ? 'symbol' : 'code';
+        }
+        return new Intl.NumberFormat(locale, options).format(num);
+    };
+    return NumberFormatter;
+}());
+var /** @type {?} */ DATE_FORMATS_SPLIT = /((?:[^yMLdHhmsazZEwGjJ']+)|(?:'(?:[^']|'')*')|(?:E+|y+|M+|L+|d+|H+|h+|J+|j+|m+|s+|a|z|Z|G+|w+))(.*)/;
+var /** @type {?} */ PATTERN_ALIASES = {
+    // Keys are quoted so they do not get renamed during closure compilation.
+    'yMMMdjms': datePartGetterFactory(combine([
+        digitCondition('year', 1),
+        nameCondition('month', 3),
+        digitCondition('day', 1),
+        digitCondition('hour', 1),
+        digitCondition('minute', 1),
+        digitCondition('second', 1),
+    ])),
+    'yMdjm': datePartGetterFactory(combine([
+        digitCondition('year', 1), digitCondition('month', 1), digitCondition('day', 1),
+        digitCondition('hour', 1), digitCondition('minute', 1)
+    ])),
+    'yMMMMEEEEd': datePartGetterFactory(combine([
+        digitCondition('year', 1), nameCondition('month', 4), nameCondition('weekday', 4),
+        digitCondition('day', 1)
+    ])),
+    'yMMMMd': datePartGetterFactory(combine([digitCondition('year', 1), nameCondition('month', 4), digitCondition('day', 1)])),
+    'yMMMd': datePartGetterFactory(combine([digitCondition('year', 1), nameCondition('month', 3), digitCondition('day', 1)])),
+    'yMd': datePartGetterFactory(combine([digitCondition('year', 1), digitCondition('month', 1), digitCondition('day', 1)])),
+    'jms': datePartGetterFactory(combine([digitCondition('hour', 1), digitCondition('second', 1), digitCondition('minute', 1)])),
+    'jm': datePartGetterFactory(combine([digitCondition('hour', 1), digitCondition('minute', 1)]))
+};
+var /** @type {?} */ DATE_FORMATS = {
+    // Keys are quoted so they do not get renamed.
+    'yyyy': datePartGetterFactory(digitCondition('year', 4)),
+    'yy': datePartGetterFactory(digitCondition('year', 2)),
+    'y': datePartGetterFactory(digitCondition('year', 1)),
+    'MMMM': datePartGetterFactory(nameCondition('month', 4)),
+    'MMM': datePartGetterFactory(nameCondition('month', 3)),
+    'MM': datePartGetterFactory(digitCondition('month', 2)),
+    'M': datePartGetterFactory(digitCondition('month', 1)),
+    'LLLL': datePartGetterFactory(nameCondition('month', 4)),
+    'L': datePartGetterFactory(nameCondition('month', 1)),
+    'dd': datePartGetterFactory(digitCondition('day', 2)),
+    'd': datePartGetterFactory(digitCondition('day', 1)),
+    'HH': digitModifier(hourExtractor(datePartGetterFactory(hour12Modify(digitCondition('hour', 2), false)))),
+    'H': hourExtractor(datePartGetterFactory(hour12Modify(digitCondition('hour', 1), false))),
+    'hh': digitModifier(hourExtractor(datePartGetterFactory(hour12Modify(digitCondition('hour', 2), true)))),
+    'h': hourExtractor(datePartGetterFactory(hour12Modify(digitCondition('hour', 1), true))),
+    'jj': datePartGetterFactory(digitCondition('hour', 2)),
+    'j': datePartGetterFactory(digitCondition('hour', 1)),
+    'mm': digitModifier(datePartGetterFactory(digitCondition('minute', 2))),
+    'm': datePartGetterFactory(digitCondition('minute', 1)),
+    'ss': digitModifier(datePartGetterFactory(digitCondition('second', 2))),
+    's': datePartGetterFactory(digitCondition('second', 1)),
+    // while ISO 8601 requires fractions to be prefixed with `.` or `,`
+    // we can be just safely rely on using `sss` since we currently don't support single or two digit
+    // fractions
+    'sss': datePartGetterFactory(digitCondition('second', 3)),
+    'EEEE': datePartGetterFactory(nameCondition('weekday', 4)),
+    'EEE': datePartGetterFactory(nameCondition('weekday', 3)),
+    'EE': datePartGetterFactory(nameCondition('weekday', 2)),
+    'E': datePartGetterFactory(nameCondition('weekday', 1)),
+    'a': hourClockExtractor(datePartGetterFactory(hour12Modify(digitCondition('hour', 1), true))),
+    'Z': timeZoneGetter('short'),
+    'z': timeZoneGetter('long'),
+    'ww': datePartGetterFactory({}),
+    // first Thursday of the year. not support ?
+    'w': datePartGetterFactory({}),
+    // of the year not support ?
+    'G': datePartGetterFactory(nameCondition('era', 1)),
+    'GG': datePartGetterFactory(nameCondition('era', 2)),
+    'GGG': datePartGetterFactory(nameCondition('era', 3)),
+    'GGGG': datePartGetterFactory(nameCondition('era', 4))
+};
+/**
+ * @param {?} inner
+ * @return {?}
+ */
+function digitModifier(inner) {
+    return function (date, locale) {
+        var /** @type {?} */ result = inner(date, locale);
+        return result.length == 1 ? '0' + result : result;
+    };
+}
+/**
+ * @param {?} inner
+ * @return {?}
+ */
+function hourClockExtractor(inner) {
+    return function (date, locale) { return inner(date, locale).split(' ')[1]; };
+}
+/**
+ * @param {?} inner
+ * @return {?}
+ */
+function hourExtractor(inner) {
+    return function (date, locale) { return inner(date, locale).split(' ')[0]; };
+}
+/**
+ * @param {?} date
+ * @param {?} locale
+ * @param {?} options
+ * @return {?}
+ */
+function intlDateFormat(date, locale, options) {
+    return new Intl.DateTimeFormat(locale, options).format(date).replace(/[\u200e\u200f]/g, '');
+}
+/**
+ * @param {?} timezone
+ * @return {?}
+ */
+function timeZoneGetter(timezone) {
+    // To workaround `Intl` API restriction for single timezone let format with 24 hours
+    var /** @type {?} */ options = { hour: '2-digit', hour12: false, timeZoneName: timezone };
+    return function (date, locale) {
+        var /** @type {?} */ result = intlDateFormat(date, locale, options);
+        // Then extract first 3 letters that related to hours
+        return result ? result.substring(3) : '';
+    };
+}
+/**
+ * @param {?} options
+ * @param {?} value
+ * @return {?}
+ */
+function hour12Modify(options, value) {
+    options.hour12 = value;
+    return options;
+}
+/**
+ * @param {?} prop
+ * @param {?} len
+ * @return {?}
+ */
+function digitCondition(prop, len) {
+    var /** @type {?} */ result = {};
+    result[prop] = len === 2 ? '2-digit' : 'numeric';
+    return result;
+}
+/**
+ * @param {?} prop
+ * @param {?} len
+ * @return {?}
+ */
+function nameCondition(prop, len) {
+    var /** @type {?} */ result = {};
+    if (len < 4) {
+        result[prop] = len > 1 ? 'short' : 'narrow';
+    }
+    else {
+        result[prop] = 'long';
+    }
+    return result;
+}
+/**
+ * @param {?} options
+ * @return {?}
+ */
+function combine(options) {
+    return ((Object)).assign.apply(((Object)), [{}].concat(options));
+}
+/**
+ * @param {?} ret
+ * @return {?}
+ */
+function datePartGetterFactory(ret) {
+    return function (date, locale) { return intlDateFormat(date, locale, ret); };
+}
+var /** @type {?} */ DATE_FORMATTER_CACHE = new Map();
+/**
+ * @param {?} format
+ * @param {?} date
+ * @param {?} locale
+ * @return {?}
+ */
+function dateFormatter(format, date, locale) {
+    var /** @type {?} */ fn = PATTERN_ALIASES[format];
+    if (fn)
+        return fn(date, locale);
+    var /** @type {?} */ cacheKey = format;
+    var /** @type {?} */ parts = DATE_FORMATTER_CACHE.get(cacheKey);
+    if (!parts) {
+        parts = [];
+        var /** @type {?} */ match = void 0;
+        DATE_FORMATS_SPLIT.exec(format);
+        while (format) {
+            match = DATE_FORMATS_SPLIT.exec(format);
+            if (match) {
+                parts = parts.concat(match.slice(1));
+                format = parts.pop();
+            }
+            else {
+                parts.push(format);
+                format = null;
+            }
+        }
+        DATE_FORMATTER_CACHE.set(cacheKey, parts);
+    }
+    return parts.reduce(function (text, part) {
+        var /** @type {?} */ fn = DATE_FORMATS[part];
+        return text + (fn ? fn(date, locale) : partToTime(part));
+    }, '');
+}
+/**
+ * @param {?} part
+ * @return {?}
+ */
+function partToTime(part) {
+    return part === '\'\'' ? '\'' : part.replace(/(^'|'$)/g, '').replace(/''/g, '\'');
+}
+var DateFormatter = (function () {
+    function DateFormatter() {
+    }
+    /**
+     * @param {?} date
+     * @param {?} locale
+     * @param {?} pattern
+     * @return {?}
+     */
+    DateFormatter.format = function (date, locale, pattern) {
+        return dateFormatter(pattern, date, locale);
+    };
+    return DateFormatter;
+}());
+var /** @type {?} */ _NUMBER_FORMAT_REGEXP = /^(\d+)?\.((\d+)(-(\d+))?)?$/;
+/**
+ * @param {?} pipe
+ * @param {?} locale
+ * @param {?} value
+ * @param {?} style
+ * @param {?} digits
+ * @param {?=} currency
+ * @param {?=} currencyAsSymbol
+ * @return {?}
+ */
+function formatNumber(pipe, locale, value, style, digits, currency, currencyAsSymbol) {
+    if (currency === void 0) { currency = null; }
+    if (currencyAsSymbol === void 0) { currencyAsSymbol = false; }
+    if (value == null)
+        return null;
+    // Convert strings to numbers
+    value = typeof value === 'string' && isNumeric(value) ? +value : value;
+    if (typeof value !== 'number') {
+        throw invalidPipeArgumentError(pipe, value);
+    }
+    var /** @type {?} */ minInt;
+    var /** @type {?} */ minFraction;
+    var /** @type {?} */ maxFraction;
+    if (style !== NumberFormatStyle.Currency) {
+        // rely on Intl default for currency
+        minInt = 1;
+        minFraction = 0;
+        maxFraction = 3;
+    }
+    if (digits) {
+        var /** @type {?} */ parts = digits.match(_NUMBER_FORMAT_REGEXP);
+        if (parts === null) {
+            throw new Error(digits + " is not a valid digit info for number pipes");
+        }
+        if (parts[1] != null) {
+            minInt = parseIntAutoRadix(parts[1]);
+        }
+        if (parts[3] != null) {
+            minFraction = parseIntAutoRadix(parts[3]);
+        }
+        if (parts[5] != null) {
+            maxFraction = parseIntAutoRadix(parts[5]);
+        }
+    }
+    return NumberFormatter.format(/** @type {?} */ (value), locale, style, {
+        minimumIntegerDigits: minInt,
+        minimumFractionDigits: minFraction,
+        maximumFractionDigits: maxFraction,
+        currency: currency,
+        currencyAsSymbol: currencyAsSymbol,
+    });
+}
+/**
+ * \@ngModule CommonModule
+ * \@whatItDoes Formats a number according to locale rules.
+ * \@howToUse `number_expression | number[:digitInfo]`
+ *
+ * Formats a number as text. Group sizing and separator and other locale-specific
+ * configurations are based on the active locale.
+ *
+ * where `expression` is a number:
+ *  - `digitInfo` is a `string` which has a following format: <br>
+ *     <code>{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}</code>
+ *   - `minIntegerDigits` is the minimum number of integer digits to use. Defaults to `1`.
+ *   - `minFractionDigits` is the minimum number of digits after fraction. Defaults to `0`.
+ *   - `maxFractionDigits` is the maximum number of digits after fraction. Defaults to `3`.
+ *
+ * For more information on the acceptable range for each of these numbers and other
+ * details see your native internationalization library.
+ *
+ * WARNING: this pipe uses the Internationalization API which is not yet available in all browsers
+ * and may require a polyfill. See {\@linkDocs guide/browser-support} for details.
+ *
+ * ### Example
+ *
+ * {\@example common/pipes/ts/number_pipe.ts region='NumberPipe'}
+ *
+ * \@stable
+ */
+var DecimalPipe = (function () {
+    /**
+     * @param {?} _locale
+     */
+    function DecimalPipe(_locale) {
+        this._locale = _locale;
+    }
+    /**
+     * @param {?} value
+     * @param {?=} digits
+     * @return {?}
+     */
+    DecimalPipe.prototype.transform = function (value, digits) {
+        if (digits === void 0) { digits = null; }
+        return formatNumber(DecimalPipe, this._locale, value, NumberFormatStyle.Decimal, digits);
+    };
+    return DecimalPipe;
+}());
+DecimalPipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'number' },] },
+];
+/** @nocollapse */
+DecimalPipe.ctorParameters = function () { return [
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"],] },] },
+]; };
+/**
+ * \@ngModule CommonModule
+ * \@whatItDoes Formats a number as a percentage according to locale rules.
+ * \@howToUse `number_expression | percent[:digitInfo]`
+ *
+ * \@description
+ *
+ * Formats a number as percentage.
+ *
+ * - `digitInfo` See {\@link DecimalPipe} for detailed description.
+ *
+ * WARNING: this pipe uses the Internationalization API which is not yet available in all browsers
+ * and may require a polyfill. See {\@linkDocs guide/browser-support} for details.
+ *
+ * ### Example
+ *
+ * {\@example common/pipes/ts/number_pipe.ts region='PercentPipe'}
+ *
+ * \@stable
+ */
+var PercentPipe = (function () {
+    /**
+     * @param {?} _locale
+     */
+    function PercentPipe(_locale) {
+        this._locale = _locale;
+    }
+    /**
+     * @param {?} value
+     * @param {?=} digits
+     * @return {?}
+     */
+    PercentPipe.prototype.transform = function (value, digits) {
+        if (digits === void 0) { digits = null; }
+        return formatNumber(PercentPipe, this._locale, value, NumberFormatStyle.Percent, digits);
+    };
+    return PercentPipe;
+}());
+PercentPipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'percent' },] },
+];
+/** @nocollapse */
+PercentPipe.ctorParameters = function () { return [
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"],] },] },
+]; };
+/**
+ * \@ngModule CommonModule
+ * \@whatItDoes Formats a number as currency using locale rules.
+ * \@howToUse `number_expression | currency[:currencyCode[:symbolDisplay[:digitInfo]]]`
+ * \@description
+ *
+ * Use `currency` to format a number as currency.
+ *
+ * - `currencyCode` is the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code, such
+ *    as `USD` for the US dollar and `EUR` for the euro.
+ * - `symbolDisplay` is a boolean indicating whether to use the currency symbol or code.
+ *   - `true`: use symbol (e.g. `$`).
+ *   - `false`(default): use code (e.g. `USD`).
+ * - `digitInfo` See {\@link DecimalPipe} for detailed description.
+ *
+ * WARNING: this pipe uses the Internationalization API which is not yet available in all browsers
+ * and may require a polyfill. See {\@linkDocs guide/browser-support} for details.
+ *
+ * ### Example
+ *
+ * {\@example common/pipes/ts/number_pipe.ts region='CurrencyPipe'}
+ *
+ * \@stable
+ */
+var CurrencyPipe = (function () {
+    /**
+     * @param {?} _locale
+     */
+    function CurrencyPipe(_locale) {
+        this._locale = _locale;
+    }
+    /**
+     * @param {?} value
+     * @param {?=} currencyCode
+     * @param {?=} symbolDisplay
+     * @param {?=} digits
+     * @return {?}
+     */
+    CurrencyPipe.prototype.transform = function (value, currencyCode, symbolDisplay, digits) {
+        if (currencyCode === void 0) { currencyCode = 'USD'; }
+        if (symbolDisplay === void 0) { symbolDisplay = false; }
+        if (digits === void 0) { digits = null; }
+        return formatNumber(CurrencyPipe, this._locale, value, NumberFormatStyle.Currency, digits, currencyCode, symbolDisplay);
+    };
+    return CurrencyPipe;
+}());
+CurrencyPipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'currency' },] },
+];
+/** @nocollapse */
+CurrencyPipe.ctorParameters = function () { return [
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"],] },] },
+]; };
+/**
+ * @param {?} text
+ * @return {?}
+ */
+function parseIntAutoRadix(text) {
+    var /** @type {?} */ result = parseInt(text);
+    if (isNaN(result)) {
+        throw new Error('Invalid integer literal when parsing ' + text);
+    }
+    return result;
+}
+/**
+ * @param {?} value
+ * @return {?}
+ */
+function isNumeric(value) {
+    return !isNaN(value - parseFloat(value));
+}
+var /** @type {?} */ ISO8601_DATE_REGEX = /^(\d{4})-?(\d\d)-?(\d\d)(?:T(\d\d)(?::?(\d\d)(?::?(\d\d)(?:\.(\d+))?)?)?(Z|([+-])(\d\d):?(\d\d))?)?$/;
+/**
+ * \@ngModule CommonModule
+ * \@whatItDoes Formats a date according to locale rules.
+ * \@howToUse `date_expression | date[:format]`
+ * \@description
+ *
+ * Where:
+ * - `expression` is a date object or a number (milliseconds since UTC epoch) or an ISO string
+ * (https://www.w3.org/TR/NOTE-datetime).
+ * - `format` indicates which date/time components to include. The format can be predefined as
+ *   shown below or custom as shown in the table.
+ *   - `'medium'`: equivalent to `'yMMMdjms'` (e.g. `Sep 3, 2010, 12:05:08 PM` for `en-US`)
+ *   - `'short'`: equivalent to `'yMdjm'` (e.g. `9/3/2010, 12:05 PM` for `en-US`)
+ *   - `'fullDate'`: equivalent to `'yMMMMEEEEd'` (e.g. `Friday, September 3, 2010` for `en-US`)
+ *   - `'longDate'`: equivalent to `'yMMMMd'` (e.g. `September 3, 2010` for `en-US`)
+ *   - `'mediumDate'`: equivalent to `'yMMMd'` (e.g. `Sep 3, 2010` for `en-US`)
+ *   - `'shortDate'`: equivalent to `'yMd'` (e.g. `9/3/2010` for `en-US`)
+ *   - `'mediumTime'`: equivalent to `'jms'` (e.g. `12:05:08 PM` for `en-US`)
+ *   - `'shortTime'`: equivalent to `'jm'` (e.g. `12:05 PM` for `en-US`)
+ *
+ *
+ *  | Component | Symbol | Narrow | Short Form   | Long Form         | Numeric   | 2-digit   |
+ *  |-----------|:------:|--------|--------------|-------------------|-----------|-----------|
+ *  | era       |   G    | G (A)  | GGG (AD)     | GGGG (Anno Domini)| -         | -         |
+ *  | year      |   y    | -      | -            | -                 | y (2015)  | yy (15)   |
+ *  | month     |   M    | L (S)  | MMM (Sep)    | MMMM (September)  | M (9)     | MM (09)   |
+ *  | day       |   d    | -      | -            | -                 | d (3)     | dd (03)   |
+ *  | weekday   |   E    | E (S)  | EEE (Sun)    | EEEE (Sunday)     | -         | -         |
+ *  | hour      |   j    | -      | -            | -                 | j (13)    | jj (13)   |
+ *  | hour12    |   h    | -      | -            | -                 | h (1 PM)  | hh (01 PM)|
+ *  | hour24    |   H    | -      | -            | -                 | H (13)    | HH (13)   |
+ *  | minute    |   m    | -      | -            | -                 | m (5)     | mm (05)   |
+ *  | second    |   s    | -      | -            | -                 | s (9)     | ss (09)   |
+ *  | timezone  |   z    | -      | -            | z (Pacific Standard Time)| -  | -         |
+ *  | timezone  |   Z    | -      | Z (GMT-8:00) | -                 | -         | -         |
+ *  | timezone  |   a    | -      | a (PM)       | -                 | -         | -         |
+ *
+ * In javascript, only the components specified will be respected (not the ordering,
+ * punctuations, ...) and details of the formatting will be dependent on the locale.
+ *
+ * Timezone of the formatted text will be the local system timezone of the end-user's machine.
+ *
+ * When the expression is a ISO string without time (e.g. 2016-09-19) the time zone offset is not
+ * applied and the formatted text will have the same day, month and year of the expression.
+ *
+ * WARNINGS:
+ * - this pipe is marked as pure hence it will not be re-evaluated when the input is mutated.
+ *   Instead users should treat the date as an immutable object and change the reference when the
+ *   pipe needs to re-run (this is to avoid reformatting the date on every change detection run
+ *   which would be an expensive operation).
+ * - this pipe uses the Internationalization API. Therefore it is only reliable in Chrome and Opera
+ *   browsers.
+ *
+ * ### Examples
+ *
+ * Assuming `dateObj` is (year: 2015, month: 6, day: 15, hour: 21, minute: 43, second: 11)
+ * in the _local_ time and locale is 'en-US':
+ *
+ * ```
+ *     {{ dateObj | date }}               // output is 'Jun 15, 2015'
+ *     {{ dateObj | date:'medium' }}      // output is 'Jun 15, 2015, 9:43:11 PM'
+ *     {{ dateObj | date:'shortTime' }}   // output is '9:43 PM'
+ *     {{ dateObj | date:'mmss' }}        // output is '43:11'
+ * ```
+ *
+ * {\@example common/pipes/ts/date_pipe.ts region='DatePipe'}
+ *
+ * \@stable
+ */
+var DatePipe = (function () {
+    /**
+     * @param {?} _locale
+     */
+    function DatePipe(_locale) {
+        this._locale = _locale;
+    }
+    /**
+     * @param {?} value
+     * @param {?=} pattern
+     * @return {?}
+     */
+    DatePipe.prototype.transform = function (value, pattern) {
+        if (pattern === void 0) { pattern = 'mediumDate'; }
+        var /** @type {?} */ date;
+        if (isBlank(value) || value !== value)
+            return null;
+        if (typeof value === 'string') {
+            value = value.trim();
+        }
+        if (isDate(value)) {
+            date = value;
+        }
+        else if (isNumeric(value)) {
+            date = new Date(parseFloat(value));
+        }
+        else if (typeof value === 'string' && /^(\d{4}-\d{1,2}-\d{1,2})$/.test(value)) {
+            /**
+            * For ISO Strings without time the day, month and year must be extracted from the ISO String
+            * before Date creation to avoid time offset and errors in the new Date.
+            * If we only replace '-' with ',' in the ISO String ("2015,01,01"), and try to create a new
+            * date, some browsers (e.g. IE 9) will throw an invalid Date error
+            * If we leave the '-' ("2015-01-01") and try to create a new Date("2015-01-01") the timeoffset
+            * is applied
+            * Note: ISO months are 0 for January, 1 for February, ...
+            */
+            var _a = value.split('-').map(function (val) { return parseInt(val, 10); }), y = _a[0], m = _a[1], d = _a[2];
+            date = new Date(y, m - 1, d);
+        }
+        else {
+            date = new Date(value);
+        }
+        if (!isDate(date)) {
+            var /** @type {?} */ match = void 0;
+            if ((typeof value === 'string') && (match = value.match(ISO8601_DATE_REGEX))) {
+                date = isoStringToDate(match);
+            }
+            else {
+                throw invalidPipeArgumentError(DatePipe, value);
+            }
+        }
+        return DateFormatter.format(date, this._locale, DatePipe._ALIASES[pattern] || pattern);
+    };
+    return DatePipe;
+}());
+/** @internal */
+DatePipe._ALIASES = {
+    'medium': 'yMMMdjms',
+    'short': 'yMdjm',
+    'fullDate': 'yMMMMEEEEd',
+    'longDate': 'yMMMMd',
+    'mediumDate': 'yMMMd',
+    'shortDate': 'yMd',
+    'mediumTime': 'jms',
+    'shortTime': 'jm'
+};
+DatePipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'date', pure: true },] },
+];
+/** @nocollapse */
+DatePipe.ctorParameters = function () { return [
+    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"],] },] },
+]; };
+/**
+ * @param {?} obj
+ * @return {?}
+ */
+function isBlank(obj) {
+    return obj == null || obj === '';
+}
+/**
+ * @param {?} obj
+ * @return {?}
+ */
+function isDate(obj) {
+    return obj instanceof Date && !isNaN(obj.valueOf());
+}
+/**
+ * @param {?} match
+ * @return {?}
+ */
+function isoStringToDate(match) {
+    var /** @type {?} */ date = new Date(0);
+    var /** @type {?} */ tzHour = 0;
+    var /** @type {?} */ tzMin = 0;
+    var /** @type {?} */ dateSetter = match[8] ? date.setUTCFullYear : date.setFullYear;
+    var /** @type {?} */ timeSetter = match[8] ? date.setUTCHours : date.setHours;
+    if (match[9]) {
+        tzHour = toInt(match[9] + match[10]);
+        tzMin = toInt(match[9] + match[11]);
+    }
+    dateSetter.call(date, toInt(match[1]), toInt(match[2]) - 1, toInt(match[3]));
+    var /** @type {?} */ h = toInt(match[4] || '0') - tzHour;
+    var /** @type {?} */ m = toInt(match[5] || '0') - tzMin;
+    var /** @type {?} */ s = toInt(match[6] || '0');
+    var /** @type {?} */ ms = Math.round(parseFloat('0.' + (match[7] || 0)) * 1000);
+    timeSetter.call(date, h, m, s, ms);
+    return date;
+}
+/**
+ * @param {?} str
+ * @return {?}
+ */
+function toInt(str) {
+    return parseInt(str, 10);
+}
+var /** @type {?} */ _INTERPOLATION_REGEXP = /#/g;
+/**
+ * \@ngModule CommonModule
+ * \@whatItDoes Maps a value to a string that pluralizes the value according to locale rules.
+ * \@howToUse `expression | i18nPlural:mapping`
+ * \@description
+ *
+ *  Where:
+ *  - `expression` is a number.
+ *  - `mapping` is an object that mimics the ICU format, see
+ *    http://userguide.icu-project.org/formatparse/messages
+ *
+ *  ## Example
+ *
+ * {\@example common/pipes/ts/i18n_pipe.ts region='I18nPluralPipeComponent'}
+ *
+ * \@experimental
+ */
+var I18nPluralPipe = (function () {
+    /**
+     * @param {?} _localization
+     */
+    function I18nPluralPipe(_localization) {
+        this._localization = _localization;
+    }
+    /**
+     * @param {?} value
+     * @param {?} pluralMap
+     * @return {?}
+     */
+    I18nPluralPipe.prototype.transform = function (value, pluralMap) {
+        if (value == null)
+            return '';
+        if (typeof pluralMap !== 'object' || pluralMap === null) {
+            throw invalidPipeArgumentError(I18nPluralPipe, pluralMap);
+        }
+        var /** @type {?} */ key = getPluralCategory(value, Object.keys(pluralMap), this._localization);
+        return pluralMap[key].replace(_INTERPOLATION_REGEXP, value.toString());
+    };
+    return I18nPluralPipe;
+}());
+I18nPluralPipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'i18nPlural', pure: true },] },
+];
+/** @nocollapse */
+I18nPluralPipe.ctorParameters = function () { return [
+    { type: NgLocalization, },
+]; };
+/**
+ * \@ngModule CommonModule
+ * \@whatItDoes Generic selector that displays the string that matches the current value.
+ * \@howToUse `expression | i18nSelect:mapping`
+ * \@description
+ *
+ *  Where `mapping` is an object that indicates the text that should be displayed
+ *  for different values of the provided `expression`.
+ *  If none of the keys of the mapping match the value of the `expression`, then the content
+ *  of the `other` key is returned when present, otherwise an empty string is returned.
+ *
+ *  ## Example
+ *
+ * {\@example common/pipes/ts/i18n_pipe.ts region='I18nSelectPipeComponent'}
+ *
+ *  \@experimental
+ */
+var I18nSelectPipe = (function () {
+    function I18nSelectPipe() {
+    }
+    /**
+     * @param {?} value
+     * @param {?} mapping
+     * @return {?}
+     */
+    I18nSelectPipe.prototype.transform = function (value, mapping) {
+        if (value == null)
+            return '';
+        if (typeof mapping !== 'object' || typeof value !== 'string') {
+            throw invalidPipeArgumentError(I18nSelectPipe, mapping);
+        }
+        if (mapping.hasOwnProperty(value)) {
+            return mapping[value];
+        }
+        if (mapping.hasOwnProperty('other')) {
+            return mapping['other'];
+        }
+        return '';
+    };
+    return I18nSelectPipe;
+}());
+I18nSelectPipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'i18nSelect', pure: true },] },
+];
+/** @nocollapse */
+I18nSelectPipe.ctorParameters = function () { return []; };
+/**
+ * \@ngModule CommonModule
+ * \@whatItDoes Converts value into JSON string.
+ * \@howToUse `expression | json`
+ * \@description
+ *
+ * Converts value into string using `JSON.stringify`. Useful for debugging.
+ *
+ * ### Example
+ * {\@example common/pipes/ts/json_pipe.ts region='JsonPipe'}
+ *
+ * \@stable
+ */
+var JsonPipe = (function () {
+    function JsonPipe() {
+    }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    JsonPipe.prototype.transform = function (value) { return JSON.stringify(value, null, 2); };
+    return JsonPipe;
+}());
+JsonPipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'json', pure: false },] },
+];
+/** @nocollapse */
+JsonPipe.ctorParameters = function () { return []; };
+/**
+ * \@ngModule CommonModule
+ * \@whatItDoes Creates a new List or String containing a subset (slice) of the elements.
+ * \@howToUse `array_or_string_expression | slice:start[:end]`
+ * \@description
+ *
+ * Where the input expression is a `List` or `String`, and:
+ * - `start`: The starting index of the subset to return.
+ *   - **a positive integer**: return the item at `start` index and all items after
+ *     in the list or string expression.
+ *   - **a negative integer**: return the item at `start` index from the end and all items after
+ *     in the list or string expression.
+ *   - **if positive and greater than the size of the expression**: return an empty list or string.
+ *   - **if negative and greater than the size of the expression**: return entire list or string.
+ * - `end`: The ending index of the subset to return.
+ *   - **omitted**: return all items until the end.
+ *   - **if positive**: return all items before `end` index of the list or string.
+ *   - **if negative**: return all items before `end` index from the end of the list or string.
+ *
+ * All behavior is based on the expected behavior of the JavaScript API `Array.prototype.slice()`
+ * and `String.prototype.slice()`.
+ *
+ * When operating on a [List], the returned list is always a copy even when all
+ * the elements are being returned.
+ *
+ * When operating on a blank value, the pipe returns the blank value.
+ *
+ * ## List Example
+ *
+ * This `ngFor` example:
+ *
+ * {\@example common/pipes/ts/slice_pipe.ts region='SlicePipe_list'}
+ *
+ * produces the following:
+ *
+ *     <li>b</li>
+ *     <li>c</li>
+ *
+ * ## String Examples
+ *
+ * {\@example common/pipes/ts/slice_pipe.ts region='SlicePipe_string'}
+ *
+ * \@stable
+ */
+var SlicePipe = (function () {
+    function SlicePipe() {
+    }
+    /**
+     * @param {?} value
+     * @param {?} start
+     * @param {?=} end
+     * @return {?}
+     */
+    SlicePipe.prototype.transform = function (value, start, end) {
+        if (value == null)
+            return value;
+        if (!this.supports(value)) {
+            throw invalidPipeArgumentError(SlicePipe, value);
+        }
+        return value.slice(start, end);
+    };
+    /**
+     * @param {?} obj
+     * @return {?}
+     */
+    SlicePipe.prototype.supports = function (obj) { return typeof obj === 'string' || Array.isArray(obj); };
+    return SlicePipe;
+}());
+SlicePipe.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'slice', pure: false },] },
+];
+/** @nocollapse */
+SlicePipe.ctorParameters = function () { return []; };
+/**
+ * A collection of Angular pipes that are likely to be used in each and every application.
+ */
+var /** @type {?} */ COMMON_PIPES = [
+    AsyncPipe,
+    UpperCasePipe,
+    LowerCasePipe,
+    JsonPipe,
+    SlicePipe,
+    DecimalPipe,
+    PercentPipe,
+    TitleCasePipe,
+    CurrencyPipe,
+    DatePipe,
+    I18nPluralPipe,
+    I18nSelectPipe,
+];
+/**
+ * The module that includes all the basic Angular directives like {\@link NgIf}, {\@link NgForOf}, ...
+ *
+ * \@stable
+ */
+var CommonModule = (function () {
+    function CommonModule() {
+    }
+    return CommonModule;
+}());
+CommonModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"], args: [{
+                declarations: [COMMON_DIRECTIVES, COMMON_PIPES],
+                exports: [COMMON_DIRECTIVES, COMMON_PIPES],
+                providers: [
+                    { provide: NgLocalization, useClass: NgLocaleLocalization },
+                ],
+            },] },
+];
+/** @nocollapse */
+CommonModule.ctorParameters = function () { return []; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */ var /** @type {?} */ PLATFORM_BROWSER_ID = 'browser';
+var /** @type {?} */ PLATFORM_SERVER_ID = 'server';
+var /** @type {?} */ PLATFORM_WORKER_APP_ID = 'browserWorkerApp';
+var /** @type {?} */ PLATFORM_WORKER_UI_ID = 'browserWorkerUi';
+/**
+ * Returns whether a platform id represents a browser platform.
+ * \@experimental
+ * @param {?} platformId
+ * @return {?}
+ */
+function isPlatformBrowser(platformId) {
+    return platformId === PLATFORM_BROWSER_ID;
+}
+/**
+ * Returns whether a platform id represents a server platform.
+ * \@experimental
+ * @param {?} platformId
+ * @return {?}
+ */
+function isPlatformServer(platformId) {
+    return platformId === PLATFORM_SERVER_ID;
+}
+/**
+ * Returns whether a platform id represents a web worker app platform.
+ * \@experimental
+ * @param {?} platformId
+ * @return {?}
+ */
+function isPlatformWorkerApp(platformId) {
+    return platformId === PLATFORM_WORKER_APP_ID;
+}
+/**
+ * Returns whether a platform id represents a web worker UI platform.
+ * \@experimental
+ * @param {?} platformId
+ * @return {?}
+ */
+function isPlatformWorkerUi(platformId) {
+    return platformId === PLATFORM_WORKER_UI_ID;
+}
+/**
+ * @stable
+ */
+var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('4.0.0-rc.3');
+
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(44);
+/* unused harmony export BrowserXhr */
+/* unused harmony export JSONPBackend */
+/* unused harmony export JSONPConnection */
+/* unused harmony export CookieXSRFStrategy */
+/* unused harmony export XHRBackend */
+/* unused harmony export XHRConnection */
+/* unused harmony export BaseRequestOptions */
+/* unused harmony export RequestOptions */
+/* unused harmony export BaseResponseOptions */
+/* unused harmony export ResponseOptions */
+/* unused harmony export ReadyState */
+/* unused harmony export RequestMethod */
+/* unused harmony export ResponseContentType */
+/* unused harmony export ResponseType */
+/* unused harmony export Headers */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Http; });
+/* unused harmony export Jsonp */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpModule; });
+/* unused harmony export JsonpModule */
+/* unused harmony export Connection */
+/* unused harmony export ConnectionBackend */
+/* unused harmony export XSRFStrategy */
+/* unused harmony export Request */
+/* unused harmony export Response */
+/* unused harmony export QueryEncoder */
+/* unused harmony export URLSearchParams */
+/* unused harmony export VERSION */
+/* unused harmony export ɵg */
+/* unused harmony export ɵa */
+/* unused harmony export ɵe */
+/* unused harmony export ɵb */
+/* unused harmony export ɵc */
+/* unused harmony export ɵd */
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+/**
+ * @license Angular v4.0.0-rc.3
+ * (c) 2010-2017 Google, Inc. https://angular.io/
+ * License: MIT
+ */
+
+
+
+/**
+ * A backend for http that uses the `XMLHttpRequest` browser API.
+ *
+ * Take care not to evaluate this in non-browser contexts.
+ *
+ * \@experimental
+ */
+var BrowserXhr = (function () {
+    function BrowserXhr() {
+    }
+    /**
+     * @return {?}
+     */
+    BrowserXhr.prototype.build = function () { return ((new XMLHttpRequest())); };
+    return BrowserXhr;
+}());
+BrowserXhr.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+BrowserXhr.ctorParameters = function () { return []; };
+var RequestMethod = {};
+RequestMethod.Get = 0;
+RequestMethod.Post = 1;
+RequestMethod.Put = 2;
+RequestMethod.Delete = 3;
+RequestMethod.Options = 4;
+RequestMethod.Head = 5;
+RequestMethod.Patch = 6;
+RequestMethod[RequestMethod.Get] = "Get";
+RequestMethod[RequestMethod.Post] = "Post";
+RequestMethod[RequestMethod.Put] = "Put";
+RequestMethod[RequestMethod.Delete] = "Delete";
+RequestMethod[RequestMethod.Options] = "Options";
+RequestMethod[RequestMethod.Head] = "Head";
+RequestMethod[RequestMethod.Patch] = "Patch";
+var ReadyState = {};
+ReadyState.Unsent = 0;
+ReadyState.Open = 1;
+ReadyState.HeadersReceived = 2;
+ReadyState.Loading = 3;
+ReadyState.Done = 4;
+ReadyState.Cancelled = 5;
+ReadyState[ReadyState.Unsent] = "Unsent";
+ReadyState[ReadyState.Open] = "Open";
+ReadyState[ReadyState.HeadersReceived] = "HeadersReceived";
+ReadyState[ReadyState.Loading] = "Loading";
+ReadyState[ReadyState.Done] = "Done";
+ReadyState[ReadyState.Cancelled] = "Cancelled";
+var ResponseType = {};
+ResponseType.Basic = 0;
+ResponseType.Cors = 1;
+ResponseType.Default = 2;
+ResponseType.Error = 3;
+ResponseType.Opaque = 4;
+ResponseType[ResponseType.Basic] = "Basic";
+ResponseType[ResponseType.Cors] = "Cors";
+ResponseType[ResponseType.Default] = "Default";
+ResponseType[ResponseType.Error] = "Error";
+ResponseType[ResponseType.Opaque] = "Opaque";
+var ContentType = {};
+ContentType.NONE = 0;
+ContentType.JSON = 1;
+ContentType.FORM = 2;
+ContentType.FORM_DATA = 3;
+ContentType.TEXT = 4;
+ContentType.BLOB = 5;
+ContentType.ARRAY_BUFFER = 6;
+ContentType[ContentType.NONE] = "NONE";
+ContentType[ContentType.JSON] = "JSON";
+ContentType[ContentType.FORM] = "FORM";
+ContentType[ContentType.FORM_DATA] = "FORM_DATA";
+ContentType[ContentType.TEXT] = "TEXT";
+ContentType[ContentType.BLOB] = "BLOB";
+ContentType[ContentType.ARRAY_BUFFER] = "ARRAY_BUFFER";
+var ResponseContentType = {};
+ResponseContentType.Text = 0;
+ResponseContentType.Json = 1;
+ResponseContentType.ArrayBuffer = 2;
+ResponseContentType.Blob = 3;
+ResponseContentType[ResponseContentType.Text] = "Text";
+ResponseContentType[ResponseContentType.Json] = "Json";
+ResponseContentType[ResponseContentType.ArrayBuffer] = "ArrayBuffer";
+ResponseContentType[ResponseContentType.Blob] = "Blob";
+/**
+ * Polyfill for [Headers](https://developer.mozilla.org/en-US/docs/Web/API/Headers/Headers), as
+ * specified in the [Fetch Spec](https://fetch.spec.whatwg.org/#headers-class).
+ *
+ * The only known difference between this `Headers` implementation and the spec is the
+ * lack of an `entries` method.
+ *
+ * ### Example
+ *
+ * ```
+ * import {Headers} from '\@angular/http';
+ *
+ * var firstHeaders = new Headers();
+ * firstHeaders.append('Content-Type', 'image/jpeg');
+ * console.log(firstHeaders.get('Content-Type')) //'image/jpeg'
+ *
+ * // Create headers from Plain Old JavaScript Object
+ * var secondHeaders = new Headers({
+ *   'X-My-Custom-Header': 'Angular'
+ * });
+ * console.log(secondHeaders.get('X-My-Custom-Header')); //'Angular'
+ *
+ * var thirdHeaders = new Headers(secondHeaders);
+ * console.log(thirdHeaders.get('X-My-Custom-Header')); //'Angular'
+ * ```
+ *
+ * \@experimental
+ */
+var Headers = (function () {
+    /**
+     * @param {?=} headers
+     */
+    function Headers(headers) {
+        var _this = this;
+        /** @internal header names are lower case */
+        this._headers = new Map();
+        /** @internal map lower case names to actual names */
+        this._normalizedNames = new Map();
+        if (!headers) {
+            return;
+        }
+        if (headers instanceof Headers) {
+            headers.forEach(function (values, name) {
+                values.forEach(function (value) { return _this.append(name, value); });
+            });
+            return;
+        }
+        Object.keys(headers).forEach(function (name) {
+            var values = Array.isArray(headers[name]) ? headers[name] : [headers[name]];
+            _this.delete(name);
+            values.forEach(function (value) { return _this.append(name, value); });
+        });
+    }
+    /**
+     * Returns a new Headers instance from the given DOMString of Response Headers
+     * @param {?} headersString
+     * @return {?}
+     */
+    Headers.fromResponseHeaderString = function (headersString) {
+        var /** @type {?} */ headers = new Headers();
+        headersString.split('\n').forEach(function (line) {
+            var /** @type {?} */ index = line.indexOf(':');
+            if (index > 0) {
+                var /** @type {?} */ name = line.slice(0, index);
+                var /** @type {?} */ value = line.slice(index + 1).trim();
+                headers.set(name, value);
+            }
+        });
+        return headers;
+    };
+    /**
+     * Appends a header to existing list of header values for a given header name.
+     * @param {?} name
+     * @param {?} value
+     * @return {?}
+     */
+    Headers.prototype.append = function (name, value) {
+        var /** @type {?} */ values = this.getAll(name);
+        if (values === null) {
+            this.set(name, value);
+        }
+        else {
+            values.push(value);
+        }
+    };
+    /**
+     * Deletes all header values for the given name.
+     * @param {?} name
+     * @return {?}
+     */
+    Headers.prototype.delete = function (name) {
+        var /** @type {?} */ lcName = name.toLowerCase();
+        this._normalizedNames.delete(lcName);
+        this._headers.delete(lcName);
+    };
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    Headers.prototype.forEach = function (fn) {
+        var _this = this;
+        this._headers.forEach(function (values, lcName) { return fn(values, _this._normalizedNames.get(lcName), _this._headers); });
+    };
+    /**
+     * Returns first header that matches given name.
+     * @param {?} name
+     * @return {?}
+     */
+    Headers.prototype.get = function (name) {
+        var /** @type {?} */ values = this.getAll(name);
+        if (values === null) {
+            return null;
+        }
+        return values.length > 0 ? values[0] : null;
+    };
+    /**
+     * Checks for existence of header by given name.
+     * @param {?} name
+     * @return {?}
+     */
+    Headers.prototype.has = function (name) { return this._headers.has(name.toLowerCase()); };
+    /**
+     * Returns the names of the headers
+     * @return {?}
+     */
+    Headers.prototype.keys = function () { return Array.from(this._normalizedNames.values()); };
+    /**
+     * Sets or overrides header value for given name.
+     * @param {?} name
+     * @param {?} value
+     * @return {?}
+     */
+    Headers.prototype.set = function (name, value) {
+        if (Array.isArray(value)) {
+            if (value.length) {
+                this._headers.set(name.toLowerCase(), [value.join(',')]);
+            }
+        }
+        else {
+            this._headers.set(name.toLowerCase(), [value]);
+        }
+        this.mayBeSetNormalizedName(name);
+    };
+    /**
+     * Returns values of all headers.
+     * @return {?}
+     */
+    Headers.prototype.values = function () { return Array.from(this._headers.values()); };
+    /**
+     * @return {?}
+     */
+    Headers.prototype.toJSON = function () {
+        var _this = this;
+        var /** @type {?} */ serialized = {};
+        this._headers.forEach(function (values, name) {
+            var /** @type {?} */ split = [];
+            values.forEach(function (v) { return split.push.apply(split, v.split(',')); });
+            serialized[_this._normalizedNames.get(name)] = split;
+        });
+        return serialized;
+    };
+    /**
+     * Returns list of header values for a given name.
+     * @param {?} name
+     * @return {?}
+     */
+    Headers.prototype.getAll = function (name) {
+        return this.has(name) ? this._headers.get(name.toLowerCase()) : null;
+    };
+    /**
+     * This method is not implemented.
+     * @return {?}
+     */
+    Headers.prototype.entries = function () { throw new Error('"entries" method is not implemented on Headers class'); };
+    /**
+     * @param {?} name
+     * @return {?}
+     */
+    Headers.prototype.mayBeSetNormalizedName = function (name) {
+        var /** @type {?} */ lcName = name.toLowerCase();
+        if (!this._normalizedNames.has(lcName)) {
+            this._normalizedNames.set(lcName, name);
+        }
+    };
+    return Headers;
+}());
+/**
+ * Creates a response options object to be optionally provided when instantiating a
+ * {\@link Response}.
+ *
+ * This class is based on the `ResponseInit` description in the [Fetch
+ * Spec](https://fetch.spec.whatwg.org/#responseinit).
+ *
+ * All values are null by default. Typical defaults can be found in the
+ * {\@link BaseResponseOptions} class, which sub-classes `ResponseOptions`.
+ *
+ * This class may be used in tests to build {\@link Response Responses} for
+ * mock responses (see {\@link MockBackend}).
+ *
+ * ### Example ([live demo](http://plnkr.co/edit/P9Jkk8e8cz6NVzbcxEsD?p=preview))
+ *
+ * ```typescript
+ * import {ResponseOptions, Response} from '\@angular/http';
+ *
+ * var options = new ResponseOptions({
+ *   body: '{"name":"Jeff"}'
+ * });
+ * var res = new Response(options);
+ *
+ * console.log('res.json():', res.json()); // Object {name: "Jeff"}
+ * ```
+ *
+ * \@experimental
+ */
+var ResponseOptions = (function () {
+    /**
+     * @param {?=} __0
+     */
+    function ResponseOptions(_a) {
+        var _b = _a === void 0 ? {} : _a, body = _b.body, status = _b.status, headers = _b.headers, statusText = _b.statusText, type = _b.type, url = _b.url;
+        this.body = body != null ? body : null;
+        this.status = status != null ? status : null;
+        this.headers = headers != null ? headers : null;
+        this.statusText = statusText != null ? statusText : null;
+        this.type = type != null ? type : null;
+        this.url = url != null ? url : null;
+    }
+    /**
+     * Creates a copy of the `ResponseOptions` instance, using the optional input as values to
+     * override
+     * existing values. This method will not change the values of the instance on which it is being
+     * called.
+     *
+     * This may be useful when sharing a base `ResponseOptions` object inside tests,
+     * where certain properties may change from test to test.
+     *
+     * ### Example ([live demo](http://plnkr.co/edit/1lXquqFfgduTFBWjNoRE?p=preview))
+     *
+     * ```typescript
+     * import {ResponseOptions, Response} from '\@angular/http';
+     *
+     * var options = new ResponseOptions({
+     *   body: {name: 'Jeff'}
+     * });
+     * var res = new Response(options.merge({
+     *   url: 'https://google.com'
+     * }));
+     * console.log('options.url:', options.url); // null
+     * console.log('res.json():', res.json()); // Object {name: "Jeff"}
+     * console.log('res.url:', res.url); // https://google.com
+     * ```
+     * @param {?=} options
+     * @return {?}
+     */
+    ResponseOptions.prototype.merge = function (options) {
+        return new ResponseOptions({
+            body: options && options.body != null ? options.body : this.body,
+            status: options && options.status != null ? options.status : this.status,
+            headers: options && options.headers != null ? options.headers : this.headers,
+            statusText: options && options.statusText != null ? options.statusText : this.statusText,
+            type: options && options.type != null ? options.type : this.type,
+            url: options && options.url != null ? options.url : this.url,
+        });
+    };
+    return ResponseOptions;
+}());
+/**
+ * Subclass of {\@link ResponseOptions}, with default values.
+ *
+ * Default values:
+ *  * status: 200
+ *  * headers: empty {\@link Headers} object
+ *
+ * This class could be extended and bound to the {\@link ResponseOptions} class
+ * when configuring an {\@link Injector}, in order to override the default options
+ * used by {\@link Http} to create {\@link Response Responses}.
+ *
+ * ### Example ([live demo](http://plnkr.co/edit/qv8DLT?p=preview))
+ *
+ * ```typescript
+ * import {provide} from '\@angular/core';
+ * import {bootstrap} from '\@angular/platform-browser/browser';
+ * import {HTTP_PROVIDERS, Headers, Http, BaseResponseOptions, ResponseOptions} from
+ * '\@angular/http';
+ * import {App} from './myapp';
+ *
+ * class MyOptions extends BaseResponseOptions {
+ *   headers:Headers = new Headers({network: 'github'});
+ * }
+ *
+ * bootstrap(App, [HTTP_PROVIDERS, {provide: ResponseOptions, useClass: MyOptions}]);
+ * ```
+ *
+ * The options could also be extended when manually creating a {\@link Response}
+ * object.
+ *
+ * ### Example ([live demo](http://plnkr.co/edit/VngosOWiaExEtbstDoix?p=preview))
+ *
+ * ```
+ * import {BaseResponseOptions, Response} from '\@angular/http';
+ *
+ * var options = new BaseResponseOptions();
+ * var res = new Response(options.merge({
+ *   body: 'Angular',
+ *   headers: new Headers({framework: 'angular'})
+ * }));
+ * console.log('res.headers.get("framework"):', res.headers.get('framework')); // angular
+ * console.log('res.text():', res.text()); // Angular;
+ * ```
+ *
+ * \@experimental
+ */
+var BaseResponseOptions = (function (_super) {
+    __extends(BaseResponseOptions, _super);
+    function BaseResponseOptions() {
+        return _super.call(this, { status: 200, statusText: 'Ok', type: ResponseType.Default, headers: new Headers() }) || this;
+    }
+    return BaseResponseOptions;
+}(ResponseOptions));
+BaseResponseOptions.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+BaseResponseOptions.ctorParameters = function () { return []; };
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+/**
+ * Abstract class from which real backends are derived.
+ *
+ * The primary purpose of a `ConnectionBackend` is to create new connections to fulfill a given
+ * {\@link Request}.
+ *
+ * \@experimental
+ * @abstract
+ */
+var ConnectionBackend = (function () {
+    function ConnectionBackend() {
+    }
+    /**
+     * @abstract
+     * @param {?} request
+     * @return {?}
+     */
+    ConnectionBackend.prototype.createConnection = function (request) { };
+    return ConnectionBackend;
+}());
+/**
+ * Abstract class from which real connections are derived.
+ *
+ * \@experimental
+ * @abstract
+ */
+var Connection = (function () {
+    function Connection() {
+    }
+    return Connection;
+}());
+/**
+ * An XSRFStrategy configures XSRF protection (e.g. via headers) on an HTTP request.
+ *
+ * \@experimental
+ * @abstract
+ */
+var XSRFStrategy = (function () {
+    function XSRFStrategy() {
+    }
+    /**
+     * @abstract
+     * @param {?} req
+     * @return {?}
+     */
+    XSRFStrategy.prototype.configureRequest = function (req) { };
+    return XSRFStrategy;
+}());
+/**
+ * @param {?} method
+ * @return {?}
+ */
+function normalizeMethodName(method) {
+    if (typeof method !== 'string')
+        return method;
+    switch (method.toUpperCase()) {
+        case 'GET':
+            return RequestMethod.Get;
+        case 'POST':
+            return RequestMethod.Post;
+        case 'PUT':
+            return RequestMethod.Put;
+        case 'DELETE':
+            return RequestMethod.Delete;
+        case 'OPTIONS':
+            return RequestMethod.Options;
+        case 'HEAD':
+            return RequestMethod.Head;
+        case 'PATCH':
+            return RequestMethod.Patch;
+    }
+    throw new Error("Invalid request method. The method \"" + method + "\" is not supported.");
+}
+var /** @type {?} */ isSuccess = function (status) { return (status >= 200 && status < 300); };
+/**
+ * @param {?} xhr
+ * @return {?}
+ */
+function getResponseURL(xhr) {
+    if ('responseURL' in xhr) {
+        return xhr.responseURL;
+    }
+    if (/^X-Request-URL:/m.test(xhr.getAllResponseHeaders())) {
+        return xhr.getResponseHeader('X-Request-URL');
+    }
+    return;
+}
+/**
+ * @param {?} input
+ * @return {?}
+ */
+function stringToArrayBuffer(input) {
+    var /** @type {?} */ view = new Uint16Array(input.length);
+    for (var /** @type {?} */ i = 0, /** @type {?} */ strLen = input.length; i < strLen; i++) {
+        view[i] = input.charCodeAt(i);
+    }
+    return view.buffer;
+}
+/**
+ * @license
+ * Copyright Google Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ * @param {?=} rawParams
+ * @return {?}
+ */
+function paramParser(rawParams) {
+    if (rawParams === void 0) { rawParams = ''; }
+    var /** @type {?} */ map = new Map();
+    if (rawParams.length > 0) {
+        var /** @type {?} */ params = rawParams.split('&');
+        params.forEach(function (param) {
+            var /** @type {?} */ eqIdx = param.indexOf('=');
+            var _a = eqIdx == -1 ? [param, ''] : [param.slice(0, eqIdx), param.slice(eqIdx + 1)], key = _a[0], val = _a[1];
+            var /** @type {?} */ list = map.get(key) || [];
+            list.push(val);
+            map.set(key, list);
+        });
+    }
+    return map;
+}
+/**
+ * \@experimental
+ *
+ */
+var QueryEncoder = (function () {
+    function QueryEncoder() {
+    }
+    /**
+     * @param {?} k
+     * @return {?}
+     */
+    QueryEncoder.prototype.encodeKey = function (k) { return standardEncoding(k); };
+    /**
+     * @param {?} v
+     * @return {?}
+     */
+    QueryEncoder.prototype.encodeValue = function (v) { return standardEncoding(v); };
+    return QueryEncoder;
+}());
+/**
+ * @param {?} v
+ * @return {?}
+ */
+function standardEncoding(v) {
+    return encodeURIComponent(v)
+        .replace(/%40/gi, '@')
+        .replace(/%3A/gi, ':')
+        .replace(/%24/gi, '$')
+        .replace(/%2C/gi, ',')
+        .replace(/%3B/gi, ';')
+        .replace(/%2B/gi, '+')
+        .replace(/%3D/gi, '=')
+        .replace(/%3F/gi, '?')
+        .replace(/%2F/gi, '/');
+}
+/**
+ * Map-like representation of url search parameters, based on
+ * [URLSearchParams](https://url.spec.whatwg.org/#urlsearchparams) in the url living standard,
+ * with several extensions for merging URLSearchParams objects:
+ *   - setAll()
+ *   - appendAll()
+ *   - replaceAll()
+ *
+ * This class accepts an optional second parameter of ${\@link QueryEncoder},
+ * which is used to serialize parameters before making a request. By default,
+ * `QueryEncoder` encodes keys and values of parameters using `encodeURIComponent`,
+ * and then un-encodes certain characters that are allowed to be part of the query
+ * according to IETF RFC 3986: https://tools.ietf.org/html/rfc3986.
+ *
+ * These are the characters that are not encoded: `! $ \' ( ) * + , ; A 9 - . _ ~ ? /`
+ *
+ * If the set of allowed query characters is not acceptable for a particular backend,
+ * `QueryEncoder` can be subclassed and provided as the 2nd argument to URLSearchParams.
+ *
+ * ```
+ * import {URLSearchParams, QueryEncoder} from '\@angular/http';
+ * class MyQueryEncoder extends QueryEncoder {
+ *   encodeKey(k: string): string {
+ *     return myEncodingFunction(k);
+ *   }
+ *
+ *   encodeValue(v: string): string {
+ *     return myEncodingFunction(v);
+ *   }
+ * }
+ *
+ * let params = new URLSearchParams('', new MyQueryEncoder());
+ * ```
+ * \@experimental
+ */
+var URLSearchParams = (function () {
+    /**
+     * @param {?=} rawParams
+     * @param {?=} queryEncoder
+     */
+    function URLSearchParams(rawParams, queryEncoder) {
+        if (rawParams === void 0) { rawParams = ''; }
+        if (queryEncoder === void 0) { queryEncoder = new QueryEncoder(); }
+        this.rawParams = rawParams;
+        this.queryEncoder = queryEncoder;
+        this.paramsMap = paramParser(rawParams);
+    }
+    /**
+     * @return {?}
+     */
+    URLSearchParams.prototype.clone = function () {
+        var /** @type {?} */ clone = new URLSearchParams('', this.queryEncoder);
+        clone.appendAll(this);
+        return clone;
+    };
+    /**
+     * @param {?} param
+     * @return {?}
+     */
+    URLSearchParams.prototype.has = function (param) { return this.paramsMap.has(param); };
+    /**
+     * @param {?} param
+     * @return {?}
+     */
+    URLSearchParams.prototype.get = function (param) {
+        var /** @type {?} */ storedParam = this.paramsMap.get(param);
+        return Array.isArray(storedParam) ? storedParam[0] : null;
+    };
+    /**
+     * @param {?} param
+     * @return {?}
+     */
+    URLSearchParams.prototype.getAll = function (param) { return this.paramsMap.get(param) || []; };
+    /**
+     * @param {?} param
+     * @param {?} val
+     * @return {?}
+     */
+    URLSearchParams.prototype.set = function (param, val) {
+        if (val === void 0 || val === null) {
+            this.delete(param);
+            return;
+        }
+        var /** @type {?} */ list = this.paramsMap.get(param) || [];
+        list.length = 0;
+        list.push(val);
+        this.paramsMap.set(param, list);
+    };
+    /**
+     * @param {?} searchParams
+     * @return {?}
+     */
+    URLSearchParams.prototype.setAll = function (searchParams) {
+        var _this = this;
+        searchParams.paramsMap.forEach(function (value, param) {
+            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
+            list.length = 0;
+            list.push(value[0]);
+            _this.paramsMap.set(param, list);
+        });
+    };
+    /**
+     * @param {?} param
+     * @param {?} val
+     * @return {?}
+     */
+    URLSearchParams.prototype.append = function (param, val) {
+        if (val === void 0 || val === null)
+            return;
+        var /** @type {?} */ list = this.paramsMap.get(param) || [];
+        list.push(val);
+        this.paramsMap.set(param, list);
+    };
+    /**
+     * @param {?} searchParams
+     * @return {?}
+     */
+    URLSearchParams.prototype.appendAll = function (searchParams) {
+        var _this = this;
+        searchParams.paramsMap.forEach(function (value, param) {
+            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
+            for (var /** @type {?} */ i = 0; i < value.length; ++i) {
+                list.push(value[i]);
+            }
+            _this.paramsMap.set(param, list);
+        });
+    };
+    /**
+     * @param {?} searchParams
+     * @return {?}
+     */
+    URLSearchParams.prototype.replaceAll = function (searchParams) {
+        var _this = this;
+        searchParams.paramsMap.forEach(function (value, param) {
+            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
+            list.length = 0;
+            for (var /** @type {?} */ i = 0; i < value.length; ++i) {
+                list.push(value[i]);
+            }
+            _this.paramsMap.set(param, list);
+        });
+    };
+    /**
+     * @return {?}
+     */
+    URLSearchParams.prototype.toString = function () {
+        var _this = this;
+        var /** @type {?} */ paramsList = [];
+        this.paramsMap.forEach(function (values, k) {
+            values.forEach(function (v) { return paramsList.push(_this.queryEncoder.encodeKey(k) + '=' + _this.queryEncoder.encodeValue(v)); });
+        });
+        return paramsList.join('&');
+    };
+    /**
+     * @param {?} param
+     * @return {?}
+     */
+    URLSearchParams.prototype.delete = function (param) { this.paramsMap.delete(param); };
+    return URLSearchParams;
+}());
+/**
+ * HTTP request body used by both {\@link Request} and {\@link Response}
+ * https://fetch.spec.whatwg.org/#body
+ * @abstract
+ */
+var Body = (function () {
+    function Body() {
+    }
+    /**
+     * Attempts to return body as parsed `JSON` object, or raises an exception.
+     * @return {?}
+     */
+    Body.prototype.json = function () {
+        if (typeof this._body === 'string') {
+            return JSON.parse(/** @type {?} */ (this._body));
+        }
+        if (this._body instanceof ArrayBuffer) {
+            return JSON.parse(this.text());
+        }
+        return this._body;
+    };
+    /**
+     * Returns the body as a string, presuming `toString()` can be called on the response body.
+     * @return {?}
+     */
+    Body.prototype.text = function () {
+        if (this._body instanceof URLSearchParams) {
+            return this._body.toString();
+        }
+        if (this._body instanceof ArrayBuffer) {
+            return String.fromCharCode.apply(null, new Uint16Array(/** @type {?} */ (this._body)));
+        }
+        if (this._body == null) {
+            return '';
+        }
+        if (typeof this._body === 'object') {
+            return JSON.stringify(this._body, null, 2);
+        }
+        return this._body.toString();
+    };
+    /**
+     * Return the body as an ArrayBuffer
+     * @return {?}
+     */
+    Body.prototype.arrayBuffer = function () {
+        if (this._body instanceof ArrayBuffer) {
+            return (this._body);
+        }
+        return stringToArrayBuffer(this.text());
+    };
+    /**
+     * Returns the request's body as a Blob, assuming that body exists.
+     * @return {?}
+     */
+    Body.prototype.blob = function () {
+        if (this._body instanceof Blob) {
+            return (this._body);
+        }
+        if (this._body instanceof ArrayBuffer) {
+            return new Blob([this._body]);
+        }
+        throw new Error('The request body isn\'t either a blob or an array buffer');
+    };
+    return Body;
+}());
+/**
+ * Creates `Response` instances from provided values.
+ *
+ * Though this object isn't
+ * usually instantiated by end-users, it is the primary object interacted with when it comes time to
+ * add data to a view.
+ *
+ * ### Example
+ *
+ * ```
+ * http.request('my-friends.txt').subscribe(response => this.friends = response.text());
+ * ```
+ *
+ * The Response's interface is inspired by the Response constructor defined in the [Fetch
+ * Spec](https://fetch.spec.whatwg.org/#response-class), but is considered a static value whose body
+ * can be accessed many times. There are other differences in the implementation, but this is the
+ * most significant.
+ *
+ * \@experimental
+ */
+var Response = (function (_super) {
+    __extends(Response, _super);
+    /**
+     * @param {?} responseOptions
+     */
+    function Response(responseOptions) {
+        var _this = _super.call(this) || this;
+        _this._body = responseOptions.body;
+        _this.status = responseOptions.status;
+        _this.ok = (_this.status >= 200 && _this.status <= 299);
+        _this.statusText = responseOptions.statusText;
+        _this.headers = responseOptions.headers;
+        _this.type = responseOptions.type;
+        _this.url = responseOptions.url;
+        return _this;
+    }
+    /**
+     * @return {?}
+     */
+    Response.prototype.toString = function () {
+        return "Response with status: " + this.status + " " + this.statusText + " for URL: " + this.url;
+    };
+    return Response;
+}(Body));
+var /** @type {?} */ _nextRequestId = 0;
+var /** @type {?} */ JSONP_HOME = '__ng_jsonp__';
+var /** @type {?} */ _jsonpConnections = null;
+/**
+ * @return {?}
+ */
+function _getJsonpConnections() {
+    var /** @type {?} */ w = typeof window == 'object' ? window : {};
+    if (_jsonpConnections === null) {
+        _jsonpConnections = w[JSONP_HOME] = {};
+    }
+    return _jsonpConnections;
+}
+var BrowserJsonp = (function () {
+    function BrowserJsonp() {
+    }
+    /**
+     * @param {?} url
+     * @return {?}
+     */
+    BrowserJsonp.prototype.build = function (url) {
+        var /** @type {?} */ node = document.createElement('script');
+        node.src = url;
+        return node;
+    };
+    /**
+     * @return {?}
+     */
+    BrowserJsonp.prototype.nextRequestID = function () { return "__req" + _nextRequestId++; };
+    /**
+     * @param {?} id
+     * @return {?}
+     */
+    BrowserJsonp.prototype.requestCallback = function (id) { return JSONP_HOME + "." + id + ".finished"; };
+    /**
+     * @param {?} id
+     * @param {?} connection
+     * @return {?}
+     */
+    BrowserJsonp.prototype.exposeConnection = function (id, connection) {
+        var /** @type {?} */ connections = _getJsonpConnections();
+        connections[id] = connection;
+    };
+    /**
+     * @param {?} id
+     * @return {?}
+     */
+    BrowserJsonp.prototype.removeConnection = function (id) {
+        var /** @type {?} */ connections = _getJsonpConnections();
+        connections[id] = null;
+    };
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    BrowserJsonp.prototype.send = function (node) { document.body.appendChild(/** @type {?} */ ((node))); };
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    BrowserJsonp.prototype.cleanup = function (node) {
+        if (node.parentNode) {
+            node.parentNode.removeChild(/** @type {?} */ ((node)));
+        }
+    };
+    return BrowserJsonp;
+}());
+BrowserJsonp.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+BrowserJsonp.ctorParameters = function () { return []; };
+var /** @type {?} */ JSONP_ERR_NO_CALLBACK = 'JSONP injected script did not invoke callback.';
+var /** @type {?} */ JSONP_ERR_WRONG_METHOD = 'JSONP requests must use GET request method.';
+/**
+ * Abstract base class for an in-flight JSONP request.
+ *
+ * \@experimental
+ * @abstract
+ */
+var JSONPConnection = (function () {
+    function JSONPConnection() {
+    }
+    /**
+     * Callback called when the JSONP request completes, to notify the application
+     * of the new data.
+     * @abstract
+     * @param {?=} data
+     * @return {?}
+     */
+    JSONPConnection.prototype.finished = function (data) { };
+    return JSONPConnection;
+}());
+var JSONPConnection_ = (function (_super) {
+    __extends(JSONPConnection_, _super);
+    /**
+     * @param {?} req
+     * @param {?} _dom
+     * @param {?=} baseResponseOptions
+     */
+    function JSONPConnection_(req, _dom, baseResponseOptions) {
+        var _this = _super.call(this) || this;
+        _this._dom = _dom;
+        _this.baseResponseOptions = baseResponseOptions;
+        _this._finished = false;
+        if (req.method !== RequestMethod.Get) {
+            throw new TypeError(JSONP_ERR_WRONG_METHOD);
+        }
+        _this.request = req;
+        _this.response = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (responseObserver) {
+            _this.readyState = ReadyState.Loading;
+            var id = _this._id = _dom.nextRequestID();
+            _dom.exposeConnection(id, _this);
+            // Workaround Dart
+            // url = url.replace(/=JSONP_CALLBACK(&|$)/, `generated method`);
+            var callback = _dom.requestCallback(_this._id);
+            var url = req.url;
+            if (url.indexOf('=JSONP_CALLBACK&') > -1) {
+                url = url.replace('=JSONP_CALLBACK&', "=" + callback + "&");
+            }
+            else if (url.lastIndexOf('=JSONP_CALLBACK') === url.length - '=JSONP_CALLBACK'.length) {
+                url = url.substring(0, url.length - '=JSONP_CALLBACK'.length) + ("=" + callback);
+            }
+            var script = _this._script = _dom.build(url);
+            var onLoad = function (event) {
+                if (_this.readyState === ReadyState.Cancelled)
+                    return;
+                _this.readyState = ReadyState.Done;
+                _dom.cleanup(script);
+                if (!_this._finished) {
+                    var responseOptions_1 = new ResponseOptions({ body: JSONP_ERR_NO_CALLBACK, type: ResponseType.Error, url: url });
+                    if (baseResponseOptions) {
+                        responseOptions_1 = baseResponseOptions.merge(responseOptions_1);
+                    }
+                    responseObserver.error(new Response(responseOptions_1));
+                    return;
+                }
+                var responseOptions = new ResponseOptions({ body: _this._responseData, url: url });
+                if (_this.baseResponseOptions) {
+                    responseOptions = _this.baseResponseOptions.merge(responseOptions);
+                }
+                responseObserver.next(new Response(responseOptions));
+                responseObserver.complete();
+            };
+            var onError = function (error) {
+                if (_this.readyState === ReadyState.Cancelled)
+                    return;
+                _this.readyState = ReadyState.Done;
+                _dom.cleanup(script);
+                var responseOptions = new ResponseOptions({ body: error.message, type: ResponseType.Error });
+                if (baseResponseOptions) {
+                    responseOptions = baseResponseOptions.merge(responseOptions);
+                }
+                responseObserver.error(new Response(responseOptions));
+            };
+            script.addEventListener('load', onLoad);
+            script.addEventListener('error', onError);
+            _dom.send(script);
+            return function () {
+                _this.readyState = ReadyState.Cancelled;
+                script.removeEventListener('load', onLoad);
+                script.removeEventListener('error', onError);
+                _this._dom.cleanup(script);
+            };
+        });
+        return _this;
+    }
+    /**
+     * @param {?=} data
+     * @return {?}
+     */
+    JSONPConnection_.prototype.finished = function (data) {
+        // Don't leak connections
+        this._finished = true;
+        this._dom.removeConnection(this._id);
+        if (this.readyState === ReadyState.Cancelled)
+            return;
+        this._responseData = data;
+    };
+    return JSONPConnection_;
+}(JSONPConnection));
+/**
+ * A {\@link ConnectionBackend} that uses the JSONP strategy of making requests.
+ *
+ * \@experimental
+ * @abstract
+ */
+var JSONPBackend = (function (_super) {
+    __extends(JSONPBackend, _super);
+    function JSONPBackend() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    return JSONPBackend;
+}(ConnectionBackend));
+var JSONPBackend_ = (function (_super) {
+    __extends(JSONPBackend_, _super);
+    /**
+     * @param {?} _browserJSONP
+     * @param {?} _baseResponseOptions
+     */
+    function JSONPBackend_(_browserJSONP, _baseResponseOptions) {
+        var _this = _super.call(this) || this;
+        _this._browserJSONP = _browserJSONP;
+        _this._baseResponseOptions = _baseResponseOptions;
+        return _this;
+    }
+    /**
+     * @param {?} request
+     * @return {?}
+     */
+    JSONPBackend_.prototype.createConnection = function (request) {
+        return new JSONPConnection_(request, this._browserJSONP, this._baseResponseOptions);
+    };
+    return JSONPBackend_;
+}(JSONPBackend));
+JSONPBackend_.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+JSONPBackend_.ctorParameters = function () { return [
+    { type: BrowserJsonp, },
+    { type: ResponseOptions, },
+]; };
+var /** @type {?} */ XSSI_PREFIX = /^\)\]\}',?\n/;
+/**
+ * Creates connections using `XMLHttpRequest`. Given a fully-qualified
+ * request, an `XHRConnection` will immediately create an `XMLHttpRequest` object and send the
+ * request.
+ *
+ * This class would typically not be created or interacted with directly inside applications, though
+ * the {\@link MockConnection} may be interacted with in tests.
+ *
+ * \@experimental
+ */
+var XHRConnection = (function () {
+    /**
+     * @param {?} req
+     * @param {?} browserXHR
+     * @param {?=} baseResponseOptions
+     */
+    function XHRConnection(req, browserXHR, baseResponseOptions) {
+        var _this = this;
+        this.request = req;
+        this.response = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (responseObserver) {
+            var _xhr = browserXHR.build();
+            _xhr.open(RequestMethod[req.method].toUpperCase(), req.url);
+            if (req.withCredentials != null) {
+                _xhr.withCredentials = req.withCredentials;
+            }
+            // load event handler
+            var onLoad = function () {
+                // normalize IE9 bug (http://bugs.jquery.com/ticket/1450)
+                var status = _xhr.status === 1223 ? 204 : _xhr.status;
+                var body = null;
+                // HTTP 204 means no content
+                if (status !== 204) {
+                    // responseText is the old-school way of retrieving response (supported by IE8 & 9)
+                    // response/responseType properties were introduced in ResourceLoader Level2 spec
+                    // (supported by IE10)
+                    body = (typeof _xhr.response === 'undefined') ? _xhr.responseText : _xhr.response;
+                    // Implicitly strip a potential XSSI prefix.
+                    if (typeof body === 'string') {
+                        body = body.replace(XSSI_PREFIX, '');
+                    }
+                }
+                // fix status code when it is 0 (0 status is undocumented).
+                // Occurs when accessing file resources or on Android 4.1 stock browser
+                // while retrieving files from application cache.
+                if (status === 0) {
+                    status = body ? 200 : 0;
+                }
+                var headers = Headers.fromResponseHeaderString(_xhr.getAllResponseHeaders());
+                // IE 9 does not provide the way to get URL of response
+                var url = getResponseURL(_xhr) || req.url;
+                var statusText = _xhr.statusText || 'OK';
+                var responseOptions = new ResponseOptions({ body: body, status: status, headers: headers, statusText: statusText, url: url });
+                if (baseResponseOptions != null) {
+                    responseOptions = baseResponseOptions.merge(responseOptions);
+                }
+                var response = new Response(responseOptions);
+                response.ok = isSuccess(status);
+                if (response.ok) {
+                    responseObserver.next(response);
+                    // TODO(gdi2290): defer complete if array buffer until done
+                    responseObserver.complete();
+                    return;
+                }
+                responseObserver.error(response);
+            };
+            // error event handler
+            var onError = function (err) {
+                var responseOptions = new ResponseOptions({
+                    body: err,
+                    type: ResponseType.Error,
+                    status: _xhr.status,
+                    statusText: _xhr.statusText,
+                });
+                if (baseResponseOptions != null) {
+                    responseOptions = baseResponseOptions.merge(responseOptions);
+                }
+                responseObserver.error(new Response(responseOptions));
+            };
+            _this.setDetectedContentType(req, _xhr);
+            if (req.headers == null) {
+                req.headers = new Headers();
+            }
+            if (!req.headers.has('Accept')) {
+                req.headers.append('Accept', 'application/json, text/plain, */*');
+            }
+            req.headers.forEach(function (values, name) { return _xhr.setRequestHeader(name, values.join(',')); });
+            // Select the correct buffer type to store the response
+            if (req.responseType != null && _xhr.responseType != null) {
+                switch (req.responseType) {
+                    case ResponseContentType.ArrayBuffer:
+                        _xhr.responseType = 'arraybuffer';
+                        break;
+                    case ResponseContentType.Json:
+                        _xhr.responseType = 'json';
+                        break;
+                    case ResponseContentType.Text:
+                        _xhr.responseType = 'text';
+                        break;
+                    case ResponseContentType.Blob:
+                        _xhr.responseType = 'blob';
+                        break;
+                    default:
+                        throw new Error('The selected responseType is not supported');
+                }
+            }
+            _xhr.addEventListener('load', onLoad);
+            _xhr.addEventListener('error', onError);
+            _xhr.send(_this.request.getBody());
+            return function () {
+                _xhr.removeEventListener('load', onLoad);
+                _xhr.removeEventListener('error', onError);
+                _xhr.abort();
+            };
+        });
+    }
+    /**
+     * @param {?} req
+     * @param {?} _xhr
+     * @return {?}
+     */
+    XHRConnection.prototype.setDetectedContentType = function (req /** TODO Request */, _xhr /** XMLHttpRequest */) {
+        // Skip if a custom Content-Type header is provided
+        if (req.headers != null && req.headers.get('Content-Type') != null) {
+            return;
+        }
+        // Set the detected content type
+        switch (req.contentType) {
+            case ContentType.NONE:
+                break;
+            case ContentType.JSON:
+                _xhr.setRequestHeader('content-type', 'application/json');
+                break;
+            case ContentType.FORM:
+                _xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
+                break;
+            case ContentType.TEXT:
+                _xhr.setRequestHeader('content-type', 'text/plain');
+                break;
+            case ContentType.BLOB:
+                var /** @type {?} */ blob = req.blob();
+                if (blob.type) {
+                    _xhr.setRequestHeader('content-type', blob.type);
+                }
+                break;
+        }
+    };
+    return XHRConnection;
+}());
+/**
+ * `XSRFConfiguration` sets up Cross Site Request Forgery (XSRF) protection for the application
+ * using a cookie. See https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
+ * for more information on XSRF.
+ *
+ * Applications can configure custom cookie and header names by binding an instance of this class
+ * with different `cookieName` and `headerName` values. See the main HTTP documentation for more
+ * details.
+ *
+ * \@experimental
+ */
+var CookieXSRFStrategy = (function () {
+    /**
+     * @param {?=} _cookieName
+     * @param {?=} _headerName
+     */
+    function CookieXSRFStrategy(_cookieName, _headerName) {
+        if (_cookieName === void 0) { _cookieName = 'XSRF-TOKEN'; }
+        if (_headerName === void 0) { _headerName = 'X-XSRF-TOKEN'; }
+        this._cookieName = _cookieName;
+        this._headerName = _headerName;
+    }
+    /**
+     * @param {?} req
+     * @return {?}
+     */
+    CookieXSRFStrategy.prototype.configureRequest = function (req) {
+        var /** @type {?} */ xsrfToken = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["ɵgetDOM"])().getCookie(this._cookieName);
+        if (xsrfToken) {
+            req.headers.set(this._headerName, xsrfToken);
+        }
+    };
+    return CookieXSRFStrategy;
+}());
+/**
+ * Creates {\@link XHRConnection} instances.
+ *
+ * This class would typically not be used by end users, but could be
+ * overridden if a different backend implementation should be used,
+ * such as in a node backend.
+ *
+ * ### Example
+ *
+ * ```
+ * import {Http, MyNodeBackend, HTTP_PROVIDERS, BaseRequestOptions} from '\@angular/http';
+ * \@Component({
+ *   viewProviders: [
+ *     HTTP_PROVIDERS,
+ *     {provide: Http, useFactory: (backend, options) => {
+ *       return new Http(backend, options);
+ *     }, deps: [MyNodeBackend, BaseRequestOptions]}]
+ * })
+ * class MyComponent {
+ *   constructor(http:Http) {
+ *     http.request('people.json').subscribe(res => this.people = res.json());
+ *   }
+ * }
+ * ```
+ * \@experimental
+ */
+var XHRBackend = (function () {
+    /**
+     * @param {?} _browserXHR
+     * @param {?} _baseResponseOptions
+     * @param {?} _xsrfStrategy
+     */
+    function XHRBackend(_browserXHR, _baseResponseOptions, _xsrfStrategy) {
+        this._browserXHR = _browserXHR;
+        this._baseResponseOptions = _baseResponseOptions;
+        this._xsrfStrategy = _xsrfStrategy;
+    }
+    /**
+     * @param {?} request
+     * @return {?}
+     */
+    XHRBackend.prototype.createConnection = function (request) {
+        this._xsrfStrategy.configureRequest(request);
+        return new XHRConnection(request, this._browserXHR, this._baseResponseOptions);
+    };
+    return XHRBackend;
+}());
+XHRBackend.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+XHRBackend.ctorParameters = function () { return [
+    { type: BrowserXhr, },
+    { type: ResponseOptions, },
+    { type: XSRFStrategy, },
+]; };
+/**
+ * Creates a request options object to be optionally provided when instantiating a
+ * {\@link Request}.
+ *
+ * This class is based on the `RequestInit` description in the [Fetch
+ * Spec](https://fetch.spec.whatwg.org/#requestinit).
+ *
+ * All values are null by default. Typical defaults can be found in the {\@link BaseRequestOptions}
+ * class, which sub-classes `RequestOptions`.
+ *
+ * ### Example ([live demo](http://plnkr.co/edit/7Wvi3lfLq41aQPKlxB4O?p=preview))
+ *
+ * ```typescript
+ * import {RequestOptions, Request, RequestMethod} from '\@angular/http';
+ *
+ * var options = new RequestOptions({
+ *   method: RequestMethod.Post,
+ *   url: 'https://google.com'
+ * });
+ * var req = new Request(options);
+ * console.log('req.method:', RequestMethod[req.method]); // Post
+ * console.log('options.url:', options.url); // https://google.com
+ * ```
+ *
+ * \@experimental
+ */
+var RequestOptions = (function () {
+    /**
+     * @param {?=} __0
+     */
+    function RequestOptions(_a) {
+        var _b = _a === void 0 ? {} : _a, method = _b.method, headers = _b.headers, body = _b.body, url = _b.url, search = _b.search, params = _b.params, withCredentials = _b.withCredentials, responseType = _b.responseType;
+        this.method = method != null ? normalizeMethodName(method) : null;
+        this.headers = headers != null ? headers : null;
+        this.body = body != null ? body : null;
+        this.url = url != null ? url : null;
+        this.params = this._mergeSearchParams(params || search);
+        this.withCredentials = withCredentials != null ? withCredentials : null;
+        this.responseType = responseType != null ? responseType : null;
+    }
+    Object.defineProperty(RequestOptions.prototype, "search", {
+        /**
+         * @deprecated from 4.0.0. Use params instead.
+         * @return {?}
+         */
+        get: function () { return this.params; },
+        /**
+         * @deprecated from 4.0.0. Use params instead.
+         * @param {?} params
+         * @return {?}
+         */
+        set: function (params) { this.params = params; },
+        enumerable: true,
+        configurable: true
+    });
+    /**
+     * Creates a copy of the `RequestOptions` instance, using the optional input as values to override
+     * existing values. This method will not change the values of the instance on which it is being
+     * called.
+     *
+     * Note that `headers` and `search` will override existing values completely if present in
+     * the `options` object. If these values should be merged, it should be done prior to calling
+     * `merge` on the `RequestOptions` instance.
+     *
+     * ### Example ([live demo](http://plnkr.co/edit/6w8XA8YTkDRcPYpdB9dk?p=preview))
+     *
+     * ```typescript
+     * import {RequestOptions, Request, RequestMethod} from '\@angular/http';
+     *
+     * var options = new RequestOptions({
+     *   method: RequestMethod.Post
+     * });
+     * var req = new Request(options.merge({
+     *   url: 'https://google.com'
+     * }));
+     * console.log('req.method:', RequestMethod[req.method]); // Post
+     * console.log('options.url:', options.url); // null
+     * console.log('req.url:', req.url); // https://google.com
+     * ```
+     * @param {?=} options
+     * @return {?}
+     */
+    RequestOptions.prototype.merge = function (options) {
+        return new RequestOptions({
+            method: options && options.method != null ? options.method : this.method,
+            headers: options && options.headers != null ? options.headers : new Headers(this.headers),
+            body: options && options.body != null ? options.body : this.body,
+            url: options && options.url != null ? options.url : this.url,
+            params: options && this._mergeSearchParams(options.params || options.search),
+            withCredentials: options && options.withCredentials != null ? options.withCredentials :
+                this.withCredentials,
+            responseType: options && options.responseType != null ? options.responseType :
+                this.responseType
+        });
+    };
+    /**
+     * @param {?} params
+     * @return {?}
+     */
+    RequestOptions.prototype._mergeSearchParams = function (params) {
+        if (!params)
+            return this.params;
+        if (params instanceof URLSearchParams) {
+            return params.clone();
+        }
+        if (typeof params === 'string') {
+            return new URLSearchParams(params);
+        }
+        return this._parseParams(params);
+    };
+    /**
+     * @param {?=} objParams
+     * @return {?}
+     */
+    RequestOptions.prototype._parseParams = function (objParams) {
+        var _this = this;
+        if (objParams === void 0) { objParams = {}; }
+        var /** @type {?} */ params = new URLSearchParams();
+        Object.keys(objParams).forEach(function (key) {
+            var /** @type {?} */ value = objParams[key];
+            if (Array.isArray(value)) {
+                value.forEach(function (item) { return _this._appendParam(key, item, params); });
+            }
+            else {
+                _this._appendParam(key, value, params);
+            }
+        });
+        return params;
+    };
+    /**
+     * @param {?} key
+     * @param {?} value
+     * @param {?} params
+     * @return {?}
+     */
+    RequestOptions.prototype._appendParam = function (key, value, params) {
+        if (typeof value !== 'string') {
+            value = JSON.stringify(value);
+        }
+        params.append(key, value);
+    };
+    return RequestOptions;
+}());
+/**
+ * Subclass of {\@link RequestOptions}, with default values.
+ *
+ * Default values:
+ *  * method: {\@link RequestMethod RequestMethod.Get}
+ *  * headers: empty {\@link Headers} object
+ *
+ * This class could be extended and bound to the {\@link RequestOptions} class
+ * when configuring an {\@link Injector}, in order to override the default options
+ * used by {\@link Http} to create and send {\@link Request Requests}.
+ *
+ * ### Example ([live demo](http://plnkr.co/edit/LEKVSx?p=preview))
+ *
+ * ```typescript
+ * import {provide} from '\@angular/core';
+ * import {bootstrap} from '\@angular/platform-browser/browser';
+ * import {HTTP_PROVIDERS, Http, BaseRequestOptions, RequestOptions} from '\@angular/http';
+ * import {App} from './myapp';
+ *
+ * class MyOptions extends BaseRequestOptions {
+ *   search: string = 'coreTeam=true';
+ * }
+ *
+ * bootstrap(App, [HTTP_PROVIDERS, {provide: RequestOptions, useClass: MyOptions}]);
+ * ```
+ *
+ * The options could also be extended when manually creating a {\@link Request}
+ * object.
+ *
+ * ### Example ([live demo](http://plnkr.co/edit/oyBoEvNtDhOSfi9YxaVb?p=preview))
+ *
+ * ```
+ * import {BaseRequestOptions, Request, RequestMethod} from '\@angular/http';
+ *
+ * var options = new BaseRequestOptions();
+ * var req = new Request(options.merge({
+ *   method: RequestMethod.Post,
+ *   url: 'https://google.com'
+ * }));
+ * console.log('req.method:', RequestMethod[req.method]); // Post
+ * console.log('options.url:', options.url); // null
+ * console.log('req.url:', req.url); // https://google.com
+ * ```
+ *
+ * \@experimental
+ */
+var BaseRequestOptions = (function (_super) {
+    __extends(BaseRequestOptions, _super);
+    function BaseRequestOptions() {
+        return _super.call(this, { method: RequestMethod.Get, headers: new Headers() }) || this;
+    }
+    return BaseRequestOptions;
+}(RequestOptions));
+BaseRequestOptions.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+BaseRequestOptions.ctorParameters = function () { return []; };
+/**
+ * Creates `Request` instances from provided values.
+ *
+ * The Request's interface is inspired by the Request constructor defined in the [Fetch
+ * Spec](https://fetch.spec.whatwg.org/#request-class),
+ * but is considered a static value whose body can be accessed many times. There are other
+ * differences in the implementation, but this is the most significant.
+ *
+ * `Request` instances are typically created by higher-level classes, like {\@link Http} and
+ * {\@link Jsonp}, but it may occasionally be useful to explicitly create `Request` instances.
+ * One such example is when creating services that wrap higher-level services, like {\@link Http},
+ * where it may be useful to generate a `Request` with arbitrary headers and search params.
+ *
+ * ```typescript
+ * import {Injectable, Injector} from '\@angular/core';
+ * import {HTTP_PROVIDERS, Http, Request, RequestMethod} from '\@angular/http';
+ *
+ * \@Injectable()
+ * class AutoAuthenticator {
+ *   constructor(public http:Http) {}
+ *   request(url:string) {
+ *     return this.http.request(new Request({
+ *       method: RequestMethod.Get,
+ *       url: url,
+ *       search: 'password=123'
+ *     }));
+ *   }
+ * }
+ *
+ * var injector = Injector.resolveAndCreate([HTTP_PROVIDERS, AutoAuthenticator]);
+ * var authenticator = injector.get(AutoAuthenticator);
+ * authenticator.request('people.json').subscribe(res => {
+ *   //URL should have included '?password=123'
+ *   console.log('people', res.json());
+ * });
+ * ```
+ *
+ * \@experimental
+ */
+var Request = (function (_super) {
+    __extends(Request, _super);
+    /**
+     * @param {?} requestOptions
+     */
+    function Request(requestOptions) {
+        var _this = _super.call(this) || this;
+        // TODO: assert that url is present
+        var url = requestOptions.url;
+        _this.url = requestOptions.url;
+        if (requestOptions.params) {
+            var params = requestOptions.params.toString();
+            if (params.length > 0) {
+                var prefix = '?';
+                if (_this.url.indexOf('?') != -1) {
+                    prefix = (_this.url[_this.url.length - 1] == '&') ? '' : '&';
+                }
+                // TODO: just delete search-query-looking string in url?
+                _this.url = url + prefix + params;
+            }
+        }
+        _this._body = requestOptions.body;
+        _this.method = normalizeMethodName(requestOptions.method);
+        // TODO(jeffbcross): implement behavior
+        // Defaults to 'omit', consistent with browser
+        _this.headers = new Headers(requestOptions.headers);
+        _this.contentType = _this.detectContentType();
+        _this.withCredentials = requestOptions.withCredentials;
+        _this.responseType = requestOptions.responseType;
+        return _this;
+    }
+    /**
+     * Returns the content type enum based on header options.
+     * @return {?}
+     */
+    Request.prototype.detectContentType = function () {
+        switch (this.headers.get('content-type')) {
+            case 'application/json':
+                return ContentType.JSON;
+            case 'application/x-www-form-urlencoded':
+                return ContentType.FORM;
+            case 'multipart/form-data':
+                return ContentType.FORM_DATA;
+            case 'text/plain':
+            case 'text/html':
+                return ContentType.TEXT;
+            case 'application/octet-stream':
+                return this._body instanceof ArrayBuffer$1 ? ContentType.ARRAY_BUFFER : ContentType.BLOB;
+            default:
+                return this.detectContentTypeFromBody();
+        }
+    };
+    /**
+     * Returns the content type of request's body based on its type.
+     * @return {?}
+     */
+    Request.prototype.detectContentTypeFromBody = function () {
+        if (this._body == null) {
+            return ContentType.NONE;
+        }
+        else if (this._body instanceof URLSearchParams) {
+            return ContentType.FORM;
+        }
+        else if (this._body instanceof FormData) {
+            return ContentType.FORM_DATA;
+        }
+        else if (this._body instanceof Blob$1) {
+            return ContentType.BLOB;
+        }
+        else if (this._body instanceof ArrayBuffer$1) {
+            return ContentType.ARRAY_BUFFER;
+        }
+        else if (this._body && typeof this._body === 'object') {
+            return ContentType.JSON;
+        }
+        else {
+            return ContentType.TEXT;
+        }
+    };
+    /**
+     * Returns the request's body according to its type. If body is undefined, return
+     * null.
+     * @return {?}
+     */
+    Request.prototype.getBody = function () {
+        switch (this.contentType) {
+            case ContentType.JSON:
+                return this.text();
+            case ContentType.FORM:
+                return this.text();
+            case ContentType.FORM_DATA:
+                return this._body;
+            case ContentType.TEXT:
+                return this.text();
+            case ContentType.BLOB:
+                return this.blob();
+            case ContentType.ARRAY_BUFFER:
+                return this.arrayBuffer();
+            default:
+                return null;
+        }
+    };
+    return Request;
+}(Body));
+var /** @type {?} */ noop = function () { };
+var /** @type {?} */ w = typeof window == 'object' ? window : noop;
+var /** @type {?} */ FormData = ((w) /** TODO #9100 */)['FormData'] || noop;
+var /** @type {?} */ Blob$1 = ((w) /** TODO #9100 */)['Blob'] || noop;
+var /** @type {?} */ ArrayBuffer$1 = ((w) /** TODO #9100 */)['ArrayBuffer'] || noop;
+/**
+ * @param {?} backend
+ * @param {?} request
+ * @return {?}
+ */
+function httpRequest(backend, request) {
+    return backend.createConnection(request).response;
+}
+/**
+ * @param {?} defaultOpts
+ * @param {?} providedOpts
+ * @param {?} method
+ * @param {?} url
+ * @return {?}
+ */
+function mergeOptions(defaultOpts, providedOpts, method, url) {
+    var /** @type {?} */ newOptions = defaultOpts;
+    if (providedOpts) {
+        // Hack so Dart can used named parameters
+        return newOptions.merge(new RequestOptions({
+            method: providedOpts.method || method,
+            url: providedOpts.url || url,
+            search: providedOpts.search,
+            params: providedOpts.params,
+            headers: providedOpts.headers,
+            body: providedOpts.body,
+            withCredentials: providedOpts.withCredentials,
+            responseType: providedOpts.responseType
+        }));
+    }
+    return newOptions.merge(new RequestOptions({ method: method, url: url }));
+}
+/**
+ * Performs http requests using `XMLHttpRequest` as the default backend.
+ *
+ * `Http` is available as an injectable class, with methods to perform http requests. Calling
+ * `request` returns an `Observable` which will emit a single {\@link Response} when a
+ * response is received.
+ *
+ * ### Example
+ *
+ * ```typescript
+ * import {Http, HTTP_PROVIDERS} from '\@angular/http';
+ * import 'rxjs/add/operator/map'
+ * \@Component({
+ *   selector: 'http-app',
+ *   viewProviders: [HTTP_PROVIDERS],
+ *   templateUrl: 'people.html'
+ * })
+ * class PeopleComponent {
+ *   constructor(http: Http) {
+ *     http.get('people.json')
+ *       // Call map on the response observable to get the parsed people object
+ *       .map(res => res.json())
+ *       // Subscribe to the observable to get the parsed people object and attach it to the
+ *       // component
+ *       .subscribe(people => this.people = people);
+ *   }
+ * }
+ * ```
+ *
+ *
+ * ### Example
+ *
+ * ```
+ * http.get('people.json').subscribe((res:Response) => this.people = res.json());
+ * ```
+ *
+ * The default construct used to perform requests, `XMLHttpRequest`, is abstracted as a "Backend" (
+ * {\@link XHRBackend} in this case), which could be mocked with dependency injection by replacing
+ * the {\@link XHRBackend} provider, as in the following example:
+ *
+ * ### Example
+ *
+ * ```typescript
+ * import {BaseRequestOptions, Http} from '\@angular/http';
+ * import {MockBackend} from '\@angular/http/testing';
+ * var injector = Injector.resolveAndCreate([
+ *   BaseRequestOptions,
+ *   MockBackend,
+ *   {provide: Http, useFactory:
+ *       function(backend, defaultOptions) {
+ *         return new Http(backend, defaultOptions);
+ *       },
+ *       deps: [MockBackend, BaseRequestOptions]}
+ * ]);
+ * var http = injector.get(Http);
+ * http.get('request-from-mock-backend.json').subscribe((res:Response) => doSomething(res));
+ * ```
+ *
+ * \@experimental
+ */
+var Http = (function () {
+    /**
+     * @param {?} _backend
+     * @param {?} _defaultOptions
+     */
+    function Http(_backend, _defaultOptions) {
+        this._backend = _backend;
+        this._defaultOptions = _defaultOptions;
+    }
+    /**
+     * Performs any type of http request. First argument is required, and can either be a url or
+     * a {\@link Request} instance. If the first argument is a url, an optional {\@link RequestOptions}
+     * object can be provided as the 2nd argument. The options object will be merged with the values
+     * of {\@link BaseRequestOptions} before performing the request.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.request = function (url, options) {
+        var /** @type {?} */ responseObservable;
+        if (typeof url === 'string') {
+            responseObservable = httpRequest(this._backend, new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, /** @type {?} */ (url))));
+        }
+        else if (url instanceof Request) {
+            responseObservable = httpRequest(this._backend, url);
+        }
+        else {
+            throw new Error('First argument must be a url string or Request instance.');
+        }
+        return responseObservable;
+    };
+    /**
+     * Performs a request with `get` http method.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.get = function (url, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, url)));
+    };
+    /**
+     * Performs a request with `post` http method.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.post = function (url, body, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Post, url)));
+    };
+    /**
+     * Performs a request with `put` http method.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.put = function (url, body, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Put, url)));
+    };
+    /**
+     * Performs a request with `delete` http method.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.delete = function (url, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Delete, url)));
+    };
+    /**
+     * Performs a request with `patch` http method.
+     * @param {?} url
+     * @param {?} body
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.patch = function (url, body, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Patch, url)));
+    };
+    /**
+     * Performs a request with `head` http method.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.head = function (url, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Head, url)));
+    };
+    /**
+     * Performs a request with `options` http method.
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Http.prototype.options = function (url, options) {
+        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Options, url)));
+    };
+    return Http;
+}());
+Http.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+Http.ctorParameters = function () { return [
+    { type: ConnectionBackend, },
+    { type: RequestOptions, },
+]; };
+/**
+ * \@experimental
+ */
+var Jsonp = (function (_super) {
+    __extends(Jsonp, _super);
+    /**
+     * @param {?} backend
+     * @param {?} defaultOptions
+     */
+    function Jsonp(backend, defaultOptions) {
+        return _super.call(this, backend, defaultOptions) || this;
+    }
+    /**
+     * Performs any type of http request. First argument is required, and can either be a url or
+     * a {\@link Request} instance. If the first argument is a url, an optional {\@link RequestOptions}
+     * object can be provided as the 2nd argument. The options object will be merged with the values
+     * of {\@link BaseRequestOptions} before performing the request.
+     *
+     * \@security Regular XHR is the safest alternative to JSONP for most applications, and is
+     * supported by all current browsers. Because JSONP creates a `<script>` element with
+     * contents retrieved from a remote source, attacker-controlled data introduced by an untrusted
+     * source could expose your application to XSS risks. Data exposed by JSONP may also be
+     * readable by malicious third-party websites. In addition, JSONP introduces potential risk for
+     * future security issues (e.g. content sniffing).  For more detail, see the
+     * [Security Guide](http://g.co/ng/security).
+     * @param {?} url
+     * @param {?=} options
+     * @return {?}
+     */
+    Jsonp.prototype.request = function (url, options) {
+        var /** @type {?} */ responseObservable;
+        if (typeof url === 'string') {
+            url =
+                new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, /** @type {?} */ (url)));
+        }
+        if (url instanceof Request) {
+            if (url.method !== RequestMethod.Get) {
+                throw new Error('JSONP requests must use GET request method.');
+            }
+            responseObservable = httpRequest(this._backend, url);
+        }
+        else {
+            throw new Error('First argument must be a url string or Request instance.');
+        }
+        return responseObservable;
+    };
+    return Jsonp;
+}(Http));
+Jsonp.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
+];
+/** @nocollapse */
+Jsonp.ctorParameters = function () { return [
+    { type: ConnectionBackend, },
+    { type: RequestOptions, },
+]; };
+/**
+ * @return {?}
+ */
+function _createDefaultCookieXSRFStrategy() {
+    return new CookieXSRFStrategy();
+}
+/**
+ * @param {?} xhrBackend
+ * @param {?} requestOptions
+ * @return {?}
+ */
+function httpFactory(xhrBackend, requestOptions) {
+    return new Http(xhrBackend, requestOptions);
+}
+/**
+ * @param {?} jsonpBackend
+ * @param {?} requestOptions
+ * @return {?}
+ */
+function jsonpFactory(jsonpBackend, requestOptions) {
+    return new Jsonp(jsonpBackend, requestOptions);
+}
+/**
+ * The module that includes http's providers
+ *
+ * \@experimental
+ */
+var HttpModule = (function () {
+    function HttpModule() {
+    }
+    return HttpModule;
+}());
+HttpModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"], args: [{
+                providers: [
+                    // TODO(pascal): use factory type annotations once supported in DI
+                    // issue: https://github.com/angular/angular/issues/3183
+                    { provide: Http, useFactory: httpFactory, deps: [XHRBackend, RequestOptions] },
+                    BrowserXhr,
+                    { provide: RequestOptions, useClass: BaseRequestOptions },
+                    { provide: ResponseOptions, useClass: BaseResponseOptions },
+                    XHRBackend,
+                    { provide: XSRFStrategy, useFactory: _createDefaultCookieXSRFStrategy },
+                ],
+            },] },
+];
+/** @nocollapse */
+HttpModule.ctorParameters = function () { return []; };
+/**
+ * The module that includes jsonp's providers
+ *
+ * \@experimental
+ */
+var JsonpModule = (function () {
+    function JsonpModule() {
+    }
+    return JsonpModule;
+}());
+JsonpModule.decorators = [
+    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"], args: [{
+                providers: [
+                    // TODO(pascal): use factory type annotations once supported in DI
+                    // issue: https://github.com/angular/angular/issues/3183
+                    { provide: Jsonp, useFactory: jsonpFactory, deps: [JSONPBackend, RequestOptions] },
+                    BrowserJsonp,
+                    { provide: RequestOptions, useClass: BaseRequestOptions },
+                    { provide: ResponseOptions, useClass: BaseResponseOptions },
+                    { provide: JSONPBackend, useClass: JSONPBackend_ },
+                ],
+            },] },
+];
+/** @nocollapse */
+JsonpModule.ctorParameters = function () { return []; };
+/**
+ * @stable
+ */
+var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('4.0.0-rc.3');
+
+
+
+/***/ }),
+/* 66 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_BehaviorSubject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Subject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_observable_from__ = __webpack_require__(175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_observable_from__ = __webpack_require__(176);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_observable_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_of__ = __webpack_require__(177);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_of__ = __webpack_require__(178);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_concatMap__ = __webpack_require__(180);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_concatMap__ = __webpack_require__(181);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_operator_concatMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_operator_concatMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_every__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_every__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_every__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_first__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_first__ = __webpack_require__(185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operator_first__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_map__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_mergeMap__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_mergeMap__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_operator_mergeMap__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_reduce__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_reduce___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_operator_reduce__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_catch__ = __webpack_require__(178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_catch__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_rxjs_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_rxjs_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_operator_concatAll__ = __webpack_require__(179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_operator_concatAll__ = __webpack_require__(180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_operator_concatAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_rxjs_operator_concatAll__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_util_EmptyError__ = __webpack_require__(64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_util_EmptyError__ = __webpack_require__(63);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_util_EmptyError___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_rxjs_util_EmptyError__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_observable_fromPromise__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_observable_fromPromise__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_rxjs_observable_fromPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_operator_last__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_operator_last__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_rxjs_operator_last___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_rxjs_operator_last__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_operator_mergeAll__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_operator_mergeAll__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18_rxjs_operator_mergeAll___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_18_rxjs_operator_mergeAll__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__angular_platform_browser__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_rxjs_operator_filter__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_rxjs_operator_filter__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20_rxjs_operator_filter___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_20_rxjs_operator_filter__);
 /* unused harmony export RouterLink */
 /* unused harmony export RouterLinkWithHref */
@@ -24805,6375 +31174,6 @@ var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["
 
 
 /***/ }),
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", { value: true });
-var toast_1 = __webpack_require__(167);
-exports.Toast = toast_1.Toast;
-var toast_manager_1 = __webpack_require__(166);
-exports.ToastsManager = toast_manager_1.ToastsManager;
-var toast_container_component_1 = __webpack_require__(105);
-exports.ToastContainer = toast_container_component_1.ToastContainer;
-var toast_options_1 = __webpack_require__(76);
-exports.ToastOptions = toast_options_1.ToastOptions;
-var toast_module_1 = __webpack_require__(384);
-exports.ToastModule = toast_module_1.ToastModule;
-//# sourceMappingURL=ng2-toastr.js.map
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-/**
- * Represents a push-based event or value that an {@link Observable} can emit.
- * This class is particularly useful for operators that manage notifications,
- * like {@link materialize}, {@link dematerialize}, {@link observeOn}, and
- * others. Besides wrapping the actual delivered value, it also annotates it
- * with metadata of, for instance, what type of push message it is (`next`,
- * `error`, or `complete`).
- *
- * @see {@link materialize}
- * @see {@link dematerialize}
- * @see {@link observeOn}
- *
- * @class Notification<T>
- */
-var Notification = (function () {
-    function Notification(kind, value, error) {
-        this.kind = kind;
-        this.value = value;
-        this.error = error;
-        this.hasValue = kind === 'N';
-    }
-    /**
-     * Delivers to the given `observer` the value wrapped by this Notification.
-     * @param {Observer} observer
-     * @return
-     */
-    Notification.prototype.observe = function (observer) {
-        switch (this.kind) {
-            case 'N':
-                return observer.next && observer.next(this.value);
-            case 'E':
-                return observer.error && observer.error(this.error);
-            case 'C':
-                return observer.complete && observer.complete();
-        }
-    };
-    /**
-     * Given some {@link Observer} callbacks, deliver the value represented by the
-     * current Notification to the correctly corresponding callback.
-     * @param {function(value: T): void} next An Observer `next` callback.
-     * @param {function(err: any): void} [error] An Observer `error` callback.
-     * @param {function(): void} [complete] An Observer `complete` callback.
-     * @return {any}
-     */
-    Notification.prototype.do = function (next, error, complete) {
-        var kind = this.kind;
-        switch (kind) {
-            case 'N':
-                return next && next(this.value);
-            case 'E':
-                return error && error(this.error);
-            case 'C':
-                return complete && complete();
-        }
-    };
-    /**
-     * Takes an Observer or its individual callback functions, and calls `observe`
-     * or `do` methods accordingly.
-     * @param {Observer|function(value: T): void} nextOrObserver An Observer or
-     * the `next` callback.
-     * @param {function(err: any): void} [error] An Observer `error` callback.
-     * @param {function(): void} [complete] An Observer `complete` callback.
-     * @return {any}
-     */
-    Notification.prototype.accept = function (nextOrObserver, error, complete) {
-        if (nextOrObserver && typeof nextOrObserver.next === 'function') {
-            return this.observe(nextOrObserver);
-        }
-        else {
-            return this.do(nextOrObserver, error, complete);
-        }
-    };
-    /**
-     * Returns a simple Observable that just delivers the notification represented
-     * by this Notification instance.
-     * @return {any}
-     */
-    Notification.prototype.toObservable = function () {
-        var kind = this.kind;
-        switch (kind) {
-            case 'N':
-                return Observable_1.Observable.of(this.value);
-            case 'E':
-                return Observable_1.Observable.throw(this.error);
-            case 'C':
-                return Observable_1.Observable.empty();
-        }
-        throw new Error('unexpected notification kind value');
-    };
-    /**
-     * A shortcut to create a Notification instance of the type `next` from a
-     * given value.
-     * @param {T} value The `next` value.
-     * @return {Notification<T>} The "next" Notification representing the
-     * argument.
-     */
-    Notification.createNext = function (value) {
-        if (typeof value !== 'undefined') {
-            return new Notification('N', value);
-        }
-        return this.undefinedValueNotification;
-    };
-    /**
-     * A shortcut to create a Notification instance of the type `error` from a
-     * given error.
-     * @param {any} [err] The `error` error.
-     * @return {Notification<T>} The "error" Notification representing the
-     * argument.
-     */
-    Notification.createError = function (err) {
-        return new Notification('E', undefined, err);
-    };
-    /**
-     * A shortcut to create a Notification instance of the type `complete`.
-     * @return {Notification<any>} The valueless "complete" Notification.
-     */
-    Notification.createComplete = function () {
-        return this.completeNotification;
-    };
-    Notification.completeNotification = new Notification('C');
-    Notification.undefinedValueNotification = new Notification('N', undefined);
-    return Notification;
-}());
-exports.Notification = Notification;
-//# sourceMappingURL=Notification.js.map
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var OuterSubscriber_1 = __webpack_require__(3);
-var subscribeToResult_1 = __webpack_require__(4);
-/**
- * Converts a higher-order Observable into a first-order Observable which
- * concurrently delivers all values that are emitted on the inner Observables.
- *
- * <span class="informal">Flattens an Observable-of-Observables.</span>
- *
- * <img src="./img/mergeAll.png" width="100%">
- *
- * `mergeAll` subscribes to an Observable that emits Observables, also known as
- * a higher-order Observable. Each time it observes one of these emitted inner
- * Observables, it subscribes to that and delivers all the values from the
- * inner Observable on the output Observable. The output Observable only
- * completes once all inner Observables have completed. Any error delivered by
- * a inner Observable will be immediately emitted on the output Observable.
- *
- * @example <caption>Spawn a new interval Observable for each click event, and blend their outputs as one Observable</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var higherOrder = clicks.map((ev) => Rx.Observable.interval(1000));
- * var firstOrder = higherOrder.mergeAll();
- * firstOrder.subscribe(x => console.log(x));
- *
- * @example <caption>Count from 0 to 9 every second for each click, but only allow 2 concurrent timers</caption>
- * var clicks = Rx.Observable.fromEvent(document, 'click');
- * var higherOrder = clicks.map((ev) => Rx.Observable.interval(1000).take(10));
- * var firstOrder = higherOrder.mergeAll(2);
- * firstOrder.subscribe(x => console.log(x));
- *
- * @see {@link combineAll}
- * @see {@link concatAll}
- * @see {@link exhaust}
- * @see {@link merge}
- * @see {@link mergeMap}
- * @see {@link mergeMapTo}
- * @see {@link mergeScan}
- * @see {@link switch}
- * @see {@link zipAll}
- *
- * @param {number} [concurrent=Number.POSITIVE_INFINITY] Maximum number of inner
- * Observables being subscribed to concurrently.
- * @return {Observable} An Observable that emits values coming from all the
- * inner Observables emitted by the source Observable.
- * @method mergeAll
- * @owner Observable
- */
-function mergeAll(concurrent) {
-    if (concurrent === void 0) { concurrent = Number.POSITIVE_INFINITY; }
-    return this.lift(new MergeAllOperator(concurrent));
-}
-exports.mergeAll = mergeAll;
-var MergeAllOperator = (function () {
-    function MergeAllOperator(concurrent) {
-        this.concurrent = concurrent;
-    }
-    MergeAllOperator.prototype.call = function (observer, source) {
-        return source.subscribe(new MergeAllSubscriber(observer, this.concurrent));
-    };
-    return MergeAllOperator;
-}());
-exports.MergeAllOperator = MergeAllOperator;
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var MergeAllSubscriber = (function (_super) {
-    __extends(MergeAllSubscriber, _super);
-    function MergeAllSubscriber(destination, concurrent) {
-        _super.call(this, destination);
-        this.concurrent = concurrent;
-        this.hasCompleted = false;
-        this.buffer = [];
-        this.active = 0;
-    }
-    MergeAllSubscriber.prototype._next = function (observable) {
-        if (this.active < this.concurrent) {
-            this.active++;
-            this.add(subscribeToResult_1.subscribeToResult(this, observable));
-        }
-        else {
-            this.buffer.push(observable);
-        }
-    };
-    MergeAllSubscriber.prototype._complete = function () {
-        this.hasCompleted = true;
-        if (this.active === 0 && this.buffer.length === 0) {
-            this.destination.complete();
-        }
-    };
-    MergeAllSubscriber.prototype.notifyComplete = function (innerSub) {
-        var buffer = this.buffer;
-        this.remove(innerSub);
-        this.active--;
-        if (buffer.length > 0) {
-            this._next(buffer.shift());
-        }
-        else if (this.active === 0 && this.hasCompleted) {
-            this.destination.complete();
-        }
-    };
-    return MergeAllSubscriber;
-}(OuterSubscriber_1.OuterSubscriber));
-exports.MergeAllSubscriber = MergeAllSubscriber;
-//# sourceMappingURL=mergeAll.js.map
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var root_1 = __webpack_require__(16);
-var Action_1 = __webpack_require__(637);
-/**
- * We need this JSDoc comment for affecting ESDoc.
- * @ignore
- * @extends {Ignored}
- */
-var AsyncAction = (function (_super) {
-    __extends(AsyncAction, _super);
-    function AsyncAction(scheduler, work) {
-        _super.call(this, scheduler, work);
-        this.scheduler = scheduler;
-        this.work = work;
-        this.pending = false;
-    }
-    AsyncAction.prototype.schedule = function (state, delay) {
-        if (delay === void 0) { delay = 0; }
-        if (this.closed) {
-            return this;
-        }
-        // Always replace the current state with the new state.
-        this.state = state;
-        // Set the pending flag indicating that this action has been scheduled, or
-        // has recursively rescheduled itself.
-        this.pending = true;
-        var id = this.id;
-        var scheduler = this.scheduler;
-        //
-        // Important implementation note:
-        //
-        // Actions only execute once by default, unless rescheduled from within the
-        // scheduled callback. This allows us to implement single and repeat
-        // actions via the same code path, without adding API surface area, as well
-        // as mimic traditional recursion but across asynchronous boundaries.
-        //
-        // However, JS runtimes and timers distinguish between intervals achieved by
-        // serial `setTimeout` calls vs. a single `setInterval` call. An interval of
-        // serial `setTimeout` calls can be individually delayed, which delays
-        // scheduling the next `setTimeout`, and so on. `setInterval` attempts to
-        // guarantee the interval callback will be invoked more precisely to the
-        // interval period, regardless of load.
-        //
-        // Therefore, we use `setInterval` to schedule single and repeat actions.
-        // If the action reschedules itself with the same delay, the interval is not
-        // canceled. If the action doesn't reschedule, or reschedules with a
-        // different delay, the interval will be canceled after scheduled callback
-        // execution.
-        //
-        if (id != null) {
-            this.id = this.recycleAsyncId(scheduler, id, delay);
-        }
-        this.delay = delay;
-        // If this action has already an async Id, don't request a new one.
-        this.id = this.id || this.requestAsyncId(scheduler, this.id, delay);
-        return this;
-    };
-    AsyncAction.prototype.requestAsyncId = function (scheduler, id, delay) {
-        if (delay === void 0) { delay = 0; }
-        return root_1.root.setInterval(scheduler.flush.bind(scheduler, this), delay);
-    };
-    AsyncAction.prototype.recycleAsyncId = function (scheduler, id, delay) {
-        if (delay === void 0) { delay = 0; }
-        // If this action is rescheduled with the same delay time, don't clear the interval id.
-        if (delay !== null && this.delay === delay) {
-            return id;
-        }
-        // Otherwise, if the action's delay time is different from the current delay,
-        // clear the interval id
-        return root_1.root.clearInterval(id) && undefined || undefined;
-    };
-    /**
-     * Immediately executes this action and the `work` it contains.
-     * @return {any}
-     */
-    AsyncAction.prototype.execute = function (state, delay) {
-        if (this.closed) {
-            return new Error('executing a cancelled action');
-        }
-        this.pending = false;
-        var error = this._execute(state, delay);
-        if (error) {
-            return error;
-        }
-        else if (this.pending === false && this.id != null) {
-            // Dequeue if the action didn't reschedule itself. Don't call
-            // unsubscribe(), because the action could reschedule later.
-            // For example:
-            // ```
-            // scheduler.schedule(function doWork(counter) {
-            //   /* ... I'm a busy worker bee ... */
-            //   var originalAction = this;
-            //   /* wait 100ms before rescheduling the action */
-            //   setTimeout(function () {
-            //     originalAction.schedule(counter + 1);
-            //   }, 100);
-            // }, 1000);
-            // ```
-            this.id = this.recycleAsyncId(this.scheduler, this.id, null);
-        }
-    };
-    AsyncAction.prototype._execute = function (state, delay) {
-        var errored = false;
-        var errorValue = undefined;
-        try {
-            this.work(state);
-        }
-        catch (e) {
-            errored = true;
-            errorValue = !!e && e || new Error(e);
-        }
-        if (errored) {
-            this.unsubscribe();
-            return errorValue;
-        }
-    };
-    AsyncAction.prototype._unsubscribe = function () {
-        var id = this.id;
-        var scheduler = this.scheduler;
-        var actions = scheduler.actions;
-        var index = actions.indexOf(this);
-        this.work = null;
-        this.delay = null;
-        this.state = null;
-        this.pending = false;
-        this.scheduler = null;
-        if (index !== -1) {
-            actions.splice(index, 1);
-        }
-        if (id != null) {
-            this.id = this.recycleAsyncId(scheduler, id, null);
-        }
-    };
-    return AsyncAction;
-}(Action_1.Action));
-exports.AsyncAction = AsyncAction;
-//# sourceMappingURL=AsyncAction.js.map
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var Scheduler_1 = __webpack_require__(397);
-var AsyncScheduler = (function (_super) {
-    __extends(AsyncScheduler, _super);
-    function AsyncScheduler() {
-        _super.apply(this, arguments);
-        this.actions = [];
-        /**
-         * A flag to indicate whether the Scheduler is currently executing a batch of
-         * queued actions.
-         * @type {boolean}
-         */
-        this.active = false;
-        /**
-         * An internal ID used to track the latest asynchronous task such as those
-         * coming from `setTimeout`, `setInterval`, `requestAnimationFrame`, and
-         * others.
-         * @type {any}
-         */
-        this.scheduled = undefined;
-    }
-    AsyncScheduler.prototype.flush = function (action) {
-        var actions = this.actions;
-        if (this.active) {
-            actions.push(action);
-            return;
-        }
-        var error;
-        this.active = true;
-        do {
-            if (error = action.execute(action.state, action.delay)) {
-                break;
-            }
-        } while (action = actions.shift()); // exhaust the scheduler queue
-        this.active = false;
-        if (error) {
-            while (action = actions.shift()) {
-                action.unsubscribe();
-            }
-            throw error;
-        }
-    };
-    return AsyncScheduler;
-}(Scheduler_1.Scheduler));
-exports.AsyncScheduler = AsyncScheduler;
-//# sourceMappingURL=AsyncScheduler.js.map
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var root_1 = __webpack_require__(16);
-function symbolIteratorPonyfill(root) {
-    var Symbol = root.Symbol;
-    if (typeof Symbol === 'function') {
-        if (!Symbol.iterator) {
-            Symbol.iterator = Symbol('iterator polyfill');
-        }
-        return Symbol.iterator;
-    }
-    else {
-        // [for Mozilla Gecko 27-35:](https://mzl.la/2ewE1zC)
-        var Set_1 = root.Set;
-        if (Set_1 && typeof new Set_1()['@@iterator'] === 'function') {
-            return '@@iterator';
-        }
-        var Map_1 = root.Map;
-        // required for compatability with es6-shim
-        if (Map_1) {
-            var keys = Object.getOwnPropertyNames(Map_1.prototype);
-            for (var i = 0; i < keys.length; ++i) {
-                var key = keys[i];
-                // according to spec, Map.prototype[@@iterator] and Map.orototype.entries must be equal.
-                if (key !== 'entries' && key !== 'size' && Map_1.prototype[key] === Map_1.prototype['entries']) {
-                    return key;
-                }
-            }
-        }
-        return '@@iterator';
-    }
-}
-exports.symbolIteratorPonyfill = symbolIteratorPonyfill;
-exports.iterator = symbolIteratorPonyfill(root_1.root);
-/**
- * @deprecated use iterator instead
- */
-exports.$$iterator = exports.iterator;
-//# sourceMappingURL=iterator.js.map
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var root_1 = __webpack_require__(16);
-function getSymbolObservable(context) {
-    var $$observable;
-    var Symbol = context.Symbol;
-    if (typeof Symbol === 'function') {
-        if (Symbol.observable) {
-            $$observable = Symbol.observable;
-        }
-        else {
-            $$observable = Symbol('observable');
-            Symbol.observable = $$observable;
-        }
-    }
-    else {
-        $$observable = '@@observable';
-    }
-    return $$observable;
-}
-exports.getSymbolObservable = getSymbolObservable;
-exports.observable = getSymbolObservable(root_1.root);
-/**
- * @deprecated use observable instead
- */
-exports.$$observable = exports.observable;
-//# sourceMappingURL=observable.js.map
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-/**
- * An error thrown when an Observable or a sequence was queried but has no
- * elements.
- *
- * @see {@link first}
- * @see {@link last}
- * @see {@link single}
- *
- * @class EmptyError
- */
-var EmptyError = (function (_super) {
-    __extends(EmptyError, _super);
-    function EmptyError() {
-        var err = _super.call(this, 'no elements in sequence');
-        this.name = err.name = 'EmptyError';
-        this.stack = err.stack;
-        this.message = err.message;
-    }
-    return EmptyError;
-}(Error));
-exports.EmptyError = EmptyError;
-//# sourceMappingURL=EmptyError.js.map
-
-/***/ }),
-/* 65 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgLocaleLocalization", function() { return NgLocaleLocalization; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgLocalization", function() { return NgLocalization; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CommonModule", function() { return CommonModule; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgClass", function() { return NgClass; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgFor", function() { return NgFor; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgForOf", function() { return NgForOf; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgIf", function() { return NgIf; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgPlural", function() { return NgPlural; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgPluralCase", function() { return NgPluralCase; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgStyle", function() { return NgStyle; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgSwitch", function() { return NgSwitch; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgSwitchCase", function() { return NgSwitchCase; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgSwitchDefault", function() { return NgSwitchDefault; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgTemplateOutlet", function() { return NgTemplateOutlet; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NgComponentOutlet", function() { return NgComponentOutlet; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AsyncPipe", function() { return AsyncPipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DatePipe", function() { return DatePipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "I18nPluralPipe", function() { return I18nPluralPipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "I18nSelectPipe", function() { return I18nSelectPipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JsonPipe", function() { return JsonPipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LowerCasePipe", function() { return LowerCasePipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrencyPipe", function() { return CurrencyPipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DecimalPipe", function() { return DecimalPipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PercentPipe", function() { return PercentPipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlicePipe", function() { return SlicePipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UpperCasePipe", function() { return UpperCasePipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TitleCasePipe", function() { return TitleCasePipe; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵPLATFORM_BROWSER_ID", function() { return PLATFORM_BROWSER_ID; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵPLATFORM_SERVER_ID", function() { return PLATFORM_SERVER_ID; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵPLATFORM_WORKER_APP_ID", function() { return PLATFORM_WORKER_APP_ID; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵPLATFORM_WORKER_UI_ID", function() { return PLATFORM_WORKER_UI_ID; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPlatformBrowser", function() { return isPlatformBrowser; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPlatformServer", function() { return isPlatformServer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPlatformWorkerApp", function() { return isPlatformWorkerApp; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isPlatformWorkerUi", function() { return isPlatformWorkerUi; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VERSION", function() { return VERSION; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PlatformLocation", function() { return PlatformLocation; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LOCATION_INITIALIZED", function() { return LOCATION_INITIALIZED; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocationStrategy", function() { return LocationStrategy; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "APP_BASE_HREF", function() { return APP_BASE_HREF; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HashLocationStrategy", function() { return HashLocationStrategy; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PathLocationStrategy", function() { return PathLocationStrategy; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Location", function() { return Location; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵc", function() { return COMMON_DIRECTIVES; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵa", function() { return NgForOfRow; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵb", function() { return NgIfContext; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ɵd", function() { return COMMON_PIPES; });
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-/**
- * @license Angular v4.0.0-rc.3
- * (c) 2010-2017 Google, Inc. https://angular.io/
- * License: MIT
- */
-
-/**
- * This class should not be used directly by an application developer. Instead, use
- * {\@link Location}.
- *
- * `PlatformLocation` encapsulates all calls to DOM apis, which allows the Router to be platform
- * agnostic.
- * This means that we can have different implementation of `PlatformLocation` for the different
- * platforms
- * that angular supports. For example, the default `PlatformLocation` is {\@link
- * BrowserPlatformLocation},
- * however when you run your app in a WebWorker you use {\@link WebWorkerPlatformLocation}.
- *
- * The `PlatformLocation` class is used directly by all implementations of {\@link LocationStrategy}
- * when
- * they need to interact with the DOM apis like pushState, popState, etc...
- *
- * {\@link LocationStrategy} in turn is used by the {\@link Location} service which is used directly
- * by
- * the {\@link Router} in order to navigate between routes. Since all interactions between {\@link
- * Router} /
- * {\@link Location} / {\@link LocationStrategy} and DOM apis flow through the `PlatformLocation`
- * class
- * they are all platform independent.
- *
- * \@stable
- * @abstract
- */
-var PlatformLocation = (function () {
-    function PlatformLocation() {
-    }
-    /**
-     * @abstract
-     * @return {?}
-     */
-    PlatformLocation.prototype.getBaseHrefFromDOM = function () { };
-    /**
-     * @abstract
-     * @param {?} fn
-     * @return {?}
-     */
-    PlatformLocation.prototype.onPopState = function (fn) { };
-    /**
-     * @abstract
-     * @param {?} fn
-     * @return {?}
-     */
-    PlatformLocation.prototype.onHashChange = function (fn) { };
-    Object.defineProperty(PlatformLocation.prototype, "pathname", {
-        /**
-         * @return {?}
-         */
-        get: function () { return null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(PlatformLocation.prototype, "search", {
-        /**
-         * @return {?}
-         */
-        get: function () { return null; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(PlatformLocation.prototype, "hash", {
-        /**
-         * @return {?}
-         */
-        get: function () { return null; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @abstract
-     * @param {?} state
-     * @param {?} title
-     * @param {?} url
-     * @return {?}
-     */
-    PlatformLocation.prototype.replaceState = function (state, title, url) { };
-    /**
-     * @abstract
-     * @param {?} state
-     * @param {?} title
-     * @param {?} url
-     * @return {?}
-     */
-    PlatformLocation.prototype.pushState = function (state, title, url) { };
-    /**
-     * @abstract
-     * @return {?}
-     */
-    PlatformLocation.prototype.forward = function () { };
-    /**
-     * @abstract
-     * @return {?}
-     */
-    PlatformLocation.prototype.back = function () { };
-    return PlatformLocation;
-}());
-/**
- * @whatItDoes indicates when a location is initialized
- * @experimental
- */
-var /** @type {?} */ LOCATION_INITIALIZED = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["InjectionToken"]('Location Initialized');
-/**
- * `LocationStrategy` is responsible for representing and reading route state
- * from the browser's URL. Angular provides two strategies:
- * {\@link HashLocationStrategy} and {\@link PathLocationStrategy}.
- *
- * This is used under the hood of the {\@link Location} service.
- *
- * Applications should use the {\@link Router} or {\@link Location} services to
- * interact with application route state.
- *
- * For instance, {\@link HashLocationStrategy} produces URLs like
- * `http://example.com#/foo`, and {\@link PathLocationStrategy} produces
- * `http://example.com/foo` as an equivalent URL.
- *
- * See these two classes for more.
- *
- * \@stable
- * @abstract
- */
-var LocationStrategy = (function () {
-    function LocationStrategy() {
-    }
-    /**
-     * @abstract
-     * @param {?=} includeHash
-     * @return {?}
-     */
-    LocationStrategy.prototype.path = function (includeHash) { };
-    /**
-     * @abstract
-     * @param {?} internal
-     * @return {?}
-     */
-    LocationStrategy.prototype.prepareExternalUrl = function (internal) { };
-    /**
-     * @abstract
-     * @param {?} state
-     * @param {?} title
-     * @param {?} url
-     * @param {?} queryParams
-     * @return {?}
-     */
-    LocationStrategy.prototype.pushState = function (state, title, url, queryParams) { };
-    /**
-     * @abstract
-     * @param {?} state
-     * @param {?} title
-     * @param {?} url
-     * @param {?} queryParams
-     * @return {?}
-     */
-    LocationStrategy.prototype.replaceState = function (state, title, url, queryParams) { };
-    /**
-     * @abstract
-     * @return {?}
-     */
-    LocationStrategy.prototype.forward = function () { };
-    /**
-     * @abstract
-     * @return {?}
-     */
-    LocationStrategy.prototype.back = function () { };
-    /**
-     * @abstract
-     * @param {?} fn
-     * @return {?}
-     */
-    LocationStrategy.prototype.onPopState = function (fn) { };
-    /**
-     * @abstract
-     * @return {?}
-     */
-    LocationStrategy.prototype.getBaseHref = function () { };
-    return LocationStrategy;
-}());
-/**
- * The `APP_BASE_HREF` token represents the base href to be used with the
- * {@link PathLocationStrategy}.
- *
- * If you're using {@link PathLocationStrategy}, you must provide a provider to a string
- * representing the URL prefix that should be preserved when generating and recognizing
- * URLs.
- *
- * ### Example
- *
- * ```typescript
- * import {Component, NgModule} from '@angular/core';
- * import {APP_BASE_HREF} from '@angular/common';
- *
- * @NgModule({
- *   providers: [{provide: APP_BASE_HREF, useValue: '/my/app'}]
- * })
- * class AppModule {}
- * ```
- *
- * @stable
- */
-var /** @type {?} */ APP_BASE_HREF = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["InjectionToken"]('appBaseHref');
-/**
- * \@whatItDoes `Location` is a service that applications can use to interact with a browser's URL.
- * \@description
- * Depending on which {\@link LocationStrategy} is used, `Location` will either persist
- * to the URL's path or the URL's hash segment.
- *
- * Note: it's better to use {\@link Router#navigate} service to trigger route changes. Use
- * `Location` only if you need to interact with or create normalized URLs outside of
- * routing.
- *
- * `Location` is responsible for normalizing the URL against the application's base href.
- * A normalized URL is absolute from the URL host, includes the application's base href, and has no
- * trailing slash:
- * - `/my/app/user/123` is normalized
- * - `my/app/user/123` **is not** normalized
- * - `/my/app/user/123/` **is not** normalized
- *
- * ### Example
- * {\@example common/location/ts/path_location_component.ts region='LocationComponent'}
- * \@stable
- */
-var Location = (function () {
-    /**
-     * @param {?} platformStrategy
-     */
-    function Location(platformStrategy) {
-        var _this = this;
-        /** @internal */
-        this._subject = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["EventEmitter"]();
-        this._platformStrategy = platformStrategy;
-        var browserBaseHref = this._platformStrategy.getBaseHref();
-        this._baseHref = Location.stripTrailingSlash(_stripIndexHtml(browserBaseHref));
-        this._platformStrategy.onPopState(function (ev) {
-            _this._subject.emit({
-                'url': _this.path(true),
-                'pop': true,
-                'type': ev.type,
-            });
-        });
-    }
-    /**
-     * @param {?=} includeHash
-     * @return {?}
-     */
-    Location.prototype.path = function (includeHash) {
-        if (includeHash === void 0) { includeHash = false; }
-        return this.normalize(this._platformStrategy.path(includeHash));
-    };
-    /**
-     * Normalizes the given path and compares to the current normalized path.
-     * @param {?} path
-     * @param {?=} query
-     * @return {?}
-     */
-    Location.prototype.isCurrentPathEqualTo = function (path, query) {
-        if (query === void 0) { query = ''; }
-        return this.path() == this.normalize(path + Location.normalizeQueryParams(query));
-    };
-    /**
-     * Given a string representing a URL, returns the normalized URL path without leading or
-     * trailing slashes.
-     * @param {?} url
-     * @return {?}
-     */
-    Location.prototype.normalize = function (url) {
-        return Location.stripTrailingSlash(_stripBaseHref(this._baseHref, _stripIndexHtml(url)));
-    };
-    /**
-     * Given a string representing a URL, returns the platform-specific external URL path.
-     * If the given URL doesn't begin with a leading slash (`'/'`), this method adds one
-     * before normalizing. This method will also add a hash if `HashLocationStrategy` is
-     * used, or the `APP_BASE_HREF` if the `PathLocationStrategy` is in use.
-     * @param {?} url
-     * @return {?}
-     */
-    Location.prototype.prepareExternalUrl = function (url) {
-        if (url && url[0] !== '/') {
-            url = '/' + url;
-        }
-        return this._platformStrategy.prepareExternalUrl(url);
-    };
-    /**
-     * Changes the browsers URL to the normalized version of the given URL, and pushes a
-     * new item onto the platform's history.
-     * @param {?} path
-     * @param {?=} query
-     * @return {?}
-     */
-    Location.prototype.go = function (path, query) {
-        if (query === void 0) { query = ''; }
-        this._platformStrategy.pushState(null, '', path, query);
-    };
-    /**
-     * Changes the browsers URL to the normalized version of the given URL, and replaces
-     * the top item on the platform's history stack.
-     * @param {?} path
-     * @param {?=} query
-     * @return {?}
-     */
-    Location.prototype.replaceState = function (path, query) {
-        if (query === void 0) { query = ''; }
-        this._platformStrategy.replaceState(null, '', path, query);
-    };
-    /**
-     * Navigates forward in the platform's history.
-     * @return {?}
-     */
-    Location.prototype.forward = function () { this._platformStrategy.forward(); };
-    /**
-     * Navigates back in the platform's history.
-     * @return {?}
-     */
-    Location.prototype.back = function () { this._platformStrategy.back(); };
-    /**
-     * Subscribe to the platform's `popState` events.
-     * @param {?} onNext
-     * @param {?=} onThrow
-     * @param {?=} onReturn
-     * @return {?}
-     */
-    Location.prototype.subscribe = function (onNext, onThrow, onReturn) {
-        if (onThrow === void 0) { onThrow = null; }
-        if (onReturn === void 0) { onReturn = null; }
-        return this._subject.subscribe({ next: onNext, error: onThrow, complete: onReturn });
-    };
-    /**
-     * Given a string of url parameters, prepend with '?' if needed, otherwise return parameters as
-     * is.
-     * @param {?} params
-     * @return {?}
-     */
-    Location.normalizeQueryParams = function (params) {
-        return params && params[0] !== '?' ? '?' + params : params;
-    };
-    /**
-     * Given 2 parts of a url, join them with a slash if needed.
-     * @param {?} start
-     * @param {?} end
-     * @return {?}
-     */
-    Location.joinWithSlash = function (start, end) {
-        if (start.length == 0) {
-            return end;
-        }
-        if (end.length == 0) {
-            return start;
-        }
-        var /** @type {?} */ slashes = 0;
-        if (start.endsWith('/')) {
-            slashes++;
-        }
-        if (end.startsWith('/')) {
-            slashes++;
-        }
-        if (slashes == 2) {
-            return start + end.substring(1);
-        }
-        if (slashes == 1) {
-            return start + end;
-        }
-        return start + '/' + end;
-    };
-    /**
-     * If url has a trailing slash, remove it, otherwise return url as is.
-     * @param {?} url
-     * @return {?}
-     */
-    Location.stripTrailingSlash = function (url) { return url.replace(/\/$/, ''); };
-    return Location;
-}());
-Location.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-Location.ctorParameters = function () { return [
-    { type: LocationStrategy, },
-]; };
-/**
- * @param {?} baseHref
- * @param {?} url
- * @return {?}
- */
-function _stripBaseHref(baseHref, url) {
-    return baseHref && url.startsWith(baseHref) ? url.substring(baseHref.length) : url;
-}
-/**
- * @param {?} url
- * @return {?}
- */
-function _stripIndexHtml(url) {
-    return url.replace(/\/index.html$/, '');
-}
-/**
- * \@whatItDoes Use URL hash for storing application location data.
- * \@description
- * `HashLocationStrategy` is a {\@link LocationStrategy} used to configure the
- * {\@link Location} service to represent its state in the
- * [hash fragment](https://en.wikipedia.org/wiki/Uniform_Resource_Locator#Syntax)
- * of the browser's URL.
- *
- * For instance, if you call `location.go('/foo')`, the browser's URL will become
- * `example.com#/foo`.
- *
- * ### Example
- *
- * {\@example common/location/ts/hash_location_component.ts region='LocationComponent'}
- *
- * \@stable
- */
-var HashLocationStrategy = (function (_super) {
-    __extends(HashLocationStrategy, _super);
-    /**
-     * @param {?} _platformLocation
-     * @param {?=} _baseHref
-     */
-    function HashLocationStrategy(_platformLocation, _baseHref) {
-        var _this = _super.call(this) || this;
-        _this._platformLocation = _platformLocation;
-        _this._baseHref = '';
-        if (_baseHref != null) {
-            _this._baseHref = _baseHref;
-        }
-        return _this;
-    }
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    HashLocationStrategy.prototype.onPopState = function (fn) {
-        this._platformLocation.onPopState(fn);
-        this._platformLocation.onHashChange(fn);
-    };
-    /**
-     * @return {?}
-     */
-    HashLocationStrategy.prototype.getBaseHref = function () { return this._baseHref; };
-    /**
-     * @param {?=} includeHash
-     * @return {?}
-     */
-    HashLocationStrategy.prototype.path = function (includeHash) {
-        if (includeHash === void 0) { includeHash = false; }
-        // the hash value is always prefixed with a `#`
-        // and if it is empty then it will stay empty
-        var /** @type {?} */ path = this._platformLocation.hash;
-        if (path == null)
-            path = '#';
-        return path.length > 0 ? path.substring(1) : path;
-    };
-    /**
-     * @param {?} internal
-     * @return {?}
-     */
-    HashLocationStrategy.prototype.prepareExternalUrl = function (internal) {
-        var /** @type {?} */ url = Location.joinWithSlash(this._baseHref, internal);
-        return url.length > 0 ? ('#' + url) : url;
-    };
-    /**
-     * @param {?} state
-     * @param {?} title
-     * @param {?} path
-     * @param {?} queryParams
-     * @return {?}
-     */
-    HashLocationStrategy.prototype.pushState = function (state, title, path, queryParams) {
-        var /** @type {?} */ url = this.prepareExternalUrl(path + Location.normalizeQueryParams(queryParams));
-        if (url.length == 0) {
-            url = this._platformLocation.pathname;
-        }
-        this._platformLocation.pushState(state, title, url);
-    };
-    /**
-     * @param {?} state
-     * @param {?} title
-     * @param {?} path
-     * @param {?} queryParams
-     * @return {?}
-     */
-    HashLocationStrategy.prototype.replaceState = function (state, title, path, queryParams) {
-        var /** @type {?} */ url = this.prepareExternalUrl(path + Location.normalizeQueryParams(queryParams));
-        if (url.length == 0) {
-            url = this._platformLocation.pathname;
-        }
-        this._platformLocation.replaceState(state, title, url);
-    };
-    /**
-     * @return {?}
-     */
-    HashLocationStrategy.prototype.forward = function () { this._platformLocation.forward(); };
-    /**
-     * @return {?}
-     */
-    HashLocationStrategy.prototype.back = function () { this._platformLocation.back(); };
-    return HashLocationStrategy;
-}(LocationStrategy));
-HashLocationStrategy.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-HashLocationStrategy.ctorParameters = function () { return [
-    { type: PlatformLocation, },
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Optional"] }, { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [APP_BASE_HREF,] },] },
-]; };
-/**
- * \@whatItDoes Use URL for storing application location data.
- * \@description
- * `PathLocationStrategy` is a {\@link LocationStrategy} used to configure the
- * {\@link Location} service to represent its state in the
- * [path](https://en.wikipedia.org/wiki/Uniform_Resource_Locator#Syntax) of the
- * browser's URL.
- *
- * If you're using `PathLocationStrategy`, you must provide a {\@link APP_BASE_HREF}
- * or add a base element to the document. This URL prefix that will be preserved
- * when generating and recognizing URLs.
- *
- * For instance, if you provide an `APP_BASE_HREF` of `'/my/app'` and call
- * `location.go('/foo')`, the browser's URL will become
- * `example.com/my/app/foo`.
- *
- * Similarly, if you add `<base href='/my/app'/>` to the document and call
- * `location.go('/foo')`, the browser's URL will become
- * `example.com/my/app/foo`.
- *
- * ### Example
- *
- * {\@example common/location/ts/path_location_component.ts region='LocationComponent'}
- *
- * \@stable
- */
-var PathLocationStrategy = (function (_super) {
-    __extends(PathLocationStrategy, _super);
-    /**
-     * @param {?} _platformLocation
-     * @param {?=} href
-     */
-    function PathLocationStrategy(_platformLocation, href) {
-        var _this = _super.call(this) || this;
-        _this._platformLocation = _platformLocation;
-        if (href == null) {
-            href = _this._platformLocation.getBaseHrefFromDOM();
-        }
-        if (href == null) {
-            throw new Error("No base href set. Please provide a value for the APP_BASE_HREF token or add a base element to the document.");
-        }
-        _this._baseHref = href;
-        return _this;
-    }
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    PathLocationStrategy.prototype.onPopState = function (fn) {
-        this._platformLocation.onPopState(fn);
-        this._platformLocation.onHashChange(fn);
-    };
-    /**
-     * @return {?}
-     */
-    PathLocationStrategy.prototype.getBaseHref = function () { return this._baseHref; };
-    /**
-     * @param {?} internal
-     * @return {?}
-     */
-    PathLocationStrategy.prototype.prepareExternalUrl = function (internal) {
-        return Location.joinWithSlash(this._baseHref, internal);
-    };
-    /**
-     * @param {?=} includeHash
-     * @return {?}
-     */
-    PathLocationStrategy.prototype.path = function (includeHash) {
-        if (includeHash === void 0) { includeHash = false; }
-        var /** @type {?} */ pathname = this._platformLocation.pathname +
-            Location.normalizeQueryParams(this._platformLocation.search);
-        var /** @type {?} */ hash = this._platformLocation.hash;
-        return hash && includeHash ? "" + pathname + hash : pathname;
-    };
-    /**
-     * @param {?} state
-     * @param {?} title
-     * @param {?} url
-     * @param {?} queryParams
-     * @return {?}
-     */
-    PathLocationStrategy.prototype.pushState = function (state, title, url, queryParams) {
-        var /** @type {?} */ externalUrl = this.prepareExternalUrl(url + Location.normalizeQueryParams(queryParams));
-        this._platformLocation.pushState(state, title, externalUrl);
-    };
-    /**
-     * @param {?} state
-     * @param {?} title
-     * @param {?} url
-     * @param {?} queryParams
-     * @return {?}
-     */
-    PathLocationStrategy.prototype.replaceState = function (state, title, url, queryParams) {
-        var /** @type {?} */ externalUrl = this.prepareExternalUrl(url + Location.normalizeQueryParams(queryParams));
-        this._platformLocation.replaceState(state, title, externalUrl);
-    };
-    /**
-     * @return {?}
-     */
-    PathLocationStrategy.prototype.forward = function () { this._platformLocation.forward(); };
-    /**
-     * @return {?}
-     */
-    PathLocationStrategy.prototype.back = function () { this._platformLocation.back(); };
-    return PathLocationStrategy;
-}(LocationStrategy));
-PathLocationStrategy.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-PathLocationStrategy.ctorParameters = function () { return [
-    { type: PlatformLocation, },
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Optional"] }, { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [APP_BASE_HREF,] },] },
-]; };
-/**
- * \@experimental
- * @abstract
- */
-var NgLocalization = (function () {
-    function NgLocalization() {
-    }
-    /**
-     * @abstract
-     * @param {?} value
-     * @return {?}
-     */
-    NgLocalization.prototype.getPluralCategory = function (value) { };
-    return NgLocalization;
-}());
-/**
- * Returns the plural category for a given value.
- * - "=value" when the case exists,
- * - the plural category otherwise
- *
- * \@internal
- * @param {?} value
- * @param {?} cases
- * @param {?} ngLocalization
- * @return {?}
- */
-function getPluralCategory(value, cases, ngLocalization) {
-    var /** @type {?} */ key = "=" + value;
-    if (cases.indexOf(key) > -1) {
-        return key;
-    }
-    key = ngLocalization.getPluralCategory(value);
-    if (cases.indexOf(key) > -1) {
-        return key;
-    }
-    if (cases.indexOf('other') > -1) {
-        return 'other';
-    }
-    throw new Error("No plural message found for value \"" + value + "\"");
-}
-/**
- * Returns the plural case based on the locale
- *
- * \@experimental
- */
-var NgLocaleLocalization = (function (_super) {
-    __extends(NgLocaleLocalization, _super);
-    /**
-     * @param {?} locale
-     */
-    function NgLocaleLocalization(locale) {
-        var _this = _super.call(this) || this;
-        _this.locale = locale;
-        return _this;
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    NgLocaleLocalization.prototype.getPluralCategory = function (value) {
-        var /** @type {?} */ plural = getPluralCase(this.locale, value);
-        switch (plural) {
-            case Plural.Zero:
-                return 'zero';
-            case Plural.One:
-                return 'one';
-            case Plural.Two:
-                return 'two';
-            case Plural.Few:
-                return 'few';
-            case Plural.Many:
-                return 'many';
-            default:
-                return 'other';
-        }
-    };
-    return NgLocaleLocalization;
-}(NgLocalization));
-NgLocaleLocalization.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-NgLocaleLocalization.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"],] },] },
-]; };
-var Plural = {};
-Plural.Zero = 0;
-Plural.One = 1;
-Plural.Two = 2;
-Plural.Few = 3;
-Plural.Many = 4;
-Plural.Other = 5;
-Plural[Plural.Zero] = "Zero";
-Plural[Plural.One] = "One";
-Plural[Plural.Two] = "Two";
-Plural[Plural.Few] = "Few";
-Plural[Plural.Many] = "Many";
-Plural[Plural.Other] = "Other";
-/**
- * Returns the plural case based on the locale
- *
- * \@experimental
- * @param {?} locale
- * @param {?} nLike
- * @return {?}
- */
-function getPluralCase(locale, nLike) {
-    // TODO(vicb): lazy compute
-    if (typeof nLike === 'string') {
-        nLike = parseInt(/** @type {?} */ (nLike), 10);
-    }
-    var /** @type {?} */ n = (nLike);
-    var /** @type {?} */ nDecimal = n.toString().replace(/^[^.]*\.?/, '');
-    var /** @type {?} */ i = Math.floor(Math.abs(n));
-    var /** @type {?} */ v = nDecimal.length;
-    var /** @type {?} */ f = parseInt(nDecimal, 10);
-    var /** @type {?} */ t = parseInt(n.toString().replace(/^[^.]*\.?|0+$/g, ''), 10) || 0;
-    var /** @type {?} */ lang = locale.split('-')[0].toLowerCase();
-    switch (lang) {
-        case 'af':
-        case 'asa':
-        case 'az':
-        case 'bem':
-        case 'bez':
-        case 'bg':
-        case 'brx':
-        case 'ce':
-        case 'cgg':
-        case 'chr':
-        case 'ckb':
-        case 'ee':
-        case 'el':
-        case 'eo':
-        case 'es':
-        case 'eu':
-        case 'fo':
-        case 'fur':
-        case 'gsw':
-        case 'ha':
-        case 'haw':
-        case 'hu':
-        case 'jgo':
-        case 'jmc':
-        case 'ka':
-        case 'kk':
-        case 'kkj':
-        case 'kl':
-        case 'ks':
-        case 'ksb':
-        case 'ky':
-        case 'lb':
-        case 'lg':
-        case 'mas':
-        case 'mgo':
-        case 'ml':
-        case 'mn':
-        case 'nb':
-        case 'nd':
-        case 'ne':
-        case 'nn':
-        case 'nnh':
-        case 'nyn':
-        case 'om':
-        case 'or':
-        case 'os':
-        case 'ps':
-        case 'rm':
-        case 'rof':
-        case 'rwk':
-        case 'saq':
-        case 'seh':
-        case 'sn':
-        case 'so':
-        case 'sq':
-        case 'ta':
-        case 'te':
-        case 'teo':
-        case 'tk':
-        case 'tr':
-        case 'ug':
-        case 'uz':
-        case 'vo':
-        case 'vun':
-        case 'wae':
-        case 'xog':
-            if (n === 1)
-                return Plural.One;
-            return Plural.Other;
-        case 'agq':
-        case 'bas':
-        case 'cu':
-        case 'dav':
-        case 'dje':
-        case 'dua':
-        case 'dyo':
-        case 'ebu':
-        case 'ewo':
-        case 'guz':
-        case 'kam':
-        case 'khq':
-        case 'ki':
-        case 'kln':
-        case 'kok':
-        case 'ksf':
-        case 'lrc':
-        case 'lu':
-        case 'luo':
-        case 'luy':
-        case 'mer':
-        case 'mfe':
-        case 'mgh':
-        case 'mua':
-        case 'mzn':
-        case 'nmg':
-        case 'nus':
-        case 'qu':
-        case 'rn':
-        case 'rw':
-        case 'sbp':
-        case 'twq':
-        case 'vai':
-        case 'yav':
-        case 'yue':
-        case 'zgh':
-        case 'ak':
-        case 'ln':
-        case 'mg':
-        case 'pa':
-        case 'ti':
-            if (n === Math.floor(n) && n >= 0 && n <= 1)
-                return Plural.One;
-            return Plural.Other;
-        case 'am':
-        case 'as':
-        case 'bn':
-        case 'fa':
-        case 'gu':
-        case 'hi':
-        case 'kn':
-        case 'mr':
-        case 'zu':
-            if (i === 0 || n === 1)
-                return Plural.One;
-            return Plural.Other;
-        case 'ar':
-            if (n === 0)
-                return Plural.Zero;
-            if (n === 1)
-                return Plural.One;
-            if (n === 2)
-                return Plural.Two;
-            if (n % 100 === Math.floor(n % 100) && n % 100 >= 3 && n % 100 <= 10)
-                return Plural.Few;
-            if (n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 99)
-                return Plural.Many;
-            return Plural.Other;
-        case 'ast':
-        case 'ca':
-        case 'de':
-        case 'en':
-        case 'et':
-        case 'fi':
-        case 'fy':
-        case 'gl':
-        case 'it':
-        case 'nl':
-        case 'sv':
-        case 'sw':
-        case 'ur':
-        case 'yi':
-            if (i === 1 && v === 0)
-                return Plural.One;
-            return Plural.Other;
-        case 'be':
-            if (n % 10 === 1 && !(n % 100 === 11))
-                return Plural.One;
-            if (n % 10 === Math.floor(n % 10) && n % 10 >= 2 && n % 10 <= 4 &&
-                !(n % 100 >= 12 && n % 100 <= 14))
-                return Plural.Few;
-            if (n % 10 === 0 || n % 10 === Math.floor(n % 10) && n % 10 >= 5 && n % 10 <= 9 ||
-                n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 14)
-                return Plural.Many;
-            return Plural.Other;
-        case 'br':
-            if (n % 10 === 1 && !(n % 100 === 11 || n % 100 === 71 || n % 100 === 91))
-                return Plural.One;
-            if (n % 10 === 2 && !(n % 100 === 12 || n % 100 === 72 || n % 100 === 92))
-                return Plural.Two;
-            if (n % 10 === Math.floor(n % 10) && (n % 10 >= 3 && n % 10 <= 4 || n % 10 === 9) &&
-                !(n % 100 >= 10 && n % 100 <= 19 || n % 100 >= 70 && n % 100 <= 79 ||
-                    n % 100 >= 90 && n % 100 <= 99))
-                return Plural.Few;
-            if (!(n === 0) && n % 1e6 === 0)
-                return Plural.Many;
-            return Plural.Other;
-        case 'bs':
-        case 'hr':
-        case 'sr':
-            if (v === 0 && i % 10 === 1 && !(i % 100 === 11) || f % 10 === 1 && !(f % 100 === 11))
-                return Plural.One;
-            if (v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 2 && i % 10 <= 4 &&
-                !(i % 100 >= 12 && i % 100 <= 14) ||
-                f % 10 === Math.floor(f % 10) && f % 10 >= 2 && f % 10 <= 4 &&
-                    !(f % 100 >= 12 && f % 100 <= 14))
-                return Plural.Few;
-            return Plural.Other;
-        case 'cs':
-        case 'sk':
-            if (i === 1 && v === 0)
-                return Plural.One;
-            if (i === Math.floor(i) && i >= 2 && i <= 4 && v === 0)
-                return Plural.Few;
-            if (!(v === 0))
-                return Plural.Many;
-            return Plural.Other;
-        case 'cy':
-            if (n === 0)
-                return Plural.Zero;
-            if (n === 1)
-                return Plural.One;
-            if (n === 2)
-                return Plural.Two;
-            if (n === 3)
-                return Plural.Few;
-            if (n === 6)
-                return Plural.Many;
-            return Plural.Other;
-        case 'da':
-            if (n === 1 || !(t === 0) && (i === 0 || i === 1))
-                return Plural.One;
-            return Plural.Other;
-        case 'dsb':
-        case 'hsb':
-            if (v === 0 && i % 100 === 1 || f % 100 === 1)
-                return Plural.One;
-            if (v === 0 && i % 100 === 2 || f % 100 === 2)
-                return Plural.Two;
-            if (v === 0 && i % 100 === Math.floor(i % 100) && i % 100 >= 3 && i % 100 <= 4 ||
-                f % 100 === Math.floor(f % 100) && f % 100 >= 3 && f % 100 <= 4)
-                return Plural.Few;
-            return Plural.Other;
-        case 'ff':
-        case 'fr':
-        case 'hy':
-        case 'kab':
-            if (i === 0 || i === 1)
-                return Plural.One;
-            return Plural.Other;
-        case 'fil':
-            if (v === 0 && (i === 1 || i === 2 || i === 3) ||
-                v === 0 && !(i % 10 === 4 || i % 10 === 6 || i % 10 === 9) ||
-                !(v === 0) && !(f % 10 === 4 || f % 10 === 6 || f % 10 === 9))
-                return Plural.One;
-            return Plural.Other;
-        case 'ga':
-            if (n === 1)
-                return Plural.One;
-            if (n === 2)
-                return Plural.Two;
-            if (n === Math.floor(n) && n >= 3 && n <= 6)
-                return Plural.Few;
-            if (n === Math.floor(n) && n >= 7 && n <= 10)
-                return Plural.Many;
-            return Plural.Other;
-        case 'gd':
-            if (n === 1 || n === 11)
-                return Plural.One;
-            if (n === 2 || n === 12)
-                return Plural.Two;
-            if (n === Math.floor(n) && (n >= 3 && n <= 10 || n >= 13 && n <= 19))
-                return Plural.Few;
-            return Plural.Other;
-        case 'gv':
-            if (v === 0 && i % 10 === 1)
-                return Plural.One;
-            if (v === 0 && i % 10 === 2)
-                return Plural.Two;
-            if (v === 0 &&
-                (i % 100 === 0 || i % 100 === 20 || i % 100 === 40 || i % 100 === 60 || i % 100 === 80))
-                return Plural.Few;
-            if (!(v === 0))
-                return Plural.Many;
-            return Plural.Other;
-        case 'he':
-            if (i === 1 && v === 0)
-                return Plural.One;
-            if (i === 2 && v === 0)
-                return Plural.Two;
-            if (v === 0 && !(n >= 0 && n <= 10) && n % 10 === 0)
-                return Plural.Many;
-            return Plural.Other;
-        case 'is':
-            if (t === 0 && i % 10 === 1 && !(i % 100 === 11) || !(t === 0))
-                return Plural.One;
-            return Plural.Other;
-        case 'ksh':
-            if (n === 0)
-                return Plural.Zero;
-            if (n === 1)
-                return Plural.One;
-            return Plural.Other;
-        case 'kw':
-        case 'naq':
-        case 'se':
-        case 'smn':
-            if (n === 1)
-                return Plural.One;
-            if (n === 2)
-                return Plural.Two;
-            return Plural.Other;
-        case 'lag':
-            if (n === 0)
-                return Plural.Zero;
-            if ((i === 0 || i === 1) && !(n === 0))
-                return Plural.One;
-            return Plural.Other;
-        case 'lt':
-            if (n % 10 === 1 && !(n % 100 >= 11 && n % 100 <= 19))
-                return Plural.One;
-            if (n % 10 === Math.floor(n % 10) && n % 10 >= 2 && n % 10 <= 9 &&
-                !(n % 100 >= 11 && n % 100 <= 19))
-                return Plural.Few;
-            if (!(f === 0))
-                return Plural.Many;
-            return Plural.Other;
-        case 'lv':
-        case 'prg':
-            if (n % 10 === 0 || n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 19 ||
-                v === 2 && f % 100 === Math.floor(f % 100) && f % 100 >= 11 && f % 100 <= 19)
-                return Plural.Zero;
-            if (n % 10 === 1 && !(n % 100 === 11) || v === 2 && f % 10 === 1 && !(f % 100 === 11) ||
-                !(v === 2) && f % 10 === 1)
-                return Plural.One;
-            return Plural.Other;
-        case 'mk':
-            if (v === 0 && i % 10 === 1 || f % 10 === 1)
-                return Plural.One;
-            return Plural.Other;
-        case 'mt':
-            if (n === 1)
-                return Plural.One;
-            if (n === 0 || n % 100 === Math.floor(n % 100) && n % 100 >= 2 && n % 100 <= 10)
-                return Plural.Few;
-            if (n % 100 === Math.floor(n % 100) && n % 100 >= 11 && n % 100 <= 19)
-                return Plural.Many;
-            return Plural.Other;
-        case 'pl':
-            if (i === 1 && v === 0)
-                return Plural.One;
-            if (v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 2 && i % 10 <= 4 &&
-                !(i % 100 >= 12 && i % 100 <= 14))
-                return Plural.Few;
-            if (v === 0 && !(i === 1) && i % 10 === Math.floor(i % 10) && i % 10 >= 0 && i % 10 <= 1 ||
-                v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 5 && i % 10 <= 9 ||
-                v === 0 && i % 100 === Math.floor(i % 100) && i % 100 >= 12 && i % 100 <= 14)
-                return Plural.Many;
-            return Plural.Other;
-        case 'pt':
-            if (n === Math.floor(n) && n >= 0 && n <= 2 && !(n === 2))
-                return Plural.One;
-            return Plural.Other;
-        case 'ro':
-            if (i === 1 && v === 0)
-                return Plural.One;
-            if (!(v === 0) || n === 0 ||
-                !(n === 1) && n % 100 === Math.floor(n % 100) && n % 100 >= 1 && n % 100 <= 19)
-                return Plural.Few;
-            return Plural.Other;
-        case 'ru':
-        case 'uk':
-            if (v === 0 && i % 10 === 1 && !(i % 100 === 11))
-                return Plural.One;
-            if (v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 2 && i % 10 <= 4 &&
-                !(i % 100 >= 12 && i % 100 <= 14))
-                return Plural.Few;
-            if (v === 0 && i % 10 === 0 ||
-                v === 0 && i % 10 === Math.floor(i % 10) && i % 10 >= 5 && i % 10 <= 9 ||
-                v === 0 && i % 100 === Math.floor(i % 100) && i % 100 >= 11 && i % 100 <= 14)
-                return Plural.Many;
-            return Plural.Other;
-        case 'shi':
-            if (i === 0 || n === 1)
-                return Plural.One;
-            if (n === Math.floor(n) && n >= 2 && n <= 10)
-                return Plural.Few;
-            return Plural.Other;
-        case 'si':
-            if (n === 0 || n === 1 || i === 0 && f === 1)
-                return Plural.One;
-            return Plural.Other;
-        case 'sl':
-            if (v === 0 && i % 100 === 1)
-                return Plural.One;
-            if (v === 0 && i % 100 === 2)
-                return Plural.Two;
-            if (v === 0 && i % 100 === Math.floor(i % 100) && i % 100 >= 3 && i % 100 <= 4 || !(v === 0))
-                return Plural.Few;
-            return Plural.Other;
-        case 'tzm':
-            if (n === Math.floor(n) && n >= 0 && n <= 1 || n === Math.floor(n) && n >= 11 && n <= 99)
-                return Plural.One;
-            return Plural.Other;
-        default:
-            return Plural.Other;
-    }
-}
-/**
- * \@ngModule CommonModule
- *
- * \@whatItDoes Adds and removes CSS classes on an HTML element.
- *
- * \@howToUse
- * ```
- *     <some-element [ngClass]="'first second'">...</some-element>
- *
- *     <some-element [ngClass]="['first', 'second']">...</some-element>
- *
- *     <some-element [ngClass]="{'first': true, 'second': true, 'third': false}">...</some-element>
- *
- *     <some-element [ngClass]="stringExp|arrayExp|objExp">...</some-element>
- *
- *     <some-element [ngClass]="{'class1 class2 class3' : true}">...</some-element>
- * ```
- *
- * \@description
- *
- * The CSS classes are updated as follows, depending on the type of the expression evaluation:
- * - `string` - the CSS classes listed in the string (space delimited) are added,
- * - `Array` - the CSS classes declared as Array elements are added,
- * - `Object` - keys are CSS classes that get added when the expression given in the value
- *              evaluates to a truthy value, otherwise they are removed.
- *
- * \@stable
- */
-var NgClass = (function () {
-    /**
-     * @param {?} _iterableDiffers
-     * @param {?} _keyValueDiffers
-     * @param {?} _ngEl
-     * @param {?} _renderer
-     */
-    function NgClass(_iterableDiffers, _keyValueDiffers, _ngEl, _renderer) {
-        this._iterableDiffers = _iterableDiffers;
-        this._keyValueDiffers = _keyValueDiffers;
-        this._ngEl = _ngEl;
-        this._renderer = _renderer;
-        this._initialClasses = [];
-    }
-    Object.defineProperty(NgClass.prototype, "klass", {
-        /**
-         * @param {?} v
-         * @return {?}
-         */
-        set: function (v) {
-            this._applyInitialClasses(true);
-            this._initialClasses = typeof v === 'string' ? v.split(/\s+/) : [];
-            this._applyInitialClasses(false);
-            this._applyClasses(this._rawClass, false);
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgClass.prototype, "ngClass", {
-        /**
-         * @param {?} v
-         * @return {?}
-         */
-        set: function (v) {
-            this._cleanupClasses(this._rawClass);
-            this._iterableDiffer = null;
-            this._keyValueDiffer = null;
-            this._rawClass = typeof v === 'string' ? v.split(/\s+/) : v;
-            if (this._rawClass) {
-                if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵisListLikeIterable"])(this._rawClass)) {
-                    this._iterableDiffer = this._iterableDiffers.find(this._rawClass).create();
-                }
-                else {
-                    this._keyValueDiffer = this._keyValueDiffers.find(this._rawClass).create();
-                }
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @return {?}
-     */
-    NgClass.prototype.ngDoCheck = function () {
-        if (this._iterableDiffer) {
-            var /** @type {?} */ iterableChanges = this._iterableDiffer.diff(/** @type {?} */ (this._rawClass));
-            if (iterableChanges) {
-                this._applyIterableChanges(iterableChanges);
-            }
-        }
-        else if (this._keyValueDiffer) {
-            var /** @type {?} */ keyValueChanges = this._keyValueDiffer.diff(/** @type {?} */ (this._rawClass));
-            if (keyValueChanges) {
-                this._applyKeyValueChanges(keyValueChanges);
-            }
-        }
-    };
-    /**
-     * @param {?} rawClassVal
-     * @return {?}
-     */
-    NgClass.prototype._cleanupClasses = function (rawClassVal) {
-        this._applyClasses(rawClassVal, true);
-        this._applyInitialClasses(false);
-    };
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    NgClass.prototype._applyKeyValueChanges = function (changes) {
-        var _this = this;
-        changes.forEachAddedItem(function (record) { return _this._toggleClass(record.key, record.currentValue); });
-        changes.forEachChangedItem(function (record) { return _this._toggleClass(record.key, record.currentValue); });
-        changes.forEachRemovedItem(function (record) {
-            if (record.previousValue) {
-                _this._toggleClass(record.key, false);
-            }
-        });
-    };
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    NgClass.prototype._applyIterableChanges = function (changes) {
-        var _this = this;
-        changes.forEachAddedItem(function (record) {
-            if (typeof record.item === 'string') {
-                _this._toggleClass(record.item, true);
-            }
-            else {
-                throw new Error("NgClass can only toggle CSS classes expressed as strings, got " + __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵstringify"])(record.item));
-            }
-        });
-        changes.forEachRemovedItem(function (record) { return _this._toggleClass(record.item, false); });
-    };
-    /**
-     * @param {?} isCleanup
-     * @return {?}
-     */
-    NgClass.prototype._applyInitialClasses = function (isCleanup) {
-        var _this = this;
-        this._initialClasses.forEach(function (klass) { return _this._toggleClass(klass, !isCleanup); });
-    };
-    /**
-     * @param {?} rawClassVal
-     * @param {?} isCleanup
-     * @return {?}
-     */
-    NgClass.prototype._applyClasses = function (rawClassVal, isCleanup) {
-        var _this = this;
-        if (rawClassVal) {
-            if (Array.isArray(rawClassVal) || rawClassVal instanceof Set) {
-                ((rawClassVal)).forEach(function (klass) { return _this._toggleClass(klass, !isCleanup); });
-            }
-            else {
-                Object.keys(rawClassVal).forEach(function (klass) {
-                    if (rawClassVal[klass] != null)
-                        _this._toggleClass(klass, !isCleanup);
-                });
-            }
-        }
-    };
-    /**
-     * @param {?} klass
-     * @param {?} enabled
-     * @return {?}
-     */
-    NgClass.prototype._toggleClass = function (klass, enabled) {
-        var _this = this;
-        klass = klass.trim();
-        if (klass) {
-            klass.split(/\s+/g).forEach(function (klass) { _this._renderer.setElementClass(_this._ngEl.nativeElement, klass, !!enabled); });
-        }
-    };
-    return NgClass;
-}());
-NgClass.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngClass]' },] },
-];
-/** @nocollapse */
-NgClass.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["IterableDiffers"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["KeyValueDiffers"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"], },
-]; };
-NgClass.propDecorators = {
-    'klass': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"], args: ['class',] },],
-    'ngClass': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-};
-/**
- * Instantiates a single {\@link Component} type and inserts its Host View into current View.
- * `NgComponentOutlet` provides a declarative approach for dynamic component creation.
- *
- * `NgComponentOutlet` requires a component type, if a falsy value is set the view will clear and
- * any existing component will get destroyed.
- *
- * ### Fine tune control
- *
- * You can control the component creation process by using the following optional attributes:
- *
- * * `ngComponentOutletInjector`: Optional custom {\@link Injector} that will be used as parent for
- * the Component. Defaults to the injector of the current view container.
- *
- * * `ngComponentOutletProviders`: Optional injectable objects ({\@link Provider}) that are visible
- * to the component.
- *
- * * `ngComponentOutletContent`: Optional list of projectable nodes to insert into the content
- * section of the component, if exists.
- *
- * * `ngComponentOutletNgModuleFactory`: Optional module factory to allow dynamically loading other
- * module, then load a component from that module.
- *
- * ### Syntax
- *
- * Simple
- * ```
- * <ng-container *ngComponentOutlet="componentTypeExpression"></ng-container>
- * ```
- *
- * Customized injector/content
- * ```
- * <ng-container *ngComponentOutlet="componentTypeExpression;
- *                                   injector: injectorExpression;
- *                                   content: contentNodesExpression;">
- * </ng-container>
- * ```
- *
- * Customized ngModuleFactory
- * ```
- * <ng-container *ngComponentOutlet="componentTypeExpression;
- *                                   ngModuleFactory: moduleFactory;">
- * </ng-container>
- * ```
- * # Example
- *
- * {\@example common/ngComponentOutlet/ts/module.ts region='SimpleExample'}
- *
- * A more complete example with additional options:
- *
- * {\@example common/ngComponentOutlet/ts/module.ts region='CompleteExample'}
- * A more complete example with ngModuleFactory:
- *
- * {\@example common/ngComponentOutlet/ts/module.ts region='NgModuleFactoryExample'}
- *
- * \@experimental
- */
-var NgComponentOutlet = (function () {
-    /**
-     * @param {?} _viewContainerRef
-     */
-    function NgComponentOutlet(_viewContainerRef) {
-        this._viewContainerRef = _viewContainerRef;
-        this._componentRef = null;
-        this._moduleRef = null;
-    }
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    NgComponentOutlet.prototype.ngOnChanges = function (changes) {
-        if (this._componentRef) {
-            this._viewContainerRef.remove(this._viewContainerRef.indexOf(this._componentRef.hostView));
-        }
-        this._viewContainerRef.clear();
-        this._componentRef = null;
-        if (this.ngComponentOutlet) {
-            var /** @type {?} */ injector = this.ngComponentOutletInjector || this._viewContainerRef.parentInjector;
-            if (((changes)).ngComponentOutletNgModuleFactory) {
-                if (this._moduleRef)
-                    this._moduleRef.destroy();
-                if (this.ngComponentOutletNgModuleFactory) {
-                    this._moduleRef = this.ngComponentOutletNgModuleFactory.create(injector);
-                }
-                else {
-                    this._moduleRef = null;
-                }
-            }
-            if (this._moduleRef) {
-                injector = this._moduleRef.injector;
-            }
-            var /** @type {?} */ componentFactory = injector.get(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ComponentFactoryResolver"]).resolveComponentFactory(this.ngComponentOutlet);
-            this._componentRef = this._viewContainerRef.createComponent(componentFactory, this._viewContainerRef.length, injector, this.ngComponentOutletContent);
-        }
-    };
-    /**
-     * @return {?}
-     */
-    NgComponentOutlet.prototype.ngOnDestroy = function () {
-        if (this._moduleRef)
-            this._moduleRef.destroy();
-    };
-    return NgComponentOutlet;
-}());
-NgComponentOutlet.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngComponentOutlet]' },] },
-];
-/** @nocollapse */
-NgComponentOutlet.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
-]; };
-NgComponentOutlet.propDecorators = {
-    'ngComponentOutlet': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-    'ngComponentOutletInjector': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-    'ngComponentOutletContent': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-    'ngComponentOutletNgModuleFactory': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-};
-var NgForOfRow = (function () {
-    /**
-     * @param {?} $implicit
-     * @param {?} index
-     * @param {?} count
-     */
-    function NgForOfRow($implicit, index, count) {
-        this.$implicit = $implicit;
-        this.index = index;
-        this.count = count;
-    }
-    Object.defineProperty(NgForOfRow.prototype, "first", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this.index === 0; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgForOfRow.prototype, "last", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this.index === this.count - 1; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgForOfRow.prototype, "even", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this.index % 2 === 0; },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgForOfRow.prototype, "odd", {
-        /**
-         * @return {?}
-         */
-        get: function () { return !this.even; },
-        enumerable: true,
-        configurable: true
-    });
-    return NgForOfRow;
-}());
-/**
- * The `NgForOf` directive instantiates a template once per item from an iterable. The context
- * for each instantiated template inherits from the outer context with the given loop variable
- * set to the current item from the iterable.
- *
- * ### Local Variables
- *
- * `NgForOf` provides several exported values that can be aliased to local variables:
- *
- * * `index` will be set to the current loop iteration for each template context.
- * * `first` will be set to a boolean value indicating whether the item is the first one in the
- *   iteration.
- * * `last` will be set to a boolean value indicating whether the item is the last one in the
- *   iteration.
- * * `even` will be set to a boolean value indicating whether this item has an even index.
- * * `odd` will be set to a boolean value indicating whether this item has an odd index.
- *
- * ### Change Propagation
- *
- * When the contents of the iterator changes, `NgForOf` makes the corresponding changes to the DOM:
- *
- * * When an item is added, a new instance of the template is added to the DOM.
- * * When an item is removed, its template instance is removed from the DOM.
- * * When items are reordered, their respective templates are reordered in the DOM.
- * * Otherwise, the DOM element for that item will remain the same.
- *
- * Angular uses object identity to track insertions and deletions within the iterator and reproduce
- * those changes in the DOM. This has important implications for animations and any stateful
- * controls (such as `<input>` elements which accept user input) that are present. Inserted rows can
- * be animated in, deleted rows can be animated out, and unchanged rows retain any unsaved state
- * such as user input.
- *
- * It is possible for the identities of elements in the iterator to change while the data does not.
- * This can happen, for example, if the iterator produced from an RPC to the server, and that
- * RPC is re-run. Even if the data hasn't changed, the second response will produce objects with
- * different identities, and Angular will tear down the entire DOM and rebuild it (as if all old
- * elements were deleted and all new elements inserted). This is an expensive operation and should
- * be avoided if possible.
- *
- * To customize the default tracking algorithm, `NgForOf` supports `trackBy` option.
- * `trackBy` takes a function which has two arguments: `index` and `item`.
- * If `trackBy` is given, Angular tracks changes by the return value of the function.
- *
- * ### Syntax
- *
- * - `<li *ngFor="let item of items; let i = index; trackBy: trackByFn">...</li>`
- * - `<li template="ngFor let item of items; let i = index; trackBy: trackByFn">...</li>`
- *
- * With `<ng-template>` element:
- *
- * ```
- * <ng-template ngFor let-item [ngForOf]="items" let-i="index" [ngForTrackBy]="trackByFn">
- *   <li>...</li>
- * </ng-template>
- * ```
- *
- * ### Example
- *
- * See a [live demo](http://plnkr.co/edit/KVuXxDp0qinGDyo307QW?p=preview) for a more detailed
- * example.
- *
- * \@stable
- */
-var NgForOf = (function () {
-    /**
-     * @param {?} _viewContainer
-     * @param {?} _template
-     * @param {?} _differs
-     */
-    function NgForOf(_viewContainer, _template, _differs) {
-        this._viewContainer = _viewContainer;
-        this._template = _template;
-        this._differs = _differs;
-        this._differ = null;
-    }
-    Object.defineProperty(NgForOf.prototype, "ngForTrackBy", {
-        /**
-         * @return {?}
-         */
-        get: function () { return this._trackByFn; },
-        /**
-         * @param {?} fn
-         * @return {?}
-         */
-        set: function (fn) {
-            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["isDevMode"])() && fn != null && typeof fn !== 'function') {
-                // TODO(vicb): use a log service once there is a public one available
-                if ((console) && (console.warn)) {
-                    console.warn("trackBy must be a function, but received " + JSON.stringify(fn) + ". " +
-                        "See https://angular.io/docs/ts/latest/api/common/index/NgFor-directive.html#!#change-propagation for more information.");
-                }
-            }
-            this._trackByFn = fn;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgForOf.prototype, "ngForTemplate", {
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-        set: function (value) {
-            // TODO(TS2.1): make TemplateRef<Partial<NgForRowOf<T>>> once we move to TS v2.1
-            // The current type is too restrictive; a template that just uses index, for example,
-            // should be acceptable.
-            if (value) {
-                this._template = value;
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    NgForOf.prototype.ngOnChanges = function (changes) {
-        if ('ngForOf' in changes) {
-            // React on ngForOf changes only once all inputs have been initialized
-            var /** @type {?} */ value = changes['ngForOf'].currentValue;
-            if (!this._differ && value) {
-                try {
-                    this._differ = this._differs.find(value).create(this.ngForTrackBy);
-                }
-                catch (e) {
-                    throw new Error("Cannot find a differ supporting object '" + value + "' of type '" + getTypeNameForDebugging(value) + "'. NgFor only supports binding to Iterables such as Arrays.");
-                }
-            }
-        }
-    };
-    /**
-     * @return {?}
-     */
-    NgForOf.prototype.ngDoCheck = function () {
-        if (this._differ) {
-            var /** @type {?} */ changes = this._differ.diff(this.ngForOf);
-            if (changes)
-                this._applyChanges(changes);
-        }
-    };
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    NgForOf.prototype._applyChanges = function (changes) {
-        var _this = this;
-        var /** @type {?} */ insertTuples = [];
-        changes.forEachOperation(function (item, adjustedPreviousIndex, currentIndex) {
-            if (item.previousIndex == null) {
-                var /** @type {?} */ view = _this._viewContainer.createEmbeddedView(_this._template, new NgForOfRow(null, null, null), currentIndex);
-                var /** @type {?} */ tuple = new RecordViewTuple(item, view);
-                insertTuples.push(tuple);
-            }
-            else if (currentIndex == null) {
-                _this._viewContainer.remove(adjustedPreviousIndex);
-            }
-            else {
-                var /** @type {?} */ view = _this._viewContainer.get(adjustedPreviousIndex);
-                _this._viewContainer.move(view, currentIndex);
-                var /** @type {?} */ tuple = new RecordViewTuple(item, /** @type {?} */ (view));
-                insertTuples.push(tuple);
-            }
-        });
-        for (var /** @type {?} */ i = 0; i < insertTuples.length; i++) {
-            this._perViewChange(insertTuples[i].view, insertTuples[i].record);
-        }
-        for (var /** @type {?} */ i = 0, /** @type {?} */ ilen = this._viewContainer.length; i < ilen; i++) {
-            var /** @type {?} */ viewRef = (this._viewContainer.get(i));
-            viewRef.context.index = i;
-            viewRef.context.count = ilen;
-        }
-        changes.forEachIdentityChange(function (record) {
-            var /** @type {?} */ viewRef = (_this._viewContainer.get(record.currentIndex));
-            viewRef.context.$implicit = record.item;
-        });
-    };
-    /**
-     * @param {?} view
-     * @param {?} record
-     * @return {?}
-     */
-    NgForOf.prototype._perViewChange = function (view, record) {
-        view.context.$implicit = record.item;
-    };
-    return NgForOf;
-}());
-NgForOf.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngFor][ngForOf]' },] },
-];
-/** @nocollapse */
-NgForOf.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["IterableDiffers"], },
-]; };
-NgForOf.propDecorators = {
-    'ngForOf': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-    'ngForTrackBy': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-    'ngForTemplate': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-};
-var RecordViewTuple = (function () {
-    /**
-     * @param {?} record
-     * @param {?} view
-     */
-    function RecordViewTuple(record, view) {
-        this.record = record;
-        this.view = view;
-    }
-    return RecordViewTuple;
-}());
-/**
- * @deprecated from v4.0.0 - Use NgForOf instead.
- */
-var /** @type {?} */ NgFor = NgForOf;
-/**
- * @param {?} type
- * @return {?}
- */
-function getTypeNameForDebugging(type) {
-    return type['name'] || typeof type;
-}
-/**
- * Conditionally includes a template based on the value of an `expression`.
- *
- * `ngIf` evaluates the `expression` and then renders the `then` or `else` template in its place
- * when expression is truthy or falsy respectively. Typically the:
- *  - `then` template is the inline template of `ngIf` unless bound to a different value.
- *  - `else` template is blank unless it is bound.
- *
- * # Most common usage
- *
- * The most common usage of the `ngIf` directive is to conditionally show the inline template as
- * seen in this example:
- * {\@example common/ngIf/ts/module.ts region='NgIfSimple'}
- *
- * # Showing an alternative template using `else`
- *
- * If it is necessary to display a template when the `expression` is falsy use the `else` template
- * binding as shown. Note that the `else` binding points to a `<ng-template>` labeled `#elseBlock`.
- * The template can be defined anywhere in the component view but is typically placed right after
- * `ngIf` for readability.
- *
- * {\@example common/ngIf/ts/module.ts region='NgIfElse'}
- *
- * # Using non-inlined `then` template
- *
- * Usually the `then` template is the inlined template of the `ngIf`, but it can be changed using
- * a binding (just like `else`). Because `then` and `else` are bindings, the template references can
- * change at runtime as shown in this example.
- *
- * {\@example common/ngIf/ts/module.ts region='NgIfThenElse'}
- *
- * # Storing conditional result in a variable
- *
- * A common pattern is that we need to show a set of properties from the same object. If the
- * object is undefined, then we have to use the safe-traversal-operator `?.` to guard against
- * dereferencing a `null` value. This is especially the case when waiting on async data such as
- * when using the `async` pipe as shown in folowing example:
- *
- * ```
- * Hello {{ (userStream|async)?.last }}, {{ (userStream|async)?.first }}!
- * ```
- *
- * There are several inefficiencies in the above example:
- *  - We create multiple subscriptions on `userStream`. One for each `async` pipe, or two in the
- *    example above.
- *  - We cannot display an alternative screen while waiting for the data to arrive asynchronously.
- *  - We have to use the safe-traversal-operator `?.` to access properties, which is cumbersome.
- *  - We have to place the `async` pipe in parenthesis.
- *
- * A better way to do this is to use `ngIf` and store the result of the condition in a local
- * variable as shown in the the example below:
- *
- * {\@example common/ngIf/ts/module.ts region='NgIfLet'}
- *
- * Notice that:
- *  - We use only one `async` pipe and hence only one subscription gets created.
- *  - `ngIf` stores the result of the `userStream|async` in the local variable `user`.
- *  - The local `user` can then be bound repeatedly in a more efficient way.
- *  - No need to use the safe-traversal-operator `?.` to access properties as `ngIf` will only
- *    display the data if `userStream` returns a value.
- *  - We can display an alternative template while waiting for the data.
- *
- * ### Syntax
- *
- * Simple form:
- * - `<div *ngIf="condition">...</div>`
- * - `<div template="ngIf condition">...</div>`
- * - `<ng-template [ngIf]="condition"><div>...</div></ng-template>`
- *
- * Form with an else block:
- * ```
- * <div *ngIf="condition; else elseBlock">...</div>
- * <ng-template #elseBlock>...</ng-template>
- * ```
- *
- * Form with a `then` and `else` block:
- * ```
- * <div *ngIf="condition; then thenBlock else elseBlock"></div>
- * <ng-template #thenBlock>...</ng-template>
- * <ng-template #elseBlock>...</ng-template>
- * ```
- *
- * Form with storing the value locally:
- * ```
- * <div *ngIf="condition; else elseBlock; let value">{{value}}</div>
- * <ng-template #elseBlock>...</ng-template>
- * ```
- *
- * \@stable
- */
-var NgIf = (function () {
-    /**
-     * @param {?} _viewContainer
-     * @param {?} templateRef
-     */
-    function NgIf(_viewContainer, templateRef) {
-        this._viewContainer = _viewContainer;
-        this._context = new NgIfContext();
-        this._thenTemplateRef = null;
-        this._elseTemplateRef = null;
-        this._thenViewRef = null;
-        this._elseViewRef = null;
-        this._thenTemplateRef = templateRef;
-    }
-    Object.defineProperty(NgIf.prototype, "ngIf", {
-        /**
-         * @param {?} condition
-         * @return {?}
-         */
-        set: function (condition) {
-            this._context.$implicit = condition;
-            this._updateView();
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgIf.prototype, "ngIfThen", {
-        /**
-         * @param {?} templateRef
-         * @return {?}
-         */
-        set: function (templateRef) {
-            this._thenTemplateRef = templateRef;
-            this._thenViewRef = null; // clear previous view if any.
-            this._updateView();
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(NgIf.prototype, "ngIfElse", {
-        /**
-         * @param {?} templateRef
-         * @return {?}
-         */
-        set: function (templateRef) {
-            this._elseTemplateRef = templateRef;
-            this._elseViewRef = null; // clear previous view if any.
-            this._updateView();
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @return {?}
-     */
-    NgIf.prototype._updateView = function () {
-        if (this._context.$implicit) {
-            if (!this._thenViewRef) {
-                this._viewContainer.clear();
-                this._elseViewRef = null;
-                if (this._thenTemplateRef) {
-                    this._thenViewRef =
-                        this._viewContainer.createEmbeddedView(this._thenTemplateRef, this._context);
-                }
-            }
-        }
-        else {
-            if (!this._elseViewRef) {
-                this._viewContainer.clear();
-                this._thenViewRef = null;
-                if (this._elseTemplateRef) {
-                    this._elseViewRef =
-                        this._viewContainer.createEmbeddedView(this._elseTemplateRef, this._context);
-                }
-            }
-        }
-    };
-    return NgIf;
-}());
-NgIf.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngIf]' },] },
-];
-/** @nocollapse */
-NgIf.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], },
-]; };
-NgIf.propDecorators = {
-    'ngIf': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-    'ngIfThen': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-    'ngIfElse': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-};
-var NgIfContext = (function () {
-    function NgIfContext() {
-        this.$implicit = null;
-    }
-    return NgIfContext;
-}());
-var SwitchView = (function () {
-    /**
-     * @param {?} _viewContainerRef
-     * @param {?} _templateRef
-     */
-    function SwitchView(_viewContainerRef, _templateRef) {
-        this._viewContainerRef = _viewContainerRef;
-        this._templateRef = _templateRef;
-        this._created = false;
-    }
-    /**
-     * @return {?}
-     */
-    SwitchView.prototype.create = function () {
-        this._created = true;
-        this._viewContainerRef.createEmbeddedView(this._templateRef);
-    };
-    /**
-     * @return {?}
-     */
-    SwitchView.prototype.destroy = function () {
-        this._created = false;
-        this._viewContainerRef.clear();
-    };
-    /**
-     * @param {?} created
-     * @return {?}
-     */
-    SwitchView.prototype.enforceState = function (created) {
-        if (created && !this._created) {
-            this.create();
-        }
-        else if (!created && this._created) {
-            this.destroy();
-        }
-    };
-    return SwitchView;
-}());
-/**
- * \@ngModule CommonModule
- *
- * \@whatItDoes Adds / removes DOM sub-trees when the nest match expressions matches the switch
- *             expression.
- *
- * \@howToUse
- * ```
- *     <container-element [ngSwitch]="switch_expression">
- *       <some-element *ngSwitchCase="match_expression_1">...</some-element>
- *       <some-element *ngSwitchCase="match_expression_2">...</some-element>
- *       <some-other-element *ngSwitchCase="match_expression_3">...</some-other-element>
- *       <ng-container *ngSwitchCase="match_expression_3">
- *         <!-- use a ng-container to group multiple root nodes -->
- *         <inner-element></inner-element>
- *         <inner-other-element></inner-other-element>
- *       </ng-container>
- *       <some-element *ngSwitchDefault>...</some-element>
- *     </container-element>
- * ```
- * \@description
- *
- * `NgSwitch` stamps out nested views when their match expression value matches the value of the
- * switch expression.
- *
- * In other words:
- * - you define a container element (where you place the directive with a switch expression on the
- * `[ngSwitch]="..."` attribute)
- * - you define inner views inside the `NgSwitch` and place a `*ngSwitchCase` attribute on the view
- * root elements.
- *
- * Elements within `NgSwitch` but outside of a `NgSwitchCase` or `NgSwitchDefault` directives will
- * be preserved at the location.
- *
- * The `ngSwitchCase` directive informs the parent `NgSwitch` of which view to display when the
- * expression is evaluated.
- * When no matching expression is found on a `ngSwitchCase` view, the `ngSwitchDefault` view is
- * stamped out.
- *
- * \@stable
- */
-var NgSwitch = (function () {
-    function NgSwitch() {
-        this._defaultUsed = false;
-        this._caseCount = 0;
-        this._lastCaseCheckIndex = 0;
-        this._lastCasesMatched = false;
-    }
-    Object.defineProperty(NgSwitch.prototype, "ngSwitch", {
-        /**
-         * @param {?} newValue
-         * @return {?}
-         */
-        set: function (newValue) {
-            this._ngSwitch = newValue;
-            if (this._caseCount === 0) {
-                this._updateDefaultCases(true);
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * \@internal
-     * @return {?}
-     */
-    NgSwitch.prototype._addCase = function () { return this._caseCount++; };
-    /**
-     * \@internal
-     * @param {?} view
-     * @return {?}
-     */
-    NgSwitch.prototype._addDefault = function (view) {
-        if (!this._defaultViews) {
-            this._defaultViews = [];
-        }
-        this._defaultViews.push(view);
-    };
-    /**
-     * \@internal
-     * @param {?} value
-     * @return {?}
-     */
-    NgSwitch.prototype._matchCase = function (value) {
-        var /** @type {?} */ matched = value == this._ngSwitch;
-        this._lastCasesMatched = this._lastCasesMatched || matched;
-        this._lastCaseCheckIndex++;
-        if (this._lastCaseCheckIndex === this._caseCount) {
-            this._updateDefaultCases(!this._lastCasesMatched);
-            this._lastCaseCheckIndex = 0;
-            this._lastCasesMatched = false;
-        }
-        return matched;
-    };
-    /**
-     * @param {?} useDefault
-     * @return {?}
-     */
-    NgSwitch.prototype._updateDefaultCases = function (useDefault) {
-        if (this._defaultViews && useDefault !== this._defaultUsed) {
-            this._defaultUsed = useDefault;
-            for (var /** @type {?} */ i = 0; i < this._defaultViews.length; i++) {
-                var /** @type {?} */ defaultView = this._defaultViews[i];
-                defaultView.enforceState(useDefault);
-            }
-        }
-    };
-    return NgSwitch;
-}());
-NgSwitch.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngSwitch]' },] },
-];
-/** @nocollapse */
-NgSwitch.ctorParameters = function () { return []; };
-NgSwitch.propDecorators = {
-    'ngSwitch': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-};
-/**
- * \@ngModule CommonModule
- *
- * \@whatItDoes Creates a view that will be added/removed from the parent {\@link NgSwitch} when the
- *             given expression evaluate to respectively the same/different value as the switch
- *             expression.
- *
- * \@howToUse
- * ```
- * <container-element [ngSwitch]="switch_expression">
- *   <some-element *ngSwitchCase="match_expression_1">...</some-element>
- * </container-element>
- * ```
- * \@description
- *
- * Insert the sub-tree when the expression evaluates to the same value as the enclosing switch
- * expression.
- *
- * If multiple match expressions match the switch expression value, all of them are displayed.
- *
- * See {\@link NgSwitch} for more details and example.
- *
- * \@stable
- */
-var NgSwitchCase = (function () {
-    /**
-     * @param {?} viewContainer
-     * @param {?} templateRef
-     * @param {?} ngSwitch
-     */
-    function NgSwitchCase(viewContainer, templateRef, ngSwitch) {
-        this.ngSwitch = ngSwitch;
-        ngSwitch._addCase();
-        this._view = new SwitchView(viewContainer, templateRef);
-    }
-    /**
-     * @return {?}
-     */
-    NgSwitchCase.prototype.ngDoCheck = function () { this._view.enforceState(this.ngSwitch._matchCase(this.ngSwitchCase)); };
-    return NgSwitchCase;
-}());
-NgSwitchCase.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngSwitchCase]' },] },
-];
-/** @nocollapse */
-NgSwitchCase.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], },
-    { type: NgSwitch, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Host"] },] },
-]; };
-NgSwitchCase.propDecorators = {
-    'ngSwitchCase': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-};
-/**
- * \@ngModule CommonModule
- * \@whatItDoes Creates a view that is added to the parent {\@link NgSwitch} when no case expressions
- * match the
- *             switch expression.
- *
- * \@howToUse
- * ```
- * <container-element [ngSwitch]="switch_expression">
- *   <some-element *ngSwitchCase="match_expression_1">...</some-element>
- *   <some-other-element *ngSwitchDefault>...</some-other-element>
- * </container-element>
- * ```
- *
- * \@description
- *
- * Insert the sub-tree when no case expressions evaluate to the same value as the enclosing switch
- * expression.
- *
- * See {\@link NgSwitch} for more details and example.
- *
- * \@stable
- */
-var NgSwitchDefault = (function () {
-    /**
-     * @param {?} viewContainer
-     * @param {?} templateRef
-     * @param {?} ngSwitch
-     */
-    function NgSwitchDefault(viewContainer, templateRef, ngSwitch) {
-        ngSwitch._addDefault(new SwitchView(viewContainer, templateRef));
-    }
-    return NgSwitchDefault;
-}());
-NgSwitchDefault.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngSwitchDefault]' },] },
-];
-/** @nocollapse */
-NgSwitchDefault.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], },
-    { type: NgSwitch, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Host"] },] },
-]; };
-/**
- * \@ngModule CommonModule
- *
- * \@whatItDoes Adds / removes DOM sub-trees based on a numeric value. Tailored for pluralization.
- *
- * \@howToUse
- * ```
- * <some-element [ngPlural]="value">
- *   <ng-template ngPluralCase="=0">there is nothing</ng-template>
- *   <ng-template ngPluralCase="=1">there is one</ng-template>
- *   <ng-template ngPluralCase="few">there are a few</ng-template>
- * </some-element>
- * ```
- *
- * \@description
- *
- * Displays DOM sub-trees that match the switch expression value, or failing that, DOM sub-trees
- * that match the switch expression's pluralization category.
- *
- * To use this directive you must provide a container element that sets the `[ngPlural]` attribute
- * to a switch expression. Inner elements with a `[ngPluralCase]` will display based on their
- * expression:
- * - if `[ngPluralCase]` is set to a value starting with `=`, it will only display if the value
- *   matches the switch expression exactly,
- * - otherwise, the view will be treated as a "category match", and will only display if exact
- *   value matches aren't found and the value maps to its category for the defined locale.
- *
- * See http://cldr.unicode.org/index/cldr-spec/plural-rules
- *
- * \@experimental
- */
-var NgPlural = (function () {
-    /**
-     * @param {?} _localization
-     */
-    function NgPlural(_localization) {
-        this._localization = _localization;
-        this._caseViews = {};
-    }
-    Object.defineProperty(NgPlural.prototype, "ngPlural", {
-        /**
-         * @param {?} value
-         * @return {?}
-         */
-        set: function (value) {
-            this._switchValue = value;
-            this._updateView();
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} value
-     * @param {?} switchView
-     * @return {?}
-     */
-    NgPlural.prototype.addCase = function (value, switchView) { this._caseViews[value] = switchView; };
-    /**
-     * @return {?}
-     */
-    NgPlural.prototype._updateView = function () {
-        this._clearViews();
-        var /** @type {?} */ cases = Object.keys(this._caseViews);
-        var /** @type {?} */ key = getPluralCategory(this._switchValue, cases, this._localization);
-        this._activateView(this._caseViews[key]);
-    };
-    /**
-     * @return {?}
-     */
-    NgPlural.prototype._clearViews = function () {
-        if (this._activeView)
-            this._activeView.destroy();
-    };
-    /**
-     * @param {?} view
-     * @return {?}
-     */
-    NgPlural.prototype._activateView = function (view) {
-        if (view) {
-            this._activeView = view;
-            this._activeView.create();
-        }
-    };
-    return NgPlural;
-}());
-NgPlural.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngPlural]' },] },
-];
-/** @nocollapse */
-NgPlural.ctorParameters = function () { return [
-    { type: NgLocalization, },
-]; };
-NgPlural.propDecorators = {
-    'ngPlural': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-};
-/**
- * \@ngModule CommonModule
- *
- * \@whatItDoes Creates a view that will be added/removed from the parent {\@link NgPlural} when the
- *             given expression matches the plural expression according to CLDR rules.
- *
- * \@howToUse
- * ```
- * <some-element [ngPlural]="value">
- *   <ng-template ngPluralCase="=0">...</ng-template>
- *   <ng-template ngPluralCase="other">...</ng-template>
- * </some-element>
- * ```
- *
- * See {\@link NgPlural} for more details and example.
- *
- * \@experimental
- */
-var NgPluralCase = (function () {
-    /**
-     * @param {?} value
-     * @param {?} template
-     * @param {?} viewContainer
-     * @param {?} ngPlural
-     */
-    function NgPluralCase(value, template, viewContainer, ngPlural) {
-        this.value = value;
-        var isANumber = !isNaN(Number(value));
-        ngPlural.addCase(isANumber ? "=" + value : value, new SwitchView(viewContainer, template));
-    }
-    return NgPluralCase;
-}());
-NgPluralCase.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngPluralCase]' },] },
-];
-/** @nocollapse */
-NgPluralCase.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Attribute"], args: ['ngPluralCase',] },] },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["TemplateRef"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
-    { type: NgPlural, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Host"] },] },
-]; };
-/**
- * \@ngModule CommonModule
- *
- * \@whatItDoes Update an HTML element styles.
- *
- * \@howToUse
- * ```
- * <some-element [ngStyle]="{'font-style': styleExp}">...</some-element>
- *
- * <some-element [ngStyle]="{'max-width.px': widthExp}">...</some-element>
- *
- * <some-element [ngStyle]="objExp">...</some-element>
- * ```
- *
- * \@description
- *
- * The styles are updated according to the value of the expression evaluation:
- * - keys are style names with an optional `.<unit>` suffix (ie 'top.px', 'font-style.em'),
- * - values are the values assigned to those properties (expressed in the given unit).
- *
- * \@stable
- */
-var NgStyle = (function () {
-    /**
-     * @param {?} _differs
-     * @param {?} _ngEl
-     * @param {?} _renderer
-     */
-    function NgStyle(_differs, _ngEl, _renderer) {
-        this._differs = _differs;
-        this._ngEl = _ngEl;
-        this._renderer = _renderer;
-    }
-    Object.defineProperty(NgStyle.prototype, "ngStyle", {
-        /**
-         * @param {?} v
-         * @return {?}
-         */
-        set: function (v) {
-            this._ngStyle = v;
-            if (!this._differ && v) {
-                this._differ = this._differs.find(v).create();
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @return {?}
-     */
-    NgStyle.prototype.ngDoCheck = function () {
-        if (this._differ) {
-            var /** @type {?} */ changes = this._differ.diff(this._ngStyle);
-            if (changes) {
-                this._applyChanges(changes);
-            }
-        }
-    };
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    NgStyle.prototype._applyChanges = function (changes) {
-        var _this = this;
-        changes.forEachRemovedItem(function (record) { return _this._setStyle(record.key, null); });
-        changes.forEachAddedItem(function (record) { return _this._setStyle(record.key, record.currentValue); });
-        changes.forEachChangedItem(function (record) { return _this._setStyle(record.key, record.currentValue); });
-    };
-    /**
-     * @param {?} nameAndUnit
-     * @param {?} value
-     * @return {?}
-     */
-    NgStyle.prototype._setStyle = function (nameAndUnit, value) {
-        var _a = nameAndUnit.split('.'), name = _a[0], unit = _a[1];
-        value = value != null && unit ? "" + value + unit : value;
-        this._renderer.setElementStyle(this._ngEl.nativeElement, name, /** @type {?} */ (value));
-    };
-    return NgStyle;
-}());
-NgStyle.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngStyle]' },] },
-];
-/** @nocollapse */
-NgStyle.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["KeyValueDiffers"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], },
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"], },
-]; };
-NgStyle.propDecorators = {
-    'ngStyle': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-};
-/**
- * \@ngModule CommonModule
- *
- * \@whatItDoes Inserts an embedded view from a prepared `TemplateRef`
- *
- * \@howToUse
- * ```
- * <ng-container *ngTemplateOutlet="templateRefExp; context: contextExp"></ng-container>
- * ```
- *
- * \@description
- *
- * You can attach a context object to the `EmbeddedViewRef` by setting `[ngTemplateOutletContext]`.
- * `[ngTemplateOutletContext]` should be an object, the object's keys will be available for binding
- * by the local template `let` declarations.
- *
- * Note: using the key `$implicit` in the context object will set it's value as default.
- *
- * # Example
- *
- * {\@example common/ngTemplateOutlet/ts/module.ts region='NgTemplateOutlet'}
- *
- * \@experimental
- */
-var NgTemplateOutlet = (function () {
-    /**
-     * @param {?} _viewContainerRef
-     */
-    function NgTemplateOutlet(_viewContainerRef) {
-        this._viewContainerRef = _viewContainerRef;
-    }
-    Object.defineProperty(NgTemplateOutlet.prototype, "ngOutletContext", {
-        /**
-         * @deprecated v4.0.0 - Renamed to ngTemplateOutletContext.
-         * @param {?} context
-         * @return {?}
-         */
-        set: function (context) { this.ngTemplateOutletContext = context; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * @param {?} changes
-     * @return {?}
-     */
-    NgTemplateOutlet.prototype.ngOnChanges = function (changes) {
-        if (this._viewRef) {
-            this._viewContainerRef.remove(this._viewContainerRef.indexOf(this._viewRef));
-        }
-        if (this.ngTemplateOutlet) {
-            this._viewRef = this._viewContainerRef.createEmbeddedView(this.ngTemplateOutlet, this.ngTemplateOutletContext);
-        }
-    };
-    return NgTemplateOutlet;
-}());
-NgTemplateOutlet.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Directive"], args: [{ selector: '[ngTemplateOutlet]' },] },
-];
-/** @nocollapse */
-NgTemplateOutlet.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"], },
-]; };
-NgTemplateOutlet.propDecorators = {
-    'ngTemplateOutletContext': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-    'ngTemplateOutlet': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-    'ngOutletContext': [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"] },],
-};
-/**
- * A collection of Angular directives that are likely to be used in each and every Angular
- * application.
- */
-var /** @type {?} */ COMMON_DIRECTIVES = [
-    NgClass,
-    NgComponentOutlet,
-    NgForOf,
-    NgIf,
-    NgTemplateOutlet,
-    NgStyle,
-    NgSwitch,
-    NgSwitchCase,
-    NgSwitchDefault,
-    NgPlural,
-    NgPluralCase,
-];
-/**
- * @param {?} type
- * @param {?} value
- * @return {?}
- */
-function invalidPipeArgumentError(type, value) {
-    return Error("InvalidPipeArgument: '" + value + "' for pipe '" + __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵstringify"])(type) + "'");
-}
-var ObservableStrategy = (function () {
-    function ObservableStrategy() {
-    }
-    /**
-     * @param {?} async
-     * @param {?} updateLatestValue
-     * @return {?}
-     */
-    ObservableStrategy.prototype.createSubscription = function (async, updateLatestValue) {
-        return async.subscribe({ next: updateLatestValue, error: function (e) { throw e; } });
-    };
-    /**
-     * @param {?} subscription
-     * @return {?}
-     */
-    ObservableStrategy.prototype.dispose = function (subscription) { subscription.unsubscribe(); };
-    /**
-     * @param {?} subscription
-     * @return {?}
-     */
-    ObservableStrategy.prototype.onDestroy = function (subscription) { subscription.unsubscribe(); };
-    return ObservableStrategy;
-}());
-var PromiseStrategy = (function () {
-    function PromiseStrategy() {
-    }
-    /**
-     * @param {?} async
-     * @param {?} updateLatestValue
-     * @return {?}
-     */
-    PromiseStrategy.prototype.createSubscription = function (async, updateLatestValue) {
-        return async.then(updateLatestValue, function (e) { throw e; });
-    };
-    /**
-     * @param {?} subscription
-     * @return {?}
-     */
-    PromiseStrategy.prototype.dispose = function (subscription) { };
-    /**
-     * @param {?} subscription
-     * @return {?}
-     */
-    PromiseStrategy.prototype.onDestroy = function (subscription) { };
-    return PromiseStrategy;
-}());
-var /** @type {?} */ _promiseStrategy = new PromiseStrategy();
-var /** @type {?} */ _observableStrategy = new ObservableStrategy();
-/**
- * \@ngModule CommonModule
- * \@whatItDoes Unwraps a value from an asynchronous primitive.
- * \@howToUse `observable_or_promise_expression | async`
- * \@description
- * The `async` pipe subscribes to an `Observable` or `Promise` and returns the latest value it has
- * emitted. When a new value is emitted, the `async` pipe marks the component to be checked for
- * changes. When the component gets destroyed, the `async` pipe unsubscribes automatically to avoid
- * potential memory leaks.
- *
- *
- * ## Examples
- *
- * This example binds a `Promise` to the view. Clicking the `Resolve` button resolves the
- * promise.
- *
- * {\@example common/pipes/ts/async_pipe.ts region='AsyncPipePromise'}
- *
- * It's also possible to use `async` with Observables. The example below binds the `time` Observable
- * to the view. The Observable continuously updates the view with the current time.
- *
- * {\@example common/pipes/ts/async_pipe.ts region='AsyncPipeObservable'}
- *
- * \@stable
- */
-var AsyncPipe = (function () {
-    /**
-     * @param {?} _ref
-     */
-    function AsyncPipe(_ref) {
-        this._ref = _ref;
-        this._latestValue = null;
-        this._latestReturnedValue = null;
-        this._subscription = null;
-        this._obj = null;
-        this._strategy = null;
-    }
-    /**
-     * @return {?}
-     */
-    AsyncPipe.prototype.ngOnDestroy = function () {
-        if (this._subscription) {
-            this._dispose();
-        }
-    };
-    /**
-     * @param {?} obj
-     * @return {?}
-     */
-    AsyncPipe.prototype.transform = function (obj) {
-        if (!this._obj) {
-            if (obj) {
-                this._subscribe(obj);
-            }
-            this._latestReturnedValue = this._latestValue;
-            return this._latestValue;
-        }
-        if (obj !== this._obj) {
-            this._dispose();
-            return this.transform(/** @type {?} */ (obj));
-        }
-        if (this._latestValue === this._latestReturnedValue) {
-            return this._latestReturnedValue;
-        }
-        this._latestReturnedValue = this._latestValue;
-        return __WEBPACK_IMPORTED_MODULE_0__angular_core__["WrappedValue"].wrap(this._latestValue);
-    };
-    /**
-     * @param {?} obj
-     * @return {?}
-     */
-    AsyncPipe.prototype._subscribe = function (obj) {
-        var _this = this;
-        this._obj = obj;
-        this._strategy = this._selectStrategy(obj);
-        this._subscription = this._strategy.createSubscription(obj, function (value) { return _this._updateLatestValue(obj, value); });
-    };
-    /**
-     * @param {?} obj
-     * @return {?}
-     */
-    AsyncPipe.prototype._selectStrategy = function (obj) {
-        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵisPromise"])(obj)) {
-            return _promiseStrategy;
-        }
-        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ɵisObservable"])(obj)) {
-            return _observableStrategy;
-        }
-        throw invalidPipeArgumentError(AsyncPipe, obj);
-    };
-    /**
-     * @return {?}
-     */
-    AsyncPipe.prototype._dispose = function () {
-        this._strategy.dispose(this._subscription);
-        this._latestValue = null;
-        this._latestReturnedValue = null;
-        this._subscription = null;
-        this._obj = null;
-    };
-    /**
-     * @param {?} async
-     * @param {?} value
-     * @return {?}
-     */
-    AsyncPipe.prototype._updateLatestValue = function (async, value) {
-        if (async === this._obj) {
-            this._latestValue = value;
-            this._ref.markForCheck();
-        }
-    };
-    return AsyncPipe;
-}());
-AsyncPipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'async', pure: false },] },
-];
-/** @nocollapse */
-AsyncPipe.ctorParameters = function () { return [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectorRef"], },
-]; };
-/**
- * Transforms text to lowercase.
- *
- * {\@example  common/pipes/ts/lowerupper_pipe.ts region='LowerUpperPipe' }
- *
- * \@stable
- */
-var LowerCasePipe = (function () {
-    function LowerCasePipe() {
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    LowerCasePipe.prototype.transform = function (value) {
-        if (!value)
-            return value;
-        if (typeof value !== 'string') {
-            throw invalidPipeArgumentError(LowerCasePipe, value);
-        }
-        return value.toLowerCase();
-    };
-    return LowerCasePipe;
-}());
-LowerCasePipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'lowercase' },] },
-];
-/** @nocollapse */
-LowerCasePipe.ctorParameters = function () { return []; };
-/**
- * Helper method to transform a single word to titlecase.
- *
- * \@stable
- * @param {?} word
- * @return {?}
- */
-function titleCaseWord(word) {
-    if (!word)
-        return word;
-    return word[0].toUpperCase() + word.substr(1).toLowerCase();
-}
-/**
- * Transforms text to titlecase.
- *
- * \@stable
- */
-var TitleCasePipe = (function () {
-    function TitleCasePipe() {
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    TitleCasePipe.prototype.transform = function (value) {
-        if (!value)
-            return value;
-        if (typeof value !== 'string') {
-            throw invalidPipeArgumentError(TitleCasePipe, value);
-        }
-        return value.split(/\b/g).map(function (word) { return titleCaseWord(word); }).join('');
-    };
-    return TitleCasePipe;
-}());
-TitleCasePipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'titlecase' },] },
-];
-/** @nocollapse */
-TitleCasePipe.ctorParameters = function () { return []; };
-/**
- * Transforms text to uppercase.
- *
- * \@stable
- */
-var UpperCasePipe = (function () {
-    function UpperCasePipe() {
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    UpperCasePipe.prototype.transform = function (value) {
-        if (!value)
-            return value;
-        if (typeof value !== 'string') {
-            throw invalidPipeArgumentError(UpperCasePipe, value);
-        }
-        return value.toUpperCase();
-    };
-    return UpperCasePipe;
-}());
-UpperCasePipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'uppercase' },] },
-];
-/** @nocollapse */
-UpperCasePipe.ctorParameters = function () { return []; };
-var NumberFormatStyle = {};
-NumberFormatStyle.Decimal = 0;
-NumberFormatStyle.Percent = 1;
-NumberFormatStyle.Currency = 2;
-NumberFormatStyle[NumberFormatStyle.Decimal] = "Decimal";
-NumberFormatStyle[NumberFormatStyle.Percent] = "Percent";
-NumberFormatStyle[NumberFormatStyle.Currency] = "Currency";
-var NumberFormatter = (function () {
-    function NumberFormatter() {
-    }
-    /**
-     * @param {?} num
-     * @param {?} locale
-     * @param {?} style
-     * @param {?=} __3
-     * @return {?}
-     */
-    NumberFormatter.format = function (num, locale, style, _a) {
-        var _b = _a === void 0 ? {} : _a, minimumIntegerDigits = _b.minimumIntegerDigits, minimumFractionDigits = _b.minimumFractionDigits, maximumFractionDigits = _b.maximumFractionDigits, currency = _b.currency, _c = _b.currencyAsSymbol, currencyAsSymbol = _c === void 0 ? false : _c;
-        var /** @type {?} */ options = {
-            minimumIntegerDigits: minimumIntegerDigits,
-            minimumFractionDigits: minimumFractionDigits,
-            maximumFractionDigits: maximumFractionDigits,
-            style: NumberFormatStyle[style].toLowerCase()
-        };
-        if (style == NumberFormatStyle.Currency) {
-            options.currency = currency;
-            options.currencyDisplay = currencyAsSymbol ? 'symbol' : 'code';
-        }
-        return new Intl.NumberFormat(locale, options).format(num);
-    };
-    return NumberFormatter;
-}());
-var /** @type {?} */ DATE_FORMATS_SPLIT = /((?:[^yMLdHhmsazZEwGjJ']+)|(?:'(?:[^']|'')*')|(?:E+|y+|M+|L+|d+|H+|h+|J+|j+|m+|s+|a|z|Z|G+|w+))(.*)/;
-var /** @type {?} */ PATTERN_ALIASES = {
-    // Keys are quoted so they do not get renamed during closure compilation.
-    'yMMMdjms': datePartGetterFactory(combine([
-        digitCondition('year', 1),
-        nameCondition('month', 3),
-        digitCondition('day', 1),
-        digitCondition('hour', 1),
-        digitCondition('minute', 1),
-        digitCondition('second', 1),
-    ])),
-    'yMdjm': datePartGetterFactory(combine([
-        digitCondition('year', 1), digitCondition('month', 1), digitCondition('day', 1),
-        digitCondition('hour', 1), digitCondition('minute', 1)
-    ])),
-    'yMMMMEEEEd': datePartGetterFactory(combine([
-        digitCondition('year', 1), nameCondition('month', 4), nameCondition('weekday', 4),
-        digitCondition('day', 1)
-    ])),
-    'yMMMMd': datePartGetterFactory(combine([digitCondition('year', 1), nameCondition('month', 4), digitCondition('day', 1)])),
-    'yMMMd': datePartGetterFactory(combine([digitCondition('year', 1), nameCondition('month', 3), digitCondition('day', 1)])),
-    'yMd': datePartGetterFactory(combine([digitCondition('year', 1), digitCondition('month', 1), digitCondition('day', 1)])),
-    'jms': datePartGetterFactory(combine([digitCondition('hour', 1), digitCondition('second', 1), digitCondition('minute', 1)])),
-    'jm': datePartGetterFactory(combine([digitCondition('hour', 1), digitCondition('minute', 1)]))
-};
-var /** @type {?} */ DATE_FORMATS = {
-    // Keys are quoted so they do not get renamed.
-    'yyyy': datePartGetterFactory(digitCondition('year', 4)),
-    'yy': datePartGetterFactory(digitCondition('year', 2)),
-    'y': datePartGetterFactory(digitCondition('year', 1)),
-    'MMMM': datePartGetterFactory(nameCondition('month', 4)),
-    'MMM': datePartGetterFactory(nameCondition('month', 3)),
-    'MM': datePartGetterFactory(digitCondition('month', 2)),
-    'M': datePartGetterFactory(digitCondition('month', 1)),
-    'LLLL': datePartGetterFactory(nameCondition('month', 4)),
-    'L': datePartGetterFactory(nameCondition('month', 1)),
-    'dd': datePartGetterFactory(digitCondition('day', 2)),
-    'd': datePartGetterFactory(digitCondition('day', 1)),
-    'HH': digitModifier(hourExtractor(datePartGetterFactory(hour12Modify(digitCondition('hour', 2), false)))),
-    'H': hourExtractor(datePartGetterFactory(hour12Modify(digitCondition('hour', 1), false))),
-    'hh': digitModifier(hourExtractor(datePartGetterFactory(hour12Modify(digitCondition('hour', 2), true)))),
-    'h': hourExtractor(datePartGetterFactory(hour12Modify(digitCondition('hour', 1), true))),
-    'jj': datePartGetterFactory(digitCondition('hour', 2)),
-    'j': datePartGetterFactory(digitCondition('hour', 1)),
-    'mm': digitModifier(datePartGetterFactory(digitCondition('minute', 2))),
-    'm': datePartGetterFactory(digitCondition('minute', 1)),
-    'ss': digitModifier(datePartGetterFactory(digitCondition('second', 2))),
-    's': datePartGetterFactory(digitCondition('second', 1)),
-    // while ISO 8601 requires fractions to be prefixed with `.` or `,`
-    // we can be just safely rely on using `sss` since we currently don't support single or two digit
-    // fractions
-    'sss': datePartGetterFactory(digitCondition('second', 3)),
-    'EEEE': datePartGetterFactory(nameCondition('weekday', 4)),
-    'EEE': datePartGetterFactory(nameCondition('weekday', 3)),
-    'EE': datePartGetterFactory(nameCondition('weekday', 2)),
-    'E': datePartGetterFactory(nameCondition('weekday', 1)),
-    'a': hourClockExtractor(datePartGetterFactory(hour12Modify(digitCondition('hour', 1), true))),
-    'Z': timeZoneGetter('short'),
-    'z': timeZoneGetter('long'),
-    'ww': datePartGetterFactory({}),
-    // first Thursday of the year. not support ?
-    'w': datePartGetterFactory({}),
-    // of the year not support ?
-    'G': datePartGetterFactory(nameCondition('era', 1)),
-    'GG': datePartGetterFactory(nameCondition('era', 2)),
-    'GGG': datePartGetterFactory(nameCondition('era', 3)),
-    'GGGG': datePartGetterFactory(nameCondition('era', 4))
-};
-/**
- * @param {?} inner
- * @return {?}
- */
-function digitModifier(inner) {
-    return function (date, locale) {
-        var /** @type {?} */ result = inner(date, locale);
-        return result.length == 1 ? '0' + result : result;
-    };
-}
-/**
- * @param {?} inner
- * @return {?}
- */
-function hourClockExtractor(inner) {
-    return function (date, locale) { return inner(date, locale).split(' ')[1]; };
-}
-/**
- * @param {?} inner
- * @return {?}
- */
-function hourExtractor(inner) {
-    return function (date, locale) { return inner(date, locale).split(' ')[0]; };
-}
-/**
- * @param {?} date
- * @param {?} locale
- * @param {?} options
- * @return {?}
- */
-function intlDateFormat(date, locale, options) {
-    return new Intl.DateTimeFormat(locale, options).format(date).replace(/[\u200e\u200f]/g, '');
-}
-/**
- * @param {?} timezone
- * @return {?}
- */
-function timeZoneGetter(timezone) {
-    // To workaround `Intl` API restriction for single timezone let format with 24 hours
-    var /** @type {?} */ options = { hour: '2-digit', hour12: false, timeZoneName: timezone };
-    return function (date, locale) {
-        var /** @type {?} */ result = intlDateFormat(date, locale, options);
-        // Then extract first 3 letters that related to hours
-        return result ? result.substring(3) : '';
-    };
-}
-/**
- * @param {?} options
- * @param {?} value
- * @return {?}
- */
-function hour12Modify(options, value) {
-    options.hour12 = value;
-    return options;
-}
-/**
- * @param {?} prop
- * @param {?} len
- * @return {?}
- */
-function digitCondition(prop, len) {
-    var /** @type {?} */ result = {};
-    result[prop] = len === 2 ? '2-digit' : 'numeric';
-    return result;
-}
-/**
- * @param {?} prop
- * @param {?} len
- * @return {?}
- */
-function nameCondition(prop, len) {
-    var /** @type {?} */ result = {};
-    if (len < 4) {
-        result[prop] = len > 1 ? 'short' : 'narrow';
-    }
-    else {
-        result[prop] = 'long';
-    }
-    return result;
-}
-/**
- * @param {?} options
- * @return {?}
- */
-function combine(options) {
-    return ((Object)).assign.apply(((Object)), [{}].concat(options));
-}
-/**
- * @param {?} ret
- * @return {?}
- */
-function datePartGetterFactory(ret) {
-    return function (date, locale) { return intlDateFormat(date, locale, ret); };
-}
-var /** @type {?} */ DATE_FORMATTER_CACHE = new Map();
-/**
- * @param {?} format
- * @param {?} date
- * @param {?} locale
- * @return {?}
- */
-function dateFormatter(format, date, locale) {
-    var /** @type {?} */ fn = PATTERN_ALIASES[format];
-    if (fn)
-        return fn(date, locale);
-    var /** @type {?} */ cacheKey = format;
-    var /** @type {?} */ parts = DATE_FORMATTER_CACHE.get(cacheKey);
-    if (!parts) {
-        parts = [];
-        var /** @type {?} */ match = void 0;
-        DATE_FORMATS_SPLIT.exec(format);
-        while (format) {
-            match = DATE_FORMATS_SPLIT.exec(format);
-            if (match) {
-                parts = parts.concat(match.slice(1));
-                format = parts.pop();
-            }
-            else {
-                parts.push(format);
-                format = null;
-            }
-        }
-        DATE_FORMATTER_CACHE.set(cacheKey, parts);
-    }
-    return parts.reduce(function (text, part) {
-        var /** @type {?} */ fn = DATE_FORMATS[part];
-        return text + (fn ? fn(date, locale) : partToTime(part));
-    }, '');
-}
-/**
- * @param {?} part
- * @return {?}
- */
-function partToTime(part) {
-    return part === '\'\'' ? '\'' : part.replace(/(^'|'$)/g, '').replace(/''/g, '\'');
-}
-var DateFormatter = (function () {
-    function DateFormatter() {
-    }
-    /**
-     * @param {?} date
-     * @param {?} locale
-     * @param {?} pattern
-     * @return {?}
-     */
-    DateFormatter.format = function (date, locale, pattern) {
-        return dateFormatter(pattern, date, locale);
-    };
-    return DateFormatter;
-}());
-var /** @type {?} */ _NUMBER_FORMAT_REGEXP = /^(\d+)?\.((\d+)(-(\d+))?)?$/;
-/**
- * @param {?} pipe
- * @param {?} locale
- * @param {?} value
- * @param {?} style
- * @param {?} digits
- * @param {?=} currency
- * @param {?=} currencyAsSymbol
- * @return {?}
- */
-function formatNumber(pipe, locale, value, style, digits, currency, currencyAsSymbol) {
-    if (currency === void 0) { currency = null; }
-    if (currencyAsSymbol === void 0) { currencyAsSymbol = false; }
-    if (value == null)
-        return null;
-    // Convert strings to numbers
-    value = typeof value === 'string' && isNumeric(value) ? +value : value;
-    if (typeof value !== 'number') {
-        throw invalidPipeArgumentError(pipe, value);
-    }
-    var /** @type {?} */ minInt;
-    var /** @type {?} */ minFraction;
-    var /** @type {?} */ maxFraction;
-    if (style !== NumberFormatStyle.Currency) {
-        // rely on Intl default for currency
-        minInt = 1;
-        minFraction = 0;
-        maxFraction = 3;
-    }
-    if (digits) {
-        var /** @type {?} */ parts = digits.match(_NUMBER_FORMAT_REGEXP);
-        if (parts === null) {
-            throw new Error(digits + " is not a valid digit info for number pipes");
-        }
-        if (parts[1] != null) {
-            minInt = parseIntAutoRadix(parts[1]);
-        }
-        if (parts[3] != null) {
-            minFraction = parseIntAutoRadix(parts[3]);
-        }
-        if (parts[5] != null) {
-            maxFraction = parseIntAutoRadix(parts[5]);
-        }
-    }
-    return NumberFormatter.format(/** @type {?} */ (value), locale, style, {
-        minimumIntegerDigits: minInt,
-        minimumFractionDigits: minFraction,
-        maximumFractionDigits: maxFraction,
-        currency: currency,
-        currencyAsSymbol: currencyAsSymbol,
-    });
-}
-/**
- * \@ngModule CommonModule
- * \@whatItDoes Formats a number according to locale rules.
- * \@howToUse `number_expression | number[:digitInfo]`
- *
- * Formats a number as text. Group sizing and separator and other locale-specific
- * configurations are based on the active locale.
- *
- * where `expression` is a number:
- *  - `digitInfo` is a `string` which has a following format: <br>
- *     <code>{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}</code>
- *   - `minIntegerDigits` is the minimum number of integer digits to use. Defaults to `1`.
- *   - `minFractionDigits` is the minimum number of digits after fraction. Defaults to `0`.
- *   - `maxFractionDigits` is the maximum number of digits after fraction. Defaults to `3`.
- *
- * For more information on the acceptable range for each of these numbers and other
- * details see your native internationalization library.
- *
- * WARNING: this pipe uses the Internationalization API which is not yet available in all browsers
- * and may require a polyfill. See {\@linkDocs guide/browser-support} for details.
- *
- * ### Example
- *
- * {\@example common/pipes/ts/number_pipe.ts region='NumberPipe'}
- *
- * \@stable
- */
-var DecimalPipe = (function () {
-    /**
-     * @param {?} _locale
-     */
-    function DecimalPipe(_locale) {
-        this._locale = _locale;
-    }
-    /**
-     * @param {?} value
-     * @param {?=} digits
-     * @return {?}
-     */
-    DecimalPipe.prototype.transform = function (value, digits) {
-        if (digits === void 0) { digits = null; }
-        return formatNumber(DecimalPipe, this._locale, value, NumberFormatStyle.Decimal, digits);
-    };
-    return DecimalPipe;
-}());
-DecimalPipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'number' },] },
-];
-/** @nocollapse */
-DecimalPipe.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"],] },] },
-]; };
-/**
- * \@ngModule CommonModule
- * \@whatItDoes Formats a number as a percentage according to locale rules.
- * \@howToUse `number_expression | percent[:digitInfo]`
- *
- * \@description
- *
- * Formats a number as percentage.
- *
- * - `digitInfo` See {\@link DecimalPipe} for detailed description.
- *
- * WARNING: this pipe uses the Internationalization API which is not yet available in all browsers
- * and may require a polyfill. See {\@linkDocs guide/browser-support} for details.
- *
- * ### Example
- *
- * {\@example common/pipes/ts/number_pipe.ts region='PercentPipe'}
- *
- * \@stable
- */
-var PercentPipe = (function () {
-    /**
-     * @param {?} _locale
-     */
-    function PercentPipe(_locale) {
-        this._locale = _locale;
-    }
-    /**
-     * @param {?} value
-     * @param {?=} digits
-     * @return {?}
-     */
-    PercentPipe.prototype.transform = function (value, digits) {
-        if (digits === void 0) { digits = null; }
-        return formatNumber(PercentPipe, this._locale, value, NumberFormatStyle.Percent, digits);
-    };
-    return PercentPipe;
-}());
-PercentPipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'percent' },] },
-];
-/** @nocollapse */
-PercentPipe.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"],] },] },
-]; };
-/**
- * \@ngModule CommonModule
- * \@whatItDoes Formats a number as currency using locale rules.
- * \@howToUse `number_expression | currency[:currencyCode[:symbolDisplay[:digitInfo]]]`
- * \@description
- *
- * Use `currency` to format a number as currency.
- *
- * - `currencyCode` is the [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) currency code, such
- *    as `USD` for the US dollar and `EUR` for the euro.
- * - `symbolDisplay` is a boolean indicating whether to use the currency symbol or code.
- *   - `true`: use symbol (e.g. `$`).
- *   - `false`(default): use code (e.g. `USD`).
- * - `digitInfo` See {\@link DecimalPipe} for detailed description.
- *
- * WARNING: this pipe uses the Internationalization API which is not yet available in all browsers
- * and may require a polyfill. See {\@linkDocs guide/browser-support} for details.
- *
- * ### Example
- *
- * {\@example common/pipes/ts/number_pipe.ts region='CurrencyPipe'}
- *
- * \@stable
- */
-var CurrencyPipe = (function () {
-    /**
-     * @param {?} _locale
-     */
-    function CurrencyPipe(_locale) {
-        this._locale = _locale;
-    }
-    /**
-     * @param {?} value
-     * @param {?=} currencyCode
-     * @param {?=} symbolDisplay
-     * @param {?=} digits
-     * @return {?}
-     */
-    CurrencyPipe.prototype.transform = function (value, currencyCode, symbolDisplay, digits) {
-        if (currencyCode === void 0) { currencyCode = 'USD'; }
-        if (symbolDisplay === void 0) { symbolDisplay = false; }
-        if (digits === void 0) { digits = null; }
-        return formatNumber(CurrencyPipe, this._locale, value, NumberFormatStyle.Currency, digits, currencyCode, symbolDisplay);
-    };
-    return CurrencyPipe;
-}());
-CurrencyPipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'currency' },] },
-];
-/** @nocollapse */
-CurrencyPipe.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"],] },] },
-]; };
-/**
- * @param {?} text
- * @return {?}
- */
-function parseIntAutoRadix(text) {
-    var /** @type {?} */ result = parseInt(text);
-    if (isNaN(result)) {
-        throw new Error('Invalid integer literal when parsing ' + text);
-    }
-    return result;
-}
-/**
- * @param {?} value
- * @return {?}
- */
-function isNumeric(value) {
-    return !isNaN(value - parseFloat(value));
-}
-var /** @type {?} */ ISO8601_DATE_REGEX = /^(\d{4})-?(\d\d)-?(\d\d)(?:T(\d\d)(?::?(\d\d)(?::?(\d\d)(?:\.(\d+))?)?)?(Z|([+-])(\d\d):?(\d\d))?)?$/;
-/**
- * \@ngModule CommonModule
- * \@whatItDoes Formats a date according to locale rules.
- * \@howToUse `date_expression | date[:format]`
- * \@description
- *
- * Where:
- * - `expression` is a date object or a number (milliseconds since UTC epoch) or an ISO string
- * (https://www.w3.org/TR/NOTE-datetime).
- * - `format` indicates which date/time components to include. The format can be predefined as
- *   shown below or custom as shown in the table.
- *   - `'medium'`: equivalent to `'yMMMdjms'` (e.g. `Sep 3, 2010, 12:05:08 PM` for `en-US`)
- *   - `'short'`: equivalent to `'yMdjm'` (e.g. `9/3/2010, 12:05 PM` for `en-US`)
- *   - `'fullDate'`: equivalent to `'yMMMMEEEEd'` (e.g. `Friday, September 3, 2010` for `en-US`)
- *   - `'longDate'`: equivalent to `'yMMMMd'` (e.g. `September 3, 2010` for `en-US`)
- *   - `'mediumDate'`: equivalent to `'yMMMd'` (e.g. `Sep 3, 2010` for `en-US`)
- *   - `'shortDate'`: equivalent to `'yMd'` (e.g. `9/3/2010` for `en-US`)
- *   - `'mediumTime'`: equivalent to `'jms'` (e.g. `12:05:08 PM` for `en-US`)
- *   - `'shortTime'`: equivalent to `'jm'` (e.g. `12:05 PM` for `en-US`)
- *
- *
- *  | Component | Symbol | Narrow | Short Form   | Long Form         | Numeric   | 2-digit   |
- *  |-----------|:------:|--------|--------------|-------------------|-----------|-----------|
- *  | era       |   G    | G (A)  | GGG (AD)     | GGGG (Anno Domini)| -         | -         |
- *  | year      |   y    | -      | -            | -                 | y (2015)  | yy (15)   |
- *  | month     |   M    | L (S)  | MMM (Sep)    | MMMM (September)  | M (9)     | MM (09)   |
- *  | day       |   d    | -      | -            | -                 | d (3)     | dd (03)   |
- *  | weekday   |   E    | E (S)  | EEE (Sun)    | EEEE (Sunday)     | -         | -         |
- *  | hour      |   j    | -      | -            | -                 | j (13)    | jj (13)   |
- *  | hour12    |   h    | -      | -            | -                 | h (1 PM)  | hh (01 PM)|
- *  | hour24    |   H    | -      | -            | -                 | H (13)    | HH (13)   |
- *  | minute    |   m    | -      | -            | -                 | m (5)     | mm (05)   |
- *  | second    |   s    | -      | -            | -                 | s (9)     | ss (09)   |
- *  | timezone  |   z    | -      | -            | z (Pacific Standard Time)| -  | -         |
- *  | timezone  |   Z    | -      | Z (GMT-8:00) | -                 | -         | -         |
- *  | timezone  |   a    | -      | a (PM)       | -                 | -         | -         |
- *
- * In javascript, only the components specified will be respected (not the ordering,
- * punctuations, ...) and details of the formatting will be dependent on the locale.
- *
- * Timezone of the formatted text will be the local system timezone of the end-user's machine.
- *
- * When the expression is a ISO string without time (e.g. 2016-09-19) the time zone offset is not
- * applied and the formatted text will have the same day, month and year of the expression.
- *
- * WARNINGS:
- * - this pipe is marked as pure hence it will not be re-evaluated when the input is mutated.
- *   Instead users should treat the date as an immutable object and change the reference when the
- *   pipe needs to re-run (this is to avoid reformatting the date on every change detection run
- *   which would be an expensive operation).
- * - this pipe uses the Internationalization API. Therefore it is only reliable in Chrome and Opera
- *   browsers.
- *
- * ### Examples
- *
- * Assuming `dateObj` is (year: 2015, month: 6, day: 15, hour: 21, minute: 43, second: 11)
- * in the _local_ time and locale is 'en-US':
- *
- * ```
- *     {{ dateObj | date }}               // output is 'Jun 15, 2015'
- *     {{ dateObj | date:'medium' }}      // output is 'Jun 15, 2015, 9:43:11 PM'
- *     {{ dateObj | date:'shortTime' }}   // output is '9:43 PM'
- *     {{ dateObj | date:'mmss' }}        // output is '43:11'
- * ```
- *
- * {\@example common/pipes/ts/date_pipe.ts region='DatePipe'}
- *
- * \@stable
- */
-var DatePipe = (function () {
-    /**
-     * @param {?} _locale
-     */
-    function DatePipe(_locale) {
-        this._locale = _locale;
-    }
-    /**
-     * @param {?} value
-     * @param {?=} pattern
-     * @return {?}
-     */
-    DatePipe.prototype.transform = function (value, pattern) {
-        if (pattern === void 0) { pattern = 'mediumDate'; }
-        var /** @type {?} */ date;
-        if (isBlank(value) || value !== value)
-            return null;
-        if (typeof value === 'string') {
-            value = value.trim();
-        }
-        if (isDate(value)) {
-            date = value;
-        }
-        else if (isNumeric(value)) {
-            date = new Date(parseFloat(value));
-        }
-        else if (typeof value === 'string' && /^(\d{4}-\d{1,2}-\d{1,2})$/.test(value)) {
-            /**
-            * For ISO Strings without time the day, month and year must be extracted from the ISO String
-            * before Date creation to avoid time offset and errors in the new Date.
-            * If we only replace '-' with ',' in the ISO String ("2015,01,01"), and try to create a new
-            * date, some browsers (e.g. IE 9) will throw an invalid Date error
-            * If we leave the '-' ("2015-01-01") and try to create a new Date("2015-01-01") the timeoffset
-            * is applied
-            * Note: ISO months are 0 for January, 1 for February, ...
-            */
-            var _a = value.split('-').map(function (val) { return parseInt(val, 10); }), y = _a[0], m = _a[1], d = _a[2];
-            date = new Date(y, m - 1, d);
-        }
-        else {
-            date = new Date(value);
-        }
-        if (!isDate(date)) {
-            var /** @type {?} */ match = void 0;
-            if ((typeof value === 'string') && (match = value.match(ISO8601_DATE_REGEX))) {
-                date = isoStringToDate(match);
-            }
-            else {
-                throw invalidPipeArgumentError(DatePipe, value);
-            }
-        }
-        return DateFormatter.format(date, this._locale, DatePipe._ALIASES[pattern] || pattern);
-    };
-    return DatePipe;
-}());
-/** @internal */
-DatePipe._ALIASES = {
-    'medium': 'yMMMdjms',
-    'short': 'yMdjm',
-    'fullDate': 'yMMMMEEEEd',
-    'longDate': 'yMMMMd',
-    'mediumDate': 'yMMMd',
-    'shortDate': 'yMd',
-    'mediumTime': 'jms',
-    'shortTime': 'jm'
-};
-DatePipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'date', pure: true },] },
-];
-/** @nocollapse */
-DatePipe.ctorParameters = function () { return [
-    { type: undefined, decorators: [{ type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Inject"], args: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["LOCALE_ID"],] },] },
-]; };
-/**
- * @param {?} obj
- * @return {?}
- */
-function isBlank(obj) {
-    return obj == null || obj === '';
-}
-/**
- * @param {?} obj
- * @return {?}
- */
-function isDate(obj) {
-    return obj instanceof Date && !isNaN(obj.valueOf());
-}
-/**
- * @param {?} match
- * @return {?}
- */
-function isoStringToDate(match) {
-    var /** @type {?} */ date = new Date(0);
-    var /** @type {?} */ tzHour = 0;
-    var /** @type {?} */ tzMin = 0;
-    var /** @type {?} */ dateSetter = match[8] ? date.setUTCFullYear : date.setFullYear;
-    var /** @type {?} */ timeSetter = match[8] ? date.setUTCHours : date.setHours;
-    if (match[9]) {
-        tzHour = toInt(match[9] + match[10]);
-        tzMin = toInt(match[9] + match[11]);
-    }
-    dateSetter.call(date, toInt(match[1]), toInt(match[2]) - 1, toInt(match[3]));
-    var /** @type {?} */ h = toInt(match[4] || '0') - tzHour;
-    var /** @type {?} */ m = toInt(match[5] || '0') - tzMin;
-    var /** @type {?} */ s = toInt(match[6] || '0');
-    var /** @type {?} */ ms = Math.round(parseFloat('0.' + (match[7] || 0)) * 1000);
-    timeSetter.call(date, h, m, s, ms);
-    return date;
-}
-/**
- * @param {?} str
- * @return {?}
- */
-function toInt(str) {
-    return parseInt(str, 10);
-}
-var /** @type {?} */ _INTERPOLATION_REGEXP = /#/g;
-/**
- * \@ngModule CommonModule
- * \@whatItDoes Maps a value to a string that pluralizes the value according to locale rules.
- * \@howToUse `expression | i18nPlural:mapping`
- * \@description
- *
- *  Where:
- *  - `expression` is a number.
- *  - `mapping` is an object that mimics the ICU format, see
- *    http://userguide.icu-project.org/formatparse/messages
- *
- *  ## Example
- *
- * {\@example common/pipes/ts/i18n_pipe.ts region='I18nPluralPipeComponent'}
- *
- * \@experimental
- */
-var I18nPluralPipe = (function () {
-    /**
-     * @param {?} _localization
-     */
-    function I18nPluralPipe(_localization) {
-        this._localization = _localization;
-    }
-    /**
-     * @param {?} value
-     * @param {?} pluralMap
-     * @return {?}
-     */
-    I18nPluralPipe.prototype.transform = function (value, pluralMap) {
-        if (value == null)
-            return '';
-        if (typeof pluralMap !== 'object' || pluralMap === null) {
-            throw invalidPipeArgumentError(I18nPluralPipe, pluralMap);
-        }
-        var /** @type {?} */ key = getPluralCategory(value, Object.keys(pluralMap), this._localization);
-        return pluralMap[key].replace(_INTERPOLATION_REGEXP, value.toString());
-    };
-    return I18nPluralPipe;
-}());
-I18nPluralPipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'i18nPlural', pure: true },] },
-];
-/** @nocollapse */
-I18nPluralPipe.ctorParameters = function () { return [
-    { type: NgLocalization, },
-]; };
-/**
- * \@ngModule CommonModule
- * \@whatItDoes Generic selector that displays the string that matches the current value.
- * \@howToUse `expression | i18nSelect:mapping`
- * \@description
- *
- *  Where `mapping` is an object that indicates the text that should be displayed
- *  for different values of the provided `expression`.
- *  If none of the keys of the mapping match the value of the `expression`, then the content
- *  of the `other` key is returned when present, otherwise an empty string is returned.
- *
- *  ## Example
- *
- * {\@example common/pipes/ts/i18n_pipe.ts region='I18nSelectPipeComponent'}
- *
- *  \@experimental
- */
-var I18nSelectPipe = (function () {
-    function I18nSelectPipe() {
-    }
-    /**
-     * @param {?} value
-     * @param {?} mapping
-     * @return {?}
-     */
-    I18nSelectPipe.prototype.transform = function (value, mapping) {
-        if (value == null)
-            return '';
-        if (typeof mapping !== 'object' || typeof value !== 'string') {
-            throw invalidPipeArgumentError(I18nSelectPipe, mapping);
-        }
-        if (mapping.hasOwnProperty(value)) {
-            return mapping[value];
-        }
-        if (mapping.hasOwnProperty('other')) {
-            return mapping['other'];
-        }
-        return '';
-    };
-    return I18nSelectPipe;
-}());
-I18nSelectPipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'i18nSelect', pure: true },] },
-];
-/** @nocollapse */
-I18nSelectPipe.ctorParameters = function () { return []; };
-/**
- * \@ngModule CommonModule
- * \@whatItDoes Converts value into JSON string.
- * \@howToUse `expression | json`
- * \@description
- *
- * Converts value into string using `JSON.stringify`. Useful for debugging.
- *
- * ### Example
- * {\@example common/pipes/ts/json_pipe.ts region='JsonPipe'}
- *
- * \@stable
- */
-var JsonPipe = (function () {
-    function JsonPipe() {
-    }
-    /**
-     * @param {?} value
-     * @return {?}
-     */
-    JsonPipe.prototype.transform = function (value) { return JSON.stringify(value, null, 2); };
-    return JsonPipe;
-}());
-JsonPipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'json', pure: false },] },
-];
-/** @nocollapse */
-JsonPipe.ctorParameters = function () { return []; };
-/**
- * \@ngModule CommonModule
- * \@whatItDoes Creates a new List or String containing a subset (slice) of the elements.
- * \@howToUse `array_or_string_expression | slice:start[:end]`
- * \@description
- *
- * Where the input expression is a `List` or `String`, and:
- * - `start`: The starting index of the subset to return.
- *   - **a positive integer**: return the item at `start` index and all items after
- *     in the list or string expression.
- *   - **a negative integer**: return the item at `start` index from the end and all items after
- *     in the list or string expression.
- *   - **if positive and greater than the size of the expression**: return an empty list or string.
- *   - **if negative and greater than the size of the expression**: return entire list or string.
- * - `end`: The ending index of the subset to return.
- *   - **omitted**: return all items until the end.
- *   - **if positive**: return all items before `end` index of the list or string.
- *   - **if negative**: return all items before `end` index from the end of the list or string.
- *
- * All behavior is based on the expected behavior of the JavaScript API `Array.prototype.slice()`
- * and `String.prototype.slice()`.
- *
- * When operating on a [List], the returned list is always a copy even when all
- * the elements are being returned.
- *
- * When operating on a blank value, the pipe returns the blank value.
- *
- * ## List Example
- *
- * This `ngFor` example:
- *
- * {\@example common/pipes/ts/slice_pipe.ts region='SlicePipe_list'}
- *
- * produces the following:
- *
- *     <li>b</li>
- *     <li>c</li>
- *
- * ## String Examples
- *
- * {\@example common/pipes/ts/slice_pipe.ts region='SlicePipe_string'}
- *
- * \@stable
- */
-var SlicePipe = (function () {
-    function SlicePipe() {
-    }
-    /**
-     * @param {?} value
-     * @param {?} start
-     * @param {?=} end
-     * @return {?}
-     */
-    SlicePipe.prototype.transform = function (value, start, end) {
-        if (value == null)
-            return value;
-        if (!this.supports(value)) {
-            throw invalidPipeArgumentError(SlicePipe, value);
-        }
-        return value.slice(start, end);
-    };
-    /**
-     * @param {?} obj
-     * @return {?}
-     */
-    SlicePipe.prototype.supports = function (obj) { return typeof obj === 'string' || Array.isArray(obj); };
-    return SlicePipe;
-}());
-SlicePipe.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"], args: [{ name: 'slice', pure: false },] },
-];
-/** @nocollapse */
-SlicePipe.ctorParameters = function () { return []; };
-/**
- * A collection of Angular pipes that are likely to be used in each and every application.
- */
-var /** @type {?} */ COMMON_PIPES = [
-    AsyncPipe,
-    UpperCasePipe,
-    LowerCasePipe,
-    JsonPipe,
-    SlicePipe,
-    DecimalPipe,
-    PercentPipe,
-    TitleCasePipe,
-    CurrencyPipe,
-    DatePipe,
-    I18nPluralPipe,
-    I18nSelectPipe,
-];
-/**
- * The module that includes all the basic Angular directives like {\@link NgIf}, {\@link NgForOf}, ...
- *
- * \@stable
- */
-var CommonModule = (function () {
-    function CommonModule() {
-    }
-    return CommonModule;
-}());
-CommonModule.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"], args: [{
-                declarations: [COMMON_DIRECTIVES, COMMON_PIPES],
-                exports: [COMMON_DIRECTIVES, COMMON_PIPES],
-                providers: [
-                    { provide: NgLocalization, useClass: NgLocaleLocalization },
-                ],
-            },] },
-];
-/** @nocollapse */
-CommonModule.ctorParameters = function () { return []; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */ var /** @type {?} */ PLATFORM_BROWSER_ID = 'browser';
-var /** @type {?} */ PLATFORM_SERVER_ID = 'server';
-var /** @type {?} */ PLATFORM_WORKER_APP_ID = 'browserWorkerApp';
-var /** @type {?} */ PLATFORM_WORKER_UI_ID = 'browserWorkerUi';
-/**
- * Returns whether a platform id represents a browser platform.
- * \@experimental
- * @param {?} platformId
- * @return {?}
- */
-function isPlatformBrowser(platformId) {
-    return platformId === PLATFORM_BROWSER_ID;
-}
-/**
- * Returns whether a platform id represents a server platform.
- * \@experimental
- * @param {?} platformId
- * @return {?}
- */
-function isPlatformServer(platformId) {
-    return platformId === PLATFORM_SERVER_ID;
-}
-/**
- * Returns whether a platform id represents a web worker app platform.
- * \@experimental
- * @param {?} platformId
- * @return {?}
- */
-function isPlatformWorkerApp(platformId) {
-    return platformId === PLATFORM_WORKER_APP_ID;
-}
-/**
- * Returns whether a platform id represents a web worker UI platform.
- * \@experimental
- * @param {?} platformId
- * @return {?}
- */
-function isPlatformWorkerUi(platformId) {
-    return platformId === PLATFORM_WORKER_UI_ID;
-}
-/**
- * @stable
- */
-var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('4.0.0-rc.3');
-
-
-
-/***/ }),
-/* 66 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(44);
-/* unused harmony export BrowserXhr */
-/* unused harmony export JSONPBackend */
-/* unused harmony export JSONPConnection */
-/* unused harmony export CookieXSRFStrategy */
-/* unused harmony export XHRBackend */
-/* unused harmony export XHRConnection */
-/* unused harmony export BaseRequestOptions */
-/* unused harmony export RequestOptions */
-/* unused harmony export BaseResponseOptions */
-/* unused harmony export ResponseOptions */
-/* unused harmony export ReadyState */
-/* unused harmony export RequestMethod */
-/* unused harmony export ResponseContentType */
-/* unused harmony export ResponseType */
-/* unused harmony export Headers */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Http; });
-/* unused harmony export Jsonp */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HttpModule; });
-/* unused harmony export JsonpModule */
-/* unused harmony export Connection */
-/* unused harmony export ConnectionBackend */
-/* unused harmony export XSRFStrategy */
-/* unused harmony export Request */
-/* unused harmony export Response */
-/* unused harmony export QueryEncoder */
-/* unused harmony export URLSearchParams */
-/* unused harmony export VERSION */
-/* unused harmony export ɵg */
-/* unused harmony export ɵa */
-/* unused harmony export ɵe */
-/* unused harmony export ɵb */
-/* unused harmony export ɵc */
-/* unused harmony export ɵd */
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-/**
- * @license Angular v4.0.0-rc.3
- * (c) 2010-2017 Google, Inc. https://angular.io/
- * License: MIT
- */
-
-
-
-/**
- * A backend for http that uses the `XMLHttpRequest` browser API.
- *
- * Take care not to evaluate this in non-browser contexts.
- *
- * \@experimental
- */
-var BrowserXhr = (function () {
-    function BrowserXhr() {
-    }
-    /**
-     * @return {?}
-     */
-    BrowserXhr.prototype.build = function () { return ((new XMLHttpRequest())); };
-    return BrowserXhr;
-}());
-BrowserXhr.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-BrowserXhr.ctorParameters = function () { return []; };
-var RequestMethod = {};
-RequestMethod.Get = 0;
-RequestMethod.Post = 1;
-RequestMethod.Put = 2;
-RequestMethod.Delete = 3;
-RequestMethod.Options = 4;
-RequestMethod.Head = 5;
-RequestMethod.Patch = 6;
-RequestMethod[RequestMethod.Get] = "Get";
-RequestMethod[RequestMethod.Post] = "Post";
-RequestMethod[RequestMethod.Put] = "Put";
-RequestMethod[RequestMethod.Delete] = "Delete";
-RequestMethod[RequestMethod.Options] = "Options";
-RequestMethod[RequestMethod.Head] = "Head";
-RequestMethod[RequestMethod.Patch] = "Patch";
-var ReadyState = {};
-ReadyState.Unsent = 0;
-ReadyState.Open = 1;
-ReadyState.HeadersReceived = 2;
-ReadyState.Loading = 3;
-ReadyState.Done = 4;
-ReadyState.Cancelled = 5;
-ReadyState[ReadyState.Unsent] = "Unsent";
-ReadyState[ReadyState.Open] = "Open";
-ReadyState[ReadyState.HeadersReceived] = "HeadersReceived";
-ReadyState[ReadyState.Loading] = "Loading";
-ReadyState[ReadyState.Done] = "Done";
-ReadyState[ReadyState.Cancelled] = "Cancelled";
-var ResponseType = {};
-ResponseType.Basic = 0;
-ResponseType.Cors = 1;
-ResponseType.Default = 2;
-ResponseType.Error = 3;
-ResponseType.Opaque = 4;
-ResponseType[ResponseType.Basic] = "Basic";
-ResponseType[ResponseType.Cors] = "Cors";
-ResponseType[ResponseType.Default] = "Default";
-ResponseType[ResponseType.Error] = "Error";
-ResponseType[ResponseType.Opaque] = "Opaque";
-var ContentType = {};
-ContentType.NONE = 0;
-ContentType.JSON = 1;
-ContentType.FORM = 2;
-ContentType.FORM_DATA = 3;
-ContentType.TEXT = 4;
-ContentType.BLOB = 5;
-ContentType.ARRAY_BUFFER = 6;
-ContentType[ContentType.NONE] = "NONE";
-ContentType[ContentType.JSON] = "JSON";
-ContentType[ContentType.FORM] = "FORM";
-ContentType[ContentType.FORM_DATA] = "FORM_DATA";
-ContentType[ContentType.TEXT] = "TEXT";
-ContentType[ContentType.BLOB] = "BLOB";
-ContentType[ContentType.ARRAY_BUFFER] = "ARRAY_BUFFER";
-var ResponseContentType = {};
-ResponseContentType.Text = 0;
-ResponseContentType.Json = 1;
-ResponseContentType.ArrayBuffer = 2;
-ResponseContentType.Blob = 3;
-ResponseContentType[ResponseContentType.Text] = "Text";
-ResponseContentType[ResponseContentType.Json] = "Json";
-ResponseContentType[ResponseContentType.ArrayBuffer] = "ArrayBuffer";
-ResponseContentType[ResponseContentType.Blob] = "Blob";
-/**
- * Polyfill for [Headers](https://developer.mozilla.org/en-US/docs/Web/API/Headers/Headers), as
- * specified in the [Fetch Spec](https://fetch.spec.whatwg.org/#headers-class).
- *
- * The only known difference between this `Headers` implementation and the spec is the
- * lack of an `entries` method.
- *
- * ### Example
- *
- * ```
- * import {Headers} from '\@angular/http';
- *
- * var firstHeaders = new Headers();
- * firstHeaders.append('Content-Type', 'image/jpeg');
- * console.log(firstHeaders.get('Content-Type')) //'image/jpeg'
- *
- * // Create headers from Plain Old JavaScript Object
- * var secondHeaders = new Headers({
- *   'X-My-Custom-Header': 'Angular'
- * });
- * console.log(secondHeaders.get('X-My-Custom-Header')); //'Angular'
- *
- * var thirdHeaders = new Headers(secondHeaders);
- * console.log(thirdHeaders.get('X-My-Custom-Header')); //'Angular'
- * ```
- *
- * \@experimental
- */
-var Headers = (function () {
-    /**
-     * @param {?=} headers
-     */
-    function Headers(headers) {
-        var _this = this;
-        /** @internal header names are lower case */
-        this._headers = new Map();
-        /** @internal map lower case names to actual names */
-        this._normalizedNames = new Map();
-        if (!headers) {
-            return;
-        }
-        if (headers instanceof Headers) {
-            headers.forEach(function (values, name) {
-                values.forEach(function (value) { return _this.append(name, value); });
-            });
-            return;
-        }
-        Object.keys(headers).forEach(function (name) {
-            var values = Array.isArray(headers[name]) ? headers[name] : [headers[name]];
-            _this.delete(name);
-            values.forEach(function (value) { return _this.append(name, value); });
-        });
-    }
-    /**
-     * Returns a new Headers instance from the given DOMString of Response Headers
-     * @param {?} headersString
-     * @return {?}
-     */
-    Headers.fromResponseHeaderString = function (headersString) {
-        var /** @type {?} */ headers = new Headers();
-        headersString.split('\n').forEach(function (line) {
-            var /** @type {?} */ index = line.indexOf(':');
-            if (index > 0) {
-                var /** @type {?} */ name = line.slice(0, index);
-                var /** @type {?} */ value = line.slice(index + 1).trim();
-                headers.set(name, value);
-            }
-        });
-        return headers;
-    };
-    /**
-     * Appends a header to existing list of header values for a given header name.
-     * @param {?} name
-     * @param {?} value
-     * @return {?}
-     */
-    Headers.prototype.append = function (name, value) {
-        var /** @type {?} */ values = this.getAll(name);
-        if (values === null) {
-            this.set(name, value);
-        }
-        else {
-            values.push(value);
-        }
-    };
-    /**
-     * Deletes all header values for the given name.
-     * @param {?} name
-     * @return {?}
-     */
-    Headers.prototype.delete = function (name) {
-        var /** @type {?} */ lcName = name.toLowerCase();
-        this._normalizedNames.delete(lcName);
-        this._headers.delete(lcName);
-    };
-    /**
-     * @param {?} fn
-     * @return {?}
-     */
-    Headers.prototype.forEach = function (fn) {
-        var _this = this;
-        this._headers.forEach(function (values, lcName) { return fn(values, _this._normalizedNames.get(lcName), _this._headers); });
-    };
-    /**
-     * Returns first header that matches given name.
-     * @param {?} name
-     * @return {?}
-     */
-    Headers.prototype.get = function (name) {
-        var /** @type {?} */ values = this.getAll(name);
-        if (values === null) {
-            return null;
-        }
-        return values.length > 0 ? values[0] : null;
-    };
-    /**
-     * Checks for existence of header by given name.
-     * @param {?} name
-     * @return {?}
-     */
-    Headers.prototype.has = function (name) { return this._headers.has(name.toLowerCase()); };
-    /**
-     * Returns the names of the headers
-     * @return {?}
-     */
-    Headers.prototype.keys = function () { return Array.from(this._normalizedNames.values()); };
-    /**
-     * Sets or overrides header value for given name.
-     * @param {?} name
-     * @param {?} value
-     * @return {?}
-     */
-    Headers.prototype.set = function (name, value) {
-        if (Array.isArray(value)) {
-            if (value.length) {
-                this._headers.set(name.toLowerCase(), [value.join(',')]);
-            }
-        }
-        else {
-            this._headers.set(name.toLowerCase(), [value]);
-        }
-        this.mayBeSetNormalizedName(name);
-    };
-    /**
-     * Returns values of all headers.
-     * @return {?}
-     */
-    Headers.prototype.values = function () { return Array.from(this._headers.values()); };
-    /**
-     * @return {?}
-     */
-    Headers.prototype.toJSON = function () {
-        var _this = this;
-        var /** @type {?} */ serialized = {};
-        this._headers.forEach(function (values, name) {
-            var /** @type {?} */ split = [];
-            values.forEach(function (v) { return split.push.apply(split, v.split(',')); });
-            serialized[_this._normalizedNames.get(name)] = split;
-        });
-        return serialized;
-    };
-    /**
-     * Returns list of header values for a given name.
-     * @param {?} name
-     * @return {?}
-     */
-    Headers.prototype.getAll = function (name) {
-        return this.has(name) ? this._headers.get(name.toLowerCase()) : null;
-    };
-    /**
-     * This method is not implemented.
-     * @return {?}
-     */
-    Headers.prototype.entries = function () { throw new Error('"entries" method is not implemented on Headers class'); };
-    /**
-     * @param {?} name
-     * @return {?}
-     */
-    Headers.prototype.mayBeSetNormalizedName = function (name) {
-        var /** @type {?} */ lcName = name.toLowerCase();
-        if (!this._normalizedNames.has(lcName)) {
-            this._normalizedNames.set(lcName, name);
-        }
-    };
-    return Headers;
-}());
-/**
- * Creates a response options object to be optionally provided when instantiating a
- * {\@link Response}.
- *
- * This class is based on the `ResponseInit` description in the [Fetch
- * Spec](https://fetch.spec.whatwg.org/#responseinit).
- *
- * All values are null by default. Typical defaults can be found in the
- * {\@link BaseResponseOptions} class, which sub-classes `ResponseOptions`.
- *
- * This class may be used in tests to build {\@link Response Responses} for
- * mock responses (see {\@link MockBackend}).
- *
- * ### Example ([live demo](http://plnkr.co/edit/P9Jkk8e8cz6NVzbcxEsD?p=preview))
- *
- * ```typescript
- * import {ResponseOptions, Response} from '\@angular/http';
- *
- * var options = new ResponseOptions({
- *   body: '{"name":"Jeff"}'
- * });
- * var res = new Response(options);
- *
- * console.log('res.json():', res.json()); // Object {name: "Jeff"}
- * ```
- *
- * \@experimental
- */
-var ResponseOptions = (function () {
-    /**
-     * @param {?=} __0
-     */
-    function ResponseOptions(_a) {
-        var _b = _a === void 0 ? {} : _a, body = _b.body, status = _b.status, headers = _b.headers, statusText = _b.statusText, type = _b.type, url = _b.url;
-        this.body = body != null ? body : null;
-        this.status = status != null ? status : null;
-        this.headers = headers != null ? headers : null;
-        this.statusText = statusText != null ? statusText : null;
-        this.type = type != null ? type : null;
-        this.url = url != null ? url : null;
-    }
-    /**
-     * Creates a copy of the `ResponseOptions` instance, using the optional input as values to
-     * override
-     * existing values. This method will not change the values of the instance on which it is being
-     * called.
-     *
-     * This may be useful when sharing a base `ResponseOptions` object inside tests,
-     * where certain properties may change from test to test.
-     *
-     * ### Example ([live demo](http://plnkr.co/edit/1lXquqFfgduTFBWjNoRE?p=preview))
-     *
-     * ```typescript
-     * import {ResponseOptions, Response} from '\@angular/http';
-     *
-     * var options = new ResponseOptions({
-     *   body: {name: 'Jeff'}
-     * });
-     * var res = new Response(options.merge({
-     *   url: 'https://google.com'
-     * }));
-     * console.log('options.url:', options.url); // null
-     * console.log('res.json():', res.json()); // Object {name: "Jeff"}
-     * console.log('res.url:', res.url); // https://google.com
-     * ```
-     * @param {?=} options
-     * @return {?}
-     */
-    ResponseOptions.prototype.merge = function (options) {
-        return new ResponseOptions({
-            body: options && options.body != null ? options.body : this.body,
-            status: options && options.status != null ? options.status : this.status,
-            headers: options && options.headers != null ? options.headers : this.headers,
-            statusText: options && options.statusText != null ? options.statusText : this.statusText,
-            type: options && options.type != null ? options.type : this.type,
-            url: options && options.url != null ? options.url : this.url,
-        });
-    };
-    return ResponseOptions;
-}());
-/**
- * Subclass of {\@link ResponseOptions}, with default values.
- *
- * Default values:
- *  * status: 200
- *  * headers: empty {\@link Headers} object
- *
- * This class could be extended and bound to the {\@link ResponseOptions} class
- * when configuring an {\@link Injector}, in order to override the default options
- * used by {\@link Http} to create {\@link Response Responses}.
- *
- * ### Example ([live demo](http://plnkr.co/edit/qv8DLT?p=preview))
- *
- * ```typescript
- * import {provide} from '\@angular/core';
- * import {bootstrap} from '\@angular/platform-browser/browser';
- * import {HTTP_PROVIDERS, Headers, Http, BaseResponseOptions, ResponseOptions} from
- * '\@angular/http';
- * import {App} from './myapp';
- *
- * class MyOptions extends BaseResponseOptions {
- *   headers:Headers = new Headers({network: 'github'});
- * }
- *
- * bootstrap(App, [HTTP_PROVIDERS, {provide: ResponseOptions, useClass: MyOptions}]);
- * ```
- *
- * The options could also be extended when manually creating a {\@link Response}
- * object.
- *
- * ### Example ([live demo](http://plnkr.co/edit/VngosOWiaExEtbstDoix?p=preview))
- *
- * ```
- * import {BaseResponseOptions, Response} from '\@angular/http';
- *
- * var options = new BaseResponseOptions();
- * var res = new Response(options.merge({
- *   body: 'Angular',
- *   headers: new Headers({framework: 'angular'})
- * }));
- * console.log('res.headers.get("framework"):', res.headers.get('framework')); // angular
- * console.log('res.text():', res.text()); // Angular;
- * ```
- *
- * \@experimental
- */
-var BaseResponseOptions = (function (_super) {
-    __extends(BaseResponseOptions, _super);
-    function BaseResponseOptions() {
-        return _super.call(this, { status: 200, statusText: 'Ok', type: ResponseType.Default, headers: new Headers() }) || this;
-    }
-    return BaseResponseOptions;
-}(ResponseOptions));
-BaseResponseOptions.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-BaseResponseOptions.ctorParameters = function () { return []; };
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Abstract class from which real backends are derived.
- *
- * The primary purpose of a `ConnectionBackend` is to create new connections to fulfill a given
- * {\@link Request}.
- *
- * \@experimental
- * @abstract
- */
-var ConnectionBackend = (function () {
-    function ConnectionBackend() {
-    }
-    /**
-     * @abstract
-     * @param {?} request
-     * @return {?}
-     */
-    ConnectionBackend.prototype.createConnection = function (request) { };
-    return ConnectionBackend;
-}());
-/**
- * Abstract class from which real connections are derived.
- *
- * \@experimental
- * @abstract
- */
-var Connection = (function () {
-    function Connection() {
-    }
-    return Connection;
-}());
-/**
- * An XSRFStrategy configures XSRF protection (e.g. via headers) on an HTTP request.
- *
- * \@experimental
- * @abstract
- */
-var XSRFStrategy = (function () {
-    function XSRFStrategy() {
-    }
-    /**
-     * @abstract
-     * @param {?} req
-     * @return {?}
-     */
-    XSRFStrategy.prototype.configureRequest = function (req) { };
-    return XSRFStrategy;
-}());
-/**
- * @param {?} method
- * @return {?}
- */
-function normalizeMethodName(method) {
-    if (typeof method !== 'string')
-        return method;
-    switch (method.toUpperCase()) {
-        case 'GET':
-            return RequestMethod.Get;
-        case 'POST':
-            return RequestMethod.Post;
-        case 'PUT':
-            return RequestMethod.Put;
-        case 'DELETE':
-            return RequestMethod.Delete;
-        case 'OPTIONS':
-            return RequestMethod.Options;
-        case 'HEAD':
-            return RequestMethod.Head;
-        case 'PATCH':
-            return RequestMethod.Patch;
-    }
-    throw new Error("Invalid request method. The method \"" + method + "\" is not supported.");
-}
-var /** @type {?} */ isSuccess = function (status) { return (status >= 200 && status < 300); };
-/**
- * @param {?} xhr
- * @return {?}
- */
-function getResponseURL(xhr) {
-    if ('responseURL' in xhr) {
-        return xhr.responseURL;
-    }
-    if (/^X-Request-URL:/m.test(xhr.getAllResponseHeaders())) {
-        return xhr.getResponseHeader('X-Request-URL');
-    }
-    return;
-}
-/**
- * @param {?} input
- * @return {?}
- */
-function stringToArrayBuffer(input) {
-    var /** @type {?} */ view = new Uint16Array(input.length);
-    for (var /** @type {?} */ i = 0, /** @type {?} */ strLen = input.length; i < strLen; i++) {
-        view[i] = input.charCodeAt(i);
-    }
-    return view.buffer;
-}
-/**
- * @license
- * Copyright Google Inc. All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
- * @param {?=} rawParams
- * @return {?}
- */
-function paramParser(rawParams) {
-    if (rawParams === void 0) { rawParams = ''; }
-    var /** @type {?} */ map = new Map();
-    if (rawParams.length > 0) {
-        var /** @type {?} */ params = rawParams.split('&');
-        params.forEach(function (param) {
-            var /** @type {?} */ eqIdx = param.indexOf('=');
-            var _a = eqIdx == -1 ? [param, ''] : [param.slice(0, eqIdx), param.slice(eqIdx + 1)], key = _a[0], val = _a[1];
-            var /** @type {?} */ list = map.get(key) || [];
-            list.push(val);
-            map.set(key, list);
-        });
-    }
-    return map;
-}
-/**
- * \@experimental
- *
- */
-var QueryEncoder = (function () {
-    function QueryEncoder() {
-    }
-    /**
-     * @param {?} k
-     * @return {?}
-     */
-    QueryEncoder.prototype.encodeKey = function (k) { return standardEncoding(k); };
-    /**
-     * @param {?} v
-     * @return {?}
-     */
-    QueryEncoder.prototype.encodeValue = function (v) { return standardEncoding(v); };
-    return QueryEncoder;
-}());
-/**
- * @param {?} v
- * @return {?}
- */
-function standardEncoding(v) {
-    return encodeURIComponent(v)
-        .replace(/%40/gi, '@')
-        .replace(/%3A/gi, ':')
-        .replace(/%24/gi, '$')
-        .replace(/%2C/gi, ',')
-        .replace(/%3B/gi, ';')
-        .replace(/%2B/gi, '+')
-        .replace(/%3D/gi, '=')
-        .replace(/%3F/gi, '?')
-        .replace(/%2F/gi, '/');
-}
-/**
- * Map-like representation of url search parameters, based on
- * [URLSearchParams](https://url.spec.whatwg.org/#urlsearchparams) in the url living standard,
- * with several extensions for merging URLSearchParams objects:
- *   - setAll()
- *   - appendAll()
- *   - replaceAll()
- *
- * This class accepts an optional second parameter of ${\@link QueryEncoder},
- * which is used to serialize parameters before making a request. By default,
- * `QueryEncoder` encodes keys and values of parameters using `encodeURIComponent`,
- * and then un-encodes certain characters that are allowed to be part of the query
- * according to IETF RFC 3986: https://tools.ietf.org/html/rfc3986.
- *
- * These are the characters that are not encoded: `! $ \' ( ) * + , ; A 9 - . _ ~ ? /`
- *
- * If the set of allowed query characters is not acceptable for a particular backend,
- * `QueryEncoder` can be subclassed and provided as the 2nd argument to URLSearchParams.
- *
- * ```
- * import {URLSearchParams, QueryEncoder} from '\@angular/http';
- * class MyQueryEncoder extends QueryEncoder {
- *   encodeKey(k: string): string {
- *     return myEncodingFunction(k);
- *   }
- *
- *   encodeValue(v: string): string {
- *     return myEncodingFunction(v);
- *   }
- * }
- *
- * let params = new URLSearchParams('', new MyQueryEncoder());
- * ```
- * \@experimental
- */
-var URLSearchParams = (function () {
-    /**
-     * @param {?=} rawParams
-     * @param {?=} queryEncoder
-     */
-    function URLSearchParams(rawParams, queryEncoder) {
-        if (rawParams === void 0) { rawParams = ''; }
-        if (queryEncoder === void 0) { queryEncoder = new QueryEncoder(); }
-        this.rawParams = rawParams;
-        this.queryEncoder = queryEncoder;
-        this.paramsMap = paramParser(rawParams);
-    }
-    /**
-     * @return {?}
-     */
-    URLSearchParams.prototype.clone = function () {
-        var /** @type {?} */ clone = new URLSearchParams('', this.queryEncoder);
-        clone.appendAll(this);
-        return clone;
-    };
-    /**
-     * @param {?} param
-     * @return {?}
-     */
-    URLSearchParams.prototype.has = function (param) { return this.paramsMap.has(param); };
-    /**
-     * @param {?} param
-     * @return {?}
-     */
-    URLSearchParams.prototype.get = function (param) {
-        var /** @type {?} */ storedParam = this.paramsMap.get(param);
-        return Array.isArray(storedParam) ? storedParam[0] : null;
-    };
-    /**
-     * @param {?} param
-     * @return {?}
-     */
-    URLSearchParams.prototype.getAll = function (param) { return this.paramsMap.get(param) || []; };
-    /**
-     * @param {?} param
-     * @param {?} val
-     * @return {?}
-     */
-    URLSearchParams.prototype.set = function (param, val) {
-        if (val === void 0 || val === null) {
-            this.delete(param);
-            return;
-        }
-        var /** @type {?} */ list = this.paramsMap.get(param) || [];
-        list.length = 0;
-        list.push(val);
-        this.paramsMap.set(param, list);
-    };
-    /**
-     * @param {?} searchParams
-     * @return {?}
-     */
-    URLSearchParams.prototype.setAll = function (searchParams) {
-        var _this = this;
-        searchParams.paramsMap.forEach(function (value, param) {
-            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
-            list.length = 0;
-            list.push(value[0]);
-            _this.paramsMap.set(param, list);
-        });
-    };
-    /**
-     * @param {?} param
-     * @param {?} val
-     * @return {?}
-     */
-    URLSearchParams.prototype.append = function (param, val) {
-        if (val === void 0 || val === null)
-            return;
-        var /** @type {?} */ list = this.paramsMap.get(param) || [];
-        list.push(val);
-        this.paramsMap.set(param, list);
-    };
-    /**
-     * @param {?} searchParams
-     * @return {?}
-     */
-    URLSearchParams.prototype.appendAll = function (searchParams) {
-        var _this = this;
-        searchParams.paramsMap.forEach(function (value, param) {
-            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
-            for (var /** @type {?} */ i = 0; i < value.length; ++i) {
-                list.push(value[i]);
-            }
-            _this.paramsMap.set(param, list);
-        });
-    };
-    /**
-     * @param {?} searchParams
-     * @return {?}
-     */
-    URLSearchParams.prototype.replaceAll = function (searchParams) {
-        var _this = this;
-        searchParams.paramsMap.forEach(function (value, param) {
-            var /** @type {?} */ list = _this.paramsMap.get(param) || [];
-            list.length = 0;
-            for (var /** @type {?} */ i = 0; i < value.length; ++i) {
-                list.push(value[i]);
-            }
-            _this.paramsMap.set(param, list);
-        });
-    };
-    /**
-     * @return {?}
-     */
-    URLSearchParams.prototype.toString = function () {
-        var _this = this;
-        var /** @type {?} */ paramsList = [];
-        this.paramsMap.forEach(function (values, k) {
-            values.forEach(function (v) { return paramsList.push(_this.queryEncoder.encodeKey(k) + '=' + _this.queryEncoder.encodeValue(v)); });
-        });
-        return paramsList.join('&');
-    };
-    /**
-     * @param {?} param
-     * @return {?}
-     */
-    URLSearchParams.prototype.delete = function (param) { this.paramsMap.delete(param); };
-    return URLSearchParams;
-}());
-/**
- * HTTP request body used by both {\@link Request} and {\@link Response}
- * https://fetch.spec.whatwg.org/#body
- * @abstract
- */
-var Body = (function () {
-    function Body() {
-    }
-    /**
-     * Attempts to return body as parsed `JSON` object, or raises an exception.
-     * @return {?}
-     */
-    Body.prototype.json = function () {
-        if (typeof this._body === 'string') {
-            return JSON.parse(/** @type {?} */ (this._body));
-        }
-        if (this._body instanceof ArrayBuffer) {
-            return JSON.parse(this.text());
-        }
-        return this._body;
-    };
-    /**
-     * Returns the body as a string, presuming `toString()` can be called on the response body.
-     * @return {?}
-     */
-    Body.prototype.text = function () {
-        if (this._body instanceof URLSearchParams) {
-            return this._body.toString();
-        }
-        if (this._body instanceof ArrayBuffer) {
-            return String.fromCharCode.apply(null, new Uint16Array(/** @type {?} */ (this._body)));
-        }
-        if (this._body == null) {
-            return '';
-        }
-        if (typeof this._body === 'object') {
-            return JSON.stringify(this._body, null, 2);
-        }
-        return this._body.toString();
-    };
-    /**
-     * Return the body as an ArrayBuffer
-     * @return {?}
-     */
-    Body.prototype.arrayBuffer = function () {
-        if (this._body instanceof ArrayBuffer) {
-            return (this._body);
-        }
-        return stringToArrayBuffer(this.text());
-    };
-    /**
-     * Returns the request's body as a Blob, assuming that body exists.
-     * @return {?}
-     */
-    Body.prototype.blob = function () {
-        if (this._body instanceof Blob) {
-            return (this._body);
-        }
-        if (this._body instanceof ArrayBuffer) {
-            return new Blob([this._body]);
-        }
-        throw new Error('The request body isn\'t either a blob or an array buffer');
-    };
-    return Body;
-}());
-/**
- * Creates `Response` instances from provided values.
- *
- * Though this object isn't
- * usually instantiated by end-users, it is the primary object interacted with when it comes time to
- * add data to a view.
- *
- * ### Example
- *
- * ```
- * http.request('my-friends.txt').subscribe(response => this.friends = response.text());
- * ```
- *
- * The Response's interface is inspired by the Response constructor defined in the [Fetch
- * Spec](https://fetch.spec.whatwg.org/#response-class), but is considered a static value whose body
- * can be accessed many times. There are other differences in the implementation, but this is the
- * most significant.
- *
- * \@experimental
- */
-var Response = (function (_super) {
-    __extends(Response, _super);
-    /**
-     * @param {?} responseOptions
-     */
-    function Response(responseOptions) {
-        var _this = _super.call(this) || this;
-        _this._body = responseOptions.body;
-        _this.status = responseOptions.status;
-        _this.ok = (_this.status >= 200 && _this.status <= 299);
-        _this.statusText = responseOptions.statusText;
-        _this.headers = responseOptions.headers;
-        _this.type = responseOptions.type;
-        _this.url = responseOptions.url;
-        return _this;
-    }
-    /**
-     * @return {?}
-     */
-    Response.prototype.toString = function () {
-        return "Response with status: " + this.status + " " + this.statusText + " for URL: " + this.url;
-    };
-    return Response;
-}(Body));
-var /** @type {?} */ _nextRequestId = 0;
-var /** @type {?} */ JSONP_HOME = '__ng_jsonp__';
-var /** @type {?} */ _jsonpConnections = null;
-/**
- * @return {?}
- */
-function _getJsonpConnections() {
-    var /** @type {?} */ w = typeof window == 'object' ? window : {};
-    if (_jsonpConnections === null) {
-        _jsonpConnections = w[JSONP_HOME] = {};
-    }
-    return _jsonpConnections;
-}
-var BrowserJsonp = (function () {
-    function BrowserJsonp() {
-    }
-    /**
-     * @param {?} url
-     * @return {?}
-     */
-    BrowserJsonp.prototype.build = function (url) {
-        var /** @type {?} */ node = document.createElement('script');
-        node.src = url;
-        return node;
-    };
-    /**
-     * @return {?}
-     */
-    BrowserJsonp.prototype.nextRequestID = function () { return "__req" + _nextRequestId++; };
-    /**
-     * @param {?} id
-     * @return {?}
-     */
-    BrowserJsonp.prototype.requestCallback = function (id) { return JSONP_HOME + "." + id + ".finished"; };
-    /**
-     * @param {?} id
-     * @param {?} connection
-     * @return {?}
-     */
-    BrowserJsonp.prototype.exposeConnection = function (id, connection) {
-        var /** @type {?} */ connections = _getJsonpConnections();
-        connections[id] = connection;
-    };
-    /**
-     * @param {?} id
-     * @return {?}
-     */
-    BrowserJsonp.prototype.removeConnection = function (id) {
-        var /** @type {?} */ connections = _getJsonpConnections();
-        connections[id] = null;
-    };
-    /**
-     * @param {?} node
-     * @return {?}
-     */
-    BrowserJsonp.prototype.send = function (node) { document.body.appendChild(/** @type {?} */ ((node))); };
-    /**
-     * @param {?} node
-     * @return {?}
-     */
-    BrowserJsonp.prototype.cleanup = function (node) {
-        if (node.parentNode) {
-            node.parentNode.removeChild(/** @type {?} */ ((node)));
-        }
-    };
-    return BrowserJsonp;
-}());
-BrowserJsonp.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-BrowserJsonp.ctorParameters = function () { return []; };
-var /** @type {?} */ JSONP_ERR_NO_CALLBACK = 'JSONP injected script did not invoke callback.';
-var /** @type {?} */ JSONP_ERR_WRONG_METHOD = 'JSONP requests must use GET request method.';
-/**
- * Abstract base class for an in-flight JSONP request.
- *
- * \@experimental
- * @abstract
- */
-var JSONPConnection = (function () {
-    function JSONPConnection() {
-    }
-    /**
-     * Callback called when the JSONP request completes, to notify the application
-     * of the new data.
-     * @abstract
-     * @param {?=} data
-     * @return {?}
-     */
-    JSONPConnection.prototype.finished = function (data) { };
-    return JSONPConnection;
-}());
-var JSONPConnection_ = (function (_super) {
-    __extends(JSONPConnection_, _super);
-    /**
-     * @param {?} req
-     * @param {?} _dom
-     * @param {?=} baseResponseOptions
-     */
-    function JSONPConnection_(req, _dom, baseResponseOptions) {
-        var _this = _super.call(this) || this;
-        _this._dom = _dom;
-        _this.baseResponseOptions = baseResponseOptions;
-        _this._finished = false;
-        if (req.method !== RequestMethod.Get) {
-            throw new TypeError(JSONP_ERR_WRONG_METHOD);
-        }
-        _this.request = req;
-        _this.response = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (responseObserver) {
-            _this.readyState = ReadyState.Loading;
-            var id = _this._id = _dom.nextRequestID();
-            _dom.exposeConnection(id, _this);
-            // Workaround Dart
-            // url = url.replace(/=JSONP_CALLBACK(&|$)/, `generated method`);
-            var callback = _dom.requestCallback(_this._id);
-            var url = req.url;
-            if (url.indexOf('=JSONP_CALLBACK&') > -1) {
-                url = url.replace('=JSONP_CALLBACK&', "=" + callback + "&");
-            }
-            else if (url.lastIndexOf('=JSONP_CALLBACK') === url.length - '=JSONP_CALLBACK'.length) {
-                url = url.substring(0, url.length - '=JSONP_CALLBACK'.length) + ("=" + callback);
-            }
-            var script = _this._script = _dom.build(url);
-            var onLoad = function (event) {
-                if (_this.readyState === ReadyState.Cancelled)
-                    return;
-                _this.readyState = ReadyState.Done;
-                _dom.cleanup(script);
-                if (!_this._finished) {
-                    var responseOptions_1 = new ResponseOptions({ body: JSONP_ERR_NO_CALLBACK, type: ResponseType.Error, url: url });
-                    if (baseResponseOptions) {
-                        responseOptions_1 = baseResponseOptions.merge(responseOptions_1);
-                    }
-                    responseObserver.error(new Response(responseOptions_1));
-                    return;
-                }
-                var responseOptions = new ResponseOptions({ body: _this._responseData, url: url });
-                if (_this.baseResponseOptions) {
-                    responseOptions = _this.baseResponseOptions.merge(responseOptions);
-                }
-                responseObserver.next(new Response(responseOptions));
-                responseObserver.complete();
-            };
-            var onError = function (error) {
-                if (_this.readyState === ReadyState.Cancelled)
-                    return;
-                _this.readyState = ReadyState.Done;
-                _dom.cleanup(script);
-                var responseOptions = new ResponseOptions({ body: error.message, type: ResponseType.Error });
-                if (baseResponseOptions) {
-                    responseOptions = baseResponseOptions.merge(responseOptions);
-                }
-                responseObserver.error(new Response(responseOptions));
-            };
-            script.addEventListener('load', onLoad);
-            script.addEventListener('error', onError);
-            _dom.send(script);
-            return function () {
-                _this.readyState = ReadyState.Cancelled;
-                script.removeEventListener('load', onLoad);
-                script.removeEventListener('error', onError);
-                _this._dom.cleanup(script);
-            };
-        });
-        return _this;
-    }
-    /**
-     * @param {?=} data
-     * @return {?}
-     */
-    JSONPConnection_.prototype.finished = function (data) {
-        // Don't leak connections
-        this._finished = true;
-        this._dom.removeConnection(this._id);
-        if (this.readyState === ReadyState.Cancelled)
-            return;
-        this._responseData = data;
-    };
-    return JSONPConnection_;
-}(JSONPConnection));
-/**
- * A {\@link ConnectionBackend} that uses the JSONP strategy of making requests.
- *
- * \@experimental
- * @abstract
- */
-var JSONPBackend = (function (_super) {
-    __extends(JSONPBackend, _super);
-    function JSONPBackend() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    return JSONPBackend;
-}(ConnectionBackend));
-var JSONPBackend_ = (function (_super) {
-    __extends(JSONPBackend_, _super);
-    /**
-     * @param {?} _browserJSONP
-     * @param {?} _baseResponseOptions
-     */
-    function JSONPBackend_(_browserJSONP, _baseResponseOptions) {
-        var _this = _super.call(this) || this;
-        _this._browserJSONP = _browserJSONP;
-        _this._baseResponseOptions = _baseResponseOptions;
-        return _this;
-    }
-    /**
-     * @param {?} request
-     * @return {?}
-     */
-    JSONPBackend_.prototype.createConnection = function (request) {
-        return new JSONPConnection_(request, this._browserJSONP, this._baseResponseOptions);
-    };
-    return JSONPBackend_;
-}(JSONPBackend));
-JSONPBackend_.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-JSONPBackend_.ctorParameters = function () { return [
-    { type: BrowserJsonp, },
-    { type: ResponseOptions, },
-]; };
-var /** @type {?} */ XSSI_PREFIX = /^\)\]\}',?\n/;
-/**
- * Creates connections using `XMLHttpRequest`. Given a fully-qualified
- * request, an `XHRConnection` will immediately create an `XMLHttpRequest` object and send the
- * request.
- *
- * This class would typically not be created or interacted with directly inside applications, though
- * the {\@link MockConnection} may be interacted with in tests.
- *
- * \@experimental
- */
-var XHRConnection = (function () {
-    /**
-     * @param {?} req
-     * @param {?} browserXHR
-     * @param {?=} baseResponseOptions
-     */
-    function XHRConnection(req, browserXHR, baseResponseOptions) {
-        var _this = this;
-        this.request = req;
-        this.response = new __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__["Observable"](function (responseObserver) {
-            var _xhr = browserXHR.build();
-            _xhr.open(RequestMethod[req.method].toUpperCase(), req.url);
-            if (req.withCredentials != null) {
-                _xhr.withCredentials = req.withCredentials;
-            }
-            // load event handler
-            var onLoad = function () {
-                // normalize IE9 bug (http://bugs.jquery.com/ticket/1450)
-                var status = _xhr.status === 1223 ? 204 : _xhr.status;
-                var body = null;
-                // HTTP 204 means no content
-                if (status !== 204) {
-                    // responseText is the old-school way of retrieving response (supported by IE8 & 9)
-                    // response/responseType properties were introduced in ResourceLoader Level2 spec
-                    // (supported by IE10)
-                    body = (typeof _xhr.response === 'undefined') ? _xhr.responseText : _xhr.response;
-                    // Implicitly strip a potential XSSI prefix.
-                    if (typeof body === 'string') {
-                        body = body.replace(XSSI_PREFIX, '');
-                    }
-                }
-                // fix status code when it is 0 (0 status is undocumented).
-                // Occurs when accessing file resources or on Android 4.1 stock browser
-                // while retrieving files from application cache.
-                if (status === 0) {
-                    status = body ? 200 : 0;
-                }
-                var headers = Headers.fromResponseHeaderString(_xhr.getAllResponseHeaders());
-                // IE 9 does not provide the way to get URL of response
-                var url = getResponseURL(_xhr) || req.url;
-                var statusText = _xhr.statusText || 'OK';
-                var responseOptions = new ResponseOptions({ body: body, status: status, headers: headers, statusText: statusText, url: url });
-                if (baseResponseOptions != null) {
-                    responseOptions = baseResponseOptions.merge(responseOptions);
-                }
-                var response = new Response(responseOptions);
-                response.ok = isSuccess(status);
-                if (response.ok) {
-                    responseObserver.next(response);
-                    // TODO(gdi2290): defer complete if array buffer until done
-                    responseObserver.complete();
-                    return;
-                }
-                responseObserver.error(response);
-            };
-            // error event handler
-            var onError = function (err) {
-                var responseOptions = new ResponseOptions({
-                    body: err,
-                    type: ResponseType.Error,
-                    status: _xhr.status,
-                    statusText: _xhr.statusText,
-                });
-                if (baseResponseOptions != null) {
-                    responseOptions = baseResponseOptions.merge(responseOptions);
-                }
-                responseObserver.error(new Response(responseOptions));
-            };
-            _this.setDetectedContentType(req, _xhr);
-            if (req.headers == null) {
-                req.headers = new Headers();
-            }
-            if (!req.headers.has('Accept')) {
-                req.headers.append('Accept', 'application/json, text/plain, */*');
-            }
-            req.headers.forEach(function (values, name) { return _xhr.setRequestHeader(name, values.join(',')); });
-            // Select the correct buffer type to store the response
-            if (req.responseType != null && _xhr.responseType != null) {
-                switch (req.responseType) {
-                    case ResponseContentType.ArrayBuffer:
-                        _xhr.responseType = 'arraybuffer';
-                        break;
-                    case ResponseContentType.Json:
-                        _xhr.responseType = 'json';
-                        break;
-                    case ResponseContentType.Text:
-                        _xhr.responseType = 'text';
-                        break;
-                    case ResponseContentType.Blob:
-                        _xhr.responseType = 'blob';
-                        break;
-                    default:
-                        throw new Error('The selected responseType is not supported');
-                }
-            }
-            _xhr.addEventListener('load', onLoad);
-            _xhr.addEventListener('error', onError);
-            _xhr.send(_this.request.getBody());
-            return function () {
-                _xhr.removeEventListener('load', onLoad);
-                _xhr.removeEventListener('error', onError);
-                _xhr.abort();
-            };
-        });
-    }
-    /**
-     * @param {?} req
-     * @param {?} _xhr
-     * @return {?}
-     */
-    XHRConnection.prototype.setDetectedContentType = function (req /** TODO Request */, _xhr /** XMLHttpRequest */) {
-        // Skip if a custom Content-Type header is provided
-        if (req.headers != null && req.headers.get('Content-Type') != null) {
-            return;
-        }
-        // Set the detected content type
-        switch (req.contentType) {
-            case ContentType.NONE:
-                break;
-            case ContentType.JSON:
-                _xhr.setRequestHeader('content-type', 'application/json');
-                break;
-            case ContentType.FORM:
-                _xhr.setRequestHeader('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
-                break;
-            case ContentType.TEXT:
-                _xhr.setRequestHeader('content-type', 'text/plain');
-                break;
-            case ContentType.BLOB:
-                var /** @type {?} */ blob = req.blob();
-                if (blob.type) {
-                    _xhr.setRequestHeader('content-type', blob.type);
-                }
-                break;
-        }
-    };
-    return XHRConnection;
-}());
-/**
- * `XSRFConfiguration` sets up Cross Site Request Forgery (XSRF) protection for the application
- * using a cookie. See https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
- * for more information on XSRF.
- *
- * Applications can configure custom cookie and header names by binding an instance of this class
- * with different `cookieName` and `headerName` values. See the main HTTP documentation for more
- * details.
- *
- * \@experimental
- */
-var CookieXSRFStrategy = (function () {
-    /**
-     * @param {?=} _cookieName
-     * @param {?=} _headerName
-     */
-    function CookieXSRFStrategy(_cookieName, _headerName) {
-        if (_cookieName === void 0) { _cookieName = 'XSRF-TOKEN'; }
-        if (_headerName === void 0) { _headerName = 'X-XSRF-TOKEN'; }
-        this._cookieName = _cookieName;
-        this._headerName = _headerName;
-    }
-    /**
-     * @param {?} req
-     * @return {?}
-     */
-    CookieXSRFStrategy.prototype.configureRequest = function (req) {
-        var /** @type {?} */ xsrfToken = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["ɵgetDOM"])().getCookie(this._cookieName);
-        if (xsrfToken) {
-            req.headers.set(this._headerName, xsrfToken);
-        }
-    };
-    return CookieXSRFStrategy;
-}());
-/**
- * Creates {\@link XHRConnection} instances.
- *
- * This class would typically not be used by end users, but could be
- * overridden if a different backend implementation should be used,
- * such as in a node backend.
- *
- * ### Example
- *
- * ```
- * import {Http, MyNodeBackend, HTTP_PROVIDERS, BaseRequestOptions} from '\@angular/http';
- * \@Component({
- *   viewProviders: [
- *     HTTP_PROVIDERS,
- *     {provide: Http, useFactory: (backend, options) => {
- *       return new Http(backend, options);
- *     }, deps: [MyNodeBackend, BaseRequestOptions]}]
- * })
- * class MyComponent {
- *   constructor(http:Http) {
- *     http.request('people.json').subscribe(res => this.people = res.json());
- *   }
- * }
- * ```
- * \@experimental
- */
-var XHRBackend = (function () {
-    /**
-     * @param {?} _browserXHR
-     * @param {?} _baseResponseOptions
-     * @param {?} _xsrfStrategy
-     */
-    function XHRBackend(_browserXHR, _baseResponseOptions, _xsrfStrategy) {
-        this._browserXHR = _browserXHR;
-        this._baseResponseOptions = _baseResponseOptions;
-        this._xsrfStrategy = _xsrfStrategy;
-    }
-    /**
-     * @param {?} request
-     * @return {?}
-     */
-    XHRBackend.prototype.createConnection = function (request) {
-        this._xsrfStrategy.configureRequest(request);
-        return new XHRConnection(request, this._browserXHR, this._baseResponseOptions);
-    };
-    return XHRBackend;
-}());
-XHRBackend.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-XHRBackend.ctorParameters = function () { return [
-    { type: BrowserXhr, },
-    { type: ResponseOptions, },
-    { type: XSRFStrategy, },
-]; };
-/**
- * Creates a request options object to be optionally provided when instantiating a
- * {\@link Request}.
- *
- * This class is based on the `RequestInit` description in the [Fetch
- * Spec](https://fetch.spec.whatwg.org/#requestinit).
- *
- * All values are null by default. Typical defaults can be found in the {\@link BaseRequestOptions}
- * class, which sub-classes `RequestOptions`.
- *
- * ### Example ([live demo](http://plnkr.co/edit/7Wvi3lfLq41aQPKlxB4O?p=preview))
- *
- * ```typescript
- * import {RequestOptions, Request, RequestMethod} from '\@angular/http';
- *
- * var options = new RequestOptions({
- *   method: RequestMethod.Post,
- *   url: 'https://google.com'
- * });
- * var req = new Request(options);
- * console.log('req.method:', RequestMethod[req.method]); // Post
- * console.log('options.url:', options.url); // https://google.com
- * ```
- *
- * \@experimental
- */
-var RequestOptions = (function () {
-    /**
-     * @param {?=} __0
-     */
-    function RequestOptions(_a) {
-        var _b = _a === void 0 ? {} : _a, method = _b.method, headers = _b.headers, body = _b.body, url = _b.url, search = _b.search, params = _b.params, withCredentials = _b.withCredentials, responseType = _b.responseType;
-        this.method = method != null ? normalizeMethodName(method) : null;
-        this.headers = headers != null ? headers : null;
-        this.body = body != null ? body : null;
-        this.url = url != null ? url : null;
-        this.params = this._mergeSearchParams(params || search);
-        this.withCredentials = withCredentials != null ? withCredentials : null;
-        this.responseType = responseType != null ? responseType : null;
-    }
-    Object.defineProperty(RequestOptions.prototype, "search", {
-        /**
-         * @deprecated from 4.0.0. Use params instead.
-         * @return {?}
-         */
-        get: function () { return this.params; },
-        /**
-         * @deprecated from 4.0.0. Use params instead.
-         * @param {?} params
-         * @return {?}
-         */
-        set: function (params) { this.params = params; },
-        enumerable: true,
-        configurable: true
-    });
-    /**
-     * Creates a copy of the `RequestOptions` instance, using the optional input as values to override
-     * existing values. This method will not change the values of the instance on which it is being
-     * called.
-     *
-     * Note that `headers` and `search` will override existing values completely if present in
-     * the `options` object. If these values should be merged, it should be done prior to calling
-     * `merge` on the `RequestOptions` instance.
-     *
-     * ### Example ([live demo](http://plnkr.co/edit/6w8XA8YTkDRcPYpdB9dk?p=preview))
-     *
-     * ```typescript
-     * import {RequestOptions, Request, RequestMethod} from '\@angular/http';
-     *
-     * var options = new RequestOptions({
-     *   method: RequestMethod.Post
-     * });
-     * var req = new Request(options.merge({
-     *   url: 'https://google.com'
-     * }));
-     * console.log('req.method:', RequestMethod[req.method]); // Post
-     * console.log('options.url:', options.url); // null
-     * console.log('req.url:', req.url); // https://google.com
-     * ```
-     * @param {?=} options
-     * @return {?}
-     */
-    RequestOptions.prototype.merge = function (options) {
-        return new RequestOptions({
-            method: options && options.method != null ? options.method : this.method,
-            headers: options && options.headers != null ? options.headers : new Headers(this.headers),
-            body: options && options.body != null ? options.body : this.body,
-            url: options && options.url != null ? options.url : this.url,
-            params: options && this._mergeSearchParams(options.params || options.search),
-            withCredentials: options && options.withCredentials != null ? options.withCredentials :
-                this.withCredentials,
-            responseType: options && options.responseType != null ? options.responseType :
-                this.responseType
-        });
-    };
-    /**
-     * @param {?} params
-     * @return {?}
-     */
-    RequestOptions.prototype._mergeSearchParams = function (params) {
-        if (!params)
-            return this.params;
-        if (params instanceof URLSearchParams) {
-            return params.clone();
-        }
-        if (typeof params === 'string') {
-            return new URLSearchParams(params);
-        }
-        return this._parseParams(params);
-    };
-    /**
-     * @param {?=} objParams
-     * @return {?}
-     */
-    RequestOptions.prototype._parseParams = function (objParams) {
-        var _this = this;
-        if (objParams === void 0) { objParams = {}; }
-        var /** @type {?} */ params = new URLSearchParams();
-        Object.keys(objParams).forEach(function (key) {
-            var /** @type {?} */ value = objParams[key];
-            if (Array.isArray(value)) {
-                value.forEach(function (item) { return _this._appendParam(key, item, params); });
-            }
-            else {
-                _this._appendParam(key, value, params);
-            }
-        });
-        return params;
-    };
-    /**
-     * @param {?} key
-     * @param {?} value
-     * @param {?} params
-     * @return {?}
-     */
-    RequestOptions.prototype._appendParam = function (key, value, params) {
-        if (typeof value !== 'string') {
-            value = JSON.stringify(value);
-        }
-        params.append(key, value);
-    };
-    return RequestOptions;
-}());
-/**
- * Subclass of {\@link RequestOptions}, with default values.
- *
- * Default values:
- *  * method: {\@link RequestMethod RequestMethod.Get}
- *  * headers: empty {\@link Headers} object
- *
- * This class could be extended and bound to the {\@link RequestOptions} class
- * when configuring an {\@link Injector}, in order to override the default options
- * used by {\@link Http} to create and send {\@link Request Requests}.
- *
- * ### Example ([live demo](http://plnkr.co/edit/LEKVSx?p=preview))
- *
- * ```typescript
- * import {provide} from '\@angular/core';
- * import {bootstrap} from '\@angular/platform-browser/browser';
- * import {HTTP_PROVIDERS, Http, BaseRequestOptions, RequestOptions} from '\@angular/http';
- * import {App} from './myapp';
- *
- * class MyOptions extends BaseRequestOptions {
- *   search: string = 'coreTeam=true';
- * }
- *
- * bootstrap(App, [HTTP_PROVIDERS, {provide: RequestOptions, useClass: MyOptions}]);
- * ```
- *
- * The options could also be extended when manually creating a {\@link Request}
- * object.
- *
- * ### Example ([live demo](http://plnkr.co/edit/oyBoEvNtDhOSfi9YxaVb?p=preview))
- *
- * ```
- * import {BaseRequestOptions, Request, RequestMethod} from '\@angular/http';
- *
- * var options = new BaseRequestOptions();
- * var req = new Request(options.merge({
- *   method: RequestMethod.Post,
- *   url: 'https://google.com'
- * }));
- * console.log('req.method:', RequestMethod[req.method]); // Post
- * console.log('options.url:', options.url); // null
- * console.log('req.url:', req.url); // https://google.com
- * ```
- *
- * \@experimental
- */
-var BaseRequestOptions = (function (_super) {
-    __extends(BaseRequestOptions, _super);
-    function BaseRequestOptions() {
-        return _super.call(this, { method: RequestMethod.Get, headers: new Headers() }) || this;
-    }
-    return BaseRequestOptions;
-}(RequestOptions));
-BaseRequestOptions.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-BaseRequestOptions.ctorParameters = function () { return []; };
-/**
- * Creates `Request` instances from provided values.
- *
- * The Request's interface is inspired by the Request constructor defined in the [Fetch
- * Spec](https://fetch.spec.whatwg.org/#request-class),
- * but is considered a static value whose body can be accessed many times. There are other
- * differences in the implementation, but this is the most significant.
- *
- * `Request` instances are typically created by higher-level classes, like {\@link Http} and
- * {\@link Jsonp}, but it may occasionally be useful to explicitly create `Request` instances.
- * One such example is when creating services that wrap higher-level services, like {\@link Http},
- * where it may be useful to generate a `Request` with arbitrary headers and search params.
- *
- * ```typescript
- * import {Injectable, Injector} from '\@angular/core';
- * import {HTTP_PROVIDERS, Http, Request, RequestMethod} from '\@angular/http';
- *
- * \@Injectable()
- * class AutoAuthenticator {
- *   constructor(public http:Http) {}
- *   request(url:string) {
- *     return this.http.request(new Request({
- *       method: RequestMethod.Get,
- *       url: url,
- *       search: 'password=123'
- *     }));
- *   }
- * }
- *
- * var injector = Injector.resolveAndCreate([HTTP_PROVIDERS, AutoAuthenticator]);
- * var authenticator = injector.get(AutoAuthenticator);
- * authenticator.request('people.json').subscribe(res => {
- *   //URL should have included '?password=123'
- *   console.log('people', res.json());
- * });
- * ```
- *
- * \@experimental
- */
-var Request = (function (_super) {
-    __extends(Request, _super);
-    /**
-     * @param {?} requestOptions
-     */
-    function Request(requestOptions) {
-        var _this = _super.call(this) || this;
-        // TODO: assert that url is present
-        var url = requestOptions.url;
-        _this.url = requestOptions.url;
-        if (requestOptions.params) {
-            var params = requestOptions.params.toString();
-            if (params.length > 0) {
-                var prefix = '?';
-                if (_this.url.indexOf('?') != -1) {
-                    prefix = (_this.url[_this.url.length - 1] == '&') ? '' : '&';
-                }
-                // TODO: just delete search-query-looking string in url?
-                _this.url = url + prefix + params;
-            }
-        }
-        _this._body = requestOptions.body;
-        _this.method = normalizeMethodName(requestOptions.method);
-        // TODO(jeffbcross): implement behavior
-        // Defaults to 'omit', consistent with browser
-        _this.headers = new Headers(requestOptions.headers);
-        _this.contentType = _this.detectContentType();
-        _this.withCredentials = requestOptions.withCredentials;
-        _this.responseType = requestOptions.responseType;
-        return _this;
-    }
-    /**
-     * Returns the content type enum based on header options.
-     * @return {?}
-     */
-    Request.prototype.detectContentType = function () {
-        switch (this.headers.get('content-type')) {
-            case 'application/json':
-                return ContentType.JSON;
-            case 'application/x-www-form-urlencoded':
-                return ContentType.FORM;
-            case 'multipart/form-data':
-                return ContentType.FORM_DATA;
-            case 'text/plain':
-            case 'text/html':
-                return ContentType.TEXT;
-            case 'application/octet-stream':
-                return this._body instanceof ArrayBuffer$1 ? ContentType.ARRAY_BUFFER : ContentType.BLOB;
-            default:
-                return this.detectContentTypeFromBody();
-        }
-    };
-    /**
-     * Returns the content type of request's body based on its type.
-     * @return {?}
-     */
-    Request.prototype.detectContentTypeFromBody = function () {
-        if (this._body == null) {
-            return ContentType.NONE;
-        }
-        else if (this._body instanceof URLSearchParams) {
-            return ContentType.FORM;
-        }
-        else if (this._body instanceof FormData) {
-            return ContentType.FORM_DATA;
-        }
-        else if (this._body instanceof Blob$1) {
-            return ContentType.BLOB;
-        }
-        else if (this._body instanceof ArrayBuffer$1) {
-            return ContentType.ARRAY_BUFFER;
-        }
-        else if (this._body && typeof this._body === 'object') {
-            return ContentType.JSON;
-        }
-        else {
-            return ContentType.TEXT;
-        }
-    };
-    /**
-     * Returns the request's body according to its type. If body is undefined, return
-     * null.
-     * @return {?}
-     */
-    Request.prototype.getBody = function () {
-        switch (this.contentType) {
-            case ContentType.JSON:
-                return this.text();
-            case ContentType.FORM:
-                return this.text();
-            case ContentType.FORM_DATA:
-                return this._body;
-            case ContentType.TEXT:
-                return this.text();
-            case ContentType.BLOB:
-                return this.blob();
-            case ContentType.ARRAY_BUFFER:
-                return this.arrayBuffer();
-            default:
-                return null;
-        }
-    };
-    return Request;
-}(Body));
-var /** @type {?} */ noop = function () { };
-var /** @type {?} */ w = typeof window == 'object' ? window : noop;
-var /** @type {?} */ FormData = ((w) /** TODO #9100 */)['FormData'] || noop;
-var /** @type {?} */ Blob$1 = ((w) /** TODO #9100 */)['Blob'] || noop;
-var /** @type {?} */ ArrayBuffer$1 = ((w) /** TODO #9100 */)['ArrayBuffer'] || noop;
-/**
- * @param {?} backend
- * @param {?} request
- * @return {?}
- */
-function httpRequest(backend, request) {
-    return backend.createConnection(request).response;
-}
-/**
- * @param {?} defaultOpts
- * @param {?} providedOpts
- * @param {?} method
- * @param {?} url
- * @return {?}
- */
-function mergeOptions(defaultOpts, providedOpts, method, url) {
-    var /** @type {?} */ newOptions = defaultOpts;
-    if (providedOpts) {
-        // Hack so Dart can used named parameters
-        return newOptions.merge(new RequestOptions({
-            method: providedOpts.method || method,
-            url: providedOpts.url || url,
-            search: providedOpts.search,
-            params: providedOpts.params,
-            headers: providedOpts.headers,
-            body: providedOpts.body,
-            withCredentials: providedOpts.withCredentials,
-            responseType: providedOpts.responseType
-        }));
-    }
-    return newOptions.merge(new RequestOptions({ method: method, url: url }));
-}
-/**
- * Performs http requests using `XMLHttpRequest` as the default backend.
- *
- * `Http` is available as an injectable class, with methods to perform http requests. Calling
- * `request` returns an `Observable` which will emit a single {\@link Response} when a
- * response is received.
- *
- * ### Example
- *
- * ```typescript
- * import {Http, HTTP_PROVIDERS} from '\@angular/http';
- * import 'rxjs/add/operator/map'
- * \@Component({
- *   selector: 'http-app',
- *   viewProviders: [HTTP_PROVIDERS],
- *   templateUrl: 'people.html'
- * })
- * class PeopleComponent {
- *   constructor(http: Http) {
- *     http.get('people.json')
- *       // Call map on the response observable to get the parsed people object
- *       .map(res => res.json())
- *       // Subscribe to the observable to get the parsed people object and attach it to the
- *       // component
- *       .subscribe(people => this.people = people);
- *   }
- * }
- * ```
- *
- *
- * ### Example
- *
- * ```
- * http.get('people.json').subscribe((res:Response) => this.people = res.json());
- * ```
- *
- * The default construct used to perform requests, `XMLHttpRequest`, is abstracted as a "Backend" (
- * {\@link XHRBackend} in this case), which could be mocked with dependency injection by replacing
- * the {\@link XHRBackend} provider, as in the following example:
- *
- * ### Example
- *
- * ```typescript
- * import {BaseRequestOptions, Http} from '\@angular/http';
- * import {MockBackend} from '\@angular/http/testing';
- * var injector = Injector.resolveAndCreate([
- *   BaseRequestOptions,
- *   MockBackend,
- *   {provide: Http, useFactory:
- *       function(backend, defaultOptions) {
- *         return new Http(backend, defaultOptions);
- *       },
- *       deps: [MockBackend, BaseRequestOptions]}
- * ]);
- * var http = injector.get(Http);
- * http.get('request-from-mock-backend.json').subscribe((res:Response) => doSomething(res));
- * ```
- *
- * \@experimental
- */
-var Http = (function () {
-    /**
-     * @param {?} _backend
-     * @param {?} _defaultOptions
-     */
-    function Http(_backend, _defaultOptions) {
-        this._backend = _backend;
-        this._defaultOptions = _defaultOptions;
-    }
-    /**
-     * Performs any type of http request. First argument is required, and can either be a url or
-     * a {\@link Request} instance. If the first argument is a url, an optional {\@link RequestOptions}
-     * object can be provided as the 2nd argument. The options object will be merged with the values
-     * of {\@link BaseRequestOptions} before performing the request.
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.request = function (url, options) {
-        var /** @type {?} */ responseObservable;
-        if (typeof url === 'string') {
-            responseObservable = httpRequest(this._backend, new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, /** @type {?} */ (url))));
-        }
-        else if (url instanceof Request) {
-            responseObservable = httpRequest(this._backend, url);
-        }
-        else {
-            throw new Error('First argument must be a url string or Request instance.');
-        }
-        return responseObservable;
-    };
-    /**
-     * Performs a request with `get` http method.
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.get = function (url, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, url)));
-    };
-    /**
-     * Performs a request with `post` http method.
-     * @param {?} url
-     * @param {?} body
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.post = function (url, body, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Post, url)));
-    };
-    /**
-     * Performs a request with `put` http method.
-     * @param {?} url
-     * @param {?} body
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.put = function (url, body, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Put, url)));
-    };
-    /**
-     * Performs a request with `delete` http method.
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.delete = function (url, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Delete, url)));
-    };
-    /**
-     * Performs a request with `patch` http method.
-     * @param {?} url
-     * @param {?} body
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.patch = function (url, body, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions.merge(new RequestOptions({ body: body })), options, RequestMethod.Patch, url)));
-    };
-    /**
-     * Performs a request with `head` http method.
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.head = function (url, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Head, url)));
-    };
-    /**
-     * Performs a request with `options` http method.
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Http.prototype.options = function (url, options) {
-        return this.request(new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Options, url)));
-    };
-    return Http;
-}());
-Http.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-Http.ctorParameters = function () { return [
-    { type: ConnectionBackend, },
-    { type: RequestOptions, },
-]; };
-/**
- * \@experimental
- */
-var Jsonp = (function (_super) {
-    __extends(Jsonp, _super);
-    /**
-     * @param {?} backend
-     * @param {?} defaultOptions
-     */
-    function Jsonp(backend, defaultOptions) {
-        return _super.call(this, backend, defaultOptions) || this;
-    }
-    /**
-     * Performs any type of http request. First argument is required, and can either be a url or
-     * a {\@link Request} instance. If the first argument is a url, an optional {\@link RequestOptions}
-     * object can be provided as the 2nd argument. The options object will be merged with the values
-     * of {\@link BaseRequestOptions} before performing the request.
-     *
-     * \@security Regular XHR is the safest alternative to JSONP for most applications, and is
-     * supported by all current browsers. Because JSONP creates a `<script>` element with
-     * contents retrieved from a remote source, attacker-controlled data introduced by an untrusted
-     * source could expose your application to XSS risks. Data exposed by JSONP may also be
-     * readable by malicious third-party websites. In addition, JSONP introduces potential risk for
-     * future security issues (e.g. content sniffing).  For more detail, see the
-     * [Security Guide](http://g.co/ng/security).
-     * @param {?} url
-     * @param {?=} options
-     * @return {?}
-     */
-    Jsonp.prototype.request = function (url, options) {
-        var /** @type {?} */ responseObservable;
-        if (typeof url === 'string') {
-            url =
-                new Request(mergeOptions(this._defaultOptions, options, RequestMethod.Get, /** @type {?} */ (url)));
-        }
-        if (url instanceof Request) {
-            if (url.method !== RequestMethod.Get) {
-                throw new Error('JSONP requests must use GET request method.');
-            }
-            responseObservable = httpRequest(this._backend, url);
-        }
-        else {
-            throw new Error('First argument must be a url string or Request instance.');
-        }
-        return responseObservable;
-    };
-    return Jsonp;
-}(Http));
-Jsonp.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"] },
-];
-/** @nocollapse */
-Jsonp.ctorParameters = function () { return [
-    { type: ConnectionBackend, },
-    { type: RequestOptions, },
-]; };
-/**
- * @return {?}
- */
-function _createDefaultCookieXSRFStrategy() {
-    return new CookieXSRFStrategy();
-}
-/**
- * @param {?} xhrBackend
- * @param {?} requestOptions
- * @return {?}
- */
-function httpFactory(xhrBackend, requestOptions) {
-    return new Http(xhrBackend, requestOptions);
-}
-/**
- * @param {?} jsonpBackend
- * @param {?} requestOptions
- * @return {?}
- */
-function jsonpFactory(jsonpBackend, requestOptions) {
-    return new Jsonp(jsonpBackend, requestOptions);
-}
-/**
- * The module that includes http's providers
- *
- * \@experimental
- */
-var HttpModule = (function () {
-    function HttpModule() {
-    }
-    return HttpModule;
-}());
-HttpModule.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"], args: [{
-                providers: [
-                    // TODO(pascal): use factory type annotations once supported in DI
-                    // issue: https://github.com/angular/angular/issues/3183
-                    { provide: Http, useFactory: httpFactory, deps: [XHRBackend, RequestOptions] },
-                    BrowserXhr,
-                    { provide: RequestOptions, useClass: BaseRequestOptions },
-                    { provide: ResponseOptions, useClass: BaseResponseOptions },
-                    XHRBackend,
-                    { provide: XSRFStrategy, useFactory: _createDefaultCookieXSRFStrategy },
-                ],
-            },] },
-];
-/** @nocollapse */
-HttpModule.ctorParameters = function () { return []; };
-/**
- * The module that includes jsonp's providers
- *
- * \@experimental
- */
-var JsonpModule = (function () {
-    function JsonpModule() {
-    }
-    return JsonpModule;
-}());
-JsonpModule.decorators = [
-    { type: __WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"], args: [{
-                providers: [
-                    // TODO(pascal): use factory type annotations once supported in DI
-                    // issue: https://github.com/angular/angular/issues/3183
-                    { provide: Jsonp, useFactory: jsonpFactory, deps: [JSONPBackend, RequestOptions] },
-                    BrowserJsonp,
-                    { provide: RequestOptions, useClass: BaseRequestOptions },
-                    { provide: ResponseOptions, useClass: BaseResponseOptions },
-                    { provide: JSONPBackend, useClass: JSONPBackend_ },
-                ],
-            },] },
-];
-/** @nocollapse */
-JsonpModule.ctorParameters = function () { return []; };
-/**
- * @stable
- */
-var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["Version"]('4.0.0-rc.3');
-
-
-
-/***/ }),
 /* 67 */,
 /* 68 */,
 /* 69 */,
@@ -31669,17 +31669,19 @@ module.exports = g;
 /* 102 */,
 /* 103 */,
 /* 104 */,
-/* 105 */
+/* 105 */,
+/* 106 */,
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(6);
-var animations_1 = __webpack_require__(117);
+var animations_1 = __webpack_require__(119);
 var toast_options_1 = __webpack_require__(76);
 var platform_browser_1 = __webpack_require__(44);
-__webpack_require__(170);
+__webpack_require__(171);
 var Subject_1 = __webpack_require__(9);
 var ToastContainer = (function () {
     function ToastContainer(sanitizer, cdr, _zone, options) {
@@ -31872,7 +31874,7 @@ exports.ToastContainer = ToastContainer;
 //# sourceMappingURL=toast-container.component.js.map
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31927,7 +31929,7 @@ exports.BehaviorSubject = BehaviorSubject;
 //# sourceMappingURL=BehaviorSubject.js.map
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31938,11 +31940,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(9);
-var queue_1 = __webpack_require__(196);
+var queue_1 = __webpack_require__(197);
 var Subscription_1 = __webpack_require__(13);
-var observeOn_1 = __webpack_require__(114);
+var observeOn_1 = __webpack_require__(116);
 var ObjectUnsubscribedError_1 = __webpack_require__(82);
-var SubjectSubscription_1 = __webpack_require__(169);
+var SubjectSubscription_1 = __webpack_require__(170);
 /**
  * @class ReplaySubject<T>
  */
@@ -32035,7 +32037,7 @@ var ReplayEvent = (function () {
 //# sourceMappingURL=ReplaySubject.js.map
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32099,17 +32101,17 @@ exports.ScalarObservable = ScalarObservable;
 //# sourceMappingURL=ScalarObservable.js.map
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var PromiseObservable_1 = __webpack_require__(173);
+var PromiseObservable_1 = __webpack_require__(174);
 exports.fromPromise = PromiseObservable_1.PromiseObservable.create;
 //# sourceMappingURL=fromPromise.js.map
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32267,7 +32269,7 @@ exports.CombineLatestSubscriber = CombineLatestSubscriber;
 //# sourceMappingURL=combineLatest.js.map
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32275,7 +32277,7 @@ exports.CombineLatestSubscriber = CombineLatestSubscriber;
 var Observable_1 = __webpack_require__(0);
 var isScheduler_1 = __webpack_require__(36);
 var ArrayObservable_1 = __webpack_require__(34);
-var mergeAll_1 = __webpack_require__(59);
+var mergeAll_1 = __webpack_require__(58);
 /* tslint:enable:max-line-length */
 /**
  * Creates an output Observable which sequentially emits all values from every
@@ -32447,7 +32449,7 @@ exports.concatStatic = concatStatic;
 //# sourceMappingURL=concat.js.map
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32546,7 +32548,7 @@ var FilterSubscriber = (function (_super) {
 //# sourceMappingURL=filter.js.map
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32723,7 +32725,7 @@ exports.MergeMapSubscriber = MergeMapSubscriber;
 //# sourceMappingURL=mergeMap.js.map
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32734,7 +32736,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var Notification_1 = __webpack_require__(58);
+var Notification_1 = __webpack_require__(57);
 /**
  * @see {@link Notification}
  *
@@ -32805,7 +32807,7 @@ exports.ObserveOnMessage = ObserveOnMessage;
 //# sourceMappingURL=observeOn.js.map
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32820,7 +32822,7 @@ var isArray_1 = __webpack_require__(35);
 var Subscriber_1 = __webpack_require__(2);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
-var iterator_1 = __webpack_require__(62);
+var iterator_1 = __webpack_require__(61);
 /* tslint:enable:max-line-length */
 /**
  * @param observables
@@ -33090,8 +33092,8 @@ var ZipBufferIterator = (function (_super) {
 //# sourceMappingURL=zip.js.map
 
 /***/ }),
-/* 116 */,
-/* 117 */
+/* 118 */,
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33909,8 +33911,6 @@ var AnimationGroupPlayer = (function () {
 
 
 /***/ }),
-/* 118 */,
-/* 119 */,
 /* 120 */,
 /* 121 */,
 /* 122 */,
@@ -33957,16 +33957,17 @@ var AnimationGroupPlayer = (function () {
 /* 163 */,
 /* 164 */,
 /* 165 */,
-/* 166 */
+/* 166 */,
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(6);
-var toast_container_component_1 = __webpack_require__(105);
+var toast_container_component_1 = __webpack_require__(107);
 var toast_options_1 = __webpack_require__(76);
-var toast_1 = __webpack_require__(167);
+var toast_1 = __webpack_require__(168);
 var Subject_1 = __webpack_require__(9);
 var ToastsManager = (function () {
     function ToastsManager(componentFactoryResolver, appRef, options) {
@@ -34104,7 +34105,7 @@ exports.ToastsManager = ToastsManager;
 //# sourceMappingURL=toast-manager.js.map
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34131,7 +34132,7 @@ exports.Toast = Toast;
 //# sourceMappingURL=toast.js.map
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34145,7 +34146,7 @@ exports.empty = {
 //# sourceMappingURL=Observer.js.map
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34191,18 +34192,18 @@ exports.SubjectSubscription = SubjectSubscription;
 //# sourceMappingURL=SubjectSubscription.js.map
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var first_1 = __webpack_require__(184);
+var first_1 = __webpack_require__(185);
 Observable_1.Observable.prototype.first = first_1.first;
 //# sourceMappingURL=first.js.map
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34372,7 +34373,7 @@ var RefCountSubscriber = (function (_super) {
 //# sourceMappingURL=ConnectableObservable.js.map
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34383,16 +34384,16 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var isArray_1 = __webpack_require__(35);
-var isArrayLike_1 = __webpack_require__(202);
-var isPromise_1 = __webpack_require__(204);
-var PromiseObservable_1 = __webpack_require__(173);
-var IteratorObservable_1 = __webpack_require__(535);
+var isArrayLike_1 = __webpack_require__(203);
+var isPromise_1 = __webpack_require__(205);
+var PromiseObservable_1 = __webpack_require__(174);
+var IteratorObservable_1 = __webpack_require__(536);
 var ArrayObservable_1 = __webpack_require__(34);
-var ArrayLikeObservable_1 = __webpack_require__(524);
-var iterator_1 = __webpack_require__(62);
+var ArrayLikeObservable_1 = __webpack_require__(525);
+var iterator_1 = __webpack_require__(61);
 var Observable_1 = __webpack_require__(0);
-var observeOn_1 = __webpack_require__(114);
-var observable_1 = __webpack_require__(63);
+var observeOn_1 = __webpack_require__(116);
+var observable_1 = __webpack_require__(62);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -34500,7 +34501,7 @@ exports.FromObservable = FromObservable;
 //# sourceMappingURL=FromObservable.js.map
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34627,7 +34628,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=PromiseObservable.js.map
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35046,27 +35047,27 @@ exports.AjaxTimeoutError = AjaxTimeoutError;
 //# sourceMappingURL=AjaxObservable.js.map
 
 /***/ }),
-/* 175 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var FromObservable_1 = __webpack_require__(172);
-exports.from = FromObservable_1.FromObservable.create;
-//# sourceMappingURL=from.js.map
-
-/***/ }),
 /* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var merge_1 = __webpack_require__(186);
+var FromObservable_1 = __webpack_require__(173);
+exports.from = FromObservable_1.FromObservable.create;
+//# sourceMappingURL=from.js.map
+
+/***/ }),
+/* 177 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var merge_1 = __webpack_require__(187);
 exports.merge = merge_1.mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35076,7 +35077,7 @@ exports.of = ArrayObservable_1.ArrayObservable.of;
 //# sourceMappingURL=of.js.map
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35198,12 +35199,12 @@ var CatchSubscriber = (function (_super) {
 //# sourceMappingURL=catch.js.map
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeAll_1 = __webpack_require__(59);
+var mergeAll_1 = __webpack_require__(58);
 /* tslint:enable:max-line-length */
 /**
  * Converts a higher-order Observable into a first-order Observable by
@@ -35260,12 +35261,12 @@ exports.concatAll = concatAll;
 //# sourceMappingURL=concatAll.js.map
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeMap_1 = __webpack_require__(113);
+var mergeMap_1 = __webpack_require__(115);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to an Observable which is merged in the output
@@ -35336,7 +35337,7 @@ exports.concatMap = concatMap;
 //# sourceMappingURL=concatMap.js.map
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35450,7 +35451,7 @@ var DistinctUntilChangedSubscriber = (function (_super) {
 //# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35530,7 +35531,7 @@ var EverySubscriber = (function (_super) {
 //# sourceMappingURL=every.js.map
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35637,7 +35638,7 @@ exports.FindValueSubscriber = FindValueSubscriber;
 //# sourceMappingURL=find.js.map
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35648,7 +35649,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyError_1 = __webpack_require__(64);
+var EmptyError_1 = __webpack_require__(63);
 /**
  * Emits only the first value (or the first value that meets some condition)
  * emitted by the source Observable.
@@ -35795,7 +35796,7 @@ var FirstSubscriber = (function (_super) {
 //# sourceMappingURL=first.js.map
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35806,7 +35807,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyError_1 = __webpack_require__(64);
+var EmptyError_1 = __webpack_require__(63);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits only the last item emitted by the source Observable.
@@ -35920,14 +35921,14 @@ var LastSubscriber = (function (_super) {
 //# sourceMappingURL=last.js.map
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
 var ArrayObservable_1 = __webpack_require__(34);
-var mergeAll_1 = __webpack_require__(59);
+var mergeAll_1 = __webpack_require__(58);
 var isScheduler_1 = __webpack_require__(36);
 /* tslint:enable:max-line-length */
 /**
@@ -36071,7 +36072,7 @@ exports.mergeStatic = mergeStatic;
 //# sourceMappingURL=merge.js.map
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36232,7 +36233,7 @@ exports.MergeMapToSubscriber = MergeMapToSubscriber;
 //# sourceMappingURL=mergeMapTo.js.map
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36242,7 +36243,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var FromObservable_1 = __webpack_require__(172);
+var FromObservable_1 = __webpack_require__(173);
 var isArray_1 = __webpack_require__(35);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
@@ -36314,7 +36315,7 @@ var OnErrorResumeNextSubscriber = (function (_super) {
 //# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36431,7 +36432,7 @@ exports.RaceSubscriber = RaceSubscriber;
 //# sourceMappingURL=race.js.map
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36461,7 +36462,7 @@ exports.share = share;
 //# sourceMappingURL=share.js.map
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36526,7 +36527,7 @@ var TimeIntervalSubscriber = (function (_super) {
 //# sourceMappingURL=timeInterval.js.map
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36582,7 +36583,7 @@ var TimestampSubscriber = (function (_super) {
 //# sourceMappingURL=timestamp.js.map
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36660,7 +36661,7 @@ exports.toPromise = toPromise;
 //# sourceMappingURL=toPromise.js.map
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36670,8 +36671,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncAction_1 = __webpack_require__(60);
-var AsyncScheduler_1 = __webpack_require__(61);
+var AsyncAction_1 = __webpack_require__(59);
+var AsyncScheduler_1 = __webpack_require__(60);
 var VirtualTimeScheduler = (function (_super) {
     __extends(VirtualTimeScheduler, _super);
     function VirtualTimeScheduler(SchedulerAction, maxFrames) {
@@ -36779,13 +36780,13 @@ exports.VirtualAction = VirtualAction;
 //# sourceMappingURL=VirtualTimeScheduler.js.map
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var AsapAction_1 = __webpack_require__(640);
-var AsapScheduler_1 = __webpack_require__(641);
+var AsapAction_1 = __webpack_require__(641);
+var AsapScheduler_1 = __webpack_require__(642);
 /**
  *
  * Asap Scheduler
@@ -36824,13 +36825,13 @@ exports.asap = new AsapScheduler_1.AsapScheduler(AsapAction_1.AsapAction);
 //# sourceMappingURL=asap.js.map
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var QueueAction_1 = __webpack_require__(642);
-var QueueScheduler_1 = __webpack_require__(643);
+var QueueAction_1 = __webpack_require__(643);
+var QueueScheduler_1 = __webpack_require__(644);
 /**
  *
  * Queue Scheduler
@@ -36896,7 +36897,7 @@ exports.queue = new QueueScheduler_1.QueueScheduler(QueueAction_1.QueueAction);
 //# sourceMappingURL=queue.js.map
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36913,12 +36914,12 @@ exports.SubscriptionLog = SubscriptionLog;
 //# sourceMappingURL=SubscriptionLog.js.map
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var SubscriptionLog_1 = __webpack_require__(197);
+var SubscriptionLog_1 = __webpack_require__(198);
 var SubscriptionLoggable = (function () {
     function SubscriptionLoggable() {
         this.subscriptions = [];
@@ -36938,7 +36939,7 @@ exports.SubscriptionLoggable = SubscriptionLoggable;
 //# sourceMappingURL=SubscriptionLoggable.js.map
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36969,7 +36970,7 @@ exports.TimeoutError = TimeoutError;
 //# sourceMappingURL=TimeoutError.js.map
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37000,7 +37001,7 @@ exports.UnsubscriptionError = UnsubscriptionError;
 //# sourceMappingURL=UnsubscriptionError.js.map
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37019,7 +37020,7 @@ exports.applyMixins = applyMixins;
 //# sourceMappingURL=applyMixins.js.map
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37028,7 +37029,7 @@ exports.isArrayLike = (function (x) { return x && typeof x.length === 'number'; 
 //# sourceMappingURL=isArrayLike.js.map
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37040,7 +37041,7 @@ exports.isObject = isObject;
 //# sourceMappingURL=isObject.js.map
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37052,7 +37053,7 @@ exports.isPromise = isPromise;
 //# sourceMappingURL=isPromise.js.map
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37063,13 +37064,13 @@ exports.noop = noop;
 //# sourceMappingURL=noop.js.map
 
 /***/ }),
-/* 206 */,
 /* 207 */,
 /* 208 */,
 /* 209 */,
 /* 210 */,
 /* 211 */,
-/* 212 */
+/* 212 */,
+/* 213 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61407,14 +61408,14 @@ var ImportResolver = (function () {
 
 
 /***/ }),
-/* 213 */
+/* 214 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_fromPromise__);
 /* unused harmony export AbstractControlDirective */
 /* unused harmony export AbstractFormGroupDirective */
@@ -67153,13 +67154,13 @@ ReactiveFormsModule.ctorParameters = function () { return []; };
 
 
 /***/ }),
-/* 214 */
+/* 215 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_compiler__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_compiler__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(44);
 /* unused harmony export RESOURCE_CACHE_PROVIDER */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return platformBrowserDynamic; });
@@ -67278,13 +67279,13 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__
 
 
 /***/ }),
-/* 215 */
+/* 216 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__(119);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BrowserAnimationsModule; });
 /* unused harmony export NoopAnimationsModule */
 /* unused harmony export AnimationDriver */
@@ -69962,7 +69963,6 @@ var Animation = (function () {
 
 
 /***/ }),
-/* 216 */,
 /* 217 */,
 /* 218 */,
 /* 219 */,
@@ -70130,16 +70130,17 @@ var Animation = (function () {
 /* 381 */,
 /* 382 */,
 /* 383 */,
-/* 384 */
+/* 384 */,
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(6);
-var common_1 = __webpack_require__(65);
-var toast_container_component_1 = __webpack_require__(105);
-var toast_manager_1 = __webpack_require__(166);
+var common_1 = __webpack_require__(64);
+var toast_container_component_1 = __webpack_require__(107);
+var toast_manager_1 = __webpack_require__(167);
 var toast_options_1 = __webpack_require__(76);
 var ToastModule = (function () {
     function ToastModule() {
@@ -70166,7 +70167,6 @@ exports.ToastModule = ToastModule;
 //# sourceMappingURL=toast.module.js.map
 
 /***/ }),
-/* 385 */,
 /* 386 */,
 /* 387 */,
 /* 388 */,
@@ -70176,7 +70176,8 @@ exports.ToastModule = ToastModule;
 /* 392 */,
 /* 393 */,
 /* 394 */,
-/* 395 */
+/* 395 */,
+/* 396 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70218,7 +70219,7 @@ exports.InnerSubscriber = InnerSubscriber;
 //# sourceMappingURL=InnerSubscriber.js.map
 
 /***/ }),
-/* 396 */
+/* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70235,12 +70236,11 @@ var Observable_1 = __webpack_require__(0);
 exports.Observable = Observable_1.Observable;
 // statics
 /* tslint:disable:no-use-before-declare */
-__webpack_require__(398);
 __webpack_require__(399);
 __webpack_require__(400);
 __webpack_require__(401);
 __webpack_require__(402);
-__webpack_require__(405);
+__webpack_require__(403);
 __webpack_require__(406);
 __webpack_require__(407);
 __webpack_require__(408);
@@ -70250,21 +70250,21 @@ __webpack_require__(411);
 __webpack_require__(412);
 __webpack_require__(413);
 __webpack_require__(414);
-__webpack_require__(419);
 __webpack_require__(415);
+__webpack_require__(420);
 __webpack_require__(416);
 __webpack_require__(417);
 __webpack_require__(418);
-__webpack_require__(420);
-__webpack_require__(423);
+__webpack_require__(419);
 __webpack_require__(421);
-__webpack_require__(422);
 __webpack_require__(424);
+__webpack_require__(422);
+__webpack_require__(423);
+__webpack_require__(425);
 //dom
-__webpack_require__(403);
 __webpack_require__(404);
+__webpack_require__(405);
 //operators
-__webpack_require__(427);
 __webpack_require__(428);
 __webpack_require__(429);
 __webpack_require__(430);
@@ -70277,34 +70277,34 @@ __webpack_require__(436);
 __webpack_require__(437);
 __webpack_require__(438);
 __webpack_require__(439);
-__webpack_require__(445);
 __webpack_require__(440);
+__webpack_require__(446);
 __webpack_require__(441);
 __webpack_require__(442);
 __webpack_require__(443);
 __webpack_require__(444);
-__webpack_require__(446);
+__webpack_require__(445);
 __webpack_require__(447);
 __webpack_require__(448);
 __webpack_require__(449);
-__webpack_require__(452);
+__webpack_require__(450);
 __webpack_require__(453);
 __webpack_require__(454);
-__webpack_require__(450);
 __webpack_require__(455);
+__webpack_require__(451);
 __webpack_require__(456);
 __webpack_require__(457);
 __webpack_require__(458);
-__webpack_require__(170);
 __webpack_require__(459);
+__webpack_require__(171);
 __webpack_require__(460);
 __webpack_require__(461);
-__webpack_require__(425);
-__webpack_require__(426);
 __webpack_require__(462);
+__webpack_require__(426);
+__webpack_require__(427);
 __webpack_require__(463);
-__webpack_require__(451);
 __webpack_require__(464);
+__webpack_require__(452);
 __webpack_require__(465);
 __webpack_require__(466);
 __webpack_require__(467);
@@ -70322,9 +70322,9 @@ __webpack_require__(478);
 __webpack_require__(479);
 __webpack_require__(480);
 __webpack_require__(481);
-__webpack_require__(483);
 __webpack_require__(482);
 __webpack_require__(484);
+__webpack_require__(483);
 __webpack_require__(485);
 __webpack_require__(486);
 __webpack_require__(487);
@@ -70364,6 +70364,7 @@ __webpack_require__(520);
 __webpack_require__(521);
 __webpack_require__(522);
 __webpack_require__(523);
+__webpack_require__(524);
 /* tslint:disable:no-unused-variable */
 var Subscription_1 = __webpack_require__(13);
 exports.Subscription = Subscription_1.Subscription;
@@ -70371,43 +70372,43 @@ var Subscriber_1 = __webpack_require__(2);
 exports.Subscriber = Subscriber_1.Subscriber;
 var AsyncSubject_1 = __webpack_require__(77);
 exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
-var ReplaySubject_1 = __webpack_require__(107);
+var ReplaySubject_1 = __webpack_require__(109);
 exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
-var BehaviorSubject_1 = __webpack_require__(106);
+var BehaviorSubject_1 = __webpack_require__(108);
 exports.BehaviorSubject = BehaviorSubject_1.BehaviorSubject;
-var ConnectableObservable_1 = __webpack_require__(171);
+var ConnectableObservable_1 = __webpack_require__(172);
 exports.ConnectableObservable = ConnectableObservable_1.ConnectableObservable;
-var Notification_1 = __webpack_require__(58);
+var Notification_1 = __webpack_require__(57);
 exports.Notification = Notification_1.Notification;
-var EmptyError_1 = __webpack_require__(64);
+var EmptyError_1 = __webpack_require__(63);
 exports.EmptyError = EmptyError_1.EmptyError;
 var ArgumentOutOfRangeError_1 = __webpack_require__(81);
 exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
 var ObjectUnsubscribedError_1 = __webpack_require__(82);
 exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
-var TimeoutError_1 = __webpack_require__(199);
+var TimeoutError_1 = __webpack_require__(200);
 exports.TimeoutError = TimeoutError_1.TimeoutError;
-var UnsubscriptionError_1 = __webpack_require__(200);
+var UnsubscriptionError_1 = __webpack_require__(201);
 exports.UnsubscriptionError = UnsubscriptionError_1.UnsubscriptionError;
-var timeInterval_1 = __webpack_require__(191);
+var timeInterval_1 = __webpack_require__(192);
 exports.TimeInterval = timeInterval_1.TimeInterval;
-var timestamp_1 = __webpack_require__(192);
+var timestamp_1 = __webpack_require__(193);
 exports.Timestamp = timestamp_1.Timestamp;
-var TestScheduler_1 = __webpack_require__(647);
+var TestScheduler_1 = __webpack_require__(648);
 exports.TestScheduler = TestScheduler_1.TestScheduler;
-var VirtualTimeScheduler_1 = __webpack_require__(194);
+var VirtualTimeScheduler_1 = __webpack_require__(195);
 exports.VirtualTimeScheduler = VirtualTimeScheduler_1.VirtualTimeScheduler;
-var AjaxObservable_1 = __webpack_require__(174);
+var AjaxObservable_1 = __webpack_require__(175);
 exports.AjaxResponse = AjaxObservable_1.AjaxResponse;
 exports.AjaxError = AjaxObservable_1.AjaxError;
 exports.AjaxTimeoutError = AjaxObservable_1.AjaxTimeoutError;
-var asap_1 = __webpack_require__(195);
+var asap_1 = __webpack_require__(196);
 var async_1 = __webpack_require__(19);
-var queue_1 = __webpack_require__(196);
-var animationFrame_1 = __webpack_require__(644);
+var queue_1 = __webpack_require__(197);
+var animationFrame_1 = __webpack_require__(645);
 var rxSubscriber_1 = __webpack_require__(80);
-var iterator_1 = __webpack_require__(62);
-var observable_1 = __webpack_require__(63);
+var iterator_1 = __webpack_require__(61);
+var observable_1 = __webpack_require__(62);
 /* tslint:enable:no-unused-variable */
 /**
  * @typedef {Object} Rx.Scheduler
@@ -70451,7 +70452,7 @@ exports.Symbol = Symbol;
 //# sourceMappingURL=Rx.js.map
 
 /***/ }),
-/* 397 */
+/* 398 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -70506,26 +70507,15 @@ exports.Scheduler = Scheduler;
 //# sourceMappingURL=Scheduler.js.map
 
 /***/ }),
-/* 398 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var bindCallback_1 = __webpack_require__(542);
-Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
-//# sourceMappingURL=bindCallback.js.map
-
-/***/ }),
 /* 399 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var bindNodeCallback_1 = __webpack_require__(543);
-Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
-//# sourceMappingURL=bindNodeCallback.js.map
+var bindCallback_1 = __webpack_require__(543);
+Observable_1.Observable.bindCallback = bindCallback_1.bindCallback;
+//# sourceMappingURL=bindCallback.js.map
 
 /***/ }),
 /* 400 */
@@ -70534,9 +70524,9 @@ Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var combineLatest_1 = __webpack_require__(544);
-Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
-//# sourceMappingURL=combineLatest.js.map
+var bindNodeCallback_1 = __webpack_require__(544);
+Observable_1.Observable.bindNodeCallback = bindNodeCallback_1.bindNodeCallback;
+//# sourceMappingURL=bindNodeCallback.js.map
 
 /***/ }),
 /* 401 */
@@ -70545,9 +70535,9 @@ Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var concat_1 = __webpack_require__(545);
-Observable_1.Observable.concat = concat_1.concat;
-//# sourceMappingURL=concat.js.map
+var combineLatest_1 = __webpack_require__(545);
+Observable_1.Observable.combineLatest = combineLatest_1.combineLatest;
+//# sourceMappingURL=combineLatest.js.map
 
 /***/ }),
 /* 402 */
@@ -70556,9 +70546,9 @@ Observable_1.Observable.concat = concat_1.concat;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var defer_1 = __webpack_require__(546);
-Observable_1.Observable.defer = defer_1.defer;
-//# sourceMappingURL=defer.js.map
+var concat_1 = __webpack_require__(546);
+Observable_1.Observable.concat = concat_1.concat;
+//# sourceMappingURL=concat.js.map
 
 /***/ }),
 /* 403 */
@@ -70567,9 +70557,9 @@ Observable_1.Observable.defer = defer_1.defer;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var ajax_1 = __webpack_require__(548);
-Observable_1.Observable.ajax = ajax_1.ajax;
-//# sourceMappingURL=ajax.js.map
+var defer_1 = __webpack_require__(547);
+Observable_1.Observable.defer = defer_1.defer;
+//# sourceMappingURL=defer.js.map
 
 /***/ }),
 /* 404 */
@@ -70578,9 +70568,9 @@ Observable_1.Observable.ajax = ajax_1.ajax;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var webSocket_1 = __webpack_require__(549);
-Observable_1.Observable.webSocket = webSocket_1.webSocket;
-//# sourceMappingURL=webSocket.js.map
+var ajax_1 = __webpack_require__(549);
+Observable_1.Observable.ajax = ajax_1.ajax;
+//# sourceMappingURL=ajax.js.map
 
 /***/ }),
 /* 405 */
@@ -70589,9 +70579,9 @@ Observable_1.Observable.webSocket = webSocket_1.webSocket;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var empty_1 = __webpack_require__(550);
-Observable_1.Observable.empty = empty_1.empty;
-//# sourceMappingURL=empty.js.map
+var webSocket_1 = __webpack_require__(550);
+Observable_1.Observable.webSocket = webSocket_1.webSocket;
+//# sourceMappingURL=webSocket.js.map
 
 /***/ }),
 /* 406 */
@@ -70600,9 +70590,9 @@ Observable_1.Observable.empty = empty_1.empty;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var forkJoin_1 = __webpack_require__(551);
-Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
-//# sourceMappingURL=forkJoin.js.map
+var empty_1 = __webpack_require__(551);
+Observable_1.Observable.empty = empty_1.empty;
+//# sourceMappingURL=empty.js.map
 
 /***/ }),
 /* 407 */
@@ -70611,9 +70601,9 @@ Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var from_1 = __webpack_require__(175);
-Observable_1.Observable.from = from_1.from;
-//# sourceMappingURL=from.js.map
+var forkJoin_1 = __webpack_require__(552);
+Observable_1.Observable.forkJoin = forkJoin_1.forkJoin;
+//# sourceMappingURL=forkJoin.js.map
 
 /***/ }),
 /* 408 */
@@ -70622,9 +70612,9 @@ Observable_1.Observable.from = from_1.from;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var fromEvent_1 = __webpack_require__(552);
-Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
-//# sourceMappingURL=fromEvent.js.map
+var from_1 = __webpack_require__(176);
+Observable_1.Observable.from = from_1.from;
+//# sourceMappingURL=from.js.map
 
 /***/ }),
 /* 409 */
@@ -70633,9 +70623,9 @@ Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var fromEventPattern_1 = __webpack_require__(553);
-Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
-//# sourceMappingURL=fromEventPattern.js.map
+var fromEvent_1 = __webpack_require__(553);
+Observable_1.Observable.fromEvent = fromEvent_1.fromEvent;
+//# sourceMappingURL=fromEvent.js.map
 
 /***/ }),
 /* 410 */
@@ -70644,9 +70634,9 @@ Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var fromPromise_1 = __webpack_require__(109);
-Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
-//# sourceMappingURL=fromPromise.js.map
+var fromEventPattern_1 = __webpack_require__(554);
+Observable_1.Observable.fromEventPattern = fromEventPattern_1.fromEventPattern;
+//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ }),
 /* 411 */
@@ -70655,9 +70645,9 @@ Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var GenerateObservable_1 = __webpack_require__(532);
-Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
-//# sourceMappingURL=generate.js.map
+var fromPromise_1 = __webpack_require__(111);
+Observable_1.Observable.fromPromise = fromPromise_1.fromPromise;
+//# sourceMappingURL=fromPromise.js.map
 
 /***/ }),
 /* 412 */
@@ -70666,9 +70656,9 @@ Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.creat
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var if_1 = __webpack_require__(554);
-Observable_1.Observable.if = if_1._if;
-//# sourceMappingURL=if.js.map
+var GenerateObservable_1 = __webpack_require__(533);
+Observable_1.Observable.generate = GenerateObservable_1.GenerateObservable.create;
+//# sourceMappingURL=generate.js.map
 
 /***/ }),
 /* 413 */
@@ -70677,9 +70667,9 @@ Observable_1.Observable.if = if_1._if;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var interval_1 = __webpack_require__(555);
-Observable_1.Observable.interval = interval_1.interval;
-//# sourceMappingURL=interval.js.map
+var if_1 = __webpack_require__(555);
+Observable_1.Observable.if = if_1._if;
+//# sourceMappingURL=if.js.map
 
 /***/ }),
 /* 414 */
@@ -70688,9 +70678,9 @@ Observable_1.Observable.interval = interval_1.interval;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var merge_1 = __webpack_require__(176);
-Observable_1.Observable.merge = merge_1.merge;
-//# sourceMappingURL=merge.js.map
+var interval_1 = __webpack_require__(556);
+Observable_1.Observable.interval = interval_1.interval;
+//# sourceMappingURL=interval.js.map
 
 /***/ }),
 /* 415 */
@@ -70699,9 +70689,9 @@ Observable_1.Observable.merge = merge_1.merge;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var never_1 = __webpack_require__(556);
-Observable_1.Observable.never = never_1.never;
-//# sourceMappingURL=never.js.map
+var merge_1 = __webpack_require__(177);
+Observable_1.Observable.merge = merge_1.merge;
+//# sourceMappingURL=merge.js.map
 
 /***/ }),
 /* 416 */
@@ -70710,9 +70700,9 @@ Observable_1.Observable.never = never_1.never;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var of_1 = __webpack_require__(177);
-Observable_1.Observable.of = of_1.of;
-//# sourceMappingURL=of.js.map
+var never_1 = __webpack_require__(557);
+Observable_1.Observable.never = never_1.never;
+//# sourceMappingURL=never.js.map
 
 /***/ }),
 /* 417 */
@@ -70721,9 +70711,9 @@ Observable_1.Observable.of = of_1.of;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var onErrorResumeNext_1 = __webpack_require__(188);
-Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNextStatic;
-//# sourceMappingURL=onErrorResumeNext.js.map
+var of_1 = __webpack_require__(178);
+Observable_1.Observable.of = of_1.of;
+//# sourceMappingURL=of.js.map
 
 /***/ }),
 /* 418 */
@@ -70732,9 +70722,9 @@ Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNex
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var pairs_1 = __webpack_require__(557);
-Observable_1.Observable.pairs = pairs_1.pairs;
-//# sourceMappingURL=pairs.js.map
+var onErrorResumeNext_1 = __webpack_require__(189);
+Observable_1.Observable.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNextStatic;
+//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ }),
 /* 419 */
@@ -70743,9 +70733,9 @@ Observable_1.Observable.pairs = pairs_1.pairs;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var race_1 = __webpack_require__(189);
-Observable_1.Observable.race = race_1.raceStatic;
-//# sourceMappingURL=race.js.map
+var pairs_1 = __webpack_require__(558);
+Observable_1.Observable.pairs = pairs_1.pairs;
+//# sourceMappingURL=pairs.js.map
 
 /***/ }),
 /* 420 */
@@ -70754,9 +70744,9 @@ Observable_1.Observable.race = race_1.raceStatic;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var range_1 = __webpack_require__(558);
-Observable_1.Observable.range = range_1.range;
-//# sourceMappingURL=range.js.map
+var race_1 = __webpack_require__(190);
+Observable_1.Observable.race = race_1.raceStatic;
+//# sourceMappingURL=race.js.map
 
 /***/ }),
 /* 421 */
@@ -70765,9 +70755,9 @@ Observable_1.Observable.range = range_1.range;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var throw_1 = __webpack_require__(559);
-Observable_1.Observable.throw = throw_1._throw;
-//# sourceMappingURL=throw.js.map
+var range_1 = __webpack_require__(559);
+Observable_1.Observable.range = range_1.range;
+//# sourceMappingURL=range.js.map
 
 /***/ }),
 /* 422 */
@@ -70776,9 +70766,9 @@ Observable_1.Observable.throw = throw_1._throw;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var timer_1 = __webpack_require__(560);
-Observable_1.Observable.timer = timer_1.timer;
-//# sourceMappingURL=timer.js.map
+var throw_1 = __webpack_require__(560);
+Observable_1.Observable.throw = throw_1._throw;
+//# sourceMappingURL=throw.js.map
 
 /***/ }),
 /* 423 */
@@ -70787,9 +70777,9 @@ Observable_1.Observable.timer = timer_1.timer;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var using_1 = __webpack_require__(561);
-Observable_1.Observable.using = using_1.using;
-//# sourceMappingURL=using.js.map
+var timer_1 = __webpack_require__(561);
+Observable_1.Observable.timer = timer_1.timer;
+//# sourceMappingURL=timer.js.map
 
 /***/ }),
 /* 424 */
@@ -70798,9 +70788,9 @@ Observable_1.Observable.using = using_1.using;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var zip_1 = __webpack_require__(562);
-Observable_1.Observable.zip = zip_1.zip;
-//# sourceMappingURL=zip.js.map
+var using_1 = __webpack_require__(562);
+Observable_1.Observable.using = using_1.using;
+//# sourceMappingURL=using.js.map
 
 /***/ }),
 /* 425 */
@@ -70809,9 +70799,9 @@ Observable_1.Observable.zip = zip_1.zip;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var audit_1 = __webpack_require__(563);
-Observable_1.Observable.prototype.audit = audit_1.audit;
-//# sourceMappingURL=audit.js.map
+var zip_1 = __webpack_require__(563);
+Observable_1.Observable.zip = zip_1.zip;
+//# sourceMappingURL=zip.js.map
 
 /***/ }),
 /* 426 */
@@ -70820,9 +70810,9 @@ Observable_1.Observable.prototype.audit = audit_1.audit;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var auditTime_1 = __webpack_require__(564);
-Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
-//# sourceMappingURL=auditTime.js.map
+var audit_1 = __webpack_require__(564);
+Observable_1.Observable.prototype.audit = audit_1.audit;
+//# sourceMappingURL=audit.js.map
 
 /***/ }),
 /* 427 */
@@ -70831,9 +70821,9 @@ Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var buffer_1 = __webpack_require__(565);
-Observable_1.Observable.prototype.buffer = buffer_1.buffer;
-//# sourceMappingURL=buffer.js.map
+var auditTime_1 = __webpack_require__(565);
+Observable_1.Observable.prototype.auditTime = auditTime_1.auditTime;
+//# sourceMappingURL=auditTime.js.map
 
 /***/ }),
 /* 428 */
@@ -70842,9 +70832,9 @@ Observable_1.Observable.prototype.buffer = buffer_1.buffer;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var bufferCount_1 = __webpack_require__(566);
-Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
-//# sourceMappingURL=bufferCount.js.map
+var buffer_1 = __webpack_require__(566);
+Observable_1.Observable.prototype.buffer = buffer_1.buffer;
+//# sourceMappingURL=buffer.js.map
 
 /***/ }),
 /* 429 */
@@ -70853,9 +70843,9 @@ Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var bufferTime_1 = __webpack_require__(567);
-Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
-//# sourceMappingURL=bufferTime.js.map
+var bufferCount_1 = __webpack_require__(567);
+Observable_1.Observable.prototype.bufferCount = bufferCount_1.bufferCount;
+//# sourceMappingURL=bufferCount.js.map
 
 /***/ }),
 /* 430 */
@@ -70864,9 +70854,9 @@ Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var bufferToggle_1 = __webpack_require__(568);
-Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
-//# sourceMappingURL=bufferToggle.js.map
+var bufferTime_1 = __webpack_require__(568);
+Observable_1.Observable.prototype.bufferTime = bufferTime_1.bufferTime;
+//# sourceMappingURL=bufferTime.js.map
 
 /***/ }),
 /* 431 */
@@ -70875,9 +70865,9 @@ Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var bufferWhen_1 = __webpack_require__(569);
-Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
-//# sourceMappingURL=bufferWhen.js.map
+var bufferToggle_1 = __webpack_require__(569);
+Observable_1.Observable.prototype.bufferToggle = bufferToggle_1.bufferToggle;
+//# sourceMappingURL=bufferToggle.js.map
 
 /***/ }),
 /* 432 */
@@ -70886,10 +70876,9 @@ Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var catch_1 = __webpack_require__(178);
-Observable_1.Observable.prototype.catch = catch_1._catch;
-Observable_1.Observable.prototype._catch = catch_1._catch;
-//# sourceMappingURL=catch.js.map
+var bufferWhen_1 = __webpack_require__(570);
+Observable_1.Observable.prototype.bufferWhen = bufferWhen_1.bufferWhen;
+//# sourceMappingURL=bufferWhen.js.map
 
 /***/ }),
 /* 433 */
@@ -70898,9 +70887,10 @@ Observable_1.Observable.prototype._catch = catch_1._catch;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var combineAll_1 = __webpack_require__(570);
-Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
-//# sourceMappingURL=combineAll.js.map
+var catch_1 = __webpack_require__(179);
+Observable_1.Observable.prototype.catch = catch_1._catch;
+Observable_1.Observable.prototype._catch = catch_1._catch;
+//# sourceMappingURL=catch.js.map
 
 /***/ }),
 /* 434 */
@@ -70909,9 +70899,9 @@ Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var combineLatest_1 = __webpack_require__(110);
-Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
-//# sourceMappingURL=combineLatest.js.map
+var combineAll_1 = __webpack_require__(571);
+Observable_1.Observable.prototype.combineAll = combineAll_1.combineAll;
+//# sourceMappingURL=combineAll.js.map
 
 /***/ }),
 /* 435 */
@@ -70920,9 +70910,9 @@ Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var concat_1 = __webpack_require__(111);
-Observable_1.Observable.prototype.concat = concat_1.concat;
-//# sourceMappingURL=concat.js.map
+var combineLatest_1 = __webpack_require__(112);
+Observable_1.Observable.prototype.combineLatest = combineLatest_1.combineLatest;
+//# sourceMappingURL=combineLatest.js.map
 
 /***/ }),
 /* 436 */
@@ -70931,9 +70921,9 @@ Observable_1.Observable.prototype.concat = concat_1.concat;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var concatAll_1 = __webpack_require__(179);
-Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
-//# sourceMappingURL=concatAll.js.map
+var concat_1 = __webpack_require__(113);
+Observable_1.Observable.prototype.concat = concat_1.concat;
+//# sourceMappingURL=concat.js.map
 
 /***/ }),
 /* 437 */
@@ -70942,9 +70932,9 @@ Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var concatMap_1 = __webpack_require__(180);
-Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
-//# sourceMappingURL=concatMap.js.map
+var concatAll_1 = __webpack_require__(180);
+Observable_1.Observable.prototype.concatAll = concatAll_1.concatAll;
+//# sourceMappingURL=concatAll.js.map
 
 /***/ }),
 /* 438 */
@@ -70953,9 +70943,9 @@ Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var concatMapTo_1 = __webpack_require__(571);
-Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
-//# sourceMappingURL=concatMapTo.js.map
+var concatMap_1 = __webpack_require__(181);
+Observable_1.Observable.prototype.concatMap = concatMap_1.concatMap;
+//# sourceMappingURL=concatMap.js.map
 
 /***/ }),
 /* 439 */
@@ -70964,9 +70954,9 @@ Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var count_1 = __webpack_require__(572);
-Observable_1.Observable.prototype.count = count_1.count;
-//# sourceMappingURL=count.js.map
+var concatMapTo_1 = __webpack_require__(572);
+Observable_1.Observable.prototype.concatMapTo = concatMapTo_1.concatMapTo;
+//# sourceMappingURL=concatMapTo.js.map
 
 /***/ }),
 /* 440 */
@@ -70975,9 +70965,9 @@ Observable_1.Observable.prototype.count = count_1.count;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var debounce_1 = __webpack_require__(573);
-Observable_1.Observable.prototype.debounce = debounce_1.debounce;
-//# sourceMappingURL=debounce.js.map
+var count_1 = __webpack_require__(573);
+Observable_1.Observable.prototype.count = count_1.count;
+//# sourceMappingURL=count.js.map
 
 /***/ }),
 /* 441 */
@@ -70986,9 +70976,9 @@ Observable_1.Observable.prototype.debounce = debounce_1.debounce;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var debounceTime_1 = __webpack_require__(574);
-Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
-//# sourceMappingURL=debounceTime.js.map
+var debounce_1 = __webpack_require__(574);
+Observable_1.Observable.prototype.debounce = debounce_1.debounce;
+//# sourceMappingURL=debounce.js.map
 
 /***/ }),
 /* 442 */
@@ -70997,9 +70987,9 @@ Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var defaultIfEmpty_1 = __webpack_require__(575);
-Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
-//# sourceMappingURL=defaultIfEmpty.js.map
+var debounceTime_1 = __webpack_require__(575);
+Observable_1.Observable.prototype.debounceTime = debounceTime_1.debounceTime;
+//# sourceMappingURL=debounceTime.js.map
 
 /***/ }),
 /* 443 */
@@ -71008,9 +70998,9 @@ Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmp
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var delay_1 = __webpack_require__(576);
-Observable_1.Observable.prototype.delay = delay_1.delay;
-//# sourceMappingURL=delay.js.map
+var defaultIfEmpty_1 = __webpack_require__(576);
+Observable_1.Observable.prototype.defaultIfEmpty = defaultIfEmpty_1.defaultIfEmpty;
+//# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ }),
 /* 444 */
@@ -71019,9 +71009,9 @@ Observable_1.Observable.prototype.delay = delay_1.delay;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var delayWhen_1 = __webpack_require__(577);
-Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
-//# sourceMappingURL=delayWhen.js.map
+var delay_1 = __webpack_require__(577);
+Observable_1.Observable.prototype.delay = delay_1.delay;
+//# sourceMappingURL=delay.js.map
 
 /***/ }),
 /* 445 */
@@ -71030,9 +71020,9 @@ Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var dematerialize_1 = __webpack_require__(578);
-Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
-//# sourceMappingURL=dematerialize.js.map
+var delayWhen_1 = __webpack_require__(578);
+Observable_1.Observable.prototype.delayWhen = delayWhen_1.delayWhen;
+//# sourceMappingURL=delayWhen.js.map
 
 /***/ }),
 /* 446 */
@@ -71041,9 +71031,9 @@ Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var distinct_1 = __webpack_require__(579);
-Observable_1.Observable.prototype.distinct = distinct_1.distinct;
-//# sourceMappingURL=distinct.js.map
+var dematerialize_1 = __webpack_require__(579);
+Observable_1.Observable.prototype.dematerialize = dematerialize_1.dematerialize;
+//# sourceMappingURL=dematerialize.js.map
 
 /***/ }),
 /* 447 */
@@ -71052,9 +71042,9 @@ Observable_1.Observable.prototype.distinct = distinct_1.distinct;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var distinctUntilChanged_1 = __webpack_require__(181);
-Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
-//# sourceMappingURL=distinctUntilChanged.js.map
+var distinct_1 = __webpack_require__(580);
+Observable_1.Observable.prototype.distinct = distinct_1.distinct;
+//# sourceMappingURL=distinct.js.map
 
 /***/ }),
 /* 448 */
@@ -71063,9 +71053,9 @@ Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var distinctUntilKeyChanged_1 = __webpack_require__(580);
-Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
-//# sourceMappingURL=distinctUntilKeyChanged.js.map
+var distinctUntilChanged_1 = __webpack_require__(182);
+Observable_1.Observable.prototype.distinctUntilChanged = distinctUntilChanged_1.distinctUntilChanged;
+//# sourceMappingURL=distinctUntilChanged.js.map
 
 /***/ }),
 /* 449 */
@@ -71074,10 +71064,9 @@ Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChan
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var do_1 = __webpack_require__(581);
-Observable_1.Observable.prototype.do = do_1._do;
-Observable_1.Observable.prototype._do = do_1._do;
-//# sourceMappingURL=do.js.map
+var distinctUntilKeyChanged_1 = __webpack_require__(581);
+Observable_1.Observable.prototype.distinctUntilKeyChanged = distinctUntilKeyChanged_1.distinctUntilKeyChanged;
+//# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ }),
 /* 450 */
@@ -71086,9 +71075,10 @@ Observable_1.Observable.prototype._do = do_1._do;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var elementAt_1 = __webpack_require__(582);
-Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
-//# sourceMappingURL=elementAt.js.map
+var do_1 = __webpack_require__(582);
+Observable_1.Observable.prototype.do = do_1._do;
+Observable_1.Observable.prototype._do = do_1._do;
+//# sourceMappingURL=do.js.map
 
 /***/ }),
 /* 451 */
@@ -71097,9 +71087,9 @@ Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var every_1 = __webpack_require__(182);
-Observable_1.Observable.prototype.every = every_1.every;
-//# sourceMappingURL=every.js.map
+var elementAt_1 = __webpack_require__(583);
+Observable_1.Observable.prototype.elementAt = elementAt_1.elementAt;
+//# sourceMappingURL=elementAt.js.map
 
 /***/ }),
 /* 452 */
@@ -71108,9 +71098,9 @@ Observable_1.Observable.prototype.every = every_1.every;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var exhaust_1 = __webpack_require__(583);
-Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
-//# sourceMappingURL=exhaust.js.map
+var every_1 = __webpack_require__(183);
+Observable_1.Observable.prototype.every = every_1.every;
+//# sourceMappingURL=every.js.map
 
 /***/ }),
 /* 453 */
@@ -71119,9 +71109,9 @@ Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var exhaustMap_1 = __webpack_require__(584);
-Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
-//# sourceMappingURL=exhaustMap.js.map
+var exhaust_1 = __webpack_require__(584);
+Observable_1.Observable.prototype.exhaust = exhaust_1.exhaust;
+//# sourceMappingURL=exhaust.js.map
 
 /***/ }),
 /* 454 */
@@ -71130,9 +71120,9 @@ Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var expand_1 = __webpack_require__(585);
-Observable_1.Observable.prototype.expand = expand_1.expand;
-//# sourceMappingURL=expand.js.map
+var exhaustMap_1 = __webpack_require__(585);
+Observable_1.Observable.prototype.exhaustMap = exhaustMap_1.exhaustMap;
+//# sourceMappingURL=exhaustMap.js.map
 
 /***/ }),
 /* 455 */
@@ -71141,9 +71131,9 @@ Observable_1.Observable.prototype.expand = expand_1.expand;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var filter_1 = __webpack_require__(112);
-Observable_1.Observable.prototype.filter = filter_1.filter;
-//# sourceMappingURL=filter.js.map
+var expand_1 = __webpack_require__(586);
+Observable_1.Observable.prototype.expand = expand_1.expand;
+//# sourceMappingURL=expand.js.map
 
 /***/ }),
 /* 456 */
@@ -71152,10 +71142,9 @@ Observable_1.Observable.prototype.filter = filter_1.filter;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var finally_1 = __webpack_require__(586);
-Observable_1.Observable.prototype.finally = finally_1._finally;
-Observable_1.Observable.prototype._finally = finally_1._finally;
-//# sourceMappingURL=finally.js.map
+var filter_1 = __webpack_require__(114);
+Observable_1.Observable.prototype.filter = filter_1.filter;
+//# sourceMappingURL=filter.js.map
 
 /***/ }),
 /* 457 */
@@ -71164,9 +71153,10 @@ Observable_1.Observable.prototype._finally = finally_1._finally;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var find_1 = __webpack_require__(183);
-Observable_1.Observable.prototype.find = find_1.find;
-//# sourceMappingURL=find.js.map
+var finally_1 = __webpack_require__(587);
+Observable_1.Observable.prototype.finally = finally_1._finally;
+Observable_1.Observable.prototype._finally = finally_1._finally;
+//# sourceMappingURL=finally.js.map
 
 /***/ }),
 /* 458 */
@@ -71175,9 +71165,9 @@ Observable_1.Observable.prototype.find = find_1.find;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var findIndex_1 = __webpack_require__(587);
-Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
-//# sourceMappingURL=findIndex.js.map
+var find_1 = __webpack_require__(184);
+Observable_1.Observable.prototype.find = find_1.find;
+//# sourceMappingURL=find.js.map
 
 /***/ }),
 /* 459 */
@@ -71186,9 +71176,9 @@ Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var groupBy_1 = __webpack_require__(588);
-Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
-//# sourceMappingURL=groupBy.js.map
+var findIndex_1 = __webpack_require__(588);
+Observable_1.Observable.prototype.findIndex = findIndex_1.findIndex;
+//# sourceMappingURL=findIndex.js.map
 
 /***/ }),
 /* 460 */
@@ -71197,9 +71187,9 @@ Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var ignoreElements_1 = __webpack_require__(589);
-Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
-//# sourceMappingURL=ignoreElements.js.map
+var groupBy_1 = __webpack_require__(589);
+Observable_1.Observable.prototype.groupBy = groupBy_1.groupBy;
+//# sourceMappingURL=groupBy.js.map
 
 /***/ }),
 /* 461 */
@@ -71208,9 +71198,9 @@ Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElemen
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var isEmpty_1 = __webpack_require__(590);
-Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
-//# sourceMappingURL=isEmpty.js.map
+var ignoreElements_1 = __webpack_require__(590);
+Observable_1.Observable.prototype.ignoreElements = ignoreElements_1.ignoreElements;
+//# sourceMappingURL=ignoreElements.js.map
 
 /***/ }),
 /* 462 */
@@ -71219,9 +71209,9 @@ Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var last_1 = __webpack_require__(185);
-Observable_1.Observable.prototype.last = last_1.last;
-//# sourceMappingURL=last.js.map
+var isEmpty_1 = __webpack_require__(591);
+Observable_1.Observable.prototype.isEmpty = isEmpty_1.isEmpty;
+//# sourceMappingURL=isEmpty.js.map
 
 /***/ }),
 /* 463 */
@@ -71230,13 +71220,24 @@ Observable_1.Observable.prototype.last = last_1.last;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var let_1 = __webpack_require__(591);
+var last_1 = __webpack_require__(186);
+Observable_1.Observable.prototype.last = last_1.last;
+//# sourceMappingURL=last.js.map
+
+/***/ }),
+/* 464 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var let_1 = __webpack_require__(592);
 Observable_1.Observable.prototype.let = let_1.letProto;
 Observable_1.Observable.prototype.letBind = let_1.letProto;
 //# sourceMappingURL=let.js.map
 
 /***/ }),
-/* 464 */
+/* 465 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71247,26 +71248,15 @@ Observable_1.Observable.prototype.map = map_1.map;
 //# sourceMappingURL=map.js.map
 
 /***/ }),
-/* 465 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var mapTo_1 = __webpack_require__(592);
-Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
-//# sourceMappingURL=mapTo.js.map
-
-/***/ }),
 /* 466 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var materialize_1 = __webpack_require__(593);
-Observable_1.Observable.prototype.materialize = materialize_1.materialize;
-//# sourceMappingURL=materialize.js.map
+var mapTo_1 = __webpack_require__(593);
+Observable_1.Observable.prototype.mapTo = mapTo_1.mapTo;
+//# sourceMappingURL=mapTo.js.map
 
 /***/ }),
 /* 467 */
@@ -71275,9 +71265,9 @@ Observable_1.Observable.prototype.materialize = materialize_1.materialize;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var max_1 = __webpack_require__(594);
-Observable_1.Observable.prototype.max = max_1.max;
-//# sourceMappingURL=max.js.map
+var materialize_1 = __webpack_require__(594);
+Observable_1.Observable.prototype.materialize = materialize_1.materialize;
+//# sourceMappingURL=materialize.js.map
 
 /***/ }),
 /* 468 */
@@ -71286,9 +71276,9 @@ Observable_1.Observable.prototype.max = max_1.max;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var merge_1 = __webpack_require__(186);
-Observable_1.Observable.prototype.merge = merge_1.merge;
-//# sourceMappingURL=merge.js.map
+var max_1 = __webpack_require__(595);
+Observable_1.Observable.prototype.max = max_1.max;
+//# sourceMappingURL=max.js.map
 
 /***/ }),
 /* 469 */
@@ -71297,9 +71287,9 @@ Observable_1.Observable.prototype.merge = merge_1.merge;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var mergeAll_1 = __webpack_require__(59);
-Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
-//# sourceMappingURL=mergeAll.js.map
+var merge_1 = __webpack_require__(187);
+Observable_1.Observable.prototype.merge = merge_1.merge;
+//# sourceMappingURL=merge.js.map
 
 /***/ }),
 /* 470 */
@@ -71308,10 +71298,9 @@ Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var mergeMap_1 = __webpack_require__(113);
-Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
-Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
-//# sourceMappingURL=mergeMap.js.map
+var mergeAll_1 = __webpack_require__(58);
+Observable_1.Observable.prototype.mergeAll = mergeAll_1.mergeAll;
+//# sourceMappingURL=mergeAll.js.map
 
 /***/ }),
 /* 471 */
@@ -71320,10 +71309,10 @@ Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var mergeMapTo_1 = __webpack_require__(187);
-Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
-Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
-//# sourceMappingURL=mergeMapTo.js.map
+var mergeMap_1 = __webpack_require__(115);
+Observable_1.Observable.prototype.mergeMap = mergeMap_1.mergeMap;
+Observable_1.Observable.prototype.flatMap = mergeMap_1.mergeMap;
+//# sourceMappingURL=mergeMap.js.map
 
 /***/ }),
 /* 472 */
@@ -71332,9 +71321,10 @@ Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var mergeScan_1 = __webpack_require__(595);
-Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
-//# sourceMappingURL=mergeScan.js.map
+var mergeMapTo_1 = __webpack_require__(188);
+Observable_1.Observable.prototype.flatMapTo = mergeMapTo_1.mergeMapTo;
+Observable_1.Observable.prototype.mergeMapTo = mergeMapTo_1.mergeMapTo;
+//# sourceMappingURL=mergeMapTo.js.map
 
 /***/ }),
 /* 473 */
@@ -71343,12 +71333,23 @@ Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var min_1 = __webpack_require__(596);
+var mergeScan_1 = __webpack_require__(596);
+Observable_1.Observable.prototype.mergeScan = mergeScan_1.mergeScan;
+//# sourceMappingURL=mergeScan.js.map
+
+/***/ }),
+/* 474 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var min_1 = __webpack_require__(597);
 Observable_1.Observable.prototype.min = min_1.min;
 //# sourceMappingURL=min.js.map
 
 /***/ }),
-/* 474 */
+/* 475 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71359,26 +71360,15 @@ Observable_1.Observable.prototype.multicast = multicast_1.multicast;
 //# sourceMappingURL=multicast.js.map
 
 /***/ }),
-/* 475 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var observeOn_1 = __webpack_require__(114);
-Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
-//# sourceMappingURL=observeOn.js.map
-
-/***/ }),
 /* 476 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var onErrorResumeNext_1 = __webpack_require__(188);
-Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNext;
-//# sourceMappingURL=onErrorResumeNext.js.map
+var observeOn_1 = __webpack_require__(116);
+Observable_1.Observable.prototype.observeOn = observeOn_1.observeOn;
+//# sourceMappingURL=observeOn.js.map
 
 /***/ }),
 /* 477 */
@@ -71387,9 +71377,9 @@ Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErro
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var pairwise_1 = __webpack_require__(597);
-Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
-//# sourceMappingURL=pairwise.js.map
+var onErrorResumeNext_1 = __webpack_require__(189);
+Observable_1.Observable.prototype.onErrorResumeNext = onErrorResumeNext_1.onErrorResumeNext;
+//# sourceMappingURL=onErrorResumeNext.js.map
 
 /***/ }),
 /* 478 */
@@ -71398,9 +71388,9 @@ Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var partition_1 = __webpack_require__(598);
-Observable_1.Observable.prototype.partition = partition_1.partition;
-//# sourceMappingURL=partition.js.map
+var pairwise_1 = __webpack_require__(598);
+Observable_1.Observable.prototype.pairwise = pairwise_1.pairwise;
+//# sourceMappingURL=pairwise.js.map
 
 /***/ }),
 /* 479 */
@@ -71409,9 +71399,9 @@ Observable_1.Observable.prototype.partition = partition_1.partition;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var pluck_1 = __webpack_require__(599);
-Observable_1.Observable.prototype.pluck = pluck_1.pluck;
-//# sourceMappingURL=pluck.js.map
+var partition_1 = __webpack_require__(599);
+Observable_1.Observable.prototype.partition = partition_1.partition;
+//# sourceMappingURL=partition.js.map
 
 /***/ }),
 /* 480 */
@@ -71420,9 +71410,9 @@ Observable_1.Observable.prototype.pluck = pluck_1.pluck;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var publish_1 = __webpack_require__(600);
-Observable_1.Observable.prototype.publish = publish_1.publish;
-//# sourceMappingURL=publish.js.map
+var pluck_1 = __webpack_require__(600);
+Observable_1.Observable.prototype.pluck = pluck_1.pluck;
+//# sourceMappingURL=pluck.js.map
 
 /***/ }),
 /* 481 */
@@ -71431,9 +71421,9 @@ Observable_1.Observable.prototype.publish = publish_1.publish;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var publishBehavior_1 = __webpack_require__(601);
-Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
-//# sourceMappingURL=publishBehavior.js.map
+var publish_1 = __webpack_require__(601);
+Observable_1.Observable.prototype.publish = publish_1.publish;
+//# sourceMappingURL=publish.js.map
 
 /***/ }),
 /* 482 */
@@ -71442,9 +71432,9 @@ Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBeh
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var publishLast_1 = __webpack_require__(602);
-Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
-//# sourceMappingURL=publishLast.js.map
+var publishBehavior_1 = __webpack_require__(602);
+Observable_1.Observable.prototype.publishBehavior = publishBehavior_1.publishBehavior;
+//# sourceMappingURL=publishBehavior.js.map
 
 /***/ }),
 /* 483 */
@@ -71453,9 +71443,9 @@ Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var publishReplay_1 = __webpack_require__(603);
-Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
-//# sourceMappingURL=publishReplay.js.map
+var publishLast_1 = __webpack_require__(603);
+Observable_1.Observable.prototype.publishLast = publishLast_1.publishLast;
+//# sourceMappingURL=publishLast.js.map
 
 /***/ }),
 /* 484 */
@@ -71464,12 +71454,23 @@ Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var race_1 = __webpack_require__(189);
+var publishReplay_1 = __webpack_require__(604);
+Observable_1.Observable.prototype.publishReplay = publishReplay_1.publishReplay;
+//# sourceMappingURL=publishReplay.js.map
+
+/***/ }),
+/* 485 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var race_1 = __webpack_require__(190);
 Observable_1.Observable.prototype.race = race_1.race;
 //# sourceMappingURL=race.js.map
 
 /***/ }),
-/* 485 */
+/* 486 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71480,26 +71481,15 @@ Observable_1.Observable.prototype.reduce = reduce_1.reduce;
 //# sourceMappingURL=reduce.js.map
 
 /***/ }),
-/* 486 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var Observable_1 = __webpack_require__(0);
-var repeat_1 = __webpack_require__(604);
-Observable_1.Observable.prototype.repeat = repeat_1.repeat;
-//# sourceMappingURL=repeat.js.map
-
-/***/ }),
 /* 487 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var repeatWhen_1 = __webpack_require__(605);
-Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
-//# sourceMappingURL=repeatWhen.js.map
+var repeat_1 = __webpack_require__(605);
+Observable_1.Observable.prototype.repeat = repeat_1.repeat;
+//# sourceMappingURL=repeat.js.map
 
 /***/ }),
 /* 488 */
@@ -71508,9 +71498,9 @@ Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var retry_1 = __webpack_require__(606);
-Observable_1.Observable.prototype.retry = retry_1.retry;
-//# sourceMappingURL=retry.js.map
+var repeatWhen_1 = __webpack_require__(606);
+Observable_1.Observable.prototype.repeatWhen = repeatWhen_1.repeatWhen;
+//# sourceMappingURL=repeatWhen.js.map
 
 /***/ }),
 /* 489 */
@@ -71519,9 +71509,9 @@ Observable_1.Observable.prototype.retry = retry_1.retry;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var retryWhen_1 = __webpack_require__(607);
-Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
-//# sourceMappingURL=retryWhen.js.map
+var retry_1 = __webpack_require__(607);
+Observable_1.Observable.prototype.retry = retry_1.retry;
+//# sourceMappingURL=retry.js.map
 
 /***/ }),
 /* 490 */
@@ -71530,9 +71520,9 @@ Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var sample_1 = __webpack_require__(608);
-Observable_1.Observable.prototype.sample = sample_1.sample;
-//# sourceMappingURL=sample.js.map
+var retryWhen_1 = __webpack_require__(608);
+Observable_1.Observable.prototype.retryWhen = retryWhen_1.retryWhen;
+//# sourceMappingURL=retryWhen.js.map
 
 /***/ }),
 /* 491 */
@@ -71541,9 +71531,9 @@ Observable_1.Observable.prototype.sample = sample_1.sample;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var sampleTime_1 = __webpack_require__(609);
-Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
-//# sourceMappingURL=sampleTime.js.map
+var sample_1 = __webpack_require__(609);
+Observable_1.Observable.prototype.sample = sample_1.sample;
+//# sourceMappingURL=sample.js.map
 
 /***/ }),
 /* 492 */
@@ -71552,9 +71542,9 @@ Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var scan_1 = __webpack_require__(610);
-Observable_1.Observable.prototype.scan = scan_1.scan;
-//# sourceMappingURL=scan.js.map
+var sampleTime_1 = __webpack_require__(610);
+Observable_1.Observable.prototype.sampleTime = sampleTime_1.sampleTime;
+//# sourceMappingURL=sampleTime.js.map
 
 /***/ }),
 /* 493 */
@@ -71563,9 +71553,9 @@ Observable_1.Observable.prototype.scan = scan_1.scan;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var sequenceEqual_1 = __webpack_require__(611);
-Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
-//# sourceMappingURL=sequenceEqual.js.map
+var scan_1 = __webpack_require__(611);
+Observable_1.Observable.prototype.scan = scan_1.scan;
+//# sourceMappingURL=scan.js.map
 
 /***/ }),
 /* 494 */
@@ -71574,9 +71564,9 @@ Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var share_1 = __webpack_require__(190);
-Observable_1.Observable.prototype.share = share_1.share;
-//# sourceMappingURL=share.js.map
+var sequenceEqual_1 = __webpack_require__(612);
+Observable_1.Observable.prototype.sequenceEqual = sequenceEqual_1.sequenceEqual;
+//# sourceMappingURL=sequenceEqual.js.map
 
 /***/ }),
 /* 495 */
@@ -71585,9 +71575,9 @@ Observable_1.Observable.prototype.share = share_1.share;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var single_1 = __webpack_require__(612);
-Observable_1.Observable.prototype.single = single_1.single;
-//# sourceMappingURL=single.js.map
+var share_1 = __webpack_require__(191);
+Observable_1.Observable.prototype.share = share_1.share;
+//# sourceMappingURL=share.js.map
 
 /***/ }),
 /* 496 */
@@ -71596,9 +71586,9 @@ Observable_1.Observable.prototype.single = single_1.single;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var skip_1 = __webpack_require__(613);
-Observable_1.Observable.prototype.skip = skip_1.skip;
-//# sourceMappingURL=skip.js.map
+var single_1 = __webpack_require__(613);
+Observable_1.Observable.prototype.single = single_1.single;
+//# sourceMappingURL=single.js.map
 
 /***/ }),
 /* 497 */
@@ -71607,9 +71597,9 @@ Observable_1.Observable.prototype.skip = skip_1.skip;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var skipUntil_1 = __webpack_require__(614);
-Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
-//# sourceMappingURL=skipUntil.js.map
+var skip_1 = __webpack_require__(614);
+Observable_1.Observable.prototype.skip = skip_1.skip;
+//# sourceMappingURL=skip.js.map
 
 /***/ }),
 /* 498 */
@@ -71618,9 +71608,9 @@ Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var skipWhile_1 = __webpack_require__(615);
-Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
-//# sourceMappingURL=skipWhile.js.map
+var skipUntil_1 = __webpack_require__(615);
+Observable_1.Observable.prototype.skipUntil = skipUntil_1.skipUntil;
+//# sourceMappingURL=skipUntil.js.map
 
 /***/ }),
 /* 499 */
@@ -71629,9 +71619,9 @@ Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var startWith_1 = __webpack_require__(616);
-Observable_1.Observable.prototype.startWith = startWith_1.startWith;
-//# sourceMappingURL=startWith.js.map
+var skipWhile_1 = __webpack_require__(616);
+Observable_1.Observable.prototype.skipWhile = skipWhile_1.skipWhile;
+//# sourceMappingURL=skipWhile.js.map
 
 /***/ }),
 /* 500 */
@@ -71640,9 +71630,9 @@ Observable_1.Observable.prototype.startWith = startWith_1.startWith;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var subscribeOn_1 = __webpack_require__(617);
-Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
-//# sourceMappingURL=subscribeOn.js.map
+var startWith_1 = __webpack_require__(617);
+Observable_1.Observable.prototype.startWith = startWith_1.startWith;
+//# sourceMappingURL=startWith.js.map
 
 /***/ }),
 /* 501 */
@@ -71651,10 +71641,9 @@ Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var switch_1 = __webpack_require__(618);
-Observable_1.Observable.prototype.switch = switch_1._switch;
-Observable_1.Observable.prototype._switch = switch_1._switch;
-//# sourceMappingURL=switch.js.map
+var subscribeOn_1 = __webpack_require__(618);
+Observable_1.Observable.prototype.subscribeOn = subscribeOn_1.subscribeOn;
+//# sourceMappingURL=subscribeOn.js.map
 
 /***/ }),
 /* 502 */
@@ -71663,9 +71652,10 @@ Observable_1.Observable.prototype._switch = switch_1._switch;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var switchMap_1 = __webpack_require__(619);
-Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
-//# sourceMappingURL=switchMap.js.map
+var switch_1 = __webpack_require__(619);
+Observable_1.Observable.prototype.switch = switch_1._switch;
+Observable_1.Observable.prototype._switch = switch_1._switch;
+//# sourceMappingURL=switch.js.map
 
 /***/ }),
 /* 503 */
@@ -71674,9 +71664,9 @@ Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var switchMapTo_1 = __webpack_require__(620);
-Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
-//# sourceMappingURL=switchMapTo.js.map
+var switchMap_1 = __webpack_require__(620);
+Observable_1.Observable.prototype.switchMap = switchMap_1.switchMap;
+//# sourceMappingURL=switchMap.js.map
 
 /***/ }),
 /* 504 */
@@ -71685,9 +71675,9 @@ Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var take_1 = __webpack_require__(621);
-Observable_1.Observable.prototype.take = take_1.take;
-//# sourceMappingURL=take.js.map
+var switchMapTo_1 = __webpack_require__(621);
+Observable_1.Observable.prototype.switchMapTo = switchMapTo_1.switchMapTo;
+//# sourceMappingURL=switchMapTo.js.map
 
 /***/ }),
 /* 505 */
@@ -71696,9 +71686,9 @@ Observable_1.Observable.prototype.take = take_1.take;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var takeLast_1 = __webpack_require__(622);
-Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
-//# sourceMappingURL=takeLast.js.map
+var take_1 = __webpack_require__(622);
+Observable_1.Observable.prototype.take = take_1.take;
+//# sourceMappingURL=take.js.map
 
 /***/ }),
 /* 506 */
@@ -71707,9 +71697,9 @@ Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var takeUntil_1 = __webpack_require__(623);
-Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
-//# sourceMappingURL=takeUntil.js.map
+var takeLast_1 = __webpack_require__(623);
+Observable_1.Observable.prototype.takeLast = takeLast_1.takeLast;
+//# sourceMappingURL=takeLast.js.map
 
 /***/ }),
 /* 507 */
@@ -71718,9 +71708,9 @@ Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var takeWhile_1 = __webpack_require__(624);
-Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
-//# sourceMappingURL=takeWhile.js.map
+var takeUntil_1 = __webpack_require__(624);
+Observable_1.Observable.prototype.takeUntil = takeUntil_1.takeUntil;
+//# sourceMappingURL=takeUntil.js.map
 
 /***/ }),
 /* 508 */
@@ -71729,9 +71719,9 @@ Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var throttle_1 = __webpack_require__(625);
-Observable_1.Observable.prototype.throttle = throttle_1.throttle;
-//# sourceMappingURL=throttle.js.map
+var takeWhile_1 = __webpack_require__(625);
+Observable_1.Observable.prototype.takeWhile = takeWhile_1.takeWhile;
+//# sourceMappingURL=takeWhile.js.map
 
 /***/ }),
 /* 509 */
@@ -71740,9 +71730,9 @@ Observable_1.Observable.prototype.throttle = throttle_1.throttle;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var throttleTime_1 = __webpack_require__(626);
-Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
-//# sourceMappingURL=throttleTime.js.map
+var throttle_1 = __webpack_require__(626);
+Observable_1.Observable.prototype.throttle = throttle_1.throttle;
+//# sourceMappingURL=throttle.js.map
 
 /***/ }),
 /* 510 */
@@ -71751,9 +71741,9 @@ Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var timeInterval_1 = __webpack_require__(191);
-Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
-//# sourceMappingURL=timeInterval.js.map
+var throttleTime_1 = __webpack_require__(627);
+Observable_1.Observable.prototype.throttleTime = throttleTime_1.throttleTime;
+//# sourceMappingURL=throttleTime.js.map
 
 /***/ }),
 /* 511 */
@@ -71762,9 +71752,9 @@ Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var timeout_1 = __webpack_require__(627);
-Observable_1.Observable.prototype.timeout = timeout_1.timeout;
-//# sourceMappingURL=timeout.js.map
+var timeInterval_1 = __webpack_require__(192);
+Observable_1.Observable.prototype.timeInterval = timeInterval_1.timeInterval;
+//# sourceMappingURL=timeInterval.js.map
 
 /***/ }),
 /* 512 */
@@ -71773,9 +71763,9 @@ Observable_1.Observable.prototype.timeout = timeout_1.timeout;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var timeoutWith_1 = __webpack_require__(628);
-Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
-//# sourceMappingURL=timeoutWith.js.map
+var timeout_1 = __webpack_require__(628);
+Observable_1.Observable.prototype.timeout = timeout_1.timeout;
+//# sourceMappingURL=timeout.js.map
 
 /***/ }),
 /* 513 */
@@ -71784,9 +71774,9 @@ Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var timestamp_1 = __webpack_require__(192);
-Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
-//# sourceMappingURL=timestamp.js.map
+var timeoutWith_1 = __webpack_require__(629);
+Observable_1.Observable.prototype.timeoutWith = timeoutWith_1.timeoutWith;
+//# sourceMappingURL=timeoutWith.js.map
 
 /***/ }),
 /* 514 */
@@ -71795,9 +71785,9 @@ Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var toArray_1 = __webpack_require__(629);
-Observable_1.Observable.prototype.toArray = toArray_1.toArray;
-//# sourceMappingURL=toArray.js.map
+var timestamp_1 = __webpack_require__(193);
+Observable_1.Observable.prototype.timestamp = timestamp_1.timestamp;
+//# sourceMappingURL=timestamp.js.map
 
 /***/ }),
 /* 515 */
@@ -71806,9 +71796,9 @@ Observable_1.Observable.prototype.toArray = toArray_1.toArray;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var toPromise_1 = __webpack_require__(193);
-Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
-//# sourceMappingURL=toPromise.js.map
+var toArray_1 = __webpack_require__(630);
+Observable_1.Observable.prototype.toArray = toArray_1.toArray;
+//# sourceMappingURL=toArray.js.map
 
 /***/ }),
 /* 516 */
@@ -71817,9 +71807,9 @@ Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var window_1 = __webpack_require__(630);
-Observable_1.Observable.prototype.window = window_1.window;
-//# sourceMappingURL=window.js.map
+var toPromise_1 = __webpack_require__(194);
+Observable_1.Observable.prototype.toPromise = toPromise_1.toPromise;
+//# sourceMappingURL=toPromise.js.map
 
 /***/ }),
 /* 517 */
@@ -71828,9 +71818,9 @@ Observable_1.Observable.prototype.window = window_1.window;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var windowCount_1 = __webpack_require__(631);
-Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
-//# sourceMappingURL=windowCount.js.map
+var window_1 = __webpack_require__(631);
+Observable_1.Observable.prototype.window = window_1.window;
+//# sourceMappingURL=window.js.map
 
 /***/ }),
 /* 518 */
@@ -71839,9 +71829,9 @@ Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var windowTime_1 = __webpack_require__(632);
-Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
-//# sourceMappingURL=windowTime.js.map
+var windowCount_1 = __webpack_require__(632);
+Observable_1.Observable.prototype.windowCount = windowCount_1.windowCount;
+//# sourceMappingURL=windowCount.js.map
 
 /***/ }),
 /* 519 */
@@ -71850,9 +71840,9 @@ Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var windowToggle_1 = __webpack_require__(633);
-Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
-//# sourceMappingURL=windowToggle.js.map
+var windowTime_1 = __webpack_require__(633);
+Observable_1.Observable.prototype.windowTime = windowTime_1.windowTime;
+//# sourceMappingURL=windowTime.js.map
 
 /***/ }),
 /* 520 */
@@ -71861,9 +71851,9 @@ Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var windowWhen_1 = __webpack_require__(634);
-Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
-//# sourceMappingURL=windowWhen.js.map
+var windowToggle_1 = __webpack_require__(634);
+Observable_1.Observable.prototype.windowToggle = windowToggle_1.windowToggle;
+//# sourceMappingURL=windowToggle.js.map
 
 /***/ }),
 /* 521 */
@@ -71872,9 +71862,9 @@ Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var withLatestFrom_1 = __webpack_require__(635);
-Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
-//# sourceMappingURL=withLatestFrom.js.map
+var windowWhen_1 = __webpack_require__(635);
+Observable_1.Observable.prototype.windowWhen = windowWhen_1.windowWhen;
+//# sourceMappingURL=windowWhen.js.map
 
 /***/ }),
 /* 522 */
@@ -71883,9 +71873,9 @@ Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFr
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var zip_1 = __webpack_require__(115);
-Observable_1.Observable.prototype.zip = zip_1.zipProto;
-//# sourceMappingURL=zip.js.map
+var withLatestFrom_1 = __webpack_require__(636);
+Observable_1.Observable.prototype.withLatestFrom = withLatestFrom_1.withLatestFrom;
+//# sourceMappingURL=withLatestFrom.js.map
 
 /***/ }),
 /* 523 */
@@ -71894,12 +71884,23 @@ Observable_1.Observable.prototype.zip = zip_1.zipProto;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var zipAll_1 = __webpack_require__(636);
+var zip_1 = __webpack_require__(117);
+Observable_1.Observable.prototype.zip = zip_1.zipProto;
+//# sourceMappingURL=zip.js.map
+
+/***/ }),
+/* 524 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var Observable_1 = __webpack_require__(0);
+var zipAll_1 = __webpack_require__(637);
 Observable_1.Observable.prototype.zipAll = zipAll_1.zipAll;
 //# sourceMappingURL=zipAll.js.map
 
 /***/ }),
-/* 524 */
+/* 525 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71910,7 +71911,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var ScalarObservable_1 = __webpack_require__(108);
+var ScalarObservable_1 = __webpack_require__(110);
 var EmptyObservable_1 = __webpack_require__(39);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -71975,7 +71976,7 @@ exports.ArrayLikeObservable = ArrayLikeObservable;
 //# sourceMappingURL=ArrayLikeObservable.js.map
 
 /***/ }),
-/* 525 */
+/* 526 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72249,7 +72250,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=BoundCallbackObservable.js.map
 
 /***/ }),
-/* 526 */
+/* 527 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72518,7 +72519,7 @@ function dispatchError(arg) {
 //# sourceMappingURL=BoundNodeCallbackObservable.js.map
 
 /***/ }),
-/* 527 */
+/* 528 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72623,7 +72624,7 @@ var DeferSubscriber = (function (_super) {
 //# sourceMappingURL=DeferObservable.js.map
 
 /***/ }),
-/* 528 */
+/* 529 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72711,7 +72712,7 @@ exports.ErrorObservable = ErrorObservable;
 //# sourceMappingURL=ErrorObservable.js.map
 
 /***/ }),
-/* 529 */
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72829,7 +72830,7 @@ var ForkJoinSubscriber = (function (_super) {
 //# sourceMappingURL=ForkJoinObservable.js.map
 
 /***/ }),
-/* 530 */
+/* 531 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -72975,7 +72976,7 @@ exports.FromEventObservable = FromEventObservable;
 //# sourceMappingURL=FromEventObservable.js.map
 
 /***/ }),
-/* 531 */
+/* 532 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73094,7 +73095,7 @@ exports.FromEventPatternObservable = FromEventPatternObservable;
 //# sourceMappingURL=FromEventPatternObservable.js.map
 
 /***/ }),
-/* 532 */
+/* 533 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73235,7 +73236,7 @@ exports.GenerateObservable = GenerateObservable;
 //# sourceMappingURL=GenerateObservable.js.map
 
 /***/ }),
-/* 533 */
+/* 534 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73302,7 +73303,7 @@ var IfSubscriber = (function (_super) {
 //# sourceMappingURL=IfObservable.js.map
 
 /***/ }),
-/* 534 */
+/* 535 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73396,7 +73397,7 @@ exports.IntervalObservable = IntervalObservable;
 //# sourceMappingURL=IntervalObservable.js.map
 
 /***/ }),
-/* 535 */
+/* 536 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73408,7 +73409,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var root_1 = __webpack_require__(16);
 var Observable_1 = __webpack_require__(0);
-var iterator_1 = __webpack_require__(62);
+var iterator_1 = __webpack_require__(61);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -73565,7 +73566,7 @@ function sign(value) {
 //# sourceMappingURL=IteratorObservable.js.map
 
 /***/ }),
-/* 536 */
+/* 537 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73576,7 +73577,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var noop_1 = __webpack_require__(205);
+var noop_1 = __webpack_require__(206);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -73630,7 +73631,7 @@ exports.NeverObservable = NeverObservable;
 //# sourceMappingURL=NeverObservable.js.map
 
 /***/ }),
-/* 537 */
+/* 538 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73721,7 +73722,7 @@ exports.PairsObservable = PairsObservable;
 //# sourceMappingURL=PairsObservable.js.map
 
 /***/ }),
-/* 538 */
+/* 539 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73823,7 +73824,7 @@ exports.RangeObservable = RangeObservable;
 //# sourceMappingURL=RangeObservable.js.map
 
 /***/ }),
-/* 539 */
+/* 540 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73834,7 +73835,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var asap_1 = __webpack_require__(195);
+var asap_1 = __webpack_require__(196);
 var isNumeric_1 = __webpack_require__(85);
 /**
  * We need this JSDoc comment for affecting ESDoc.
@@ -73880,7 +73881,7 @@ exports.SubscribeOnObservable = SubscribeOnObservable;
 //# sourceMappingURL=SubscribeOnObservable.js.map
 
 /***/ }),
-/* 540 */
+/* 541 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -73993,7 +73994,7 @@ exports.TimerObservable = TimerObservable;
 //# sourceMappingURL=TimerObservable.js.map
 
 /***/ }),
-/* 541 */
+/* 542 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74060,24 +74061,14 @@ var UsingSubscriber = (function (_super) {
 //# sourceMappingURL=UsingObservable.js.map
 
 /***/ }),
-/* 542 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var BoundCallbackObservable_1 = __webpack_require__(525);
-exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
-//# sourceMappingURL=bindCallback.js.map
-
-/***/ }),
 /* 543 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var BoundNodeCallbackObservable_1 = __webpack_require__(526);
-exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
-//# sourceMappingURL=bindNodeCallback.js.map
+var BoundCallbackObservable_1 = __webpack_require__(526);
+exports.bindCallback = BoundCallbackObservable_1.BoundCallbackObservable.create;
+//# sourceMappingURL=bindCallback.js.map
 
 /***/ }),
 /* 544 */
@@ -74085,10 +74076,20 @@ exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObserv
 
 "use strict";
 
+var BoundNodeCallbackObservable_1 = __webpack_require__(527);
+exports.bindNodeCallback = BoundNodeCallbackObservable_1.BoundNodeCallbackObservable.create;
+//# sourceMappingURL=bindNodeCallback.js.map
+
+/***/ }),
+/* 545 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
 var isScheduler_1 = __webpack_require__(36);
 var isArray_1 = __webpack_require__(35);
 var ArrayObservable_1 = __webpack_require__(34);
-var combineLatest_1 = __webpack_require__(110);
+var combineLatest_1 = __webpack_require__(112);
 /* tslint:enable:max-line-length */
 /**
  * Combines multiple Observables to create an Observable whose values are
@@ -74222,27 +74223,27 @@ exports.combineLatest = combineLatest;
 //# sourceMappingURL=combineLatest.js.map
 
 /***/ }),
-/* 545 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var concat_1 = __webpack_require__(111);
-exports.concat = concat_1.concatStatic;
-//# sourceMappingURL=concat.js.map
-
-/***/ }),
 /* 546 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var DeferObservable_1 = __webpack_require__(527);
+var concat_1 = __webpack_require__(113);
+exports.concat = concat_1.concatStatic;
+//# sourceMappingURL=concat.js.map
+
+/***/ }),
+/* 547 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var DeferObservable_1 = __webpack_require__(528);
 exports.defer = DeferObservable_1.DeferObservable.create;
 //# sourceMappingURL=defer.js.map
 
 /***/ }),
-/* 547 */
+/* 548 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74257,10 +74258,10 @@ var Subscriber_1 = __webpack_require__(2);
 var Observable_1 = __webpack_require__(0);
 var Subscription_1 = __webpack_require__(13);
 var root_1 = __webpack_require__(16);
-var ReplaySubject_1 = __webpack_require__(107);
+var ReplaySubject_1 = __webpack_require__(109);
 var tryCatch_1 = __webpack_require__(17);
 var errorObject_1 = __webpack_require__(15);
-var assign_1 = __webpack_require__(654);
+var assign_1 = __webpack_require__(655);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -74498,27 +74499,27 @@ exports.WebSocketSubject = WebSocketSubject;
 //# sourceMappingURL=WebSocketSubject.js.map
 
 /***/ }),
-/* 548 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var AjaxObservable_1 = __webpack_require__(174);
-exports.ajax = AjaxObservable_1.AjaxObservable.create;
-//# sourceMappingURL=ajax.js.map
-
-/***/ }),
 /* 549 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var WebSocketSubject_1 = __webpack_require__(547);
+var AjaxObservable_1 = __webpack_require__(175);
+exports.ajax = AjaxObservable_1.AjaxObservable.create;
+//# sourceMappingURL=ajax.js.map
+
+/***/ }),
+/* 550 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var WebSocketSubject_1 = __webpack_require__(548);
 exports.webSocket = WebSocketSubject_1.WebSocketSubject.create;
 //# sourceMappingURL=webSocket.js.map
 
 /***/ }),
-/* 550 */
+/* 551 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74528,24 +74529,14 @@ exports.empty = EmptyObservable_1.EmptyObservable.create;
 //# sourceMappingURL=empty.js.map
 
 /***/ }),
-/* 551 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var ForkJoinObservable_1 = __webpack_require__(529);
-exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
-//# sourceMappingURL=forkJoin.js.map
-
-/***/ }),
 /* 552 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var FromEventObservable_1 = __webpack_require__(530);
-exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
-//# sourceMappingURL=fromEvent.js.map
+var ForkJoinObservable_1 = __webpack_require__(530);
+exports.forkJoin = ForkJoinObservable_1.ForkJoinObservable.create;
+//# sourceMappingURL=forkJoin.js.map
 
 /***/ }),
 /* 553 */
@@ -74553,9 +74544,9 @@ exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
 
 "use strict";
 
-var FromEventPatternObservable_1 = __webpack_require__(531);
-exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
-//# sourceMappingURL=fromEventPattern.js.map
+var FromEventObservable_1 = __webpack_require__(531);
+exports.fromEvent = FromEventObservable_1.FromEventObservable.create;
+//# sourceMappingURL=fromEvent.js.map
 
 /***/ }),
 /* 554 */
@@ -74563,9 +74554,9 @@ exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservab
 
 "use strict";
 
-var IfObservable_1 = __webpack_require__(533);
-exports._if = IfObservable_1.IfObservable.create;
-//# sourceMappingURL=if.js.map
+var FromEventPatternObservable_1 = __webpack_require__(532);
+exports.fromEventPattern = FromEventPatternObservable_1.FromEventPatternObservable.create;
+//# sourceMappingURL=fromEventPattern.js.map
 
 /***/ }),
 /* 555 */
@@ -74573,9 +74564,9 @@ exports._if = IfObservable_1.IfObservable.create;
 
 "use strict";
 
-var IntervalObservable_1 = __webpack_require__(534);
-exports.interval = IntervalObservable_1.IntervalObservable.create;
-//# sourceMappingURL=interval.js.map
+var IfObservable_1 = __webpack_require__(534);
+exports._if = IfObservable_1.IfObservable.create;
+//# sourceMappingURL=if.js.map
 
 /***/ }),
 /* 556 */
@@ -74583,9 +74574,9 @@ exports.interval = IntervalObservable_1.IntervalObservable.create;
 
 "use strict";
 
-var NeverObservable_1 = __webpack_require__(536);
-exports.never = NeverObservable_1.NeverObservable.create;
-//# sourceMappingURL=never.js.map
+var IntervalObservable_1 = __webpack_require__(535);
+exports.interval = IntervalObservable_1.IntervalObservable.create;
+//# sourceMappingURL=interval.js.map
 
 /***/ }),
 /* 557 */
@@ -74593,9 +74584,9 @@ exports.never = NeverObservable_1.NeverObservable.create;
 
 "use strict";
 
-var PairsObservable_1 = __webpack_require__(537);
-exports.pairs = PairsObservable_1.PairsObservable.create;
-//# sourceMappingURL=pairs.js.map
+var NeverObservable_1 = __webpack_require__(537);
+exports.never = NeverObservable_1.NeverObservable.create;
+//# sourceMappingURL=never.js.map
 
 /***/ }),
 /* 558 */
@@ -74603,9 +74594,9 @@ exports.pairs = PairsObservable_1.PairsObservable.create;
 
 "use strict";
 
-var RangeObservable_1 = __webpack_require__(538);
-exports.range = RangeObservable_1.RangeObservable.create;
-//# sourceMappingURL=range.js.map
+var PairsObservable_1 = __webpack_require__(538);
+exports.pairs = PairsObservable_1.PairsObservable.create;
+//# sourceMappingURL=pairs.js.map
 
 /***/ }),
 /* 559 */
@@ -74613,9 +74604,9 @@ exports.range = RangeObservable_1.RangeObservable.create;
 
 "use strict";
 
-var ErrorObservable_1 = __webpack_require__(528);
-exports._throw = ErrorObservable_1.ErrorObservable.create;
-//# sourceMappingURL=throw.js.map
+var RangeObservable_1 = __webpack_require__(539);
+exports.range = RangeObservable_1.RangeObservable.create;
+//# sourceMappingURL=range.js.map
 
 /***/ }),
 /* 560 */
@@ -74623,9 +74614,9 @@ exports._throw = ErrorObservable_1.ErrorObservable.create;
 
 "use strict";
 
-var TimerObservable_1 = __webpack_require__(540);
-exports.timer = TimerObservable_1.TimerObservable.create;
-//# sourceMappingURL=timer.js.map
+var ErrorObservable_1 = __webpack_require__(529);
+exports._throw = ErrorObservable_1.ErrorObservable.create;
+//# sourceMappingURL=throw.js.map
 
 /***/ }),
 /* 561 */
@@ -74633,9 +74624,9 @@ exports.timer = TimerObservable_1.TimerObservable.create;
 
 "use strict";
 
-var UsingObservable_1 = __webpack_require__(541);
-exports.using = UsingObservable_1.UsingObservable.create;
-//# sourceMappingURL=using.js.map
+var TimerObservable_1 = __webpack_require__(541);
+exports.timer = TimerObservable_1.TimerObservable.create;
+//# sourceMappingURL=timer.js.map
 
 /***/ }),
 /* 562 */
@@ -74643,12 +74634,22 @@ exports.using = UsingObservable_1.UsingObservable.create;
 
 "use strict";
 
-var zip_1 = __webpack_require__(115);
+var UsingObservable_1 = __webpack_require__(542);
+exports.using = UsingObservable_1.UsingObservable.create;
+//# sourceMappingURL=using.js.map
+
+/***/ }),
+/* 563 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var zip_1 = __webpack_require__(117);
 exports.zip = zip_1.zipStatic;
 //# sourceMappingURL=zip.js.map
 
 /***/ }),
-/* 563 */
+/* 564 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74764,7 +74765,7 @@ var AuditSubscriber = (function (_super) {
 //# sourceMappingURL=audit.js.map
 
 /***/ }),
-/* 564 */
+/* 565 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74874,7 +74875,7 @@ function dispatchNext(subscriber) {
 //# sourceMappingURL=auditTime.js.map
 
 /***/ }),
-/* 565 */
+/* 566 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -74956,7 +74957,7 @@ var BufferSubscriber = (function (_super) {
 //# sourceMappingURL=buffer.js.map
 
 /***/ }),
-/* 566 */
+/* 567 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75102,7 +75103,7 @@ var BufferSkipCountSubscriber = (function (_super) {
 //# sourceMappingURL=bufferCount.js.map
 
 /***/ }),
-/* 567 */
+/* 568 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75307,7 +75308,7 @@ function dispatchBufferClose(arg) {
 //# sourceMappingURL=bufferTime.js.map
 
 /***/ }),
-/* 568 */
+/* 569 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75465,7 +75466,7 @@ var BufferToggleSubscriber = (function (_super) {
 //# sourceMappingURL=bufferToggle.js.map
 
 /***/ }),
-/* 569 */
+/* 570 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75593,12 +75594,12 @@ var BufferWhenSubscriber = (function (_super) {
 //# sourceMappingURL=bufferWhen.js.map
 
 /***/ }),
-/* 570 */
+/* 571 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var combineLatest_1 = __webpack_require__(110);
+var combineLatest_1 = __webpack_require__(112);
 /**
  * Converts a higher-order Observable into a first-order Observable by waiting
  * for the outer Observable to complete, then applying {@link combineLatest}.
@@ -75646,12 +75647,12 @@ exports.combineAll = combineAll;
 //# sourceMappingURL=combineAll.js.map
 
 /***/ }),
-/* 571 */
+/* 572 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var mergeMapTo_1 = __webpack_require__(187);
+var mergeMapTo_1 = __webpack_require__(188);
 /* tslint:enable:max-line-length */
 /**
  * Projects each source value to the same Observable which is merged multiple
@@ -75716,7 +75717,7 @@ exports.concatMapTo = concatMapTo;
 //# sourceMappingURL=concatMapTo.js.map
 
 /***/ }),
-/* 572 */
+/* 573 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75833,7 +75834,7 @@ var CountSubscriber = (function (_super) {
 //# sourceMappingURL=count.js.map
 
 /***/ }),
-/* 573 */
+/* 574 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75966,7 +75967,7 @@ var DebounceSubscriber = (function (_super) {
 //# sourceMappingURL=debounce.js.map
 
 /***/ }),
-/* 574 */
+/* 575 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76088,7 +76089,7 @@ function dispatchNext(subscriber) {
 //# sourceMappingURL=debounceTime.js.map
 
 /***/ }),
-/* 575 */
+/* 576 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76171,7 +76172,7 @@ var DefaultIfEmptySubscriber = (function (_super) {
 //# sourceMappingURL=defaultIfEmpty.js.map
 
 /***/ }),
-/* 576 */
+/* 577 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76184,7 +76185,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var async_1 = __webpack_require__(19);
 var isDate_1 = __webpack_require__(83);
 var Subscriber_1 = __webpack_require__(2);
-var Notification_1 = __webpack_require__(58);
+var Notification_1 = __webpack_require__(57);
 /**
  * Delays the emission of items from the source Observable by a given timeout or
  * until a given Date.
@@ -76312,7 +76313,7 @@ var DelayMessage = (function () {
 //# sourceMappingURL=delay.js.map
 
 /***/ }),
-/* 577 */
+/* 578 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76508,7 +76509,7 @@ var SubscriptionDelaySubscriber = (function (_super) {
 //# sourceMappingURL=delayWhen.js.map
 
 /***/ }),
-/* 578 */
+/* 579 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76589,7 +76590,7 @@ var DeMaterializeSubscriber = (function (_super) {
 //# sourceMappingURL=dematerialize.js.map
 
 /***/ }),
-/* 579 */
+/* 580 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76601,7 +76602,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
-var Set_1 = __webpack_require__(653);
+var Set_1 = __webpack_require__(654);
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items.
  *
@@ -76715,12 +76716,12 @@ exports.DistinctSubscriber = DistinctSubscriber;
 //# sourceMappingURL=distinct.js.map
 
 /***/ }),
-/* 580 */
+/* 581 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var distinctUntilChanged_1 = __webpack_require__(181);
+var distinctUntilChanged_1 = __webpack_require__(182);
 /* tslint:enable:max-line-length */
 /**
  * Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from the previous item,
@@ -76791,7 +76792,7 @@ exports.distinctUntilKeyChanged = distinctUntilKeyChanged;
 //# sourceMappingURL=distinctUntilKeyChanged.js.map
 
 /***/ }),
-/* 581 */
+/* 582 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76910,7 +76911,7 @@ var DoSubscriber = (function (_super) {
 //# sourceMappingURL=do.js.map
 
 /***/ }),
-/* 582 */
+/* 583 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77016,7 +77017,7 @@ var ElementAtSubscriber = (function (_super) {
 //# sourceMappingURL=elementAt.js.map
 
 /***/ }),
-/* 583 */
+/* 584 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77111,7 +77112,7 @@ var SwitchFirstSubscriber = (function (_super) {
 //# sourceMappingURL=exhaust.js.map
 
 /***/ }),
-/* 584 */
+/* 585 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77255,7 +77256,7 @@ var SwitchFirstMapSubscriber = (function (_super) {
 //# sourceMappingURL=exhaustMap.js.map
 
 /***/ }),
-/* 585 */
+/* 586 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77412,7 +77413,7 @@ exports.ExpandSubscriber = ExpandSubscriber;
 //# sourceMappingURL=expand.js.map
 
 /***/ }),
-/* 586 */
+/* 587 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77461,12 +77462,12 @@ var FinallySubscriber = (function (_super) {
 //# sourceMappingURL=finally.js.map
 
 /***/ }),
-/* 587 */
+/* 588 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var find_1 = __webpack_require__(183);
+var find_1 = __webpack_require__(184);
 /**
  * Emits only the index of the first value emitted by the source Observable that
  * meets some condition.
@@ -77508,7 +77509,7 @@ exports.findIndex = findIndex;
 //# sourceMappingURL=findIndex.js.map
 
 /***/ }),
-/* 588 */
+/* 589 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77522,8 +77523,8 @@ var Subscriber_1 = __webpack_require__(2);
 var Subscription_1 = __webpack_require__(13);
 var Observable_1 = __webpack_require__(0);
 var Subject_1 = __webpack_require__(9);
-var Map_1 = __webpack_require__(651);
-var FastMap_1 = __webpack_require__(649);
+var Map_1 = __webpack_require__(652);
+var FastMap_1 = __webpack_require__(650);
 /* tslint:enable:max-line-length */
 /**
  * Groups the items emitted by an Observable according to a specified criterion,
@@ -77795,7 +77796,7 @@ var InnerRefCountSubscription = (function (_super) {
 //# sourceMappingURL=groupBy.js.map
 
 /***/ }),
-/* 589 */
+/* 590 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77806,7 +77807,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var noop_1 = __webpack_require__(205);
+var noop_1 = __webpack_require__(206);
 /**
  * Ignores all items emitted by the source Observable and only passes calls of `complete` or `error`.
  *
@@ -77848,7 +77849,7 @@ var IgnoreElementsSubscriber = (function (_super) {
 //# sourceMappingURL=ignoreElements.js.map
 
 /***/ }),
-/* 590 */
+/* 591 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77906,7 +77907,7 @@ var IsEmptySubscriber = (function (_super) {
 //# sourceMappingURL=isEmpty.js.map
 
 /***/ }),
-/* 591 */
+/* 592 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77924,7 +77925,7 @@ exports.letProto = letProto;
 //# sourceMappingURL=let.js.map
 
 /***/ }),
-/* 592 */
+/* 593 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -77993,7 +77994,7 @@ var MapToSubscriber = (function (_super) {
 //# sourceMappingURL=mapTo.js.map
 
 /***/ }),
-/* 593 */
+/* 594 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78004,7 +78005,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var Notification_1 = __webpack_require__(58);
+var Notification_1 = __webpack_require__(57);
 /**
  * Represents all of the notifications from the source Observable as `next`
  * emissions marked with their original types within {@link Notification}
@@ -78089,7 +78090,7 @@ var MaterializeSubscriber = (function (_super) {
 //# sourceMappingURL=materialize.js.map
 
 /***/ }),
-/* 594 */
+/* 595 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78136,7 +78137,7 @@ exports.max = max;
 //# sourceMappingURL=max.js.map
 
 /***/ }),
-/* 595 */
+/* 596 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78271,7 +78272,7 @@ exports.MergeScanSubscriber = MergeScanSubscriber;
 //# sourceMappingURL=mergeScan.js.map
 
 /***/ }),
-/* 596 */
+/* 597 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78318,7 +78319,7 @@ exports.min = min;
 //# sourceMappingURL=min.js.map
 
 /***/ }),
-/* 597 */
+/* 598 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78401,13 +78402,13 @@ var PairwiseSubscriber = (function (_super) {
 //# sourceMappingURL=pairwise.js.map
 
 /***/ }),
-/* 598 */
+/* 599 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var not_1 = __webpack_require__(655);
-var filter_1 = __webpack_require__(112);
+var not_1 = __webpack_require__(656);
+var filter_1 = __webpack_require__(114);
 /**
  * Splits the source Observable into two, one with values that satisfy a
  * predicate, and another with values that don't satisfy the predicate.
@@ -78459,7 +78460,7 @@ exports.partition = partition;
 //# sourceMappingURL=partition.js.map
 
 /***/ }),
-/* 599 */
+/* 600 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78522,7 +78523,7 @@ function plucker(props, length) {
 //# sourceMappingURL=pluck.js.map
 
 /***/ }),
-/* 600 */
+/* 601 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78551,12 +78552,12 @@ exports.publish = publish;
 //# sourceMappingURL=publish.js.map
 
 /***/ }),
-/* 601 */
+/* 602 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var BehaviorSubject_1 = __webpack_require__(106);
+var BehaviorSubject_1 = __webpack_require__(108);
 var multicast_1 = __webpack_require__(49);
 /**
  * @param value
@@ -78571,7 +78572,7 @@ exports.publishBehavior = publishBehavior;
 //# sourceMappingURL=publishBehavior.js.map
 
 /***/ }),
-/* 602 */
+/* 603 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78590,12 +78591,12 @@ exports.publishLast = publishLast;
 //# sourceMappingURL=publishLast.js.map
 
 /***/ }),
-/* 603 */
+/* 604 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ReplaySubject_1 = __webpack_require__(107);
+var ReplaySubject_1 = __webpack_require__(109);
 var multicast_1 = __webpack_require__(49);
 /**
  * @param bufferSize
@@ -78614,7 +78615,7 @@ exports.publishReplay = publishReplay;
 //# sourceMappingURL=publishReplay.js.map
 
 /***/ }),
-/* 604 */
+/* 605 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78690,7 +78691,7 @@ var RepeatSubscriber = (function (_super) {
 //# sourceMappingURL=repeat.js.map
 
 /***/ }),
-/* 605 */
+/* 606 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78804,7 +78805,7 @@ var RepeatWhenSubscriber = (function (_super) {
 //# sourceMappingURL=repeatWhen.js.map
 
 /***/ }),
-/* 606 */
+/* 607 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78875,7 +78876,7 @@ var RetrySubscriber = (function (_super) {
 //# sourceMappingURL=retry.js.map
 
 /***/ }),
-/* 607 */
+/* 608 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -78982,7 +78983,7 @@ var RetryWhenSubscriber = (function (_super) {
 //# sourceMappingURL=retryWhen.js.map
 
 /***/ }),
-/* 608 */
+/* 609 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79076,7 +79077,7 @@ var SampleSubscriber = (function (_super) {
 //# sourceMappingURL=sample.js.map
 
 /***/ }),
-/* 609 */
+/* 610 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79173,7 +79174,7 @@ function dispatchNotification(state) {
 //# sourceMappingURL=sampleTime.js.map
 
 /***/ }),
-/* 610 */
+/* 611 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79298,7 +79299,7 @@ var ScanSubscriber = (function (_super) {
 //# sourceMappingURL=scan.js.map
 
 /***/ }),
-/* 611 */
+/* 612 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79468,7 +79469,7 @@ var SequenceEqualCompareToSubscriber = (function (_super) {
 //# sourceMappingURL=sequenceEqual.js.map
 
 /***/ }),
-/* 612 */
+/* 613 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79479,7 +79480,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var EmptyError_1 = __webpack_require__(64);
+var EmptyError_1 = __webpack_require__(63);
 /**
  * Returns an Observable that emits the single item emitted by the source Observable that matches a specified
  * predicate, if that Observable emits one such item. If the source Observable emits more than one such item or no
@@ -79567,7 +79568,7 @@ var SingleSubscriber = (function (_super) {
 //# sourceMappingURL=single.js.map
 
 /***/ }),
-/* 613 */
+/* 614 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79624,7 +79625,7 @@ var SkipSubscriber = (function (_super) {
 //# sourceMappingURL=skip.js.map
 
 /***/ }),
-/* 614 */
+/* 615 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79701,7 +79702,7 @@ var SkipUntilSubscriber = (function (_super) {
 //# sourceMappingURL=skipUntil.js.map
 
 /***/ }),
-/* 615 */
+/* 616 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79773,15 +79774,15 @@ var SkipWhileSubscriber = (function (_super) {
 //# sourceMappingURL=skipWhile.js.map
 
 /***/ }),
-/* 616 */
+/* 617 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var ArrayObservable_1 = __webpack_require__(34);
-var ScalarObservable_1 = __webpack_require__(108);
+var ScalarObservable_1 = __webpack_require__(110);
 var EmptyObservable_1 = __webpack_require__(39);
-var concat_1 = __webpack_require__(111);
+var concat_1 = __webpack_require__(113);
 var isScheduler_1 = __webpack_require__(36);
 /* tslint:enable:max-line-length */
 /**
@@ -79825,12 +79826,12 @@ exports.startWith = startWith;
 //# sourceMappingURL=startWith.js.map
 
 /***/ }),
-/* 617 */
+/* 618 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var SubscribeOnObservable_1 = __webpack_require__(539);
+var SubscribeOnObservable_1 = __webpack_require__(540);
 /**
  * Asynchronously subscribes Observers to this Observable on the specified IScheduler.
  *
@@ -79860,7 +79861,7 @@ var SubscribeOnOperator = (function () {
 //# sourceMappingURL=subscribeOn.js.map
 
 /***/ }),
-/* 618 */
+/* 619 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -79974,7 +79975,7 @@ var SwitchSubscriber = (function (_super) {
 //# sourceMappingURL=switch.js.map
 
 /***/ }),
-/* 619 */
+/* 620 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80120,7 +80121,7 @@ var SwitchMapSubscriber = (function (_super) {
 //# sourceMappingURL=switchMap.js.map
 
 /***/ }),
-/* 620 */
+/* 621 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80251,7 +80252,7 @@ var SwitchMapToSubscriber = (function (_super) {
 //# sourceMappingURL=switchMapTo.js.map
 
 /***/ }),
-/* 621 */
+/* 622 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80346,7 +80347,7 @@ var TakeSubscriber = (function (_super) {
 //# sourceMappingURL=take.js.map
 
 /***/ }),
-/* 622 */
+/* 623 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80459,7 +80460,7 @@ var TakeLastSubscriber = (function (_super) {
 //# sourceMappingURL=takeLast.js.map
 
 /***/ }),
-/* 623 */
+/* 624 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80540,7 +80541,7 @@ var TakeUntilSubscriber = (function (_super) {
 //# sourceMappingURL=takeUntil.js.map
 
 /***/ }),
-/* 624 */
+/* 625 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80638,7 +80639,7 @@ var TakeWhileSubscriber = (function (_super) {
 //# sourceMappingURL=takeWhile.js.map
 
 /***/ }),
-/* 625 */
+/* 626 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80752,7 +80753,7 @@ var ThrottleSubscriber = (function (_super) {
 //# sourceMappingURL=throttle.js.map
 
 /***/ }),
-/* 626 */
+/* 627 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80853,7 +80854,7 @@ function dispatchNext(arg) {
 //# sourceMappingURL=throttleTime.js.map
 
 /***/ }),
-/* 627 */
+/* 628 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -80866,7 +80867,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var async_1 = __webpack_require__(19);
 var isDate_1 = __webpack_require__(83);
 var Subscriber_1 = __webpack_require__(2);
-var TimeoutError_1 = __webpack_require__(199);
+var TimeoutError_1 = __webpack_require__(200);
 /**
  * @param {number} due
  * @param {Scheduler} [scheduler]
@@ -80942,7 +80943,7 @@ var TimeoutSubscriber = (function (_super) {
 //# sourceMappingURL=timeout.js.map
 
 /***/ }),
-/* 628 */
+/* 629 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81035,7 +81036,7 @@ var TimeoutWithSubscriber = (function (_super) {
 //# sourceMappingURL=timeoutWith.js.map
 
 /***/ }),
-/* 629 */
+/* 630 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81086,7 +81087,7 @@ var ToArraySubscriber = (function (_super) {
 //# sourceMappingURL=toArray.js.map
 
 /***/ }),
-/* 630 */
+/* 631 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81202,7 +81203,7 @@ var WindowSubscriber = (function (_super) {
 //# sourceMappingURL=window.js.map
 
 /***/ }),
-/* 631 */
+/* 632 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81339,7 +81340,7 @@ var WindowCountSubscriber = (function (_super) {
 //# sourceMappingURL=windowCount.js.map
 
 /***/ }),
-/* 632 */
+/* 633 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81506,7 +81507,7 @@ function dispatchWindowClose(state) {
 //# sourceMappingURL=windowTime.js.map
 
 /***/ }),
-/* 633 */
+/* 634 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81692,7 +81693,7 @@ var WindowToggleSubscriber = (function (_super) {
 //# sourceMappingURL=windowToggle.js.map
 
 /***/ }),
-/* 634 */
+/* 635 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81825,7 +81826,7 @@ var WindowSubscriber = (function (_super) {
 //# sourceMappingURL=windowWhen.js.map
 
 /***/ }),
-/* 635 */
+/* 636 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -81961,12 +81962,12 @@ var WithLatestFromSubscriber = (function (_super) {
 //# sourceMappingURL=withLatestFrom.js.map
 
 /***/ }),
-/* 636 */
+/* 637 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var zip_1 = __webpack_require__(115);
+var zip_1 = __webpack_require__(117);
 /**
  * @param project
  * @return {Observable<R>|WebSocketSubject<T>|Observable<T>}
@@ -81980,7 +81981,7 @@ exports.zipAll = zipAll;
 //# sourceMappingURL=zipAll.js.map
 
 /***/ }),
-/* 637 */
+/* 638 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82030,7 +82031,7 @@ exports.Action = Action;
 //# sourceMappingURL=Action.js.map
 
 /***/ }),
-/* 638 */
+/* 639 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82040,8 +82041,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncAction_1 = __webpack_require__(60);
-var AnimationFrame_1 = __webpack_require__(648);
+var AsyncAction_1 = __webpack_require__(59);
+var AnimationFrame_1 = __webpack_require__(649);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -82091,7 +82092,7 @@ exports.AnimationFrameAction = AnimationFrameAction;
 //# sourceMappingURL=AnimationFrameAction.js.map
 
 /***/ }),
-/* 639 */
+/* 640 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82101,7 +82102,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncScheduler_1 = __webpack_require__(61);
+var AsyncScheduler_1 = __webpack_require__(60);
 var AnimationFrameScheduler = (function (_super) {
     __extends(AnimationFrameScheduler, _super);
     function AnimationFrameScheduler() {
@@ -82134,7 +82135,7 @@ exports.AnimationFrameScheduler = AnimationFrameScheduler;
 //# sourceMappingURL=AnimationFrameScheduler.js.map
 
 /***/ }),
-/* 640 */
+/* 641 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82144,8 +82145,8 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Immediate_1 = __webpack_require__(650);
-var AsyncAction_1 = __webpack_require__(60);
+var Immediate_1 = __webpack_require__(651);
+var AsyncAction_1 = __webpack_require__(59);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -82195,7 +82196,7 @@ exports.AsapAction = AsapAction;
 //# sourceMappingURL=AsapAction.js.map
 
 /***/ }),
-/* 641 */
+/* 642 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82205,7 +82206,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncScheduler_1 = __webpack_require__(61);
+var AsyncScheduler_1 = __webpack_require__(60);
 var AsapScheduler = (function (_super) {
     __extends(AsapScheduler, _super);
     function AsapScheduler() {
@@ -82238,7 +82239,7 @@ exports.AsapScheduler = AsapScheduler;
 //# sourceMappingURL=AsapScheduler.js.map
 
 /***/ }),
-/* 642 */
+/* 643 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82248,7 +82249,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncAction_1 = __webpack_require__(60);
+var AsyncAction_1 = __webpack_require__(59);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -82293,7 +82294,7 @@ exports.QueueAction = QueueAction;
 //# sourceMappingURL=QueueAction.js.map
 
 /***/ }),
-/* 643 */
+/* 644 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82303,7 +82304,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var AsyncScheduler_1 = __webpack_require__(61);
+var AsyncScheduler_1 = __webpack_require__(60);
 var QueueScheduler = (function (_super) {
     __extends(QueueScheduler, _super);
     function QueueScheduler() {
@@ -82315,13 +82316,13 @@ exports.QueueScheduler = QueueScheduler;
 //# sourceMappingURL=QueueScheduler.js.map
 
 /***/ }),
-/* 644 */
+/* 645 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var AnimationFrameAction_1 = __webpack_require__(638);
-var AnimationFrameScheduler_1 = __webpack_require__(639);
+var AnimationFrameAction_1 = __webpack_require__(639);
+var AnimationFrameScheduler_1 = __webpack_require__(640);
 /**
  *
  * Animation Frame Scheduler
@@ -82356,7 +82357,7 @@ exports.animationFrame = new AnimationFrameScheduler_1.AnimationFrameScheduler(A
 //# sourceMappingURL=animationFrame.js.map
 
 /***/ }),
-/* 645 */
+/* 646 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82368,8 +82369,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var Subscription_1 = __webpack_require__(13);
-var SubscriptionLoggable_1 = __webpack_require__(198);
-var applyMixins_1 = __webpack_require__(201);
+var SubscriptionLoggable_1 = __webpack_require__(199);
+var applyMixins_1 = __webpack_require__(202);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -82408,7 +82409,7 @@ applyMixins_1.applyMixins(ColdObservable, [SubscriptionLoggable_1.SubscriptionLo
 //# sourceMappingURL=ColdObservable.js.map
 
 /***/ }),
-/* 646 */
+/* 647 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82420,8 +82421,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Subject_1 = __webpack_require__(9);
 var Subscription_1 = __webpack_require__(13);
-var SubscriptionLoggable_1 = __webpack_require__(198);
-var applyMixins_1 = __webpack_require__(201);
+var SubscriptionLoggable_1 = __webpack_require__(199);
+var applyMixins_1 = __webpack_require__(202);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @ignore
@@ -82462,7 +82463,7 @@ applyMixins_1.applyMixins(HotObservable, [SubscriptionLoggable_1.SubscriptionLog
 //# sourceMappingURL=HotObservable.js.map
 
 /***/ }),
-/* 647 */
+/* 648 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82473,11 +82474,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Observable_1 = __webpack_require__(0);
-var Notification_1 = __webpack_require__(58);
-var ColdObservable_1 = __webpack_require__(645);
-var HotObservable_1 = __webpack_require__(646);
-var SubscriptionLog_1 = __webpack_require__(197);
-var VirtualTimeScheduler_1 = __webpack_require__(194);
+var Notification_1 = __webpack_require__(57);
+var ColdObservable_1 = __webpack_require__(646);
+var HotObservable_1 = __webpack_require__(647);
+var SubscriptionLog_1 = __webpack_require__(198);
+var VirtualTimeScheduler_1 = __webpack_require__(195);
 var defaultMaxFrame = 750;
 var TestScheduler = (function (_super) {
     __extends(TestScheduler, _super);
@@ -82691,7 +82692,7 @@ exports.TestScheduler = TestScheduler;
 //# sourceMappingURL=TestScheduler.js.map
 
 /***/ }),
-/* 648 */
+/* 649 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82731,7 +82732,7 @@ exports.AnimationFrame = new RequestAnimationFrameDefinition(root_1.root);
 //# sourceMappingURL=AnimationFrame.js.map
 
 /***/ }),
-/* 649 */
+/* 650 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82768,7 +82769,7 @@ exports.FastMap = FastMap;
 //# sourceMappingURL=FastMap.js.map
 
 /***/ }),
-/* 650 */
+/* 651 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82983,18 +82984,18 @@ exports.Immediate = new ImmediateDefinition(root_1.root);
 //# sourceMappingURL=Immediate.js.map
 
 /***/ }),
-/* 651 */
+/* 652 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var root_1 = __webpack_require__(16);
-var MapPolyfill_1 = __webpack_require__(652);
+var MapPolyfill_1 = __webpack_require__(653);
 exports.Map = root_1.root.Map || (function () { return MapPolyfill_1.MapPolyfill; })();
 //# sourceMappingURL=Map.js.map
 
 /***/ }),
-/* 652 */
+/* 653 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83047,7 +83048,7 @@ exports.MapPolyfill = MapPolyfill;
 //# sourceMappingURL=MapPolyfill.js.map
 
 /***/ }),
-/* 653 */
+/* 654 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83086,7 +83087,7 @@ exports.Set = root_1.root.Set || minimalSetImpl();
 //# sourceMappingURL=Set.js.map
 
 /***/ }),
-/* 654 */
+/* 655 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83118,7 +83119,7 @@ exports.assign = getAssign(root_1.root);
 //# sourceMappingURL=assign.js.map
 
 /***/ }),
-/* 655 */
+/* 656 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -83135,14 +83136,14 @@ exports.not = not;
 //# sourceMappingURL=not.js.map
 
 /***/ }),
-/* 656 */
+/* 657 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var Subscriber_1 = __webpack_require__(2);
 var rxSubscriber_1 = __webpack_require__(80);
-var Observer_1 = __webpack_require__(168);
+var Observer_1 = __webpack_require__(169);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
         if (nextOrObserver instanceof Subscriber_1.Subscriber) {
