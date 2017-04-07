@@ -28,6 +28,12 @@
 
         <dependency>
             <groupId>com.sequencing</groupId>
+            <artifactId>oauth2-core</artifactId>
+            <version>1.2</version>
+        </dependency>
+<!--
+        <dependency>
+            <groupId>com.sequencing</groupId>
             <artifactId>appchains</artifactId>
             <version>1.0.9</version>
         </dependency>
@@ -36,6 +42,29 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.sequencing</groupId>
+            <artifactId>file-selector</artifactId>
+            <version>1.0.27</version>
+            <type>aar</type>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.android.support</groupId>
+                    <artifactId>appcompat-v7</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.android.support</groupId>
+                    <artifactId>design</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.nhaarman.supertooltips</groupId>
+                    <artifactId>library</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+-->
 
     </dependencies>
 
