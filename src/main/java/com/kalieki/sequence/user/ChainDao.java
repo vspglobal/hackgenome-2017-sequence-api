@@ -25,14 +25,11 @@ public class ChainDao {
 	}
 
 	public boolean userIsVitaminDDeficient() throws Exception {
-		/*System.err.println(i);
-		i++;
-		if (i % 2 == 0) {
-			return true;
-		} else {
-			return false;
-		}*/
-		 return isSusceptibleByFileIdAndChain("Chain88");
+		/*
+		 * System.err.println(i); i++; if (i % 2 == 0) { return true; } else {
+		 * return false; }
+		 */
+		return isSusceptibleByFileIdAndChain("Chain88");
 	}
 
 	private boolean isSusceptibleByFileIdAndChain(String chain) throws Exception {
@@ -62,13 +59,12 @@ public class ChainDao {
 				if (type == DefaultAppChainsImpl.ResultType.TEXT) {
 					if ("result".equals(r.getName())) {
 						String data = ((DefaultAppChainsImpl.TextResultValue) r.getValue()).getData();
-						
+
 						System.err.println("file id" + fileId + "name is " + r.getName() + "data is " + data);
-						
-						if (data
-								.contains("INCREASED RISK")) {
-							//wasFound = true;
-							//break;
+
+						if (data.contains("INCREASED RISK")) {
+							wasFound = true;
+							break;
 						}
 					}
 				}
