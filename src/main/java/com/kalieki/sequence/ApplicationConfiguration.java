@@ -5,22 +5,23 @@ package com.kalieki.sequence;
  */
 
 
+        import org.springframework.beans.factory.annotation.Value;
         import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ApplicationConfiguration
 {
-    //@Value("${redirectMapping}")
-    private String redirectMapping = "/redirect";
+    @Value("${redirectMapping}")
+    private String redirectMapping ;
 
-    //@Value("${redirectHost}")
-    private String redirectHost="http://localhost:4200";
+    @Value("${redirectHost}")
+    private String redirectHost;
 
-   // @Value("${clientId}")
-    private String clientId="kalieki";
+    @Value("${clientId}")
+    private String clientId;
 
-   // @Value("${clientSecret}")
-    private String clientSecret="4yL8IJump2KgJ89w6CTNdI22y4ArR049-5HdznXQAfdRkonEOLaf8CC0W4FxZQyqYW_QQofVrTbCiNELlL7S0w";
+    @Value("${clientSecret}")
+    private String clientSecret;
 
     public String getRedirectMapping()
     {
