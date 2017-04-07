@@ -29,7 +29,8 @@ public class ChainDao {
 		 * System.err.println(i); i++; if (i % 2 == 0) { return true; } else {
 		 * return false; }
 		 */
-		return isSusceptibleByFileIdAndChain("Chain88");
+		return true;
+		//return isSusceptibleByFileIdAndChain("Chain88");
 	}
 
 	private boolean isSusceptibleByFileIdAndChain(String chain) throws Exception {
