@@ -13,7 +13,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by kalieki on 3/24/17.
@@ -44,6 +43,7 @@ public class Application {
                 .withRedirectUri(config.getRedirectHost() + config.getRedirectMapping())
                 .withClientId(config.getClientId())
                 .withClientSecret(config.getClientSecret())
+             .withState("CA")
                 .withScope("external|demo")
                 .build();
     }

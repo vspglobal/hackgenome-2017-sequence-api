@@ -1,4 +1,4 @@
 redirectMapping=/Default/Authcallback
-redirectHost=http://localhost:4200
+redirectHost=http://localhost:4200/redirect
 clientId=kalieki
 clientSecret=4yL8IJump2KgJ89w6CTNdI22y4ArR049-5HdznXQAfdRkonEOLaf8CC0W4FxZQyqYW_QQofVrTbCiNELlL7S0w

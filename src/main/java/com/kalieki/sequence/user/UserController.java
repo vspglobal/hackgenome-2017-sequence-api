@@ -1,21 +1,13 @@
 package com.kalieki.sequence.user;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.util.EntityUtils;
-import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import com.sequencing.oauth.core.SequencingFileMetadataApi;
+import com.sequencing.oauth.core.SequencingOAuth2Client;
+import com.sequencing.oauth.core.Token;
+import com.sequencing.oauth.exception.NonAuthorizedException;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by kalieki on 3/24/17.
@@ -26,35 +18,29 @@ import java.util.List;
 @CrossOrigin
 public class UserController {
 
-    private HttpClient client = HttpClientBuilder.create().build();
+    @Autowired
+    private SequencingOAuth2Client oauth;
 
-    @RequestMapping(method = RequestMethod.GET)
-    public String getToken(@RequestParam() String code) throws IOException {
-        HttpPost post = new HttpPost("https://sequencing.com/oauth2/token");
+    @Autowired
+    private SequencingFileMetadataApi api;
 
-        List<NameValuePair> body = new ArrayList<NameValuePair>();
+    private Logger logger = Logger.getLogger(getClass());
 
-        body.add(new BasicNameValuePair("grant_type", "authorization_code"));
-        body.add(new BasicNameValuePair("client_id", "kalieki"));
-        body.add(new BasicNameValuePair("client_secret", "4yL8IJump2KgJ89w6CTNdI22y4ArR049-5HdznXQAfdRkonEOLaf8CC0W4FxZQyqYW_QQofVrTbCiNELlL7S0w"));
-        body.add(new BasicNameValuePair("code", code));
-        body.add(new BasicNameValuePair("redirect_uri", "http://localhost:4200/redirect"));
+    @RequestMapping( method = RequestMethod.GET, params = { "state", "code" })
+    @CrossOrigin
+    public Boolean authCallbackResponse(@RequestParam("state") String state, @RequestParam("code") String code) throws NonAuthorizedException {
 
-        HttpEntity entity = new UrlEncodedFormEntity(body);
-        post.setEntity(entity);
+        try {
+            Token token  = oauth.authorize(code, state);
+            logger.info("Authentication tokens: access token : " + token.getAccessToken() + ", refresh token: " + token.getRefreshToken());
 
-        HttpResponse response = client.execute(post);
-        HttpEntity responseEntity = response.getEntity();
-        String respString = EntityUtils.toString(responseEntity);
-
-        HashMap<String,Object> result =
-                new ObjectMapper().readValue(respString, HashMap.class);
-
-        String val = (String) result.get("access_token");
-        if(val == null){
-            throw new RuntimeException("Error Auth");
+        } catch (Exception e) {
+            logger.warn("An unsuccessful attempt to get the token", e);
+            return false;
         }
 
-        return val;
+        String files = api.getFiles();
+
+        return true;
     }
 }

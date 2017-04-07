@@ -5,14 +5,13 @@ package com.kalieki.sequence;
  */
 
 
-        import org.springframework.beans.factory.annotation.Value;
         import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ApplicationConfiguration
 {
     //@Value("${redirectMapping}")
-    private String redirectMapping = "/Default/Authcallback";
+    private String redirectMapping = "/redirect";
 
     //@Value("${redirectHost}")
     private String redirectHost="http://localhost:4200";
