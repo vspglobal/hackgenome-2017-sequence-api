@@ -34,7 +34,11 @@ public class ListController {
 				item.setWarning(
 						"Warning - You are genetically prone to heart disease. This food is high in saturated fats (Based on matching food item of "
 								+ Nutrition.getFoodItemName(item.getName()) + ")");
-				
+
+			} else if (Nutrition.doesFoodGetSodiumWarning(item.getName()) && chains.userIsProneToHypertension()) {
+				item.setWarning(
+						"Warning - You are genetically prone to hypertension.  This food is high in sodium (Based on matching food item of "
+								+ Nutrition.getFoodItemName(item.getName()) + ")");
 			} else {
 				item.setWarning(null);
 			}

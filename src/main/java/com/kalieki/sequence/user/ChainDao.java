@@ -30,7 +30,7 @@ public class ChainDao {
 		 * return false; }
 		 */
 		return true;
-		//return isSusceptibleByFileIdAndChain("Chain88");
+		// return isSusceptibleByFileIdAndChain("Chain88");
 	}
 
 	private boolean isSusceptibleByFileIdAndChain(String chain) throws Exception {
@@ -75,6 +75,10 @@ public class ChainDao {
 		}
 
 		return cachedChainsByFileId.get(fileId).get(chain);
+	}
+
+	public boolean userIsProneToHypertension() throws Exception {
+		return isSusceptibleByFileIdAndChain("Chain800");
 	}
 
 }

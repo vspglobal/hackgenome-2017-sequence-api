@@ -25,6 +25,9 @@ public class Nutrition {
 
 	private static final HttpClient CLIENT = HttpClientBuilder.create().build();
 	private static final ObjectMapper MAPPER = new ObjectMapper();
+	
+	private static final String SODIUM = "307";
+	private static final int SODIUM_WARNING_LIMIT = 140;
 
 	private static Map<String, FoodItem> cachedItemForQuery = new HashMap<String, FoodItem>();
 	private static Map<String, List<Nutrient>> cachedNutrients = new HashMap<String, List<Nutrient>>();
@@ -33,9 +36,31 @@ public class Nutrition {
 		StringBuilder builder = new StringBuilder();
 		for (String food : Arrays.asList("salted butter", "corn flakes", "ribeye steak", "frozen french fries",
 				"carrot juice", "green peas")) {
-			builder.append(food + " is this bad for me? " + doesFoodGetSaturatedFatWarning(food) + "\n");
+			builder.append(food + " is this bad for me? " + doesFoodGetSodiumWarning(food) + "\n");
 		}
 		System.err.println(builder.toString());
+	}
+
+	public static boolean doesFoodGetSodiumWarning(String foodQuery) throws Exception {
+		String id = getItemForQuery(foodQuery).getNdbno();
+
+		if (id == null) {
+			return false;
+		}
+
+		List<Nutrient> nutrients = getNutrientsById(id);
+
+		boolean saturatedFatWarning = false;
+
+		for (Nutrient nutrient : nutrients) {
+			if (SODIUM.equals(nutrient.getNutrient_id())) {
+				if (Double.parseDouble(nutrient.getValue()) > SODIUM_WARNING_LIMIT) {
+					saturatedFatWarning = true;
+				}
+			}
+		}
+
+		return saturatedFatWarning;
 	}
 
 	public static boolean doesFoodGetSaturatedFatWarning(String foodQuery) throws Exception {
