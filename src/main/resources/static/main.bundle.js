@@ -1,35 +1,12 @@
 webpackJsonp([1,4],{
 
-/***/ 120:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__environments_environment__ = __webpack_require__(88);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Dao; });
-
-var Dao = (function () {
-    function Dao() {
-        var location = window.location.href;
-        this.base = __WEBPACK_IMPORTED_MODULE_0__environments_environment__["a" /* environment */].base;
-    }
-    Dao.prototype.extractData = function (res) {
-        var body = res.json();
-        return body || {};
-    };
-    return Dao;
-}());
-
-//# sourceMappingURL=C:/workspace/sequence-ui/src/app.dao.js.map
-
-/***/ }),
-
 /***/ 121:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_dao__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_dao__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(50);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FileDaoService; });
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -80,7 +57,7 @@ var _a;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__file_dao_service__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_toastr__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_toastr__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_ng2_toastr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(66);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilesComponent; });
@@ -129,8 +106,8 @@ var FilesComponent = (function () {
 FilesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-files',
-        template: __webpack_require__(388),
-        styles: [__webpack_require__(377)]
+        template: __webpack_require__(389),
+        styles: [__webpack_require__(378)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__file_dao_service__["a" /* FileDaoService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__file_dao_service__["a" /* FileDaoService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ng2_toastr__["ToastsManager"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ng2_toastr__["ToastsManager"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_router__["b" /* Router */]) === "function" && _c || Object])
 ], FilesComponent);
@@ -166,8 +143,8 @@ var FutureComponent = (function () {
 FutureComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-future',
-        template: __webpack_require__(389),
-        styles: [__webpack_require__(378)]
+        template: __webpack_require__(390),
+        styles: [__webpack_require__(379)]
     }),
     __metadata("design:paramtypes", [])
 ], FutureComponent);
@@ -206,8 +183,8 @@ HeaderComponent.enableBack = false;
 HeaderComponent = HeaderComponent_1 = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-header',
-        template: __webpack_require__(390),
-        styles: [__webpack_require__(379)]
+        template: __webpack_require__(391),
+        styles: [__webpack_require__(380)]
     }),
     __metadata("design:paramtypes", [])
 ], HeaderComponent);
@@ -224,7 +201,7 @@ var HeaderComponent_1;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__header_header_component__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_service_service__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__list_service_service__ = __webpack_require__(88);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -257,8 +234,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-home',
-        template: __webpack_require__(392),
-        styles: [__webpack_require__(381)]
+        template: __webpack_require__(393),
+        styles: [__webpack_require__(382)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__list_service_service__["a" /* ListServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__list_service_service__["a" /* ListServiceService */]) === "function" && _b || Object])
 ], HomeComponent);
@@ -273,8 +250,8 @@ var _a, _b;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_dao__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_dao__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(50);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListDaoService; });
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -324,7 +301,8 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_service_service__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_service_service__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__suggest_dao_service__ = __webpack_require__(128);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -337,25 +315,49 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var ListComponent = (function () {
-    function ListComponent(listService) {
+    function ListComponent(listService, suggestDao) {
+        var _this = this;
         this.listService = listService;
+        this.suggestDao = suggestDao;
         this.itemToAdd = "";
+        this.suggestions = [{ message: "Hello World", items: ['Hello'], hidden: false }];
+        this.loading = false;
+        this.loading = true;
+        this.suggestDao.init().subscribe(function (success) {
+            _this.loading = false;
+            _this.suggestions = success;
+        }, function (err) {
+            _this.loading = false;
+        });
     }
     ListComponent.prototype.ngOnInit = function () {
+    };
+    ListComponent.prototype.getSuggestions = function () {
+        if (!this.loading && !!this.suggestions) {
+            var arr = [];
+            for (var a = 0; a < this.suggestions.length; a++) {
+                if (!this.suggestions[a].hidden) {
+                    arr.push(this.suggestions[a]);
+                }
+            }
+            return arr;
+        }
+        return [];
     };
     return ListComponent;
 }());
 ListComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-list',
-        template: __webpack_require__(393),
-        styles: [__webpack_require__(382)]
+        template: __webpack_require__(394),
+        styles: [__webpack_require__(383)]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__list_service_service__["a" /* ListServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__list_service_service__["a" /* ListServiceService */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__list_service_service__["a" /* ListServiceService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__list_service_service__["a" /* ListServiceService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__suggest_dao_service__["a" /* SuggestDaoService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__suggest_dao_service__["a" /* SuggestDaoService */]) === "function" && _b || Object])
 ], ListComponent);
 
-var _a;
+var _a, _b;
 //# sourceMappingURL=C:/workspace/sequence-ui/src/list.component.js.map
 
 /***/ }),
@@ -365,7 +367,55 @@ var _a;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_dao__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(50);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SuggestDaoService; });
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var SuggestDaoService = (function (_super) {
+    __extends(SuggestDaoService, _super);
+    function SuggestDaoService(http) {
+        var _this = _super.call(this) || this;
+        _this.http = http;
+        _this.path = '/suggest';
+        return _this;
+    }
+    SuggestDaoService.prototype.init = function () {
+        return this.http.get(this.base + this.path).map(this.extractData);
+    };
+    return SuggestDaoService;
+}(__WEBPACK_IMPORTED_MODULE_1__app_dao__["a" /* Dao */]));
+SuggestDaoService = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */]) === "function" && _a || Object])
+], SuggestDaoService);
+
+var _a;
+//# sourceMappingURL=C:/workspace/sequence-ui/src/suggest-dao.service.js.map
+
+/***/ }),
+
+/***/ 129:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(89);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -392,8 +442,8 @@ var LoginComponent = (function () {
 LoginComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-login',
-        template: __webpack_require__(395),
-        styles: [__webpack_require__(384)]
+        template: __webpack_require__(396),
+        styles: [__webpack_require__(385)]
     }),
     __metadata("design:paramtypes", [])
 ], LoginComponent);
@@ -402,7 +452,7 @@ LoginComponent = __decorate([
 
 /***/ }),
 
-/***/ 129:
+/***/ 130:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -452,7 +502,7 @@ OauthService = __decorate([
 
 /***/ }),
 
-/***/ 207:
+/***/ 208:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -461,20 +511,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 207;
+webpackEmptyContext.id = 208;
 
 
 /***/ }),
 
-/***/ 208:
+/***/ 209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(219);
 
 
 
@@ -487,17 +537,17 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 217:
+/***/ 218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_oauth_oauth_service__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_oauth_oauth_service__ = __webpack_require__(130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__ = __webpack_require__(397);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__ = __webpack_require__(398);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_toastr__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_toastr__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_ng2_toastr__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -541,7 +591,6 @@ var AppComponent = (function () {
             });
         }
         else if (!this.oauth.isLoggedIn()) {
-            this.router.navigate(["login"]);
         }
     };
     AppComponent.prototype.getParameterByName = function (name) {
@@ -562,8 +611,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
-        template: __webpack_require__(387),
-        styles: [__webpack_require__(376)]
+        template: __webpack_require__(388),
+        styles: [__webpack_require__(377)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_oauth_oauth_service__["a" /* OauthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_oauth_oauth_service__["a" /* OauthService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* Http */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5_ng2_toastr__["ToastsManager"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ng2_toastr__["ToastsManager"]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewContainerRef"]) === "function" && _f || Object])
 ], AppComponent);
@@ -573,33 +622,34 @@ var _a, _b, _c, _d, _e, _f;
 
 /***/ }),
 
-/***/ 218:
+/***/ 219:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(65);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_oauth_oauth_service__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__login_login_component__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_oauth_oauth_service__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__login_login_component__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_router__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__header_header_component__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_toastr__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_toastr__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_ng2_toastr__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_toast__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_routes__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_toast__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_routes__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__ = __webpack_require__(217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__list_list_component__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__list_list_dao_service__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__home_home_component__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__home_badge_badge_component__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__home_badge_badge_component__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__files_files_component__ = __webpack_require__(122);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__files_file_dao_service__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__future_future_component__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__loading_loading_component__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__list_service_service__ = __webpack_require__(87);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__loading_loading_component__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__list_service_service__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__list_suggest_dao_service__ = __webpack_require__(128);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -607,6 +657,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -655,7 +706,7 @@ AppModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_9_ng2_toastr__["ToastModule"].forRoot(),
             __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
         ],
-        providers: [__WEBPACK_IMPORTED_MODULE_5__services_oauth_oauth_service__["a" /* OauthService */], { provide: __WEBPACK_IMPORTED_MODULE_9_ng2_toastr__["ToastOptions"], useClass: __WEBPACK_IMPORTED_MODULE_10__app_toast__["a" /* CustomOption */] }, __WEBPACK_IMPORTED_MODULE_14__list_list_dao_service__["a" /* ListDaoService */], __WEBPACK_IMPORTED_MODULE_18__files_file_dao_service__["a" /* FileDaoService */], __WEBPACK_IMPORTED_MODULE_21__list_service_service__["a" /* ListServiceService */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_5__services_oauth_oauth_service__["a" /* OauthService */], { provide: __WEBPACK_IMPORTED_MODULE_9_ng2_toastr__["ToastOptions"], useClass: __WEBPACK_IMPORTED_MODULE_10__app_toast__["a" /* CustomOption */] }, __WEBPACK_IMPORTED_MODULE_14__list_list_dao_service__["a" /* ListDaoService */], __WEBPACK_IMPORTED_MODULE_18__files_file_dao_service__["a" /* FileDaoService */], __WEBPACK_IMPORTED_MODULE_21__list_service_service__["a" /* ListServiceService */], __WEBPACK_IMPORTED_MODULE_22__list_suggest_dao_service__["a" /* SuggestDaoService */]],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
@@ -664,11 +715,11 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 219:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__login_login_component__ = __webpack_require__(128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__login_login_component__ = __webpack_require__(129);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_list_component__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__files_files_component__ = __webpack_require__(122);
@@ -696,11 +747,11 @@ var appRoutes = [
 
 /***/ }),
 
-/***/ 220:
+/***/ 221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ng2_toastr__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ng2_toastr__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_ng2_toastr__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CustomOption; });
 var __extends = (this && this.__extends) || function (d, b) {
@@ -725,7 +776,7 @@ var CustomOption = (function (_super) {
 
 /***/ }),
 
-/***/ 221:
+/***/ 222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -751,8 +802,8 @@ var BadgeComponent = (function () {
 BadgeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-badge',
-        template: __webpack_require__(391),
-        styles: [__webpack_require__(380)],
+        template: __webpack_require__(392),
+        styles: [__webpack_require__(381)],
         inputs: ['color', 'icon', 'text']
     }),
     __metadata("design:paramtypes", [])
@@ -762,7 +813,7 @@ BadgeComponent = __decorate([
 
 /***/ }),
 
-/***/ 222:
+/***/ 223:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -788,31 +839,13 @@ var LoadingComponent = (function () {
 LoadingComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-loading',
-        template: __webpack_require__(394),
-        styles: [__webpack_require__(383)]
+        template: __webpack_require__(395),
+        styles: [__webpack_require__(384)]
     }),
     __metadata("design:paramtypes", [])
 ], LoadingComponent);
 
 //# sourceMappingURL=C:/workspace/sequence-ui/src/loading.component.js.map
-
-/***/ }),
-
-/***/ 376:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(23)();
-// imports
-
-
-// module
-exports.push([module.i, ".app {\n  background-color: white;\n  /*\r\n  background-image: url(\"../assets/tree.png\");\r\n  background-size: cover;\r\n  background-position: center;\r\n  */ }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
 
 /***/ }),
 
@@ -824,7 +857,7 @@ exports = module.exports = __webpack_require__(23)();
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".app {\n  background-color: white;\n  /*\r\n  background-image: url(\"../assets/tree.png\");\r\n  background-size: cover;\r\n  background-position: center;\r\n  */ }\n", ""]);
 
 // exports
 
@@ -860,7 +893,7 @@ exports = module.exports = __webpack_require__(23)();
 
 
 // module
-exports.push([module.i, ".header {\n  background-color: #2e8bcc;\n  height: 50px; }\n\n.title {\n  color: #ecf0f1;\n  font-size: 30px;\n  margin-top: 5px; }\n", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -878,7 +911,7 @@ exports = module.exports = __webpack_require__(23)();
 
 
 // module
-exports.push([module.i, ".icon-badge, .icon-badge-green, .icon-badge-purple, .icon-badge-pink, .icon-badge-red, .icon-badge-yellow, .icon-badge-teal {\n  height: 100px;\n  padding-top: 15px; }\n\n.icon-badge-green {\n  background-color: #8cbf26; }\n\n.icon-badge-purple {\n  background-color: #7b4f9d; }\n\n.icon-badge-pink {\n  background-color: #ff0097; }\n\n.icon-badge-red {\n  background-color: #c0392b; }\n\n.icon-badge-yellow {\n  background-color: #f1c40f; }\n\n.icon-badge-teal {\n  background-color: #00aba9; }\n", ""]);
+exports.push([module.i, ".header {\n  background-color: #2e8bcc;\n  height: 50px; }\n\n.title {\n  color: #ecf0f1;\n  font-size: 30px;\n  margin-top: 5px; }\n", ""]);
 
 // exports
 
@@ -896,7 +929,7 @@ exports = module.exports = __webpack_require__(23)();
 
 
 // module
-exports.push([module.i, ".icon-badge, .icon-badge-green, .icon-badge-purple {\n  height: 100px;\n  padding-top: 15px; }\n\n.icon-badge-green {\n  background-color: #8cbf26; }\n\n.icon-badge-purple {\n  background-color: #7b4f9d; }\n", ""]);
+exports.push([module.i, ".icon-badge, .icon-badge-green, .icon-badge-purple, .icon-badge-pink, .icon-badge-red, .icon-badge-yellow, .icon-badge-teal {\n  height: 100px;\n  padding-top: 15px; }\n\n.icon-badge-green {\n  background-color: #8cbf26; }\n\n.icon-badge-purple {\n  background-color: #7b4f9d; }\n\n.icon-badge-pink {\n  background-color: #ff0097; }\n\n.icon-badge-red {\n  background-color: #c0392b; }\n\n.icon-badge-yellow {\n  background-color: #f1c40f; }\n\n.icon-badge-teal {\n  background-color: #00aba9; }\n", ""]);
 
 // exports
 
@@ -914,7 +947,7 @@ exports = module.exports = __webpack_require__(23)();
 
 
 // module
-exports.push([module.i, ".list {\n  background-color: #2e8bcc;\n  opacity: .8;\n  border: 1px solid #7b4f9d;\n  margin: 30px; }\n\n.strike {\n  text-decoration: line-through; }\n\n.warning {\n  display: block;\n  color: orangered;\n  font-size: 10px; }\n\n.contain {\n  position: relative;\n  margin: 155px auto;\n  width: 200px; }\n\nsvg {\n  position: absolute; }\n  svg ellipse {\n    -webkit-transform-origin: center;\n            transform-origin: center; }\n  svg:nth-of-type(1) ellipse {\n    stroke: #F1725D;\n    cx: 25px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 0ms;\n            animation-delay: 0ms; }\n  svg:nth-of-type(2) ellipse {\n    stroke: #38BDAB;\n    cx: 65px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 75ms;\n            animation-delay: 75ms; }\n  svg:nth-of-type(3) ellipse {\n    stroke: #9D30A5;\n    cx: 105px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 150ms;\n            animation-delay: 150ms; }\n  svg:nth-of-type(4) ellipse {\n    stroke: #B779E2;\n    cx: 145px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 225ms;\n            animation-delay: 225ms; }\n  svg:nth-of-type(5) ellipse {\n    stroke: #683893;\n    cx: 185px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 300ms;\n            animation-delay: 300ms; }\n  svg:nth-of-type(6) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 25px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 0ms;\n            animation-delay: 0ms; }\n  svg:nth-of-type(7) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 65px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 75ms;\n            animation-delay: 75ms; }\n  svg:nth-of-type(8) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 105px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 150ms;\n            animation-delay: 150ms; }\n  svg:nth-of-type(9) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 145px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 225ms;\n            animation-delay: 225ms; }\n  svg:nth-of-type(10) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 185px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 300ms;\n            animation-delay: 300ms; }\n\n@-webkit-keyframes jump {\n  40% {\n    -webkit-transform: translateY(20px) scale(1.3);\n            transform: translateY(20px) scale(1.3);\n    opacity: .9; }\n  40% {\n    rx: 10px;\n    ry: 10px;\n    stroke-width: 3px; }\n  45% {\n    rx: 15px;\n    ry: 7px;\n    stroke-width: 4px; }\n  55% {\n    rx: 10px;\n    ry: 10px; } }\n\n@keyframes jump {\n  40% {\n    -webkit-transform: translateY(20px) scale(1.3);\n            transform: translateY(20px) scale(1.3);\n    opacity: .9; }\n  40% {\n    rx: 10px;\n    ry: 10px;\n    stroke-width: 3px; }\n  45% {\n    rx: 15px;\n    ry: 7px;\n    stroke-width: 4px; }\n  55% {\n    rx: 10px;\n    ry: 10px; } }\n\n@-webkit-keyframes shadow {\n  45% {\n    opacity: .15;\n    rx: 10px;\n    ry: 3px;\n    -webkit-transform: translateY(5px) scale(1.3);\n            transform: translateY(5px) scale(1.3); } }\n\n@keyframes shadow {\n  45% {\n    opacity: .15;\n    rx: 10px;\n    ry: 3px;\n    -webkit-transform: translateY(5px) scale(1.3);\n            transform: translateY(5px) scale(1.3); } }\n", ""]);
+exports.push([module.i, ".icon-badge, .icon-badge-green, .icon-badge-purple {\n  height: 100px;\n  padding-top: 15px; }\n\n.icon-badge-green {\n  background-color: #8cbf26; }\n\n.icon-badge-purple {\n  background-color: #7b4f9d; }\n", ""]);
 
 // exports
 
@@ -932,7 +965,7 @@ exports = module.exports = __webpack_require__(23)();
 
 
 // module
-exports.push([module.i, ".contain {\n  position: relative;\n  margin: 155px auto;\n  width: 200px; }\n\nsvg {\n  position: absolute; }\n  svg ellipse {\n    -webkit-transform-origin: center;\n            transform-origin: center; }\n  svg:nth-of-type(1) ellipse {\n    stroke: #F1725D;\n    cx: 25px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 0ms;\n            animation-delay: 0ms; }\n  svg:nth-of-type(2) ellipse {\n    stroke: #38BDAB;\n    cx: 65px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 75ms;\n            animation-delay: 75ms; }\n  svg:nth-of-type(3) ellipse {\n    stroke: #9D30A5;\n    cx: 105px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 150ms;\n            animation-delay: 150ms; }\n  svg:nth-of-type(4) ellipse {\n    stroke: #B779E2;\n    cx: 145px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 225ms;\n            animation-delay: 225ms; }\n  svg:nth-of-type(5) ellipse {\n    stroke: #683893;\n    cx: 185px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 300ms;\n            animation-delay: 300ms; }\n  svg:nth-of-type(6) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 25px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 0ms;\n            animation-delay: 0ms; }\n  svg:nth-of-type(7) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 65px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 75ms;\n            animation-delay: 75ms; }\n  svg:nth-of-type(8) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 105px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 150ms;\n            animation-delay: 150ms; }\n  svg:nth-of-type(9) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 145px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 225ms;\n            animation-delay: 225ms; }\n  svg:nth-of-type(10) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 185px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 300ms;\n            animation-delay: 300ms; }\n\n@-webkit-keyframes jump {\n  40% {\n    -webkit-transform: translateY(20px) scale(1.3);\n            transform: translateY(20px) scale(1.3);\n    opacity: .9; }\n  40% {\n    rx: 10px;\n    ry: 10px;\n    stroke-width: 3px; }\n  45% {\n    rx: 15px;\n    ry: 7px;\n    stroke-width: 4px; }\n  55% {\n    rx: 10px;\n    ry: 10px; } }\n\n@keyframes jump {\n  40% {\n    -webkit-transform: translateY(20px) scale(1.3);\n            transform: translateY(20px) scale(1.3);\n    opacity: .9; }\n  40% {\n    rx: 10px;\n    ry: 10px;\n    stroke-width: 3px; }\n  45% {\n    rx: 15px;\n    ry: 7px;\n    stroke-width: 4px; }\n  55% {\n    rx: 10px;\n    ry: 10px; } }\n\n@-webkit-keyframes shadow {\n  45% {\n    opacity: .15;\n    rx: 10px;\n    ry: 3px;\n    -webkit-transform: translateY(5px) scale(1.3);\n            transform: translateY(5px) scale(1.3); } }\n\n@keyframes shadow {\n  45% {\n    opacity: .15;\n    rx: 10px;\n    ry: 3px;\n    -webkit-transform: translateY(5px) scale(1.3);\n            transform: translateY(5px) scale(1.3); } }\n", ""]);
+exports.push([module.i, ".list {\n  background-color: #2e8bcc;\n  opacity: .8;\n  border: 1px solid #7b4f9d;\n  margin: 30px; }\n\n.strike {\n  text-decoration: line-through; }\n\n.warning {\n  display: block;\n  color: orangered;\n  font-size: 10px; }\n\n.contain {\n  position: relative;\n  margin: 155px auto;\n  width: 200px; }\n\nsvg {\n  position: absolute; }\n  svg ellipse {\n    -webkit-transform-origin: center;\n            transform-origin: center; }\n  svg:nth-of-type(1) ellipse {\n    stroke: #F1725D;\n    cx: 25px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 0ms;\n            animation-delay: 0ms; }\n  svg:nth-of-type(2) ellipse {\n    stroke: #38BDAB;\n    cx: 65px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 75ms;\n            animation-delay: 75ms; }\n  svg:nth-of-type(3) ellipse {\n    stroke: #9D30A5;\n    cx: 105px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 150ms;\n            animation-delay: 150ms; }\n  svg:nth-of-type(4) ellipse {\n    stroke: #B779E2;\n    cx: 145px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 225ms;\n            animation-delay: 225ms; }\n  svg:nth-of-type(5) ellipse {\n    stroke: #683893;\n    cx: 185px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 300ms;\n            animation-delay: 300ms; }\n  svg:nth-of-type(6) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 25px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 0ms;\n            animation-delay: 0ms; }\n  svg:nth-of-type(7) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 65px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 75ms;\n            animation-delay: 75ms; }\n  svg:nth-of-type(8) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 105px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 150ms;\n            animation-delay: 150ms; }\n  svg:nth-of-type(9) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 145px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 225ms;\n            animation-delay: 225ms; }\n  svg:nth-of-type(10) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 185px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 300ms;\n            animation-delay: 300ms; }\n\n@-webkit-keyframes jump {\n  40% {\n    -webkit-transform: translateY(20px) scale(1.3);\n            transform: translateY(20px) scale(1.3);\n    opacity: .9; }\n  40% {\n    rx: 10px;\n    ry: 10px;\n    stroke-width: 3px; }\n  45% {\n    rx: 15px;\n    ry: 7px;\n    stroke-width: 4px; }\n  55% {\n    rx: 10px;\n    ry: 10px; } }\n\n@keyframes jump {\n  40% {\n    -webkit-transform: translateY(20px) scale(1.3);\n            transform: translateY(20px) scale(1.3);\n    opacity: .9; }\n  40% {\n    rx: 10px;\n    ry: 10px;\n    stroke-width: 3px; }\n  45% {\n    rx: 15px;\n    ry: 7px;\n    stroke-width: 4px; }\n  55% {\n    rx: 10px;\n    ry: 10px; } }\n\n@-webkit-keyframes shadow {\n  45% {\n    opacity: .15;\n    rx: 10px;\n    ry: 3px;\n    -webkit-transform: translateY(5px) scale(1.3);\n            transform: translateY(5px) scale(1.3); } }\n\n@keyframes shadow {\n  45% {\n    opacity: .15;\n    rx: 10px;\n    ry: 3px;\n    -webkit-transform: translateY(5px) scale(1.3);\n            transform: translateY(5px) scale(1.3); } }\n", ""]);
 
 // exports
 
@@ -950,6 +983,24 @@ exports = module.exports = __webpack_require__(23)();
 
 
 // module
+exports.push([module.i, ".contain {\n  position: relative;\n  margin: 155px auto;\n  width: 200px; }\n\nsvg {\n  position: absolute; }\n  svg ellipse {\n    -webkit-transform-origin: center;\n            transform-origin: center; }\n  svg:nth-of-type(1) ellipse {\n    stroke: #F1725D;\n    cx: 25px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 0ms;\n            animation-delay: 0ms; }\n  svg:nth-of-type(2) ellipse {\n    stroke: #38BDAB;\n    cx: 65px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 75ms;\n            animation-delay: 75ms; }\n  svg:nth-of-type(3) ellipse {\n    stroke: #9D30A5;\n    cx: 105px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 150ms;\n            animation-delay: 150ms; }\n  svg:nth-of-type(4) ellipse {\n    stroke: #B779E2;\n    cx: 145px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 225ms;\n            animation-delay: 225ms; }\n  svg:nth-of-type(5) ellipse {\n    stroke: #683893;\n    cx: 185px;\n    stroke-width: 3px;\n    -webkit-animation: jump 600ms infinite ease-in-out;\n            animation: jump 600ms infinite ease-in-out;\n    opacity: .7;\n    -webkit-animation-delay: 300ms;\n            animation-delay: 300ms; }\n  svg:nth-of-type(6) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 25px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 0ms;\n            animation-delay: 0ms; }\n  svg:nth-of-type(7) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 65px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 75ms;\n            animation-delay: 75ms; }\n  svg:nth-of-type(8) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 105px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 150ms;\n            animation-delay: 150ms; }\n  svg:nth-of-type(9) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 145px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 225ms;\n            animation-delay: 225ms; }\n  svg:nth-of-type(10) ellipse {\n    fill: #333333;\n    opacity: .05;\n    rx: 0;\n    ry: 0;\n    cx: 185px;\n    cy: 48px;\n    -webkit-animation: shadow 600ms infinite ease-in-out;\n            animation: shadow 600ms infinite ease-in-out;\n    -webkit-animation-delay: 300ms;\n            animation-delay: 300ms; }\n\n@-webkit-keyframes jump {\n  40% {\n    -webkit-transform: translateY(20px) scale(1.3);\n            transform: translateY(20px) scale(1.3);\n    opacity: .9; }\n  40% {\n    rx: 10px;\n    ry: 10px;\n    stroke-width: 3px; }\n  45% {\n    rx: 15px;\n    ry: 7px;\n    stroke-width: 4px; }\n  55% {\n    rx: 10px;\n    ry: 10px; } }\n\n@keyframes jump {\n  40% {\n    -webkit-transform: translateY(20px) scale(1.3);\n            transform: translateY(20px) scale(1.3);\n    opacity: .9; }\n  40% {\n    rx: 10px;\n    ry: 10px;\n    stroke-width: 3px; }\n  45% {\n    rx: 15px;\n    ry: 7px;\n    stroke-width: 4px; }\n  55% {\n    rx: 10px;\n    ry: 10px; } }\n\n@-webkit-keyframes shadow {\n  45% {\n    opacity: .15;\n    rx: 10px;\n    ry: 3px;\n    -webkit-transform: translateY(5px) scale(1.3);\n            transform: translateY(5px) scale(1.3); } }\n\n@keyframes shadow {\n  45% {\n    opacity: .15;\n    rx: 10px;\n    ry: 3px;\n    -webkit-transform: translateY(5px) scale(1.3);\n            transform: translateY(5px) scale(1.3); } }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ 385:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(23)();
+// imports
+
+
+// module
 exports.push([module.i, ".loginCard {\n  background-color: #8cbf26;\n  margin-top: 100px;\n  border: 2px solid #7b4f9d;\n  color: #8cbf26; }\n\n.loginCardHeader {\n  background-color: #393; }\n\n.icon {\n  width: 20px;\n  height: 20px; }\n\n.smallNavHolder {\n  padding-left: 10px;\n  padding-right: 10px; }\n\n.navBtn {\n  cursor: pointer; }\n", ""]);
 
 // exports
@@ -960,73 +1011,73 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 387:
+/***/ 388:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"app\" style=\"min-height: 100vh\">\n  <app-header></app-header>\n  <div *ngIf=\"loading\">\n      <app-loading></app-loading>\n  </div>\n  <div [hidden]=\"loading\">\n    <router-outlet></router-outlet>\n  </div>\n\n</div>\n"
 
 /***/ }),
 
-/***/ 388:
+/***/ 389:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\" *ngFor=\"let file of files\">\n      <app-badge style=\"cursor: pointer\" class=\"col-12 pad-top\" [text]=\"file.friendlyDesc1\" icon=\"person\" [color]=\"file.selected ? 'red' : 'green'\" (click)=\"selectFile(file)\"></app-badge>\n    </div>\n  </div>\n"
 
 /***/ }),
 
-/***/ 389:
+/***/ 390:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\" style=\"padding:0px;\">\n  <img src=\"../../assets/future.png\" style=\"max-width: 100%; max-height: 100%\"/>\n</div>\n"
 
 /***/ }),
 
-/***/ 390:
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"container-fluid header\">\r\n  <div class=\"row\">\r\n    <div class=\"title col-8\" [routerLink]=\"['home']\" style=\"font-weight: bold\">SmartList</div>\r\n    <div class=\"col-4\">\r\n        <button class=\"btn btn-block btn-warning\" style=\"margin-top:5px;\" *ngIf=\"backEnabled()\" [routerLink]=\"'home'\">Back</button>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
-
-/***/ }),
-
 /***/ 391:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid justify-content-center text-center\" [ngClass]=\"'icon-badge-' + color\">\n  <div class=\"row\">\n    <div class=\"col\"><img [src]=\"'../../../assets/svg/' + icon + '.svg'\" style=\"height:50px; width:50px;\"/></div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col\">\n      {{text}}\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container-fluid header\">\r\n  <div class=\"row\">\r\n    <div class=\"title col-8\" [routerLink]=\"['home']\" style=\"font-weight: bold\">Listr</div>\r\n    <div class=\"col-4\">\r\n        <button class=\"btn btn-block btn-warning\" style=\"margin-top:5px;\" *ngIf=\"backEnabled()\" [routerLink]=\"'home'\">Back</button>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
 /***/ 392:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\">\n\n    <app-badge class=\"col-12 col-md-12 pad-top\" color=\"green\" icon=\"list-ordered\" text=\"List\" (click)=\"goTo('list')\"></app-badge>\n    <app-badge class=\"col-sm-8 col-md-7 pad-top\" color=\"red\" icon=\"dashboard\" text=\"Calories\" (click)=\"goTo('calories')\"></app-badge>\n    <app-badge class=\"col-sm-4 col-md-5 pad-top\" color=\"pink\" icon=\"octoface\" text=\"Allergies\" (click)=\"goTo('allergies')\"></app-badge>\n    <app-badge class=\"col-sm-6 col-md-6 pad-top\" color=\"yellow\" icon=\"person\" text=\"Seq Files\" (click)=\"goTo('files')\"></app-badge>\n    <app-badge class=\"col-sm-6 col-md-6 pad-top\" color=\"teal\" icon=\"gear\" text=\"Settings\" (click)=\"goTo('settings')\"></app-badge>\n\n\n  </div>\n</div>\n\n"
+module.exports = "<div class=\"container-fluid justify-content-center text-center\" [ngClass]=\"'icon-badge-' + color\">\n  <div class=\"row\">\n    <div class=\"col\"><img [src]=\"'../../../assets/svg/' + icon + '.svg'\" style=\"height:50px; width:50px;\"/></div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col\">\n      {{text}}\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
 /***/ 393:
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n\n  <div>\n\n    <div class=\"card\" style=\"border:none; border-radius: 0px;\">\n      <img class=\"card-img-top\" src=\"../../../assets/market.jpg\" alt=\"Card image cap\"\n           style=\"max-height: 100%; max-width: 100%\">\n      <div class=\"card-block\">\n        <h4 class=\"card-title\">Shopping Cart</h4>\n        <input class=\"form-control\" [(ngModel)]=\"itemToAdd\" style=\"margin-bottom : 5px;\">\n        <button class=\"btn btn-success btn-block\" (click)=\"listService.addItem(itemToAdd)\">\n          Add Item</button>\n      </div>\n      <ul class=\"list-group list-group-flush\" *ngIf=\"!loading && !!listService.list\">\n        <li class=\"list-group-item\" [ngClass]=\"{'strike' : !!item.strike}\" *ngFor=\"let item of listService.list\"\n            (click)=\"item.strike = !item.strike\">\n          <div class=\"container-fluid no-gutters\" style=\"padding:0px;\">\n            <div class=\"row\">\n              <div class=\"col-12\">{{item.name}}</div>\n            </div>\n            <div class=\"row warning\" *ngIf=\"!!item.warning\">\n              <div class=\"col-12\">{{item.warning}}</div>\n            </div>\n          </div>\n        </li>\n      </ul>\n      <ul *ngIf=\"!!listService.loading\">\n        <app-loading></app-loading>\n      </ul>\n    </div>\n  </div>\n</div>\n\n"
+module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\">\n\n    <app-badge class=\"col-12 col-md-12 pad-top\" color=\"green\" icon=\"list-ordered\" text=\"List\" (click)=\"goTo('list')\"></app-badge>\n    <app-badge class=\"col-sm-8 col-md-7 pad-top\" color=\"red\" icon=\"dashboard\" text=\"Calories\" (click)=\"goTo('calories')\"></app-badge>\n    <app-badge class=\"col-sm-4 col-md-5 pad-top\" color=\"pink\" icon=\"octoface\" text=\"Allergies\" (click)=\"goTo('allergies')\"></app-badge>\n    <app-badge class=\"col-sm-6 col-md-6 pad-top\" color=\"yellow\" icon=\"person\" text=\"Seq Files\" (click)=\"goTo('files')\"></app-badge>\n    <app-badge class=\"col-sm-6 col-md-6 pad-top\" color=\"teal\" icon=\"gear\" text=\"Settings\" (click)=\"goTo('settings')\"></app-badge>\n\n\n  </div>\n</div>\n\n"
 
 /***/ }),
 
 /***/ 394:
 /***/ (function(module, exports) {
 
-module.exports = "<div class='contain'>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n</div>\n"
+module.exports = "<div>\n\n  <div>\n\n    <div class=\"card\" style=\"border:none; border-radius: 0px;\">\n      <img class=\"card-img-top\" src=\"../../../assets/market.jpg\" alt=\"Card image cap\"\n           style=\"max-height: 100%; max-width: 100%\">\n      <div class=\"card-block\">\n        <h4 class=\"card-title\">Shopping Cart</h4>\n        <input class=\"form-control\" [(ngModel)]=\"itemToAdd\" style=\"margin-bottom : 5px;\">\n        <button class=\"btn btn-success btn-block\" (click)=\"listService.addItem(itemToAdd)\">\n          Add Item\n        </button>\n      </div>\n      <ul class=\"list-group list-group-flush\" *ngIf=\"!listService.loading && !!listService.list\">\n        <li class=\"list-group-item\" [ngClass]=\"{'strike' : !!item.strike}\" *ngFor=\"let item of listService.list\"\n            (click)=\"item.strike = !item.strike\">\n          <div class=\"container-fluid no-gutters\" style=\"padding:0px;\">\n            <div class=\"row\">\n              <div class=\"col-12\">{{item.name}}</div>\n            </div>\n            <div class=\"row warning\" *ngIf=\"!!item.warning\">\n              <div class=\"col-12\">{{item.warning}}</div>\n            </div>\n          </div>\n        </li>\n      </ul>\n      <ul class=\"list-group list-group-flush\" *ngIf=\"listService.loading\">\n        <li class=\"list-group-item\">\n          <app-loading></app-loading>\n        </li>\n      </ul>\n      <ul class=\"list-group list-group-flush\" *ngFor=\"let suggestion of getSuggestions()\">\n        <li class=\"list-group-item\">\n          <div class=\"container-fluid\">\n            <div class=\"row text-center\">\n              <div class=\"col\">\n                {{suggestion.message}}\n              </div>\n            </div>\n          </div>\n\n        </li>\n        <li class=\"list-group-item\" *ngFor=\"let item of suggestion.items\">\n          <div class=\"container-fluid\">\n            <div class=\"row text-left\">\n              <div class=\"col-12\" (click)=\"listService.addItem(item); suggestion.hidden = true;\">{{item}}</div>\n            </div>\n          </div>\n        </li>\n      </ul>\n      <ul *ngIf=\"!!loading\">\n        <app-loading></app-loading>\n      </ul>\n    </div>\n  </div>\n</div>\n\n"
 
 /***/ }),
 
 /***/ 395:
 /***/ (function(module, exports) {
 
+module.exports = "<div class='contain'>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n  <svg height='80' width='210'>\n    <ellipse cx='25' cy='20' fill='none' rx='10' ry='10'></ellipse>\n  </svg>\n</div>\n"
+
+/***/ }),
+
+/***/ 396:
+/***/ (function(module, exports) {
+
 module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"row justify-content-center hidden-lg-up smallNavHolder\">\r\n    <button class=\"form-control navBtn\" style=\"margin-top:10px;\" (click)=\"loginWithSequence()\">Sequence</button>\r\n    <button class=\"form-control navBtn\" style=\"margin-top:10px;\"><img src=\"../../assets/gicon.png\" class=\"icon\">\r\n    </button>\r\n    <button class=\"form-control navBtn\" style=\"margin-top:10px;\"><img src=\"../../assets/ficon.png\" class=\"icon\">\r\n    </button>\r\n  </div>\r\n  <div class=\"row justify-content-center hidden-md-down\">\r\n    <div class=\"col-4\">\r\n      <div class=\"card text-center loginCard\">\r\n        <div class=\"card-header loginCardHeader\">\r\n          Login\r\n        </div>\r\n        <div class=\"card-block\">\r\n          <button class=\"form-control navBtn\" style=\"margin-top:10px;\" (click)=\"loginWithSequence()\">Sequence</button>\r\n          <button class=\"form-control navBtn\" style=\"margin-top:10px;\"><img src=\"../../assets/gicon.png\" class=\"icon\">\r\n          </button>\r\n          <button class=\"form-control navBtn\" style=\"margin-top:10px;\"><img src=\"../../assets/ficon.png\" class=\"icon\">\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
-/***/ 659:
+/***/ 660:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(208);
+module.exports = __webpack_require__(209);
 
 
 /***/ }),
@@ -1035,9 +1086,31 @@ module.exports = __webpack_require__(208);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__environments_environment__ = __webpack_require__(89);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Dao; });
+
+var Dao = (function () {
+    function Dao() {
+        this.base = __WEBPACK_IMPORTED_MODULE_0__environments_environment__["a" /* environment */].base;
+    }
+    Dao.prototype.extractData = function (res) {
+        var body = res.json();
+        return body || {};
+    };
+    return Dao;
+}());
+
+//# sourceMappingURL=C:/workspace/sequence-ui/src/app.dao.js.map
+
+/***/ }),
+
+/***/ 88:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_list_dao_service__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_toastr__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_toastr__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ng2_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_ng2_toastr__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListServiceService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1109,7 +1182,7 @@ var _a, _b;
 
 /***/ }),
 
-/***/ 88:
+/***/ 89:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1124,5 +1197,5 @@ var environment = {
 
 /***/ })
 
-},[659]);
+},[660]);
 //# sourceMappingURL=main.bundle.js.map
