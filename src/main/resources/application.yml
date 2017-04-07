@@ -13,7 +13,7 @@ spring:
 
 redirectMapping: /
 redirectHost: http://40.71.86.58
-clientId: HackGenome
-clientSecret: K6Qt20cZFKV73VBaID5Yha3EYFtoIGIMPiNSXulOkoC4Gmi7RCT__bwUzFiCLFUlDSjWI17mHtwVgM-ConSswA
+clientId: HackGenome2
+clientSecret: IAst0JhvC6Joh7mZU-apMykiRJlOfM7X9cZdCgHIMhYZ463FymbhAoyfDxp2zcUtXA3JO4qOdDVmyJ5230--8Q
 server:
   port: 80
