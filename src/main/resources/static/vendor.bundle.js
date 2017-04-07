@@ -158,10 +158,10 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isFunction_1 = __webpack_require__(84);
+var isFunction_1 = __webpack_require__(85);
 var Subscription_1 = __webpack_require__(13);
 var Observer_1 = __webpack_require__(170);
-var rxSubscriber_1 = __webpack_require__(80);
+var rxSubscriber_1 = __webpack_require__(81);
 /**
  * Implements the {@link Observer} interface and extends the
  * {@link Subscription} class. While the {@link Observer} is the public API for
@@ -13848,7 +13848,7 @@ function transition(stateChangeExpr, steps) {
 }
 
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(86)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(87)))
 
 /***/ }),
 /* 7 */,
@@ -13866,9 +13866,9 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(0);
 var Subscriber_1 = __webpack_require__(2);
 var Subscription_1 = __webpack_require__(13);
-var ObjectUnsubscribedError_1 = __webpack_require__(82);
+var ObjectUnsubscribedError_1 = __webpack_require__(83);
 var SubjectSubscription_1 = __webpack_require__(171);
-var rxSubscriber_1 = __webpack_require__(80);
+var rxSubscriber_1 = __webpack_require__(81);
 /**
  * @class SubjectSubscriber<T>
  */
@@ -14037,7 +14037,7 @@ exports.AnonymousSubject = AnonymousSubject;
 
 var isArray_1 = __webpack_require__(35);
 var isObject_1 = __webpack_require__(205);
-var isFunction_1 = __webpack_require__(84);
+var isFunction_1 = __webpack_require__(85);
 var tryCatch_1 = __webpack_require__(17);
 var errorObject_1 = __webpack_require__(15);
 var UnsubscriptionError_1 = __webpack_require__(202);
@@ -14257,7 +14257,7 @@ if (!exports.root) {
     throw new Error('RxJS could not find any global context (window, self, global)');
 }
 //# sourceMappingURL=root.js.map
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(86)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(87)))
 
 /***/ }),
 /* 17 */
@@ -20996,7 +20996,7 @@ var toast_manager_1 = __webpack_require__(168);
 exports.ToastsManager = toast_manager_1.ToastsManager;
 var toast_container_component_1 = __webpack_require__(108);
 exports.ToastContainer = toast_container_component_1.ToastContainer;
-var toast_options_1 = __webpack_require__(76);
+var toast_options_1 = __webpack_require__(77);
 exports.ToastOptions = toast_options_1.ToastOptions;
 var toast_module_1 = __webpack_require__(386);
 exports.ToastModule = toast_module_1.ToastModule;
@@ -25325,11 +25325,11 @@ var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_operator_every___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_operator_every__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_first__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_operator_first___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_operator_first__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_map__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_map__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_mergeMap__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_operator_mergeMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_operator_mergeMap__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_reduce__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_reduce__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_operator_reduce___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_operator_reduce__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_Observable__);
@@ -31183,7 +31183,8 @@ var /** @type {?} */ VERSION = new __WEBPACK_IMPORTED_MODULE_1__angular_core__["
 /* 73 */,
 /* 74 */,
 /* 75 */,
-/* 76 */
+/* 76 */,
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31215,7 +31216,7 @@ exports.ToastOptions = ToastOptions;
 //# sourceMappingURL=toast-options.js.map
 
 /***/ }),
-/* 77 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31274,7 +31275,7 @@ exports.AsyncSubject = AsyncSubject;
 //# sourceMappingURL=AsyncSubject.js.map
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31367,7 +31368,7 @@ var MapSubscriber = (function (_super) {
 //# sourceMappingURL=map.js.map
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31499,7 +31500,7 @@ exports.ReduceSubscriber = ReduceSubscriber;
 //# sourceMappingURL=reduce.js.map
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31515,7 +31516,7 @@ exports.$$rxSubscriber = exports.rxSubscriber;
 //# sourceMappingURL=rxSubscriber.js.map
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31549,7 +31550,7 @@ exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError;
 //# sourceMappingURL=ArgumentOutOfRangeError.js.map
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31582,7 +31583,7 @@ exports.ObjectUnsubscribedError = ObjectUnsubscribedError;
 //# sourceMappingURL=ObjectUnsubscribedError.js.map
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31594,7 +31595,7 @@ exports.isDate = isDate;
 //# sourceMappingURL=isDate.js.map
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31606,7 +31607,7 @@ exports.isFunction = isFunction;
 //# sourceMappingURL=isFunction.js.map
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31624,7 +31625,7 @@ exports.isNumeric = isNumeric;
 //# sourceMappingURL=isNumeric.js.map
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports) {
 
 var g;
@@ -31651,7 +31652,6 @@ module.exports = g;
 
 
 /***/ }),
-/* 87 */,
 /* 88 */,
 /* 89 */,
 /* 90 */,
@@ -31680,7 +31680,7 @@ module.exports = g;
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(6);
 var animations_1 = __webpack_require__(120);
-var toast_options_1 = __webpack_require__(76);
+var toast_options_1 = __webpack_require__(77);
 var platform_browser_1 = __webpack_require__(44);
 __webpack_require__(172);
 var Subject_1 = __webpack_require__(9);
@@ -31886,7 +31886,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subject_1 = __webpack_require__(9);
-var ObjectUnsubscribedError_1 = __webpack_require__(82);
+var ObjectUnsubscribedError_1 = __webpack_require__(83);
 /**
  * @class BehaviorSubject<T>
  */
@@ -31944,7 +31944,7 @@ var Subject_1 = __webpack_require__(9);
 var queue_1 = __webpack_require__(198);
 var Subscription_1 = __webpack_require__(13);
 var observeOn_1 = __webpack_require__(117);
-var ObjectUnsubscribedError_1 = __webpack_require__(82);
+var ObjectUnsubscribedError_1 = __webpack_require__(83);
 var SubjectSubscription_1 = __webpack_require__(171);
 /**
  * @class ReplaySubject<T>
@@ -33967,7 +33967,7 @@ var AnimationGroupPlayer = (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = __webpack_require__(6);
 var toast_container_component_1 = __webpack_require__(108);
-var toast_options_1 = __webpack_require__(76);
+var toast_options_1 = __webpack_require__(77);
 var toast_1 = __webpack_require__(169);
 var Subject_1 = __webpack_require__(9);
 var ToastsManager = (function () {
@@ -34644,7 +34644,7 @@ var tryCatch_1 = __webpack_require__(17);
 var errorObject_1 = __webpack_require__(15);
 var Observable_1 = __webpack_require__(0);
 var Subscriber_1 = __webpack_require__(2);
-var map_1 = __webpack_require__(78);
+var map_1 = __webpack_require__(79);
 function getCORSRequest() {
     if (root_1.root.XMLHttpRequest) {
         return new root_1.root.XMLHttpRequest();
@@ -70142,7 +70142,7 @@ var core_1 = __webpack_require__(6);
 var common_1 = __webpack_require__(65);
 var toast_container_component_1 = __webpack_require__(108);
 var toast_manager_1 = __webpack_require__(168);
-var toast_options_1 = __webpack_require__(76);
+var toast_options_1 = __webpack_require__(77);
 var ToastModule = (function () {
     function ToastModule() {
     }
@@ -70371,7 +70371,7 @@ var Subscription_1 = __webpack_require__(13);
 exports.Subscription = Subscription_1.Subscription;
 var Subscriber_1 = __webpack_require__(2);
 exports.Subscriber = Subscriber_1.Subscriber;
-var AsyncSubject_1 = __webpack_require__(77);
+var AsyncSubject_1 = __webpack_require__(78);
 exports.AsyncSubject = AsyncSubject_1.AsyncSubject;
 var ReplaySubject_1 = __webpack_require__(110);
 exports.ReplaySubject = ReplaySubject_1.ReplaySubject;
@@ -70383,9 +70383,9 @@ var Notification_1 = __webpack_require__(58);
 exports.Notification = Notification_1.Notification;
 var EmptyError_1 = __webpack_require__(64);
 exports.EmptyError = EmptyError_1.EmptyError;
-var ArgumentOutOfRangeError_1 = __webpack_require__(81);
+var ArgumentOutOfRangeError_1 = __webpack_require__(82);
 exports.ArgumentOutOfRangeError = ArgumentOutOfRangeError_1.ArgumentOutOfRangeError;
-var ObjectUnsubscribedError_1 = __webpack_require__(82);
+var ObjectUnsubscribedError_1 = __webpack_require__(83);
 exports.ObjectUnsubscribedError = ObjectUnsubscribedError_1.ObjectUnsubscribedError;
 var TimeoutError_1 = __webpack_require__(201);
 exports.TimeoutError = TimeoutError_1.TimeoutError;
@@ -70407,7 +70407,7 @@ var asap_1 = __webpack_require__(197);
 var async_1 = __webpack_require__(19);
 var queue_1 = __webpack_require__(198);
 var animationFrame_1 = __webpack_require__(646);
-var rxSubscriber_1 = __webpack_require__(80);
+var rxSubscriber_1 = __webpack_require__(81);
 var iterator_1 = __webpack_require__(62);
 var observable_1 = __webpack_require__(63);
 /* tslint:enable:no-unused-variable */
@@ -71244,7 +71244,7 @@ Observable_1.Observable.prototype.letBind = let_1.letProto;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var map_1 = __webpack_require__(78);
+var map_1 = __webpack_require__(79);
 Observable_1.Observable.prototype.map = map_1.map;
 //# sourceMappingURL=map.js.map
 
@@ -71477,7 +71477,7 @@ Observable_1.Observable.prototype.race = race_1.race;
 "use strict";
 
 var Observable_1 = __webpack_require__(0);
-var reduce_1 = __webpack_require__(79);
+var reduce_1 = __webpack_require__(80);
 Observable_1.Observable.prototype.reduce = reduce_1.reduce;
 //# sourceMappingURL=reduce.js.map
 
@@ -71990,7 +71990,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(0);
 var tryCatch_1 = __webpack_require__(17);
 var errorObject_1 = __webpack_require__(15);
-var AsyncSubject_1 = __webpack_require__(77);
+var AsyncSubject_1 = __webpack_require__(78);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -72264,7 +72264,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Observable_1 = __webpack_require__(0);
 var tryCatch_1 = __webpack_require__(17);
 var errorObject_1 = __webpack_require__(15);
-var AsyncSubject_1 = __webpack_require__(77);
+var AsyncSubject_1 = __webpack_require__(78);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -72843,7 +72843,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var tryCatch_1 = __webpack_require__(17);
-var isFunction_1 = __webpack_require__(84);
+var isFunction_1 = __webpack_require__(85);
 var errorObject_1 = __webpack_require__(15);
 var Subscription_1 = __webpack_require__(13);
 var toString = Object.prototype.toString;
@@ -72987,7 +72987,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isFunction_1 = __webpack_require__(84);
+var isFunction_1 = __webpack_require__(85);
 var Observable_1 = __webpack_require__(0);
 var Subscription_1 = __webpack_require__(13);
 /**
@@ -73314,7 +73314,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isNumeric_1 = __webpack_require__(85);
+var isNumeric_1 = __webpack_require__(86);
 var Observable_1 = __webpack_require__(0);
 var async_1 = __webpack_require__(19);
 /**
@@ -73837,7 +73837,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var Observable_1 = __webpack_require__(0);
 var asap_1 = __webpack_require__(197);
-var isNumeric_1 = __webpack_require__(85);
+var isNumeric_1 = __webpack_require__(86);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -73892,11 +73892,11 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var isNumeric_1 = __webpack_require__(85);
+var isNumeric_1 = __webpack_require__(86);
 var Observable_1 = __webpack_require__(0);
 var async_1 = __webpack_require__(19);
 var isScheduler_1 = __webpack_require__(36);
-var isDate_1 = __webpack_require__(83);
+var isDate_1 = __webpack_require__(84);
 /**
  * We need this JSDoc comment for affecting ESDoc.
  * @extends {Ignored}
@@ -76184,7 +76184,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(19);
-var isDate_1 = __webpack_require__(83);
+var isDate_1 = __webpack_require__(84);
 var Subscriber_1 = __webpack_require__(2);
 var Notification_1 = __webpack_require__(58);
 /**
@@ -76923,7 +76923,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(81);
+var ArgumentOutOfRangeError_1 = __webpack_require__(82);
 /**
  * Emits the single value at the specified `index` in a sequence of emissions
  * from the source Observable.
@@ -78096,7 +78096,7 @@ var MaterializeSubscriber = (function (_super) {
 
 "use strict";
 
-var reduce_1 = __webpack_require__(79);
+var reduce_1 = __webpack_require__(80);
 /**
  * The Max operator operates on an Observable that emits numbers (or items that can be compared with a provided function),
  * and when source Observable completes it emits a single item: the item with the largest value.
@@ -78278,7 +78278,7 @@ exports.MergeScanSubscriber = MergeScanSubscriber;
 
 "use strict";
 
-var reduce_1 = __webpack_require__(79);
+var reduce_1 = __webpack_require__(80);
 /**
  * The Min operator operates on an Observable that emits numbers (or items that can be compared with a provided function),
  * and when source Observable completes it emits a single item: the item with the smallest value.
@@ -78466,7 +78466,7 @@ exports.partition = partition;
 
 "use strict";
 
-var map_1 = __webpack_require__(78);
+var map_1 = __webpack_require__(79);
 /**
  * Maps each source value (an object) to its specified nested property.
  *
@@ -78578,7 +78578,7 @@ exports.publishBehavior = publishBehavior;
 
 "use strict";
 
-var AsyncSubject_1 = __webpack_require__(77);
+var AsyncSubject_1 = __webpack_require__(78);
 var multicast_1 = __webpack_require__(49);
 /**
  * @return {ConnectableObservable<T>}
@@ -80264,7 +80264,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(81);
+var ArgumentOutOfRangeError_1 = __webpack_require__(82);
 var EmptyObservable_1 = __webpack_require__(39);
 /**
  * Emits only the first `count` values emitted by the source Observable.
@@ -80359,7 +80359,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var Subscriber_1 = __webpack_require__(2);
-var ArgumentOutOfRangeError_1 = __webpack_require__(81);
+var ArgumentOutOfRangeError_1 = __webpack_require__(82);
 var EmptyObservable_1 = __webpack_require__(39);
 /**
  * Emits only the last `count` values emitted by the source Observable.
@@ -80866,7 +80866,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(19);
-var isDate_1 = __webpack_require__(83);
+var isDate_1 = __webpack_require__(84);
 var Subscriber_1 = __webpack_require__(2);
 var TimeoutError_1 = __webpack_require__(201);
 /**
@@ -80955,7 +80955,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 var async_1 = __webpack_require__(19);
-var isDate_1 = __webpack_require__(83);
+var isDate_1 = __webpack_require__(84);
 var OuterSubscriber_1 = __webpack_require__(3);
 var subscribeToResult_1 = __webpack_require__(4);
 /* tslint:enable:max-line-length */
@@ -81354,7 +81354,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 var Subject_1 = __webpack_require__(9);
 var async_1 = __webpack_require__(19);
 var Subscriber_1 = __webpack_require__(2);
-var isNumeric_1 = __webpack_require__(85);
+var isNumeric_1 = __webpack_require__(86);
 var isScheduler_1 = __webpack_require__(36);
 function windowTime(windowTimeSpan) {
     var scheduler = async_1.async;
@@ -83143,7 +83143,7 @@ exports.not = not;
 "use strict";
 
 var Subscriber_1 = __webpack_require__(2);
-var rxSubscriber_1 = __webpack_require__(80);
+var rxSubscriber_1 = __webpack_require__(81);
 var Observer_1 = __webpack_require__(170);
 function toSubscriber(nextOrObserver, error, complete) {
     if (nextOrObserver) {
