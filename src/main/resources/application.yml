@@ -11,7 +11,7 @@ spring:
 
 
 
-redirectMapping: /redirect
+redirectMapping: /
 redirectHost: http://40.71.86.58
 clientId: HackGenome
 clientSecret: K6Qt20cZFKV73VBaID5Yha3EYFtoIGIMPiNSXulOkoC4Gmi7RCT__bwUzFiCLFUlDSjWI17mHtwVgM-ConSswA
