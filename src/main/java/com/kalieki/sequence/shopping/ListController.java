@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.kalieki.sequence.files.DataFileController;
 import com.kalieki.sequence.model.Item;
 import com.kalieki.sequence.nutrition.Nutrition;
 import com.sequencing.appchains.DefaultAppChainsImpl;
@@ -47,9 +47,8 @@ public class ListController {
 
 		// DefaultAppChainsImpl.Report result = chains.getReport("StartApp",
 		// "Chain63", "227679"); // homer
-		DefaultAppChainsImpl.Report result = chains.getReport("StartApp", "Chain63", "80605"); // vito
-		// DefaultAppChainsImpl.Report result = chains.getReport("StartApp",
-		// "Chain63", "227679"); // homer
+		DefaultAppChainsImpl.Report result = chains.getReport("StartApp", "Chain63",
+				DataFileController.getSelectedFile().getId());
 
 		System.out.println(new ObjectMapper().writeValueAsString(result));
 

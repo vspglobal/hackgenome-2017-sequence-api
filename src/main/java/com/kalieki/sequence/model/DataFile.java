@@ -1,149 +1,137 @@
 package com.kalieki.sequence.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JacksonStdImpl;
-
 /**
  * Created by jaswka on 4/6/17.
  */
 public class DataFile {
 
+	private String Id;
 
-    private String Id;
+	private String Name;
 
+	private String DateAdded;
 
-    private String Name;
+	private String Ext;
 
-    private String DateAdded;
+	private String FileCategory;
 
+	private String FileSubType;
 
-    private String Ext;
+	private String FileType;
 
+	private String FriendlyDesc1;
 
+	private String FriendlyDesc2;
 
-    private String FileCategory;
+	private String Population;
 
-    private String  FileSubType;
+	private String Dex;
 
-    private String FileType;
+	private String WasUsedPreviously;
 
-    private String FriendlyDesc1 ;
+	public String getId() {
+		return Id;
+	}
 
+	public void setId(String id) {
+		Id = id;
+	}
 
-    private String FriendlyDesc2;
+	public String getName() {
+		return Name;
+	}
 
+	public void setName(String name) {
+		Name = name;
+	}
 
-    private String Population;
+	public String getDateAdded() {
+		return DateAdded;
+	}
 
+	public void setDateAdded(String dateAdded) {
+		DateAdded = dateAdded;
+	}
 
-    private String Dex;
+	public String getExt() {
+		return Ext;
+	}
 
-    private String WasUsedPreviously;
+	public void setExt(String ext) {
+		Ext = ext;
+	}
 
+	public String getFileCategory() {
+		return FileCategory;
+	}
 
-    public String getId() {
-        return Id;
-    }
+	public void setFileCategory(String fileCategory) {
+		FileCategory = fileCategory;
+	}
 
-    public void setId(String id) {
-        Id = id;
-    }
+	public String getFileSubType() {
+		return FileSubType;
+	}
 
-    public String getName() {
-        return Name;
-    }
+	public void setFileSubType(String fileSubType) {
+		FileSubType = fileSubType;
+	}
 
-    public void setName(String name) {
-        Name = name;
-    }
+	public String getFileType() {
+		return FileType;
+	}
 
-    public String getDateAdded() {
-        return DateAdded;
-    }
+	public void setFileType(String fileType) {
+		FileType = fileType;
+	}
 
-    public void setDateAdded(String dateAdded) {
-        DateAdded = dateAdded;
-    }
+	public String getFriendlyDesc1() {
+		return FriendlyDesc1;
+	}
 
-    public String getExt() {
-        return Ext;
-    }
+	public void setFriendlyDesc1(String friendlyDesc1) {
+		FriendlyDesc1 = friendlyDesc1;
+	}
 
-    public void setExt(String ext) {
-        Ext = ext;
-    }
+	public String getFriendlyDesc2() {
+		return FriendlyDesc2;
+	}
 
-    public String getFileCategory() {
-        return FileCategory;
-    }
+	public void setFriendlyDesc2(String friendlyDesc2) {
+		FriendlyDesc2 = friendlyDesc2;
+	}
 
-    public void setFileCategory(String fileCategory) {
-        FileCategory = fileCategory;
-    }
+	public String getPopulation() {
+		return Population;
+	}
 
-    public String getFileSubType() {
-        return FileSubType;
-    }
+	public void setPopulation(String population) {
+		Population = population;
+	}
 
-    public void setFileSubType(String fileSubType) {
-        FileSubType = fileSubType;
-    }
+	public String getDex() {
+		return Dex;
+	}
 
-    public String getFileType() {
-        return FileType;
-    }
+	public void setDex(String dex) {
+		Dex = dex;
+	}
 
-    public void setFileType(String fileType) {
-        FileType = fileType;
-    }
+	public String getWasUsedPreviously() {
+		return WasUsedPreviously;
+	}
 
-    public String getFriendlyDesc1() {
-        return FriendlyDesc1;
-    }
+	public void setWasUsedPreviously(String wasUsedPreviously) {
+		WasUsedPreviously = wasUsedPreviously;
+	}
 
-    public void setFriendlyDesc1(String friendlyDesc1) {
-        FriendlyDesc1 = friendlyDesc1;
-    }
+	private boolean selected;
 
-    public String getFriendlyDesc2() {
-        return FriendlyDesc2;
-    }
+	public boolean isSelected() {
+		return selected;
+	}
 
-    public void setFriendlyDesc2(String friendlyDesc2) {
-        FriendlyDesc2 = friendlyDesc2;
-    }
-
-    public String getPopulation() {
-        return Population;
-    }
-
-    public void setPopulation(String population) {
-        Population = population;
-    }
-
-    public String getDex() {
-        return Dex;
-    }
-
-    public void setDex(String dex) {
-        Dex = dex;
-    }
-
-    public String getWasUsedPreviously() {
-        return WasUsedPreviously;
-    }
-
-    public void setWasUsedPreviously(String wasUsedPreviously) {
-        WasUsedPreviously = wasUsedPreviously;
-    }
-
-    private boolean selected ;
-
-    public boolean isSelected() {
-        return selected;
-    }
-
-    public void setSelected(boolean selected) {
-        this.selected = selected;
-    }
+	public void setSelected(boolean selected) {
+		this.selected = selected;
+	}
 }
