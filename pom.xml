@@ -31,12 +31,13 @@
             <artifactId>oauth2-core</artifactId>
             <version>1.2</version>
         </dependency>
-<!--
+
         <dependency>
             <groupId>com.sequencing</groupId>
             <artifactId>appchains</artifactId>
             <version>1.0.9</version>
         </dependency>
+        <!--
 
         <dependency>
             <groupId>com.google.code.gson</groupId>

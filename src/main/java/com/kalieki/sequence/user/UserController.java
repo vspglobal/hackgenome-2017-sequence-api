@@ -34,6 +34,7 @@ public class UserController {
             Token token  = oauth.authorize(code, state);
             logger.info("Authentication tokens: access token : " + token.getAccessToken() + ", refresh token: " + token.getRefreshToken());
 
+
         } catch (Exception e) {
             logger.warn("An unsuccessful attempt to get the token", e);
             return false;

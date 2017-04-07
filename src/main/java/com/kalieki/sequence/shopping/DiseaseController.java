@@ -1,5 +1,6 @@
 package com.kalieki.sequence.shopping;
 
+import com.sequencing.appchains.DefaultAppChainsImpl;
 import com.sequencing.oauth.core.SequencingFileMetadataApi;
 import com.sequencing.oauth.core.SequencingOAuth2Client;
 import com.sequencing.oauth.exception.NonAuthorizedException;
@@ -17,8 +18,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class DiseaseController {
 
 
-    @Autowired
-    private SequencingFileMetadataApi fileApi;
 
     @Autowired
     private SequencingOAuth2Client oauth;
@@ -26,34 +25,28 @@ public class DiseaseController {
 
     @RequestMapping(method = RequestMethod.GET,value = "/susceptible")
     public String susceptible() {
-//        DefaultAppChainsImpl chains = new DefaultAppChainsImpl("21697faff955dcb320820bb8e324a9dec251f2c0", "api.sequencing.com");
-//
-//        DefaultAppChainsImpl.Report result = chains.getReport("StartApp", "Chain891", "Genghis");
-//
-//        if (result.isSucceeded() == false)
-//            System.out.println("Request has failed");
-//        else
-//            System.out.println("Request has succeeded");
-//
-//        for (DefaultAppChainsImpl.Result r : result.getResults())
-//        {
-//            DefaultAppChainsImpl.ResultType type = r.getValue().getType();
-//
-//            if (type == DefaultAppChainsImpl.ResultType.TEXT)
-//            {
-//                DefaultAppChainsImpl.TextResultValue v = (DefaultAppChainsImpl.TextResultValue) r.getValue();
-//                System.out.println(String.format(" -> text result type %s = %s", r.getName(), v.getData()));
-//            }
-//        }
+        DefaultAppChainsImpl chains = new DefaultAppChainsImpl(oauth.getToken().toString(), "api.sequencing.com");
 
-        try {
+        DefaultAppChainsImpl.Report result = chains.getReport("StartApp", "Chain891", "80602");
 
-            System.out.println("***************"+oauth.isAuthorized());
-            System.out.println(fileApi.getSampleFiles());
-        } catch (NonAuthorizedException e) {
-            e.printStackTrace();
+        if (result.isSucceeded() == false)
+            System.out.println("Request has failed");
+        else
+            System.out.println("Request has succeeded");
+
+        for (DefaultAppChainsImpl.Result r : result.getResults())
+        {
+            DefaultAppChainsImpl.ResultType type = r.getValue().getType();
+
+            if (type == DefaultAppChainsImpl.ResultType.TEXT)
+            {
+                DefaultAppChainsImpl.TextResultValue v = (DefaultAppChainsImpl.TextResultValue) r.getValue();
+                System.out.println(String.format(" -> text result type %s = %s", r.getName(), v.getData()));
+            }
         }
-        return "true";
+
+
+        return "done!!!";
 
     }
 }
