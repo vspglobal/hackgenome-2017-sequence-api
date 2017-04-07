@@ -26,7 +26,7 @@ public class Nutrition {
 	private static final HttpClient CLIENT = HttpClientBuilder.create().build();
 	private static final ObjectMapper MAPPER = new ObjectMapper();
 
-	private static Map<String, String> cachedIdForQuery = new HashMap<String, String>();
+	private static Map<String, FoodItem> cachedItemForQuery = new HashMap<String, FoodItem>();
 	private static Map<String, List<Nutrient>> cachedNutrients = new HashMap<String, List<Nutrient>>();
 
 	public static void main(String[] args) throws Exception {
@@ -39,7 +39,7 @@ public class Nutrition {
 	}
 
 	public static boolean doesFoodGetSaturatedFatWarning(String foodQuery) throws Exception {
-		String id = getIdForQuery(foodQuery);
+		String id = getItemForQuery(foodQuery).getNdbno();
 
 		if (id == null) {
 			return false;
@@ -76,8 +76,8 @@ public class Nutrition {
 		return cachedNutrients.get(id);
 	}
 
-	private static String getIdForQuery(String query) throws Exception {
-		if (!cachedIdForQuery.containsKey(query)) {
+	private static FoodItem getItemForQuery(String query) throws Exception {
+		if (!cachedItemForQuery.containsKey(query)) {
 			URI uri = new URIBuilder(SEARCH_REQUEST_TEMPLATE).addParameter("format", "json").addParameter("q", query)
 					.addParameter("max", "1").addParameter("offset", "0").addParameter("api_key", USDA_API_KEY).build();
 			HttpGet getSearch = new HttpGet(uri);
@@ -89,13 +89,18 @@ public class Nutrition {
 			UsdaSearch search = MAPPER.readValue(entity, UsdaSearch.class);
 
 			if (search.getErrors() == null) {
-				String id = search.getList().getItem().get(0).getNdbno();
-				cachedIdForQuery.put(query, id);
+				FoodItem id = search.getList().getItem().get(0);
+				cachedItemForQuery.put(query, id);
 			} else {
-				cachedIdForQuery.put(query, null);
+				cachedItemForQuery.put(query, null);
 			}
 		}
 
-		return cachedIdForQuery.get(query);
+		return cachedItemForQuery.get(query);
+	}
+
+	public static String getFoodItemName(String query) {
+		String fullName = cachedItemForQuery.get(query).getName();
+		return fullName.substring(0, fullName.length() > 80 ? 80 : fullName.length());
 	}
 }

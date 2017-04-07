@@ -32,7 +32,9 @@ public class ListController {
 		for (Item item : new ArrayList<Item>(itemList)) {
 			if (Nutrition.doesFoodGetSaturatedFatWarning(item.getName()) && chains.userIsProneToHeartDisease()) {
 				item.setWarning(
-						"Warning - You are genetically prone to heart disease. This food is high in saturated fats");
+						"Warning - You are genetically prone to heart disease. This food is high in saturated fats (Based on matching food item of "
+								+ Nutrition.getFoodItemName(item.getName()) + ")");
+				
 			} else {
 				item.setWarning(null);
 			}
