@@ -8,7 +8,12 @@ clientSecret: 4yL8IJump2KgJ89w6CTNdI22y4ArR049-5HdznXQAfdRkonEOLaf8CC0W4FxZQyqYW
 spring:
   profiles: azure
 
+
+
+
 redirectMapping: /redirect
-redirectHost: http://40.71.86.58:4200
-clientId: kalieki
-clientSecret: 4yL8IJump2KgJ89w6CTNdI22y4ArR049-5HdznXQAfdRkonEOLaf8CC0W4FxZQyqYW_QQofVrTbCiNELlL7S0w
+redirectHost: http://40.71.86.58
+clientId: HackGenome
+clientSecret: K6Qt20cZFKV73VBaID5Yha3EYFtoIGIMPiNSXulOkoC4Gmi7RCT__bwUzFiCLFUlDSjWI17mHtwVgM-ConSswA
+server:
+  port: 80
