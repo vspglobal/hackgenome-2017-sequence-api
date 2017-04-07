@@ -1,7 +1,9 @@
 package com.kalieki.sequence.shopping;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -30,12 +32,16 @@ public class ListController {
 
 	public static List<Item> itemList = null;
 
+	private static Map<String, Boolean> isUserProneToHeartDisease = new HashMap<String, Boolean>();
+
 	@RequestMapping(method = RequestMethod.GET)
 	public List<Item> get() throws Exception {
 		for (Item item : new ArrayList<Item>(itemList)) {
 			if (userIsProneToHeartDisease() && Nutrition.doesFoodGetSaturatedFatWarning(item.getName())) {
 				item.setWarning(
 						"Warning - You are genetically prone to heart disease. This food is high in saturated fats");
+			} else {
+				item.setWarning(null);
 			}
 		}
 		return itemList;
@@ -47,28 +53,36 @@ public class ListController {
 
 		// DefaultAppChainsImpl.Report result = chains.getReport("StartApp",
 		// "Chain63", "227679"); // homer
-		DefaultAppChainsImpl.Report result = chains.getReport("StartApp", "Chain63",
-				DataFileController.getSelectedFile().getId());
+		String userId = DataFileController.getSelectedFile().getId();
 
-		System.out.println(new ObjectMapper().writeValueAsString(result));
+		if (!isUserProneToHeartDisease.containsKey(userId)) {
+			DefaultAppChainsImpl.Report result = chains.getReport("StartApp", "Chain63", userId);
 
-		if (!result.isSucceeded()) {
-			throw new RuntimeException("Something went wrong");
-		}
+			System.out.println(new ObjectMapper().writeValueAsString(result));
 
-		for (DefaultAppChainsImpl.Result r : result.getResults()) {
-			DefaultAppChainsImpl.ResultType type = r.getValue().getType();
+			if (!result.isSucceeded()) {
+				throw new RuntimeException("Something went wrong");
+			}
 
-			if (type == DefaultAppChainsImpl.ResultType.TEXT) {
-				if ("result".equals(r.getName())) {
-					if (((DefaultAppChainsImpl.TextResultValue) r.getValue()).getData().contains("INCREASED RISK")) {
-						return true;
+			for (DefaultAppChainsImpl.Result r : result.getResults()) {
+				DefaultAppChainsImpl.ResultType type = r.getValue().getType();
+
+				if (type == DefaultAppChainsImpl.ResultType.TEXT) {
+					if ("result".equals(r.getName())) {
+						if (((DefaultAppChainsImpl.TextResultValue) r.getValue()).getData()
+								.contains("INCREASED RISK")) {
+							isUserProneToHeartDisease.put(userId, true);
+							return true;
+						}
 					}
 				}
 			}
-		}
 
-		return false;
+			isUserProneToHeartDisease.put(userId, false);
+			return false;
+		} else {
+			return isUserProneToHeartDisease.get(userId);
+		}
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
