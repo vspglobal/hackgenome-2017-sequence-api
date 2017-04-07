@@ -2,7 +2,9 @@ package com.kalieki.sequence.nutrition;
 
 import java.net.URI;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -24,6 +26,9 @@ public class Nutrition {
 	private static final HttpClient CLIENT = HttpClientBuilder.create().build();
 	private static final ObjectMapper MAPPER = new ObjectMapper();
 
+	private static Map<String, String> cachedIdForQuery = new HashMap<String, String>();
+	private static Map<String, List<Nutrient>> cachedNutrients = new HashMap<String, List<Nutrient>>();
+
 	public static void main(String[] args) throws Exception {
 		StringBuilder builder = new StringBuilder();
 		for (String food : Arrays.asList("salted butter", "corn flakes", "ribeye steak", "frozen french fries",
@@ -35,11 +40,11 @@ public class Nutrition {
 
 	public static boolean doesFoodGetSaturatedFatWarning(String foodQuery) throws Exception {
 		String id = getIdForQuery(foodQuery);
-		
+
 		if (id == null) {
 			return false;
 		}
-		
+
 		List<Nutrient> nutrients = getNutrientsById(id);
 
 		boolean saturatedFatWarning = false;
@@ -56,32 +61,41 @@ public class Nutrition {
 	}
 
 	private static List<Nutrient> getNutrientsById(String id) throws Exception {
-		URI uri = new URIBuilder(NUTRITION_REQUEST_TEMPLATE).addParameter("format", "json").addParameter("ndbno", id)
-				.addParameter("api_key", USDA_API_KEY).build();
+		if (!cachedNutrients.containsKey(id)) {
+			URI uri = new URIBuilder(NUTRITION_REQUEST_TEMPLATE).addParameter("format", "json")
+					.addParameter("ndbno", id).addParameter("api_key", USDA_API_KEY).build();
 
-		HttpGet getNutrition = new HttpGet(uri);
-		HttpResponse nutritionResponse = CLIENT.execute(getNutrition);
-		UsdaReports foods = MAPPER.readValue(nutritionResponse.getEntity().getContent(), UsdaReports.class);
-		List<Nutrient> nutrients = foods.getFood().get(0).getFood().getNutrients();
-		return nutrients;
+			HttpGet getNutrition = new HttpGet(uri);
+			HttpResponse nutritionResponse = CLIENT.execute(getNutrition);
+			UsdaReports foods = MAPPER.readValue(nutritionResponse.getEntity().getContent(), UsdaReports.class);
+			List<Nutrient> nutrients = foods.getFood().get(0).getFood().getNutrients();
+
+			cachedNutrients.put(id, nutrients);
+		}
+
+		return cachedNutrients.get(id);
 	}
 
 	private static String getIdForQuery(String query) throws Exception {
-		URI uri = new URIBuilder(SEARCH_REQUEST_TEMPLATE).addParameter("format", "json").addParameter("q", query)
-				.addParameter("max", "1").addParameter("offset", "0").addParameter("api_key", USDA_API_KEY).build();
-		HttpGet getSearch = new HttpGet(uri);
+		if (!cachedIdForQuery.containsKey(query)) {
+			URI uri = new URIBuilder(SEARCH_REQUEST_TEMPLATE).addParameter("format", "json").addParameter("q", query)
+					.addParameter("max", "1").addParameter("offset", "0").addParameter("api_key", USDA_API_KEY).build();
+			HttpGet getSearch = new HttpGet(uri);
 
-		HttpResponse response = CLIENT.execute(getSearch);
+			HttpResponse response = CLIENT.execute(getSearch);
 
-		String entity = EntityUtils.toString(response.getEntity());
+			String entity = EntityUtils.toString(response.getEntity());
 
-		UsdaSearch search = MAPPER.readValue(entity, UsdaSearch.class);
+			UsdaSearch search = MAPPER.readValue(entity, UsdaSearch.class);
 
-		if (search.getErrors() == null) {
-			String id = search.getList().getItem().get(0).getNdbno();
-			return id;
-		} else {
-			return null;
+			if (search.getErrors() == null) {
+				String id = search.getList().getItem().get(0).getNdbno();
+				cachedIdForQuery.put(query, id);
+			} else {
+				cachedIdForQuery.put(query, null);
+			}
 		}
+
+		return cachedIdForQuery.get(query);
 	}
 }
