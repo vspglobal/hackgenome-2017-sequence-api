@@ -1,0 +1,19 @@
+redirectMapping: /
+redirectHost: http://localhost:4200
+clientId: kaliekishop
+clientSecret: zYjudZY6o29waXGPtzpEVFlniKEhZAnucK37YAbAwy_SK9wJNwpZacqqdHT_iHoyuIUiY5rOwpkJHvAbDayk3A
+
+---
+
+spring:
+  profiles: azure
+
+
+
+
+redirectMapping: /
+redirectHost: http://40.71.86.58
+clientId: HackGenome2
+clientSecret: IAst0JhvC6Joh7mZU-apMykiRJlOfM7X9cZdCgHIMhYZ463FymbhAoyfDxp2zcUtXA3JO4qOdDVmyJ5230--8Q
+server:
+  port: 80
