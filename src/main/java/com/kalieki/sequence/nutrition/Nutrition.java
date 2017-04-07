@@ -9,6 +9,7 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -25,7 +26,8 @@ public class Nutrition {
 
 	public static void main(String[] args) throws Exception {
 		StringBuilder builder = new StringBuilder();
-		for (String food : Arrays.asList("salted butter", "corn flakes", "ribeye steak", "frozen french fries", "carrot juice", "green peas")) {
+		for (String food : Arrays.asList("salted butter", "corn flakes", "ribeye steak", "frozen french fries",
+				"carrot juice", "green peas")) {
 			builder.append(food + " is this bad for me? " + doesFoodGetSaturatedFatWarning(food) + "\n");
 		}
 		System.err.println(builder.toString());
@@ -33,6 +35,11 @@ public class Nutrition {
 
 	public static boolean doesFoodGetSaturatedFatWarning(String foodQuery) throws Exception {
 		String id = getIdForQuery(foodQuery);
+		
+		if (id == null) {
+			return false;
+		}
+		
 		List<Nutrient> nutrients = getNutrientsById(id);
 
 		boolean saturatedFatWarning = false;
@@ -66,8 +73,15 @@ public class Nutrition {
 
 		HttpResponse response = CLIENT.execute(getSearch);
 
-		UsdaSearch search = MAPPER.readValue(response.getEntity().getContent(), UsdaSearch.class);
-		String id = search.getList().getItem().get(0).getNdbno();
-		return id;
+		String entity = EntityUtils.toString(response.getEntity());
+
+		UsdaSearch search = MAPPER.readValue(entity, UsdaSearch.class);
+
+		if (search.getErrors() == null) {
+			String id = search.getList().getItem().get(0).getNdbno();
+			return id;
+		} else {
+			return null;
+		}
 	}
 }
