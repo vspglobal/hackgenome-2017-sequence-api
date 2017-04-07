@@ -41,6 +41,8 @@ public class UserController {
         }
 
         String files = api.getFiles();
+        
+        System.out.println(files);
 
         return true;
     }

@@ -3,6 +3,7 @@ package com.kalieki.sequence.shopping;
 import com.sequencing.appchains.DefaultAppChainsImpl;
 import com.sequencing.oauth.core.SequencingFileMetadataApi;
 import com.sequencing.oauth.core.SequencingOAuth2Client;
+import com.sequencing.oauth.core.Token;
 import com.sequencing.oauth.exception.NonAuthorizedException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,7 +26,8 @@ public class DiseaseController {
 
     @RequestMapping(method = RequestMethod.GET,value = "/susceptible")
     public String susceptible() {
-        DefaultAppChainsImpl chains = new DefaultAppChainsImpl(oauth.getToken().toString(), "api.sequencing.com");
+        Token token = oauth.getToken();
+		DefaultAppChainsImpl chains = new DefaultAppChainsImpl(token.getAccessToken(), "api.sequencing.com");
 
         DefaultAppChainsImpl.Report result = chains.getReport("StartApp", "Chain891", "80602");
 
