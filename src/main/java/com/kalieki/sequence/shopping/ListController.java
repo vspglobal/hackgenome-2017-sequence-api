@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.kalieki.sequence.files.DataFileController;
 import com.kalieki.sequence.model.Item;
 import com.kalieki.sequence.nutrition.Nutrition;
@@ -32,12 +32,12 @@ public class ListController {
 
 	public static List<Item> itemList = null;
 
-	private static Map<String, Boolean> isUserProneToHeartDisease = new HashMap<String, Boolean>();
+	private static Map<String, Map<String, Boolean>> cachedChainsByFileId = new HashMap<String, Map<String, Boolean>>();
 
 	@RequestMapping(method = RequestMethod.GET)
 	public List<Item> get() throws Exception {
 		for (Item item : new ArrayList<Item>(itemList)) {
-			if (userIsProneToHeartDisease() && Nutrition.doesFoodGetSaturatedFatWarning(item.getName())) {
+			if (Nutrition.doesFoodGetSaturatedFatWarning(item.getName()) && userIsProneToHeartDisease()) {
 				item.setWarning(
 						"Warning - You are genetically prone to heart disease. This food is high in saturated fats");
 			} else {
@@ -48,21 +48,27 @@ public class ListController {
 	}
 
 	private boolean userIsProneToHeartDisease() throws Exception {
+		return isSusceptibleByFileIdAndChain("Chain63");
+	}
+
+	private boolean isSusceptibleByFileIdAndChain(String chain) throws JsonProcessingException {
 		Token token = oauth.getToken();
 		DefaultAppChainsImpl chains = new DefaultAppChainsImpl(token.getAccessToken(), "api.sequencing.com");
 
-		// DefaultAppChainsImpl.Report result = chains.getReport("StartApp",
-		// "Chain63", "227679"); // homer
-		String userId = DataFileController.getSelectedFile().getId();
+		String fileId = DataFileController.getSelectedFile().getId();
 
-		if (!isUserProneToHeartDisease.containsKey(userId)) {
-			DefaultAppChainsImpl.Report result = chains.getReport("StartApp", "Chain63", userId);
+		if (!cachedChainsByFileId.containsKey(fileId)) {
+			cachedChainsByFileId.put(fileId, new HashMap<String, Boolean>());
+		}
 
-			System.out.println(new ObjectMapper().writeValueAsString(result));
+		if (!cachedChainsByFileId.get(fileId).containsKey(chain)) {
+			DefaultAppChainsImpl.Report result = chains.getReport("StartApp", chain, fileId);
 
 			if (!result.isSucceeded()) {
 				throw new RuntimeException("Something went wrong");
 			}
+
+			boolean wasFound = false;
 
 			for (DefaultAppChainsImpl.Result r : result.getResults()) {
 				DefaultAppChainsImpl.ResultType type = r.getValue().getType();
@@ -71,18 +77,17 @@ public class ListController {
 					if ("result".equals(r.getName())) {
 						if (((DefaultAppChainsImpl.TextResultValue) r.getValue()).getData()
 								.contains("INCREASED RISK")) {
-							isUserProneToHeartDisease.put(userId, true);
-							return true;
+							wasFound = true;
+							break;
 						}
 					}
 				}
 			}
 
-			isUserProneToHeartDisease.put(userId, false);
-			return false;
-		} else {
-			return isUserProneToHeartDisease.get(userId);
+			cachedChainsByFileId.get(fileId).put(chain, wasFound);
 		}
+
+		return cachedChainsByFileId.get(fileId).get(chain);
 	}
 
 	@RequestMapping(method = RequestMethod.POST)
@@ -95,8 +100,9 @@ public class ListController {
 			}
 		}
 
-		if (!exists)
+		if (!exists) {
 			itemList.add(item);
+		}
 		return itemList;
 	}
 
