@@ -40,11 +40,11 @@ public class Application {
     @Autowired
     public AuthenticationParameters getParameters(ApplicationConfiguration config) {
         return new AuthenticationParameters.ConfigurationBuilder()
-             .withRedirectUri(config.getRedirectHost() + config.getRedirectMapping())
+             .withRedirectUri(config.getRedirectHost())
              .withClientId(config.getClientId())
              .withClientSecret(config.getClientSecret())
-             .withState("CA")
-             .withScope("external|demo")
+             .withState("WA")
+             .withScope("demo")
              .build();
     }
 

@@ -1,7 +1,7 @@
-redirectMapping: /redirect
+redirectMapping: /
 redirectHost: http://localhost:4200
-clientId: kalieki
-clientSecret: 4yL8IJump2KgJ89w6CTNdI22y4ArR049-5HdznXQAfdRkonEOLaf8CC0W4FxZQyqYW_QQofVrTbCiNELlL7S0w
+clientId: kaliekishop
+clientSecret: zYjudZY6o29waXGPtzpEVFlniKEhZAnucK37YAbAwy_SK9wJNwpZacqqdHT_iHoyuIUiY5rOwpkJHvAbDayk3A
 
 ---
 
